@@ -3,7 +3,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "check": "node --check dist/app.js && node --check dist/python-worker.js && node --check dist/assessments.js && node --check dist/sync.js && node --check dist/labs.js && node --check dist/labs-python.js && node --check dist/labs-torch.js",
+    "check": "node --check dist/app.js && node --check dist/python-worker.js && node --check dist/assessments.js && node --check dist/sync.js && node --check dist/labs.js && node --check dist/labs-python.js && node --check dist/labs-torch.js && node --check dist/learning.js",
     "build:pages": "node scripts/prepare-pages.mjs",
     "build:cloud": "node cloud/build.mjs"
   }

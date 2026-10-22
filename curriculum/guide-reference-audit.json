@@ -1,0 +1,276 @@
+{
+  "checkedOn": "2026-10-22",
+  "scope": "HTTP status and named fragment existence for API-card references; not a proof of every teaching claim",
+  "references": [
+    {
+      "url": "https://cs50.harvard.edu/python/notes/0/",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://d2l.ai/chapter_attention-mechanisms-and-transformers/attention-scoring-functions.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://d2l.ai/chapter_linear-regression/linear-regression.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://d2l.ai/chapter_multilayer-perceptrons/numerical-stability-and-init.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/howto/sorting.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/library/copy.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/library/csv.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/library/functions.html#sum",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/library/functions.html#zip",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/library/json.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/library/math.html#math.isfinite",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/library/stdtypes.html#str.lower",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/library/stdtypes.html#str.split",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/reference/datamodel.html#special-method-names",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/classes.html#class-objects",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/classes.html#generators",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/classes.html#instance-objects",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/controlflow.html#default-argument-values",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/controlflow.html#defining-functions",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/controlflow.html#for-statements",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/controlflow.html#if-statements",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/controlflow.html#the-range-function",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/datastructures.html#dictionaries",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/datastructures.html#nested-list-comprehensions",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/datastructures.html#sets",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/errors.html#handling-exceptions",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/errors.html#raising-exceptions",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/inputoutput.html#saving-structured-data-with-json",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/introduction.html#lists",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/introduction.html#numbers",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.10/generated/torch.Tensor.masked_fill.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.10/generated/torch.clone.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.10/generated/torch.flatten.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.10/generated/torch.gather.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.10/generated/torch.matmul.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.10/generated/torch.mean.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.10/generated/torch.nn.BCEWithLogitsLoss.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.10/generated/torch.nn.CrossEntropyLoss.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.10/generated/torch.nn.Sequential.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.10/generated/torch.nn.functional.cross_entropy.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.10/generated/torch.nn.utils.clip_grad_norm_.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.10/generated/torch.stack.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.10/generated/torch.zeros.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.10/notes/autograd.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.10/notes/broadcasting.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html",
+      "status": 200,
+      "fragmentFound": true
+    },
+    {
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+      "status": 200,
+      "fragmentFound": true
+    }
+  ]
+}

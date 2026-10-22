@@ -1,0 +1,51 @@
+"""Self-contained task specifications for legacy prompts that said 'above'."""
+CONTRACTS={
+ 'py28':[
+  '定义EarlyStop(patience,min_delta=0)，patience是整数且>=1，min_delta>=0；否则构造时抛ValueError。输入loss保证有限。',
+  '第一次step建立基准best并返回False。此后仅loss<best-min_delta算显著改善：此时才更新best并清零等待次数；否则best不变、等待次数加1。',
+  '等待次数达到patience时step返回True，否则False。min_delta>0时，小幅下降不更新best；相等不算改善。'],
+ 'pt11':[
+  '定义gradient_stages(value)。对同一个浮点叶子x，先计算x²并backward，再重新前向计算3*x并backward，记录累计梯度。',
+  '清空x.grad，重新前向计算x²并backward。返回(累计梯度,清空后的梯度)二元组，两项都是Python数值。不能用解析公式代替实际autograd。'],
+ 'pt13':[
+  '定义check_gradient(value,eps=1e-5)，固定f(x)=x³+2*x²-4*x，eps保证为正。',
+  '一条路径用float64叶子和backward计算autograd梯度；另一条用传入eps做[f(x+eps)-f(x-eps)]/(2*eps)。',
+  '返回(autograd梯度,中心差分梯度)两个Python数值；不是字典，也不返回第三个误差值。两项不能都代入解析导数。'],
+ 'pt14':[
+  '定义clip_gradients(parameters,max_norm)，max_norm>=0。收集grad不是None的参数，计算所有梯度合并后的L2范数。',
+  '共同系数严格按min(1,max_norm/(原范数+1e-6))计算，在no_grad中原地缩放全部有效grad；参数值本身不变。',
+  '返回裁剪前的Python范数；没有梯度返回0。不能调用现成clip_grad_norm_，也不能逐元素截断或逐参数分别归一化。'],
+ 'pt16':[
+  '定义make_mlp(in_dim,hidden,classes)，返回nn.Module：Linear(in_dim,hidden)→ReLU→Linear(hidden,classes)。两层均含bias并注册为子模块。',
+  '输入[B,in_dim]输出[B,classes]原始logits，末尾不加softmax或argmax。维度来自参数，不能写死。'],
+ 'pt17':[
+  '定义FeatureDataset(x,y)，继承torch.utils.data.Dataset。x与y首维样本数不一致抛ValueError。',
+  '构造时分别clone保存两者；__len__返回样本数，__getitem__(i)返回(本条特征clone,本条标签clone)。',
+  '修改构造前的外部输入，或修改取出的样本，都不能污染内部数据。'],
+ 'pt18':[
+  '定义collate_samples(samples)，samples每项为(等长一维浮点Tensor,整数标签)。空列表抛ValueError。',
+  '返回(features,labels)：features为独立存储的[B,D]特征batch，labels为[B] long张量。B=1也不能删掉样本轴；不修改输入。'],
+ 'pt19':[
+  '定义trainable_head(model)，模型已有backbone与head子模块。冻结backbone所有参数，启用head所有参数，包括原先被禁用的head参数。',
+  '返回head全部真实参数组成的list供优化器使用，不返回clone，也不把eval当作冻结。'],
+ 'pt20':[
+  '定义predict(model,x)：保存原train/eval模式，eval+no_grad下调用model(x)，返回输出。',
+  '用finally恢复原模式，包括前向抛异常的情况；不要通过detach事后掩盖前向期间仍在建图的问题。'],
+ 'pt21':[
+  '定义epoch_mse(model,batches)，batches为(x,y)批次。临时eval+no_grad，累计全部误差平方sum和y.numel()，最后按总目标元素数求平均。',
+  '没有目标元素返回Python 0.0。成功和异常都恢复原模式；不更新参数、不反传，不把各批mean简单平均。'],
+ 'pt23':[
+  '定义evaluate_classifier(model,batches)，用原始logits[B,C]和long标签[B]。eval+no_grad下累计交叉熵sum、argmax(1)正确数与总样本数。',
+  '返回{"loss":平均交叉熵,"accuracy":正确比例}，两项为Python数值；空数据两项为0。finally恢复原模式，不更新参数。'],
+ 'pt24':[
+  '定义save_checkpoint(model,optimizer,epoch,path)，torch.save的字典恰用model、optimizer、epoch三个键，前两项分别为各自state_dict。',
+  '定义load_checkpoint(model,optimizer,path)，用map_location="cpu"、weights_only=True加载，恢复两份state_dict，返回保存的epoch，不加1。'],
+ 'pt26':[
+  '定义fit_binary(x,y,steps=100,lr=0.1)。x为CPU浮点[B,D]、y为0/1标签[B]，B/D均>0；支持float32/float64，steps为非负整数。',
+  '构造Linear(D,1).to(x)，权重与bias清零，用给定lr的SGD全批训练。输出squeeze(-1)，目标转x.dtype，损失使用BCEWithLogits，不先sigmoid。',
+  '每轮记录更新前loss.item()。返回{"weight":一维Python权重列表,"bias":Python数值,"losses":列表}；losses长度等于steps。steps=0返回零参数与空曲线。'],
+ 'pt30':[
+  '定义train_classifier(train_x,train_y,val_x,val_y,epochs=100,lr=0.1)。这题采用两个logit：零初始化Linear(D,2)，用给定lr的SGD和交叉熵，仅在训练集更新epochs轮。',
+  '训练结束后eval+no_grad，分别计算训练交叉熵均值、独立验证交叉熵均值、argmax类别准确率。不要把验证数据加入训练或用于参数更新。',
+  '返回{"model":模型,"train_loss":Python数值,"val_loss":Python数值,"val_accuracy":Python数值}。模型保持eval；这里返回最终指标，不要求逐轮损失曲线。'],
+}

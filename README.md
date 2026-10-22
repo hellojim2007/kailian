@@ -18,7 +18,7 @@
 
 面向“看得懂代码，却还不能独立写出来”的学习者。当前开放 **Python × PyTorch**：从完整例题开始，先预测结果，再从空白写代码，用边界测试和延迟考核检查自己能否迁移。
 
-主线建议 **20–30 小时**；分层考核额外 **310 分钟，约 5 小时 10 分钟**，讲评与个人重试可按需要延长。这是一条实践入门路线，后续仍需通过项目持续积累。
+新版推荐路线为 **53 节入门主线＋19 节进阶回访**。入门主线建议 **20–30 小时**；进阶内容另计，按需要回访。全量分层考核额外 **310 分钟，约 5 小时 10 分钟**，讲评与个人重试可延长。这是实践入门路线，后续仍需通过项目持续积累。
 
 > 正式入口指向 GitHub Pages，发布结果见上方部署状态。网页 Python 在浏览器中执行；真实 PyTorch 代码目前使用本机版。账户后端负责登录与进度同步，**不执行学生代码**。
 
@@ -26,11 +26,30 @@
 
 | 实践主线 | 分层验收 | 反复提取 |
 | :--- | :--- | :--- |
-| **12 章 · 72 道完整编程练习** | **18 份考核 · 136 道新增题** | **24 道独立复习题** |
+| **12 个主题 · 72 道完整编程练习** | **18 份考核 · 136 道新增题** | **24 道独立复习题** |
 | 144 道理解题 · 144 个可运行例题 | 12 份章末 + 4 份累计 + 2 份阶段 | 建议在 1 / 3 / 7 天后回访 |
 | 基础 → 进阶 → 排错 → 综合 | 50 道新增编程题已包含在 136 题内 | 已包含在 136 题内，不重复累计 |
 
-**合计 122 道编程任务 = 72 道主线练习 + 50 道新增编程题。** 原有练习全部保留；延迟复习采用单独题目，避免只记住同一份答案。
+**合计 122 道正式编程任务 = 72 道课程练习 + 50 道考核编程题。** 另外每节增加一道短程序热身，共 **72 道热身**；以实际输出即时反馈，不冒充完整边界验收或独立掌握证据。原有练习全部保留。
+
+## 这次把“学一点”重新写了一遍
+
+全部 72 节都有语法/API 用法卡片、参数与返回值说明、可运行最小例子、独立热身编辑器和逐步任务拆解。共 **63 个不同的 API 示例**，在相应课节首次讲解，后续可展开复习；原 144 个完整例题继续保留。文本处理先讲 `lower()`、`split()`、`strip()` 各自做什么，再跟踪值与类型，最后组合成函数。
+
+默认“继续推荐路线”按具体先修关系前进：先函数再切片/文本函数，先求导→SGD→直线拟合，再组织模型与训练；稳定损失、递归与注意力留到进阶。左侧 12 个主题和旧题号保留，便于查找和兼容历史进度，**不是首次学习的推荐顺序**。
+
+```mermaid
+flowchart LR
+    A[Python 入门 29节] --> B[PyTorch 入门 24节]
+    B --> C[Python 进阶 7节]
+    C --> D[PyTorch 进阶 12节]
+    style A fill:#eee8ff,stroke:#a590d2,color:#4d3c6c
+    style B fill:#e8f5ef,stroke:#91bca9,color:#396d59
+    style C fill:#fff3dd,stroke:#c9ad73,color:#7f6637
+    style D fill:#e7f1ff,stroke:#8eafd5,color:#365b86
+```
+
+简单赋值、索引、循环计数改用代码例子与热身；保留 **5 个可选的张量/梯度/训练实验**。热身与正式作业分开保存，查看热身参考也单独记录。[完整整改说明、教材依据与72节映射](CURRICULUM_REDESIGN.md)
 
 <img src="assets/learning-loop.svg" alt="学习闭环：学一点、预测一下、独立实现、判题反馈、延迟考核，再用独立复习题重新提取知识。" width="100%">
 
@@ -81,7 +100,7 @@
 | 阶段卷 | 2 × 45 分钟 | 完成综合数据、训练或评估任务 |
 | 独立复习 | 每章 2 题，共 24 题 | 隔一段时间后重新提取知识 |
 
-考核题在交卷后统一讲评，代码任务包含正常、边界或异常验收。计时是训练节奏参考，学习计划允许按个人情况调整；1 / 3 / 7 天是建议复习间隔，等待时间不计学习工时。
+考核题在交卷后统一讲评，代码任务包含正常、边界或异常验收。18 份试卷按完整知识主题考察，包含进阶回访内容；请看各卷已完成练习提示，不把主题编号当成推荐路线步骤编号。计时是训练节奏参考，1 / 3 / 7 天是建议间隔，等待时间不计学习工时。
 
 ## 先试两道
 
@@ -131,7 +150,7 @@ print((x - x.mean(dim=1, keepdim=True)).tolist())
 ## 练习时，你会拿到什么
 
 - **完整的示例与明确契约。** 先看代码和实际输出，任务写明返回值、形状、类型及关键边界。
-- **12 个对应本课的概念实验。** 动手改变配对、阈值、形状与梯度，观察结果；其余 60 节使用各自例题、预测题和代码练习。
+- **按难点保留的 5 个可选实验。** 动手观察维度、梯度和训练；简单操作用代码例子与热身验证。
 - **从空白开始的编辑器。** 写完整程序、函数或实验组件；标准输入和练习附件由运行环境提供。
 - **能定位问题的反馈。** 对照实际值与期望值，查看失败验收；主线提示逐步展开，参考实现不会自动通关。
 - **可回访的学习记录。** 地图支持搜索、难度与状态筛选；代码草稿、理解题和考核尝试随学习保留。
@@ -242,6 +261,7 @@ npm run check
 
 python -X utf8 verify.py
 python -X utf8 verify_content.py
+python -X utf8 verify_guides.py
 python -X utf8 verify_python_semantics.py
 python -X utf8 verify_torch_semantics.py
 python -X utf8 verify_assessments.py
@@ -251,6 +271,7 @@ node verify_progress.mjs
 node verify_assessment_state.mjs
 node verify_progress_sync_state.mjs
 node verify_lab_alignment.mjs
+node verify_learning.mjs
 node verify_python_labs.mjs
 node verify_torch_labs.mjs
 node --test cloud/pages-auth.test.mjs cloud/verify.mjs
@@ -258,7 +279,7 @@ node --test cloud/pages-auth.test.mjs cloud/verify.mjs
 
 `verify_api.py` 需要先在另一终端启动 `python server.py`。这些检查分别覆盖参考实现、例题输出、独立语义对照、考核判题、API 契约、旧进度迁移与账号同步状态。内容可靠性还依赖持续复核；发现题目问题时，欢迎附题号、输入及实际结果提交 [Issue](https://github.com/hellojim2007/kailian/issues)。[内容复核记录](CONTENT_AUDIT.md)
 
-最新一轮逐课记录：[Python 36 节](PYTHON_LESSON_REVIEW.md) · [PyTorch 36 节](TORCH_LESSON_REVIEW.md) · [交互、学习路径与资料对应关系](CONTENT_INTERACTION_AUDIT.md)。交互检查将实验绑定到精确题目 ID，未知 ID 不会回退到通用动画。
+最新教学重构见 [课程整改说明](CURRICULUM_REDESIGN.md)。此前语义复查记录：[Python 36 节](PYTHON_LESSON_REVIEW.md) · [PyTorch 36 节](TORCH_LESSON_REVIEW.md) · [交互对应关系](CONTENT_INTERACTION_AUDIT.md)。未知题目 ID 不会回退到通用动画。
 
 </details>
 

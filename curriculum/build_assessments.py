@@ -10,7 +10,7 @@ data={'version':1,'additionalMinutes':310,'exams':[],'items':[],'exercises':[],'
       'chapterLessons':{ch:[l['id'] for l in lessons if l['chapter']==ch] for ch in sorted({l['chapter'] for l in lessons})},
       'skillTitles':{l['id']:l['title'] for l in lessons},
       'policy':{'reviewDays':[1,3,7], 'suggestedPassPercent':80,
-                'note':'原有练习全部保留。考核与讲评额外约4–6小时；复习间隔是可调整的学习安排，等待时间不计学习工时。'}}
+                'note':'18份试卷按完整知识主题考察，包含该主题的进阶回访内容；专题编号不是推荐路线的步骤编号，请看各卷已完成练习提示再作答。原有练习全部保留，考核与讲评额外约4–6小时；复习间隔是学习安排，等待时间不计学习工时。'}}
 for bank in [python_bank(),torch_bank()]:
     for key in ['exams','items','exercises','reviewItems']: data[key].extend(bank[key])
 items={x['id']:x for x in data['items']}

@@ -1,6 +1,6 @@
 {
-  "version": 1,
-  "scope": "12 explicit lesson-specific labs; the remaining 60 lessons intentionally have no concept lab. Examples, quizzes and code tasks remain available on all lessons.",
+  "version": 2,
+  "scope": "5 optional Tensor/gradient/training labs; 67 units taught with executable syntax examples, warmups and full tasks.",
   "lessons": [
     {
       "lessonId": "p1",
@@ -8,19 +8,15 @@
       "title": "第一行，自己来",
       "chapter": "c01",
       "objective": "让变量保存初值、执行加法赋值，并输出更新后的值",
-      "widgetId": "lab-p1",
-      "domId": "lab-p1",
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
       "learningPathHints": [],
       "resources": [
         {
           "url": "https://docs.python.org/3/tutorial/introduction.html#numbers",
           "scope": "official-section"
-        },
-        {
-          "url": "https://cs50.harvard.edu/python/",
-          "scope": "course-index"
         }
       ]
     },
@@ -32,17 +28,27 @@
       "objective": "把标准输入转换为数值，并按题目约定计算和输出",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
-      "learningPathHints": [],
+      "learningPathHints": [
+        "第一行，自己来"
+      ],
       "resources": [
-        {
-          "url": "https://cs50.harvard.edu/python/",
-          "scope": "course-index"
-        },
         {
           "url": "https://docs.python.org/3/tutorial/controlflow.html",
           "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/introduction.html#lists",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://cs50.harvard.edu/python/notes/0/",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/introduction.html#numbers",
+          "scope": "api-reference"
         }
       ]
     },
@@ -54,17 +60,23 @@
       "objective": "用条件分支覆盖成绩区间及边界",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
-      "learningPathHints": [],
+      "learningPathHints": [
+        "输入不是数值"
+      ],
       "resources": [
-        {
-          "url": "https://cs50.harvard.edu/python/",
-          "scope": "course-index"
-        },
         {
           "url": "https://docs.python.org/3/tutorial/controlflow.html",
           "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#if-statements",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/introduction.html#numbers",
+          "scope": "api-reference"
         }
       ]
     },
@@ -74,19 +86,21 @@
       "title": "一次处理一批",
       "chapter": "c01",
       "objective": "按顺序遍历全部分数，在循环体中逐个加分并输出",
-      "widgetId": "lab-p3",
-      "domId": "lab-p3",
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
-      "learningPathHints": [],
+      "learningPathHints": [
+        "条件要覆盖边界"
+      ],
       "resources": [
         {
           "url": "https://docs.python.org/3/tutorial/controlflow.html#for-statements",
           "scope": "official-section"
         },
         {
-          "url": "https://cs50.harvard.edu/python/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/tutorial/introduction.html#lists",
+          "scope": "api-reference"
         }
       ]
     },
@@ -98,17 +112,27 @@
       "objective": "理解 range 的终点约定，完成循环累计",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
-      "learningPathHints": [],
+      "learningPathHints": [
+        "一次处理一批"
+      ],
       "resources": [
-        {
-          "url": "https://cs50.harvard.edu/python/",
-          "scope": "course-index"
-        },
         {
           "url": "https://docs.python.org/3/tutorial/controlflow.html",
           "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#the-range-function",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#for-statements",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/introduction.html#numbers",
+          "scope": "api-reference"
         }
       ]
     },
@@ -120,17 +144,27 @@
       "objective": "用循环状态与 break 正确处理退出条件",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
-      "learningPathHints": [],
+      "learningPathHints": [
+        "range 的终点在哪里"
+      ],
       "resources": [
-        {
-          "url": "https://cs50.harvard.edu/python/",
-          "scope": "course-index"
-        },
         {
           "url": "https://docs.python.org/3/tutorial/controlflow.html",
           "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#break-and-continue-statements",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#for-statements",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://cs50.harvard.edu/python/notes/0/",
+          "scope": "api-reference"
         }
       ]
     },
@@ -140,21 +174,17 @@
       "title": "让数据排成一列",
       "chapter": "c02",
       "objective": "读取列表长度，区分正索引与负索引",
-      "widgetId": "lab-p2",
-      "domId": "lab-p2",
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
       "learningPathHints": [
-        "起步与控制流"
+        "一次处理一批"
       ],
       "resources": [
         {
           "url": "https://docs.python.org/3/tutorial/introduction.html#lists",
           "scope": "official-section"
-        },
-        {
-          "url": "https://programming-26.mooc.fi/",
-          "scope": "course-index"
         }
       ]
     },
@@ -166,11 +196,11 @@
       "objective": "按约定切片并返回独立的列表副本",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "inline-primer-path-repair",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
       "learningPathHints": [
-        "已学起步与控制流、p2 列表索引",
-        "先读本节函数接口先导：def、形参、缩进与 return；p4 稍后系统练习函数"
+        "把操作装进函数",
+        "让数据排成一列"
       ],
       "resources": [
         {
@@ -180,10 +210,6 @@
         {
           "url": "https://docs.python.org/3/tutorial/introduction.html#lists",
           "scope": "official-section"
-        },
-        {
-          "url": "https://programming-26.mooc.fi/",
-          "scope": "course-index"
         }
       ]
     },
@@ -195,10 +221,11 @@
       "objective": "用字符串操作将文本清洗为词语序列",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "起步与控制流"
+        "把操作装进函数",
+        "切片与独立副本"
       ],
       "resources": [
         {
@@ -206,8 +233,20 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://programming-26.mooc.fi/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/library/stdtypes.html#str.lower",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/stdtypes.html#str.split",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://cs50.harvard.edu/python/notes/0/",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#defining-functions",
+          "scope": "api-reference"
         }
       ]
     },
@@ -219,10 +258,12 @@
       "objective": "使用滑动窗口状态计算连续均值",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "起步与控制流"
+        "切片与独立副本",
+        "把操作装进函数",
+        "把契约写成明确的异常"
       ],
       "resources": [
         {
@@ -230,8 +271,20 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://programming-26.mooc.fi/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/tutorial/introduction.html#lists",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#the-range-function",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/functions.html#sum",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/errors.html#raising-exceptions",
+          "scope": "api-reference"
         }
       ]
     },
@@ -243,10 +296,10 @@
       "objective": "去除重复值，同时保留首次出现顺序",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "起步与控制流"
+        "切片与独立副本"
       ],
       "resources": [
         {
@@ -254,8 +307,12 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://programming-26.mooc.fi/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/tutorial/datastructures.html#sets",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#for-statements",
+          "scope": "api-reference"
         }
       ]
     },
@@ -267,10 +324,11 @@
       "objective": "将变长列表补齐成批次，并构造有效位置 mask",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "起步与控制流"
+        "滑动窗口均值",
+        "去重但保留顺序"
       ],
       "resources": [
         {
@@ -278,8 +336,16 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://programming-26.mooc.fi/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/tutorial/datastructures.html#nested-list-comprehensions",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/functions.html#zip",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions",
+          "scope": "api-reference"
         }
       ]
     },
@@ -289,12 +355,12 @@
       "title": "把操作装进函数",
       "chapter": "c03",
       "objective": "定义接收列表的 mean 函数，用 return 交回平均值",
-      "widgetId": "lab-p4",
-      "domId": "lab-p4",
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
       "learningPathHints": [
-        "序列与字符串"
+        "让数据排成一列"
       ],
       "resources": [
         {
@@ -302,8 +368,8 @@
           "scope": "official-section"
         },
         {
-          "url": "https://programming-26.mooc.fi/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/library/functions.html#sum",
+          "scope": "api-reference"
         }
       ]
     },
@@ -313,12 +379,13 @@
       "title": "做一个小型评估器",
       "chapter": "c03",
       "objective": "用 zip 逐对比较预测与标签，统计 accuracy 并处理双空输入",
-      "widgetId": "lab-p6",
-      "domId": "lab-p6",
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
       "learningPathHints": [
-        "序列与字符串"
+        "把操作装进函数",
+        "让默认参数可控"
       ],
       "resources": [
         {
@@ -326,8 +393,12 @@
           "scope": "official-section"
         },
         {
-          "url": "https://programming-26.mooc.fi/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#defining-functions",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/functions.html#sum",
+          "scope": "api-reference"
         }
       ]
     },
@@ -339,10 +410,11 @@
       "objective": "用默认参数和关键字参数控制数值变换",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "序列与字符串"
+        "把操作装进函数",
+        "切片与独立副本"
       ],
       "resources": [
         {
@@ -350,8 +422,16 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://programming-26.mooc.fi/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#default-argument-values",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#for-statements",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/datastructures.html#list-comprehensions",
+          "scope": "api-reference"
         }
       ]
     },
@@ -363,10 +443,11 @@
       "objective": "用生成器按需产生小批次，并处理末尾不足一批的数据",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "序列与字符串"
+        "把变长序列排成批次",
+        "把契约写成明确的异常"
       ],
       "resources": [
         {
@@ -374,8 +455,20 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://programming-26.mooc.fi/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/tutorial/classes.html#generators",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/introduction.html#lists",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#the-range-function",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/errors.html#raising-exceptions",
+          "scope": "api-reference"
         }
       ]
     },
@@ -387,10 +480,11 @@
       "objective": "修复可变默认参数造成的跨调用状态共享",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "序列与字符串"
+        "让默认参数可控",
+        "切片与独立副本"
       ],
       "resources": [
         {
@@ -398,8 +492,12 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://programming-26.mooc.fi/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#default-argument-values",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/introduction.html#lists",
+          "scope": "api-reference"
         }
       ]
     },
@@ -411,10 +509,11 @@
       "objective": "验证概率数据契约，用明确异常报告无效输入",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "序列与字符串"
+        "只处理你预料到的错误",
+        "把操作装进函数"
       ],
       "resources": [
         {
@@ -422,8 +521,16 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://programming-26.mooc.fi/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/tutorial/errors.html#raising-exceptions",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/math.html#math.isfinite",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/functions.html#sum",
+          "scope": "api-reference"
         }
       ]
     },
@@ -433,12 +540,12 @@
       "title": "给实验结果起名字",
       "chapter": "c04",
       "objective": "读取字典中的 loss 字段，统计严格低于阈值的记录",
-      "widgetId": "lab-p5",
-      "domId": "lab-p5",
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
       "learningPathHints": [
-        "函数与组合"
+        "做一个小型评估器"
       ],
       "resources": [
         {
@@ -446,8 +553,12 @@
           "scope": "official-section"
         },
         {
-          "url": "https://cs50.harvard.edu/python/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#for-statements",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#if-statements",
+          "scope": "api-reference"
         }
       ]
     },
@@ -459,10 +570,10 @@
       "objective": "用字典累计各标签出现次数",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "函数与组合"
+        "给实验结果起名字"
       ],
       "resources": [
         {
@@ -470,8 +581,12 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://cs50.harvard.edu/python/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/tutorial/datastructures.html#dictionaries",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#for-statements",
+          "scope": "api-reference"
         }
       ]
     },
@@ -483,10 +598,10 @@
       "objective": "按组累计数值和数量，计算各组平均值",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "函数与组合"
+        "用字典统计标签"
       ],
       "resources": [
         {
@@ -494,8 +609,12 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://cs50.harvard.edu/python/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/tutorial/datastructures.html#dictionaries",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/functions.html#sum",
+          "scope": "api-reference"
         }
       ]
     },
@@ -507,10 +626,10 @@
       "objective": "组合排序键，使并列实验结果的排序可重复",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "函数与组合"
+        "分组平均不能混在一起"
       ],
       "resources": [
         {
@@ -518,8 +637,16 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://cs50.harvard.edu/python/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/howto/sorting.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#defining-functions",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/introduction.html#lists",
+          "scope": "api-reference"
         }
       ]
     },
@@ -531,10 +658,11 @@
       "objective": "递归合并配置，并避免嵌套可变对象共享",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "函数与组合"
+        "综合：生成可重跑的实验报告",
+        "修复悄悄共享的历史"
       ],
       "resources": [
         {
@@ -542,8 +670,16 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://cs50.harvard.edu/python/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/library/copy.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/datastructures.html#dictionaries",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#defining-functions",
+          "scope": "api-reference"
         }
       ]
     },
@@ -555,10 +691,11 @@
       "objective": "过滤无效 checkpoint，按指标选出有效最优结果",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "函数与组合"
+        "合并配置但别共享内部状态",
+        "只处理你预料到的错误"
       ],
       "resources": [
         {
@@ -566,8 +703,16 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://cs50.harvard.edu/python/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/library/math.html#math.isfinite",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/howto/sorting.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/datastructures.html#dictionaries",
+          "scope": "api-reference"
         }
       ]
     },
@@ -579,10 +724,10 @@
       "objective": "只捕获约定的解析异常，并区分错误类型",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "字典与实验数据"
+        "让榜单排序可重复"
       ],
       "resources": [
         {
@@ -600,6 +745,18 @@
         {
           "url": "https://docs.python.org/3/library/json.html",
           "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/errors.html#handling-exceptions",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/math.html#math.isfinite",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#defining-functions",
+          "scope": "api-reference"
         }
       ]
     },
@@ -611,10 +768,11 @@
       "objective": "从真实 JSON 文件读取配置并遵守异常契约",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "字典与实验数据"
+        "把契约写成明确的异常",
+        "只处理你预料到的错误"
       ],
       "resources": [
         {
@@ -632,6 +790,14 @@
         {
           "url": "https://docs.python.org/3/library/json.html",
           "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/inputoutput.html#saving-structured-data-with-json",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/datastructures.html#dictionaries",
+          "scope": "api-reference"
         }
       ]
     },
@@ -643,10 +809,10 @@
       "objective": "用 CSV 解析器正确处理包含逗号和引号的字段",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "字典与实验数据"
+        "真正读取一份 JSON 文件"
       ],
       "resources": [
         {
@@ -664,6 +830,14 @@
         {
           "url": "https://docs.python.org/3/library/json.html",
           "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/inputoutput.html#saving-structured-data-with-json",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/functions.html#sum",
+          "scope": "api-reference"
         }
       ]
     },
@@ -675,10 +849,11 @@
       "objective": "逐行处理 JSONL，按约定对待空行和错误记录",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "字典与实验数据"
+        "真正读取一份 JSON 文件",
+        "CSV 不能直接按逗号切"
       ],
       "resources": [
         {
@@ -696,6 +871,14 @@
         {
           "url": "https://docs.python.org/3/library/json.html",
           "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/errors.html#handling-exceptions",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/datastructures.html#dictionaries",
+          "scope": "api-reference"
         }
       ]
     },
@@ -707,10 +890,11 @@
       "objective": "用断言检验批次数据的结构与取值契约",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "字典与实验数据"
+        "逐行解析不完美的日志",
+        "把契约写成明确的异常"
       ],
       "resources": [
         {
@@ -728,6 +912,18 @@
         {
           "url": "https://docs.python.org/3/library/json.html",
           "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/errors.html#raising-exceptions",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/math.html#math.isfinite",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/datastructures.html#nested-list-comprehensions",
+          "scope": "api-reference"
         }
       ]
     },
@@ -739,10 +935,11 @@
       "objective": "读取实验记录、分组汇总，并写出可重复的报告",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "字典与实验数据"
+        "把数据约定变成断言",
+        "分组平均不能混在一起"
       ],
       "resources": [
         {
@@ -760,6 +957,18 @@
         {
           "url": "https://docs.python.org/3/library/json.html",
           "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/datastructures.html#dictionaries",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/math.html#math.isfinite",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/inputoutput.html#saving-structured-data-with-json",
+          "scope": "api-reference"
         }
       ]
     },
@@ -771,10 +980,11 @@
       "objective": "用类保存累计状态，维护按样本数加权的均值",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "文件、异常与测试"
+        "把数据约定变成断言",
+        "把操作装进函数"
       ],
       "resources": [
         {
@@ -782,8 +992,12 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://programming-26.mooc.fi/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/tutorial/classes.html#class-objects",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -795,10 +1009,11 @@
       "objective": "累计预测正确数和总样本数，计算整体准确率",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "文件、异常与测试"
+        "用类维护加权均值",
+        "做一个小型评估器"
       ],
       "resources": [
         {
@@ -806,8 +1021,16 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://programming-26.mooc.fi/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/tutorial/classes.html#class-objects",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/functions.html#zip",
+          "scope": "api-reference"
         }
       ]
     },
@@ -819,10 +1042,11 @@
       "objective": "实现可索引数据集，并保护内部数据免受外部修改",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "文件、异常与测试"
+        "用类维护加权均值",
+        "切片与独立副本"
       ],
       "resources": [
         {
@@ -830,8 +1054,16 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://programming-26.mooc.fi/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/reference/datamodel.html#special-method-names",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/classes.html#class-objects",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/introduction.html#lists",
+          "scope": "api-reference"
         }
       ]
     },
@@ -843,10 +1075,11 @@
       "objective": "维护最佳指标与连续未改进次数，实现提前停止状态机",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "文件、异常与测试"
+        "用类维护加权均值",
+        "选出最好的有效 checkpoint"
       ],
       "resources": [
         {
@@ -854,8 +1087,12 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://programming-26.mooc.fi/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/tutorial/classes.html#instance-objects",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/classes.html#class-objects",
+          "scope": "api-reference"
         }
       ]
     },
@@ -867,10 +1104,11 @@
       "objective": "按顺序组合可调用的处理步骤",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "文件、异常与测试"
+        "实现一个可索引数据集",
+        "让默认参数可控"
       ],
       "resources": [
         {
@@ -878,8 +1116,16 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://programming-26.mooc.fi/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/reference/datamodel.html#special-method-names",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#defining-functions",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/classes.html#class-objects",
+          "scope": "api-reference"
         }
       ]
     },
@@ -891,10 +1137,11 @@
       "objective": "按组划分数据，避免组泄漏和可变数据共享",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "文件、异常与测试"
+        "合并配置但别共享内部状态",
+        "综合：生成可重跑的实验报告"
       ],
       "resources": [
         {
@@ -902,8 +1149,16 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://programming-26.mooc.fi/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/tutorial/datastructures.html#sets",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/copy.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/datastructures.html#dictionaries",
+          "scope": "api-reference"
         }
       ]
     },
@@ -915,10 +1170,11 @@
       "objective": "沿特征维求每行均值，解释输入与输出形状",
       "widgetId": "torch-row-means",
       "domId": "lab-t1",
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
       "learningPathHints": [
-        "类与数据流水线"
+        "实现一个可索引数据集",
+        "把小函数组合成处理流水线"
       ],
       "resources": [
         {
@@ -926,8 +1182,12 @@
           "scope": "official-section"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.mean.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -939,10 +1199,10 @@
       "objective": "保留样本维展平特征，并处理非连续张量",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "类与数据流水线"
+        "先看形状，再做计算"
       ],
       "resources": [
         {
@@ -950,8 +1210,8 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.flatten.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -963,10 +1223,10 @@
       "objective": "按每条样本的目标标签索引出对应分数",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "类与数据流水线"
+        "给每条样本同一把尺"
       ],
       "resources": [
         {
@@ -974,8 +1234,8 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.gather.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -987,10 +1247,10 @@
       "objective": "按 mask 只平均有效位置，并处理无有效项的行",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "类与数据流水线"
+        "取出每条样本的目标分数"
       ],
       "resources": [
         {
@@ -998,8 +1258,16 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.Tensor.masked_fill.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.mean.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/notes/broadcasting.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1011,10 +1279,11 @@
       "objective": "把变长张量补齐，返回对应的有效位置 mask",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "类与数据流水线"
+        "只平均有效位置",
+        "切片与独立副本"
       ],
       "resources": [
         {
@@ -1022,8 +1291,12 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.zeros.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/introduction.html#lists",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1035,10 +1308,11 @@
       "objective": "用广播和向量化计算两组向量的成对平方距离",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "类与数据流水线"
+        "梯度累积也要按样本数加权",
+        "给每条样本同一把尺"
       ],
       "resources": [
         {
@@ -1046,8 +1320,16 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://docs.pytorch.org/docs/2.10/notes/broadcasting.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.mean.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1059,10 +1341,11 @@
       "objective": "把行均值保留为列向量，正确广播以完成逐行中心化",
       "widgetId": "torch-center-rows",
       "domId": "lab-t2",
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
       "learningPathHints": [
-        "张量形状与索引"
+        "先看形状，再做计算",
+        "展平特征，保留样本维"
       ],
       "resources": [
         {
@@ -1074,8 +1357,12 @@
           "scope": "official-section"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://docs.pytorch.org/docs/2.10/notes/broadcasting.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.mean.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1087,10 +1374,11 @@
       "objective": "减去行最大值，稳定计算 softmax",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "张量形状与索引"
+        "综合：训练二分类直线",
+        "给每条样本同一把尺"
       ],
       "resources": [
         {
@@ -1098,8 +1386,16 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://d2l.ai/chapter_multilayer-perceptrons/numerical-stability-and-init.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.mean.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/notes/broadcasting.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1111,10 +1407,10 @@
       "objective": "通过最大值平移稳定计算 logsumexp",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "张量形状与索引"
+        "数值稳定的 softmax"
       ],
       "resources": [
         {
@@ -1122,8 +1418,12 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://d2l.ai/chapter_multilayer-perceptrons/numerical-stability-and-init.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.mean.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1135,11 +1435,12 @@
       "objective": "忽略指定位置计算交叉熵，并保留正确梯度行为",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "inline-primer-path-repair",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
       "learningPathHints": [
-        "已学张量形状与索引、pt07 数值稳定的 logsumexp",
-        "先读本节最小计算图先导：与输入相连的零和独立常量；t3 稍后系统练习自动微分"
+        "稳定计算 logsumexp",
+        "写一个可复用的分类训练步骤",
+        "让机器帮你求导"
       ],
       "resources": [
         {
@@ -1147,8 +1448,16 @@
           "scope": "official-section"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.nn.functional.cross_entropy.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://d2l.ai/chapter_multilayer-perceptrons/numerical-stability-and-init.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.gather.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1160,10 +1469,11 @@
       "objective": "拆分注意力头，保持 token 与各维度的对应关系",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "张量形状与索引"
+        "向量化成对平方距离",
+        "忽略 padding 的交叉熵"
       ],
       "resources": [
         {
@@ -1171,8 +1481,12 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.matmul.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.flatten.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1184,10 +1498,11 @@
       "objective": "计算缩放点积分数、softmax 权重及加权输出",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "张量形状与索引"
+        "拆分多头时别打乱 token",
+        "数值稳定的 softmax"
       ],
       "resources": [
         {
@@ -1195,8 +1510,16 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.matmul.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://d2l.ai/chapter_attention-mechanisms-and-transformers/attention-scoring-functions.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://d2l.ai/chapter_multilayer-perceptrons/numerical-stability-and-init.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1208,10 +1531,10 @@
       "objective": "构建标量计算图，用 backward 读取输入梯度",
       "widgetId": "torch-autograd-functions",
       "domId": "lab-t3",
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
       "learningPathHints": [
-        "广播与数值稳定"
+        "构造张量版 padding 与 mask"
       ],
       "resources": [
         {
@@ -1219,8 +1542,12 @@
           "scope": "official-section"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1232,19 +1559,15 @@
       "objective": "观察重复反向传播的梯度累积，并正确清空梯度",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "广播与数值稳定"
+        "让机器帮你求导"
       ],
       "resources": [
         {
           "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html",
           "scope": "chapter-reference"
-        },
-        {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
         }
       ]
     },
@@ -1256,10 +1579,10 @@
       "objective": "修复重新包装张量造成的计算图断开",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "广播与数值稳定"
+        "区分累积与清空梯度"
       ],
       "resources": [
         {
@@ -1267,8 +1590,8 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.clone.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1280,10 +1603,11 @@
       "objective": "用有限差分检查 autograd 梯度",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "广播与数值稳定"
+        "训练你的第一条直线",
+        "修复被重新包装断开的图"
       ],
       "resources": [
         {
@@ -1291,8 +1615,8 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://docs.python.org/3/tutorial/introduction.html#numbers",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1304,10 +1628,11 @@
       "objective": "按所有参数的全局范数裁剪梯度",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "广播与数值稳定"
+        "用有限差分核对 autograd",
+        "完成一次参数更新"
       ],
       "resources": [
         {
@@ -1315,8 +1640,8 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.nn.utils.clip_grad_norm_.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1328,10 +1653,11 @@
       "objective": "按样本数加权各微批次损失，得到正确累计梯度",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "广播与数值稳定"
+        "按全局范数裁剪梯度",
+        "整个 epoch 的 MSE"
       ],
       "resources": [
         {
@@ -1339,8 +1665,12 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://d2l.ai/chapter_linear-regression/linear-regression.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1350,17 +1680,26 @@
       "title": "把计算装进模型",
       "chapter": "c10",
       "objective": "在 nn.Module 中注册 Linear 层，并理解输入输出形状",
-      "widgetId": "torch-linear-shapes",
-      "domId": "lab-t4",
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
       "learningPathHints": [
-        "梯度与训练排错"
+        "训练你的第一条直线",
+        "用类维护加权均值"
       ],
       "resources": [
         {
           "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html#nn-linear",
           "scope": "official-section"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/classes.html#class-objects",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1372,10 +1711,10 @@
       "objective": "用指定维度与激活函数构建两层 MLP",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "梯度与训练排错"
+        "把计算装进模型"
       ],
       "resources": [
         {
@@ -1385,6 +1724,10 @@
         {
           "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html",
           "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.nn.Sequential.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1396,10 +1739,11 @@
       "objective": "实现保护自身数据的 PyTorch Dataset",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "梯度与训练排错"
+        "构建可配置的两层 MLP",
+        "实现一个可索引数据集"
       ],
       "resources": [
         {
@@ -1409,6 +1753,14 @@
         {
           "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html",
           "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.clone.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/reference/datamodel.html#special-method-names",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1420,10 +1772,10 @@
       "objective": "用 collate_fn 将若干样本合并为张量批次",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "梯度与训练排错"
+        "让 Dataset 管好自己的数据"
       ],
       "resources": [
         {
@@ -1433,6 +1785,14 @@
         {
           "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html",
           "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.stack.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/functions.html#zip",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1444,10 +1804,11 @@
       "objective": "冻结骨干参数，仅让分类头参与训练",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "梯度与训练排错"
+        "综合：训练二分类直线",
+        "自己实现 collate_fn"
       ],
       "resources": [
         {
@@ -1457,6 +1818,14 @@
         {
           "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html",
           "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/notes/autograd.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1468,10 +1837,10 @@
       "objective": "在评估模式和 no_grad 下预测，并恢复原模式",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "梯度与训练排错"
+        "自己实现 collate_fn"
       ],
       "resources": [
         {
@@ -1481,6 +1850,10 @@
         {
           "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html",
           "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1492,15 +1865,23 @@
       "objective": "依次清梯度、算损失、反向传播和 SGD 更新，解释参数变化",
       "widgetId": "torch-sgd-step",
       "domId": "lab-t5",
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
       "learningPathHints": [
-        "模型与数据加载"
+        "修复被重新包装断开的图"
       ],
       "resources": [
         {
           "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html#optimizer",
           "scope": "official-section"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1512,10 +1893,11 @@
       "objective": "按样本数加权，计算整个 epoch 的 MSE",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "模型与数据加载"
+        "预测后恢复原来的模式",
+        "训练你的第一条直线"
       ],
       "resources": [
         {
@@ -1525,6 +1907,10 @@
         {
           "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html",
           "scope": "chapter-reference"
+        },
+        {
+          "url": "https://d2l.ai/chapter_linear-regression/linear-regression.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1536,10 +1922,10 @@
       "objective": "根据二分类计数计算指标，并处理零分母",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "模型与数据加载"
+        "整个 epoch 的 MSE"
       ],
       "resources": [
         {
@@ -1549,6 +1935,14 @@
         {
           "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html",
           "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.nn.BCEWithLogitsLoss.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1560,10 +1954,11 @@
       "objective": "实现按样本累计指标的完整分类评估循环",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "模型与数据加载"
+        "二分类指标的零分母",
+        "预测后恢复原来的模式"
       ],
       "resources": [
         {
@@ -1573,6 +1968,10 @@
         {
           "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html",
           "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.nn.CrossEntropyLoss.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1584,10 +1983,10 @@
       "objective": "保存并恢复模型和优化器状态，避免保留可变引用",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "模型与数据加载"
+        "完整的分类评估循环"
       ],
       "resources": [
         {
@@ -1597,6 +1996,10 @@
         {
           "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html",
           "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1608,10 +2011,10 @@
       "objective": "实现清理旧梯度并更新模型的一次分类训练步骤",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "模型与数据加载"
+        "保存的是状态，不是引用"
       ],
       "resources": [
         {
@@ -1621,6 +2024,14 @@
         {
           "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html",
           "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.nn.CrossEntropyLoss.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1632,10 +2043,10 @@
       "objective": "重复训练线性模型，观察损失以及斜率和截距的收敛",
       "widgetId": "torch-affine-training",
       "domId": "lab-t6",
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
       "learningPathHints": [
-        "训练、评估与恢复"
+        "完成一次参数更新"
       ],
       "resources": [
         {
@@ -1643,8 +2054,12 @@
           "scope": "official-section"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://d2l.ai/chapter_linear-regression/linear-regression.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1656,10 +2071,10 @@
       "objective": "训练二分类线性模型，并记录损失变化",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "训练、评估与恢复"
+        "写一个可复用的分类训练步骤"
       ],
       "resources": [
         {
@@ -1667,8 +2082,12 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.nn.BCEWithLogitsLoss.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1680,10 +2099,10 @@
       "objective": "构造混淆矩阵，计算各类指标及 macro F1",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "训练、评估与恢复"
+        "综合：训练二分类直线"
       ],
       "resources": [
         {
@@ -1691,8 +2110,16 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://developers.google.com/machine-learning/crash-course/classification/accuracy-precision-recall",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/datastructures.html#nested-list-comprehensions",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1704,10 +2131,11 @@
       "objective": "使用 mask 对有效 token 向量做句级池化",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "训练、评估与恢复"
+        "向量化成对平方距离",
+        "只平均有效位置"
       ],
       "resources": [
         {
@@ -1715,8 +2143,16 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.Tensor.masked_fill.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/notes/broadcasting.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.mean.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1728,10 +2164,11 @@
       "objective": "构造因果 mask，让注意力无法读取未来 token",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "训练、评估与恢复"
+        "手写缩放点积注意力",
+        "综合：带 mask 的句向量池化"
       ],
       "resources": [
         {
@@ -1739,8 +2176,16 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://d2l.ai/chapter_attention-mechanisms-and-transformers/attention-scoring-functions.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.matmul.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.Tensor.masked_fill.html",
+          "scope": "api-reference"
         }
       ]
     },
@@ -1752,10 +2197,11 @@
       "objective": "分开训练与独立验证，完成可复现的分类实验",
       "widgetId": null,
       "domId": null,
-      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "prerequisiteAuditScope": "authored-lesson-route-with-inline-api-not-exhaustive-code-proof",
       "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
       "learningPathHints": [
-        "训练、评估与恢复"
+        "综合：混淆矩阵与 macro F1",
+        "综合：训练二分类直线"
       ],
       "resources": [
         {
@@ -1763,8 +2209,12 @@
           "scope": "chapter-reference"
         },
         {
-          "url": "https://learn.arena.education/chapter0_fundamentals/",
-          "scope": "course-index"
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.nn.CrossEntropyLoss.html",
+          "scope": "api-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.nn.BCEWithLogitsLoss.html",
+          "scope": "api-reference"
         }
       ]
     }

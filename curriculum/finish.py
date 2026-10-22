@@ -88,7 +88,9 @@ for id,title,description,resources in CHAPTERS:
     selected=[x for x in LESSONS if x['chapter']==id]
     assert len(selected)==6,(id,len(selected))
     chapters.append({'id':id,'title':title,'description':description,'minutes':sum(x['minutes'] for x in selected),'resources':[{'title':SOURCES[k][0],'url':SOURCES[k][1]} for k in resources],'lessons':[x['id'] for x in selected]})
-course={'version':3,'contentRevision':'2026-10-22-lesson-alignment','title':'Python × PyTorch 实验编程','budget':'20–30 小时','notes':'讲解、例题与练习为原创，参考资料用于知识顺序与延伸阅读；不是对应机构的官方课程或原题镜像。','chapters':chapters,'sources':[{'key':k,'title':v[0],'url':v[1]} for k,v in SOURCES.items()]}
+from pedagogy import apply_pedagogy
+study_route=apply_pedagogy(LESSONS)
+course={'version':4,'contentRevision':'2026-10-22-guided-course','title':'Python × PyTorch 实验编程','budget':'主线 20–30 小时＋进阶回访','studyRoute':study_route,'notes':'讲解、例题与练习为原创。学习顺序参考CS50P与Helsinki MOOC，API语义核对Python/PyTorch官方文档，数值稳定与训练递进参考D2L；不是对应机构的官方课程或原题镜像。','chapters':chapters,'sources':[{'key':k,'title':v[0],'url':v[1]} for k,v in SOURCES.items()] + [{'key':'d2l','title':'Dive into Deep Learning · 数据、求导与训练递进','url':'https://d2l.ai/'}]}
 (ROOT/'dist/lessons.json').write_text(json.dumps(LESSONS,ensure_ascii=False,indent=2),encoding='utf-8')
 (ROOT/'dist/course.json').write_text(json.dumps(course,ensure_ascii=False,indent=2),encoding='utf-8')
 print(f"Built {len(LESSONS)} coding exercises, {sum(len(x['tests']) for x in LESSONS)} checks, 144 quizzes, 144 worked examples; suggested {sum(x['minutes'] for x in LESSONS)/60:.1f}h")

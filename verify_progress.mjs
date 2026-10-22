@@ -1,11 +1,12 @@
 import assert from 'node:assert/strict';
 import fs from 'node:fs';
 import {cleanAssessmentProgress} from './dist/assessments.js';
+import {cleanWarmups} from './dist/learning.js';
 
 const source=fs.readFileSync(new URL('./dist/app.js',import.meta.url),'utf8');
 const lessons=JSON.parse(fs.readFileSync(new URL('./dist/lessons.json',import.meta.url),'utf8'));
 const body=source.slice(source.indexOf('function syncQuizRevisions('),source.indexOf('async function importProgress('));
-const clean=new Function('lessons','cleanAssessmentProgress',body+';return cleanProgress;')(lessons,cleanAssessmentProgress);
+const clean=new Function('lessons','cleanAssessmentProgress','cleanWarmups',body+';return cleanProgress;')(lessons,cleanAssessmentProgress,cleanWarmups);
 const old=clean({version:1,current:'p4',drafts:{p4:'def mean(xs):\n    return sum(xs)/len(xs)'},passed:{p1:true},quiz:{p4:true},answers:{p4:1}});
 assert.equal(old.current,'p4');assert.equal(old.passed.p1,true);assert.equal(old.quiz.p4,true);assert.equal(old.answers.p4,lessons.find(l=>l.id==='p4').quiz.previousAnswerMap[1]);assert.match(old.drafts.p4,/return/);
 const newer=clean({version:2,current:'py01',drafts:{py01:'print(1)',unknown:'bad'},passed:{py01:true,unknown:true},quiz:{'py01:1':true},answers:{'py01:1':2,'p1:1':99},quizRevisions:{'py01:1':2},inputs:{py01:'8 3'},stats:{py01:{attempts:3,failures:2,reference:true}}});
@@ -15,3 +16,6 @@ const superseded=clean({version:2,current:'p1',drafts:{p1:'print(80)'},passed:{p
 assert.equal(superseded.quiz.p1,true);assert.equal(superseded.answers.p1,lessons[0].quiz.answer);assert.equal(superseded.quiz['p1:1'],undefined);assert.equal(superseded.answers['p1:1'],undefined);assert.equal(superseded.passed.p1,true);assert.equal(superseded.drafts.p1,'print(80)');
 assert.deepEqual(clean({version:2,...superseded}),superseded);
 console.log('PASS old concepts remapped / revised predictions reset / current quizzes retained / drafts / programming history / repeat import');
+const warm=clean({version:2,current:'py06',drafts:{py06:'formal code'},passed:{py06:true},warmups:{py06:{draft:'warmup code',passed:true,viewed:true},unknown:{draft:'bad',passed:true}}});
+assert.equal(warm.drafts.py06,'formal code');assert.equal(warm.passed.py06,true);assert.equal(warm.warmups.py06.draft,'warmup code');assert.equal(warm.warmups.py06.passed,true);assert.equal(warm.warmups.unknown,undefined);assert.deepEqual(clean({version:2,...warm}),warm);
+console.log('PASS separate warmup drafts/feedback round-trip without changing full-task progress');
