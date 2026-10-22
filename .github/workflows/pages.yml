@@ -31,6 +31,7 @@ jobs:
           node verify_progress.mjs
           node verify_assessment_state.mjs
           node verify_progress_sync_state.mjs
+          node verify_lab_alignment.mjs
       - name: Prepare static browser assets
         run: node scripts/prepare-pages.mjs
       - uses: actions/configure-pages@v5

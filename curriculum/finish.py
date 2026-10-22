@@ -3,6 +3,7 @@ exec((ROOT/'curriculum/models.py').read_text(encoding='utf-8'),globals())
 exec((ROOT/'curriculum/training.py').read_text(encoding='utf-8'),globals())
 exec((ROOT/'curriculum/projects.py').read_text(encoding='utf-8'),globals())
 exec((ROOT/'curriculum/python_audit_fixes.py').read_text(encoding='utf-8'),globals())
+exec((ROOT/'curriculum/python_teaching_fixes.py').read_text(encoding='utf-8'),globals())
 exec((ROOT/'curriculum/torch_audit_fixes.py').read_text(encoding='utf-8'),globals())
 exec((ROOT/'curriculum/trace_quizzes.py').read_text(encoding='utf-8'),globals())
 
@@ -61,6 +62,19 @@ for item in LESSONS:
         test['sample']=i<2
     item['estimatedMinutes']=item['minutes']
 
+exec((ROOT/'curriculum/torch_teaching_fixes.py').read_text(encoding='utf-8'),globals())
+exec((ROOT/'curriculum/prerequisite_fixes.py').read_text(encoding='utf-8'),globals())
+
+# Keep independent examples self-contained without duplicate import noise.
+def deduplicate_torch_import(code):
+    while code.startswith('import torch\nimport torch\n'):
+        code=code[len('import torch\n'):]
+    return code
+for item in LESSONS:
+    item['example']=deduplicate_torch_import(item['example'])
+    for worked in item['examples']:
+        worked['code']=deduplicate_torch_import(worked['code'])
+
 # Explicit learning contracts for manual implementations. They are teaching
 # checks, not a security boundary: aliases can still be used deliberately.
 for id,forbidden in {'pt06':['softmax'],'pt07':['logsumexp'],'pt08':['cross_entropy'],'pt14':['clip_grad_norm_'],'pt10':['scaled_dot_product_attention'],'pt29':['scaled_dot_product_attention']}.items():
@@ -74,7 +88,7 @@ for id,title,description,resources in CHAPTERS:
     selected=[x for x in LESSONS if x['chapter']==id]
     assert len(selected)==6,(id,len(selected))
     chapters.append({'id':id,'title':title,'description':description,'minutes':sum(x['minutes'] for x in selected),'resources':[{'title':SOURCES[k][0],'url':SOURCES[k][1]} for k in resources],'lessons':[x['id'] for x in selected]})
-course={'version':3,'contentRevision':'2026-10-22-audit','title':'Python × PyTorch 实验编程','budget':'20–30 小时','notes':'讲解、例题与练习为原创，参考资料用于知识顺序与延伸阅读；不是对应机构的官方课程或原题镜像。','chapters':chapters,'sources':[{'key':k,'title':v[0],'url':v[1]} for k,v in SOURCES.items()]}
+course={'version':3,'contentRevision':'2026-10-22-lesson-alignment','title':'Python × PyTorch 实验编程','budget':'20–30 小时','notes':'讲解、例题与练习为原创，参考资料用于知识顺序与延伸阅读；不是对应机构的官方课程或原题镜像。','chapters':chapters,'sources':[{'key':k,'title':v[0],'url':v[1]} for k,v in SOURCES.items()]}
 (ROOT/'dist/lessons.json').write_text(json.dumps(LESSONS,ensure_ascii=False,indent=2),encoding='utf-8')
 (ROOT/'dist/course.json').write_text(json.dumps(course,ensure_ascii=False,indent=2),encoding='utf-8')
 print(f"Built {len(LESSONS)} coding exercises, {sum(len(x['tests']) for x in LESSONS)} checks, 144 quizzes, 144 worked examples; suggested {sum(x['minutes'] for x in LESSONS)/60:.1f}h")

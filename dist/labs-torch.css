@@ -1,0 +1,55 @@
+.lesson-lab[data-torch-lab]{margin:16px 0;padding:16px;border:1px solid #ded9ef;background:#fbfaff;border-radius:12px;color:#3d3c49;overflow:hidden}
+.lesson-lab[data-torch-lab] .tlab-kicker{font:9px var(--mono,monospace);letter-spacing:.06em;color:#8977ba}
+.lesson-lab[data-torch-lab] .tlab-heading h4{margin:7px 0;font-size:15px;line-height:1.6;color:#4b3c6c}
+.lesson-lab[data-torch-lab] .tlab-heading p{font-size:11px;line-height:1.9;margin:0 0 13px;color:#80758f}
+.lesson-lab[data-torch-lab] .tlab-controls{display:flex;align-items:center;flex-wrap:wrap;gap:7px;margin:11px 0}
+.lesson-lab[data-torch-lab] .tlab-controls>span{font-size:10px;color:#8a7a9b;margin-right:2px}
+.lesson-lab[data-torch-lab] .tlab-button{padding:7px 9px;border:1px solid #ded7ec;border-radius:6px;background:#fff;color:#7b688f;font-size:10px;line-height:1.6;cursor:pointer}
+.lesson-lab[data-torch-lab] .tlab-button:hover{border-color:#a88bcf;background:#f6f1ff}
+.lesson-lab[data-torch-lab] .tlab-button.is-active{background:#eee5fd;color:#6948a3;border-color:#b69bdc}
+.lesson-lab[data-torch-lab] .tlab-button:disabled{opacity:.45;cursor:default}
+.lesson-lab[data-torch-lab] .tlab-slider{font-size:10px;color:#7e6c91;display:block;line-height:1.9;margin:10px 0}
+.lesson-lab[data-torch-lab] .tlab-slider input[type=range]{display:block;width:100%;accent-color:#7954b0;margin:8px 0 4px;cursor:pointer}
+.lesson-lab[data-torch-lab] .tlab-slider output{font:11px var(--mono,monospace);font-weight:600;color:#67449e}
+.lesson-lab[data-torch-lab] .tlab-slider-pair{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.lesson-lab[data-torch-lab] .tlab-compare{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:9px;margin:12px 0;align-items:start}
+.lesson-lab[data-torch-lab] .tlab-panel{min-width:0;border:1px solid #e5e0ed;background:#fff;border-radius:8px;padding:10px}
+.lesson-lab[data-torch-lab] .tlab-panel h5{font-size:10px;color:#776588;margin:0 0 10px;line-height:1.8}
+.lesson-lab[data-torch-lab] .tlab-panel p{font-size:10px;line-height:1.85;color:#91839e;margin:8px 0 0}
+.lesson-lab[data-torch-lab] .tlab-good{background:#f4f8f2;border-color:#d9e5d4}
+.lesson-lab[data-torch-lab] .tlab-good h5{color:#638453}
+.lesson-lab[data-torch-lab] .tlab-caution{background:#fff8f0;border-color:#eee0cb}
+.lesson-lab[data-torch-lab] .tlab-caution h5{color:#a28258}
+.lesson-lab[data-torch-lab] .tlab-matrix-block{min-width:0;margin:9px 0}
+.lesson-lab[data-torch-lab] .tlab-caption{display:block;font:9px/1.85 var(--mono,monospace);color:#8b7d99;margin-bottom:6px;overflow-wrap:anywhere}
+.lesson-lab[data-torch-lab] .tlab-scroll{overflow:auto;max-width:100%}
+.lesson-lab[data-torch-lab] .tlab-matrix{border-collapse:separate;border-spacing:4px;width:100%;table-layout:fixed}
+.lesson-lab[data-torch-lab] .tlab-matrix td{padding:7px 4px;border-radius:5px;background:#eae2f8;text-align:center;font:11px var(--mono,monospace);color:#735293;overflow-wrap:anywhere}
+.lesson-lab[data-torch-lab] .tlab-matrix tr:nth-child(even) td{background:#e3eddd;color:#64804f}
+.lesson-lab[data-torch-lab] .tlab-code{font:10px/1.9 var(--mono,monospace);padding:10px;border-radius:6px;background:#f0edf7;color:#7b6494;overflow-wrap:anywhere;margin:10px 0}
+.lesson-lab[data-torch-lab] .tlab-numbers{display:flex;flex-wrap:wrap;gap:7px;margin:12px 0}
+.lesson-lab[data-torch-lab] .tlab-number{flex:1;min-width:80px;background:#fff;border:1px solid #e7e0ef;border-radius:7px;padding:10px}
+.lesson-lab[data-torch-lab] .tlab-number>span{font-size:9px;color:#9a8ba8;display:block;line-height:1.7}
+.lesson-lab[data-torch-lab] .tlab-number strong{font:16px/1.9 var(--mono,monospace);font-weight:600;color:#725299;display:block;overflow-wrap:anywhere}
+.lesson-lab[data-torch-lab] .tlab-number small{font-size:9px;color:#a08fad;display:block;line-height:1.8}
+.lesson-lab[data-torch-lab] .tlab-explanation{font-size:10px;color:#8b779c;line-height:1.95;margin:10px 0}
+.lesson-lab[data-torch-lab] .tlab-note{font-size:9px;color:#a18fab;line-height:1.9;border-top:1px solid #ece5f2;padding-top:9px;margin:12px 0 0}
+.lesson-lab[data-torch-lab] .tlab-error{font-size:10px;line-height:1.9;color:#a87c48;padding:10px;background:#fff1dd;border-radius:6px;overflow-wrap:anywhere}
+.lesson-lab[data-torch-lab] .tlab-formula{font:12px/1.9 var(--mono,monospace);font-weight:600;color:#735096;margin:13px 0 7px}
+.lesson-lab[data-torch-lab] .tlab-formula span{display:block;font-size:10px;font-weight:400;color:#a08aaa}
+.lesson-lab[data-torch-lab] .tlab-chart{display:block;width:100%;height:auto;max-height:240px;background:#fff;border:1px solid #eee7f5;border-radius:9px}
+.lesson-lab[data-torch-lab] .tlab-chart text{font:9px var(--mono,monospace);fill:#a699b2}
+.lesson-lab[data-torch-lab] .tlab-axis{fill:none;stroke:#e6dfea;stroke-width:1}
+.lesson-lab[data-torch-lab] .tlab-function{fill:none;stroke:#8963bf;stroke-width:2.3}
+.lesson-lab[data-torch-lab] .tlab-tangent{stroke:#85a76d;stroke-width:2}
+.lesson-lab[data-torch-lab] .tlab-point{fill:#7955b0;stroke:white;stroke-width:2}
+.lesson-lab[data-torch-lab] .tlab-target{fill:#86a86e;stroke:white;stroke-width:1.5}
+.lesson-lab[data-torch-lab] .tlab-prediction{fill:white;stroke:#8861ba;stroke-width:1.6}
+.lesson-lab[data-torch-lab] .tlab-legend{display:flex;gap:14px;flex-wrap:wrap;font-size:9px;margin:8px 0;color:#a18eac}
+.lesson-lab[data-torch-lab] .tlab-target-key{color:#7f9d69}
+.lesson-lab[data-torch-lab] .tlab-model-key{color:#8b67b6}
+.lesson-lab[data-torch-lab] .tlab-steps{margin:6px 0 0;font:9px/1.9 var(--mono,monospace)}
+.lesson-lab[data-torch-lab] .tlab-steps>div{border-top:1px solid #e7e2eb;display:flex;justify-content:space-between;align-items:flex-start;gap:6px;padding:5px 0}
+.lesson-lab[data-torch-lab] .tlab-steps dt{color:#9a879f;font-family:var(--sans,sans-serif)}
+.lesson-lab[data-torch-lab] .tlab-steps dd{margin:0;color:#766184;overflow-wrap:anywhere}
+@media(max-width:620px){.lesson-lab[data-torch-lab]{padding:12px}.lesson-lab[data-torch-lab] .tlab-compare{grid-template-columns:1fr}.lesson-lab[data-torch-lab] .tlab-numbers{gap:5px}.lesson-lab[data-torch-lab] .tlab-number{padding:8px;min-width:72px}.lesson-lab[data-torch-lab] .tlab-number strong{font-size:14px}.lesson-lab[data-torch-lab] .tlab-button{padding:7px}.lesson-lab[data-torch-lab] .tlab-matrix td{font-size:10px}}

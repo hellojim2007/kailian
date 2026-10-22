@@ -10,7 +10,7 @@ await mkdir(out,{recursive:true});
 let count=0;
 for(const entry of await readdir(source,{withFileTypes:true})){
  if(entry.name.startsWith('.')||!entry.isFile())continue;
- if(!/\.(?:html|css|js|json|py|svg|txt)$/.test(entry.name))throw new Error('Unexpected public asset '+entry.name);
+ if(!/\.(?:html|css|js|json|py|svg|txt|png|ico)$/.test(entry.name))throw new Error('Unexpected public asset '+entry.name);
  await copyFile(resolve(source,entry.name),resolve(out,entry.name));count++;
 }
 for(const name of ['index.html','app.js','python-worker.js','lessons.json','exams.json','grade.py','sync.js'])await readFile(resolve(out,name));

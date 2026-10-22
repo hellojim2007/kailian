@@ -9,7 +9,8 @@ if (args.length && (args.length !== 2 || args[0] !== '--out')) throw new Error('
 const out = resolve(root, args[1] || 'dist');
 const rel = relative(root, out);
 if (rel === '..' || rel.startsWith('..' + sep) || resolve(out) === root) throw new Error('Build output must be a subdirectory of this project');
-const mime = {'.html':'text/html; charset=utf-8','.js':'application/javascript; charset=utf-8','.mjs':'application/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.py':'text/x-python; charset=utf-8','.svg':'image/svg+xml; charset=utf-8','.txt':'text/plain; charset=utf-8'};
+const mime = {'.html':'text/html; charset=utf-8','.js':'application/javascript; charset=utf-8','.mjs':'application/javascript; charset=utf-8','.css':'text/css; charset=utf-8','.json':'application/json; charset=utf-8','.py':'text/x-python; charset=utf-8','.svg':'image/svg+xml; charset=utf-8','.txt':'text/plain; charset=utf-8','.png':'image/png','.ico':'image/x-icon'};
+const binaryExtensions = new Set(['.png','.ico']);
 const assets = {};
 async function walk(dir, prefix = '') {
   for (const entry of (await readdir(dir, {withFileTypes:true})).sort((a,b)=>a.name.localeCompare(b.name, 'en'))) {
@@ -19,9 +20,10 @@ async function walk(dir, prefix = '') {
     if (entry.isDirectory()) { await walk(path, key); continue; }
     if (!entry.isFile()) throw new Error('Static asset is not a regular file: ' + key);
     const ext = entry.name.slice(entry.name.lastIndexOf('.')).toLowerCase(), type = mime[ext];
-    if (!type) throw new Error('Only text assets can be embedded by this build: ' + key);
-    const bytes = await readFile(path), body = new TextDecoder('utf-8', {fatal:true}).decode(bytes);
-    assets[key] = {type, body, etag:'"' + createHash('sha256').update(bytes).digest('hex').slice(0,24) + '"'};
+    if (!type) throw new Error('Unsupported embedded asset type: ' + key);
+    const bytes = await readFile(path), binary = binaryExtensions.has(ext);
+    const body = binary ? bytes.toString('base64') : new TextDecoder('utf-8', {fatal:true}).decode(bytes);
+    assets[key] = {type, body, ...(binary?{encoding:'base64'}:{}), etag:'"' + createHash('sha256').update(bytes).digest('hex').slice(0,24) + '"'};
   }
 }
 await walk(resolve(root, 'dist'));

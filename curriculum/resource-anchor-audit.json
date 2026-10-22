@@ -1,0 +1,59 @@
+{
+  "checkedOn": "2026-10-22",
+  "method": "Each URL was fetched with urllib, followed HTTP redirects, parsed HTML id attributes, and matched the fragment exactly. Content/section topic was cross-checked on official Python and PyTorch pages via web browsing. This is a dated bounded check, not a perpetual link guarantee.",
+  "scope": "12 lesson-specific labs plus py05/pt08 prerequisite primers; all other resources remain chapter references or course indexes.",
+  "anchors": [
+    {
+      "url": "https://docs.python.org/3/library/functions.html#zip",
+      "fragmentPresent": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/controlflow.html#defining-functions",
+      "fragmentPresent": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/controlflow.html#for-statements",
+      "fragmentPresent": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/datastructures.html#dictionaries",
+      "fragmentPresent": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/introduction.html#lists",
+      "fragmentPresent": true
+    },
+    {
+      "url": "https://docs.python.org/3/tutorial/introduction.html#numbers",
+      "fragmentPresent": true
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.10/generated/torch.mean.html#torch.mean",
+      "fragmentPresent": true
+    },
+    {
+      "url": "https://docs.pytorch.org/docs/2.10/notes/broadcasting.html#general-semantics",
+      "fragmentPresent": true
+    },
+    {
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html#computing-gradients",
+      "fragmentPresent": true
+    },
+    {
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html#tensors-functions-and-computational-graph",
+      "fragmentPresent": true
+    },
+    {
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html#nn-linear",
+      "fragmentPresent": true
+    },
+    {
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html#full-implementation",
+      "fragmentPresent": true
+    },
+    {
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html#optimizer",
+      "fragmentPresent": true
+    }
+  ]
+}

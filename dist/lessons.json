@@ -52,12 +52,14 @@
     "kind": "实现",
     "resources": [
       {
-        "title": "Harvard CS50P",
-        "url": "https://cs50.harvard.edu/python/"
+        "title": "Python 官方：数值、变量与赋值",
+        "url": "https://docs.python.org/3/tutorial/introduction.html#numbers",
+        "scope": "official-section"
       },
       {
-        "title": "Python：控制流与函数",
-        "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        "title": "Harvard CS50P · 课程目录（延伸）",
+        "url": "https://cs50.harvard.edu/python/",
+        "scope": "course-index"
       }
     ],
     "teaching": [
@@ -67,11 +69,11 @@
       },
       {
         "title": "逐步写出来",
-        "body": "先写出输入、输出与变量的含义，再把操作逐句翻译成代码。C++ 的 int score = 70; 在这里写成 score = 70。"
+        "body": "按顺序跟踪 score：先保存初值，再用旧值计算 score + 5，最后把新值写回同一个名字。讲解代码用初值 70；编程任务用初值 75，两段程序需要分别计算。"
       },
       {
         "title": "检查与迁移",
-        "body": "运行示例验证直觉，再提交测试。通过后换一个输入，解释哪里会变化、哪里保持不变。"
+        "body": "print(score) 显示执行到这一行时保存的值。试着把初值换成 0，观察加 5 的规则是否保持一致。"
       }
     ],
     "examples": [
@@ -136,7 +138,9 @@
       "解释一次失败的原因"
     ],
     "prerequisites": [],
-    "estimatedMinutes": 10
+    "estimatedMinutes": 10,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "specific-official-sections-plus-labelled-course-index"
   },
   {
     "id": "py01",
@@ -243,12 +247,14 @@
     ],
     "resources": [
       {
-        "title": "Harvard CS50P",
-        "url": "https://cs50.harvard.edu/python/"
+        "title": "Harvard CS50P · 课程目录（延伸）",
+        "url": "https://cs50.harvard.edu/python/",
+        "scope": "course-index"
       },
       {
         "title": "Python：控制流与函数",
-        "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        "url": "https://docs.python.org/3/tutorial/controlflow.html",
+        "scope": "chapter-reference"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -297,7 +303,9 @@
       "解释一次失败的原因"
     ],
     "prerequisites": [],
-    "estimatedMinutes": 20
+    "estimatedMinutes": 20,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py02",
@@ -418,12 +426,14 @@
     ],
     "resources": [
       {
-        "title": "Harvard CS50P",
-        "url": "https://cs50.harvard.edu/python/"
+        "title": "Harvard CS50P · 课程目录（延伸）",
+        "url": "https://cs50.harvard.edu/python/",
+        "scope": "course-index"
       },
       {
         "title": "Python：控制流与函数",
-        "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        "url": "https://docs.python.org/3/tutorial/controlflow.html",
+        "scope": "chapter-reference"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -472,7 +482,9 @@
       "解释一次失败的原因"
     ],
     "prerequisites": [],
-    "estimatedMinutes": 20
+    "estimatedMinutes": 20,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "p3",
@@ -528,12 +540,14 @@
     "kind": "实现",
     "resources": [
       {
-        "title": "Harvard CS50P",
-        "url": "https://cs50.harvard.edu/python/"
+        "title": "Python 官方：for 语句",
+        "url": "https://docs.python.org/3/tutorial/controlflow.html#for-statements",
+        "scope": "official-section"
       },
       {
-        "title": "Python：控制流与函数",
-        "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        "title": "Harvard CS50P · 课程目录（延伸）",
+        "url": "https://cs50.harvard.edu/python/",
+        "scope": "course-index"
       }
     ],
     "teaching": [
@@ -543,11 +557,11 @@
       },
       {
         "title": "逐步写出来",
-        "body": "先写出输入、输出与变量的含义，再把操作逐句翻译成代码。对应 C++ 的 for (auto value : values)。Python 用冒号和缩进组织代码块。"
+        "body": "for score in scores: 每轮把下一项赋给 score，缩进中的 print(score + 5) 计算并显示本轮结果。这个表达式不会把 scores 原列表的元素改掉。"
       },
       {
         "title": "检查与迁移",
-        "body": "运行示例验证直觉，再提交测试。通过后换一个输入，解释哪里会变化、哪里保持不变。"
+        "body": "任务要逐项输出 65、80、95，各占一行。把 print 移出循环只会在循环结束后执行一次；要根据缩进判断属于哪一层。"
       }
     ],
     "examples": [
@@ -613,7 +627,9 @@
       "解释一次失败的原因"
     ],
     "prerequisites": [],
-    "estimatedMinutes": 12
+    "estimatedMinutes": 12,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "specific-official-sections-plus-labelled-course-index"
   },
   {
     "id": "py03",
@@ -727,12 +743,14 @@
     ],
     "resources": [
       {
-        "title": "Harvard CS50P",
-        "url": "https://cs50.harvard.edu/python/"
+        "title": "Harvard CS50P · 课程目录（延伸）",
+        "url": "https://cs50.harvard.edu/python/",
+        "scope": "course-index"
       },
       {
         "title": "Python：控制流与函数",
-        "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        "url": "https://docs.python.org/3/tutorial/controlflow.html",
+        "scope": "chapter-reference"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -781,7 +799,9 @@
       "解释一次失败的原因"
     ],
     "prerequisites": [],
-    "estimatedMinutes": 20
+    "estimatedMinutes": 20,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py04",
@@ -888,12 +908,14 @@
     ],
     "resources": [
       {
-        "title": "Harvard CS50P",
-        "url": "https://cs50.harvard.edu/python/"
+        "title": "Harvard CS50P · 课程目录（延伸）",
+        "url": "https://cs50.harvard.edu/python/",
+        "scope": "course-index"
       },
       {
         "title": "Python：控制流与函数",
-        "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        "url": "https://docs.python.org/3/tutorial/controlflow.html",
+        "scope": "chapter-reference"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -943,7 +965,9 @@
       "解释一次失败的原因"
     ],
     "prerequisites": [],
-    "estimatedMinutes": 20
+    "estimatedMinutes": 20,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "p2",
@@ -998,12 +1022,14 @@
     "kind": "实现",
     "resources": [
       {
-        "title": "Python：数据结构",
-        "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        "title": "Python 官方：列表、索引与切片",
+        "url": "https://docs.python.org/3/tutorial/introduction.html#lists",
+        "scope": "official-section"
       },
       {
-        "title": "Helsinki Python MOOC",
-        "url": "https://programming-26.mooc.fi/"
+        "title": "Helsinki Python MOOC · 课程目录（延伸）",
+        "url": "https://programming-26.mooc.fi/",
+        "scope": "course-index"
       }
     ],
     "teaching": [
@@ -1013,11 +1039,11 @@
       },
       {
         "title": "逐步写出来",
-        "body": "先写出输入、输出与变量的含义，再把操作逐句翻译成代码。列表有点像 vector：scores[1] 是第二个元素；len(scores) 对应 size()。"
+        "body": "先创建 scores 列表。len(scores) 统计元素数量；scores[0] 读第一项，scores[-1] 读最后一项。主示例修改的是 scores[1]，不会连带修改最后一项。"
       },
       {
         "title": "检查与迁移",
-        "body": "运行示例验证直觉，再提交测试。通过后换一个输入，解释哪里会变化、哪里保持不变。"
+        "body": "编程任务要求两次 print：第一行是长度，第二行是最后一个分数。长度 3 不代表存在索引 3，正索引只到 2。"
       }
     ],
     "examples": [
@@ -1084,7 +1110,9 @@
     "prerequisites": [
       "起步与控制流"
     ],
-    "estimatedMinutes": 10
+    "estimatedMinutes": 10,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "specific-official-sections-plus-labelled-course-index"
   },
   {
     "id": "py05",
@@ -1097,7 +1125,7 @@
     "runtime": "python",
     "tag": "take_first",
     "intro": "切片 xs[start:stop] 包含 start，不包含 stop。xs[:] 复制外层列表；把新名字直接赋给旧列表只产生别名。返回新列表时要防止意外修改输入。",
-    "example": "a=[1,2,3]\nb=a[:]\nb[0]=9\nprint(a)  # [1,2,3]\n",
+    "example": "def copy_prefix(values, count):\n    return values[:count]\n\noriginal = [10, 20, 30]\ncopied = copy_prefix(original, 2)\ncopied[0] = 99\nprint(original)\nprint(copied)\n",
     "cpp": "把已有的编程思路迁移过来；优先理解对象、输入输出约定和边界行为。",
     "visual": "list",
     "quiz": {
@@ -1167,16 +1195,20 @@
     ],
     "teaching": [
       {
-        "title": "为什么要学",
-        "body": "切片 xs[start:stop] 包含 start，不包含 stop。xs[:] 复制外层列表；把新名字直接赋给旧列表只产生别名。返回新列表时要防止意外修改输入。"
+        "title": "第一次从空白写函数",
+        "body": "这一关第一次要求你自己定义函数。def take_first(xs, n): 是函数头，xs 和 n 是调用者传入的参数；冒号后换行，函数体统一缩进 4 个空格。只定义函数不会自动调用它。"
       },
       {
-        "title": "把过程拆开",
-        "body": "长度 n 不为负，xs[:n] 自动处理 n 超过列表长度的情况。 先得到切片，再返回它；n=0 得到空列表。"
+        "title": "用切片创建外层副本",
+        "body": "xs[:n] 取前 n 项并新建外层列表；n 超过长度时取到末尾，n=0 时得到空列表。把 b=xs 直接赋给另一个名字只会产生别名。"
       },
       {
-        "title": "边界与检查",
-        "body": "评测会修改返回值，检查原列表是否还保持不变。浅复制对嵌套对象不保证完全独立。"
+        "title": "返回值与显示结果",
+        "body": "函数体用 return 把新列表交给调用者；result = take_first(xs, n) 会接住它。print 只负责显示，不能代替 return。本题评测会传入参数，不需要你再用 input 读取。后面的函数章节会系统讲参数、生成器和状态。"
+      },
+      {
+        "title": "独立到哪一层",
+        "body": "评测会向返回列表追加元素，确认原列表长度不变；只要求外层列表独立。切片不是递归深复制，内部如果仍是可变对象，需要在后续复制章节进一步处理。"
       }
     ],
     "examples": [
@@ -1198,12 +1230,19 @@
     ],
     "resources": [
       {
-        "title": "Python：数据结构",
-        "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        "title": "Python 官方：定义函数与返回值（本节先导）",
+        "url": "https://docs.python.org/3/tutorial/controlflow.html#defining-functions",
+        "scope": "official-section"
       },
       {
-        "title": "Helsinki Python MOOC",
-        "url": "https://programming-26.mooc.fi/"
+        "title": "Python 官方：列表切片与浅复制",
+        "url": "https://docs.python.org/3/tutorial/introduction.html#lists",
+        "scope": "official-section"
+      },
+      {
+        "title": "Helsinki Python MOOC · 课程目录（延伸）",
+        "url": "https://programming-26.mooc.fi/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -1252,9 +1291,12 @@
       "解释一次失败的原因"
     ],
     "prerequisites": [
-      "起步与控制流"
+      "已学起步与控制流、p2 列表索引",
+      "先读本节函数接口先导：def、形参、缩进与 return；p4 稍后系统练习函数"
     ],
-    "estimatedMinutes": 20
+    "estimatedMinutes": 20,
+    "prerequisiteAuditScope": "inline-primer-path-repair",
+    "resourceAuditScope": "specific-official-sections-plus-labelled-course-index"
   },
   {
     "id": "py06",
@@ -1368,11 +1410,13 @@
     "resources": [
       {
         "title": "Python：数据结构",
-        "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        "url": "https://docs.python.org/3/tutorial/datastructures.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "Helsinki Python MOOC",
-        "url": "https://programming-26.mooc.fi/"
+        "title": "Helsinki Python MOOC · 课程目录（延伸）",
+        "url": "https://programming-26.mooc.fi/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -1423,7 +1467,9 @@
     "prerequisites": [
       "起步与控制流"
     ],
-    "estimatedMinutes": 20
+    "estimatedMinutes": 20,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py07",
@@ -1558,11 +1604,13 @@
     "resources": [
       {
         "title": "Python：数据结构",
-        "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        "url": "https://docs.python.org/3/tutorial/datastructures.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "Helsinki Python MOOC",
-        "url": "https://programming-26.mooc.fi/"
+        "title": "Helsinki Python MOOC · 课程目录（延伸）",
+        "url": "https://programming-26.mooc.fi/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -1613,7 +1661,9 @@
     "prerequisites": [
       "起步与控制流"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py08",
@@ -1737,11 +1787,13 @@
     "resources": [
       {
         "title": "Python：数据结构",
-        "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        "url": "https://docs.python.org/3/tutorial/datastructures.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "Helsinki Python MOOC",
-        "url": "https://programming-26.mooc.fi/"
+        "title": "Helsinki Python MOOC · 课程目录（延伸）",
+        "url": "https://programming-26.mooc.fi/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -1792,7 +1844,9 @@
     "prerequisites": [
       "起步与控制流"
     ],
-    "estimatedMinutes": 20
+    "estimatedMinutes": 20,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py09",
@@ -1965,11 +2019,13 @@
     "resources": [
       {
         "title": "Python：数据结构",
-        "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        "url": "https://docs.python.org/3/tutorial/datastructures.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "Helsinki Python MOOC",
-        "url": "https://programming-26.mooc.fi/"
+        "title": "Helsinki Python MOOC · 课程目录（延伸）",
+        "url": "https://programming-26.mooc.fi/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -2020,7 +2076,9 @@
     "prerequisites": [
       "起步与控制流"
     ],
-    "estimatedMinutes": 30
+    "estimatedMinutes": 30,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "p4",
@@ -2031,7 +2089,7 @@
     "runtime": "python",
     "intro": "def 定义函数，参数接收输入，return 把结果交给调用者。print 只负责显示，不能代替 return。你可以使用 sum 和 len 处理列表。",
     "example": "def add_bonus(score):\n    return score + 5\n\nresult = add_bonus(70)\nprint(result)  # 75",
-    "cpp": "def add_bonus(score): 类似函数声明；不必写返回值类型，但需要显式 return。",
+    "cpp": "def add_bonus(score): 定义函数；这里不写返回值类型。任务需要把结果交给调用者，因此函数体应显式 return。",
     "visual": "values",
     "quiz": {
       "question": "要让 y = mean([2, 4]) 得到一个数，mean 里应该用什么？",
@@ -2087,12 +2145,14 @@
     "kind": "实现",
     "resources": [
       {
-        "title": "Python：控制流与函数",
-        "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        "title": "Python 官方：定义函数与返回值",
+        "url": "https://docs.python.org/3/tutorial/controlflow.html#defining-functions",
+        "scope": "official-section"
       },
       {
-        "title": "Helsinki Python MOOC",
-        "url": "https://programming-26.mooc.fi/"
+        "title": "Helsinki Python MOOC · 课程目录（延伸）",
+        "url": "https://programming-26.mooc.fi/",
+        "scope": "course-index"
       }
     ],
     "teaching": [
@@ -2102,11 +2162,11 @@
       },
       {
         "title": "逐步写出来",
-        "body": "先写出输入、输出与变量的含义，再把操作逐句翻译成代码。def add_bonus(score): 类似函数声明；不必写返回值类型，但需要显式 return。"
+        "body": "前面的切片题已经使用过 def 和 return，这里把函数调用系统串起来：参数 values 接收列表，sum(values) 得总和，len(values) 得数量，除法计算均值。"
       },
       {
         "title": "检查与迁移",
-        "body": "运行示例验证直觉，再提交测试。通过后换一个输入，解释哪里会变化、哪里保持不变。"
+        "body": "本题保证 values 非空。mean 的返回值要能赋给 y 并参与后续计算；只在函数里 print 均值，会让 y 得到 None。"
       }
     ],
     "examples": [
@@ -2173,7 +2233,9 @@
     "prerequisites": [
       "序列与字符串"
     ],
-    "estimatedMinutes": 15
+    "estimatedMinutes": 15,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "specific-official-sections-plus-labelled-course-index"
   },
   {
     "id": "p6",
@@ -2246,12 +2308,14 @@
     "kind": "实现",
     "resources": [
       {
-        "title": "Python：控制流与函数",
-        "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        "title": "Python 官方：zip 按位置配对",
+        "url": "https://docs.python.org/3/library/functions.html#zip",
+        "scope": "official-section"
       },
       {
-        "title": "Helsinki Python MOOC",
-        "url": "https://programming-26.mooc.fi/"
+        "title": "Helsinki Python MOOC · 课程目录（延伸）",
+        "url": "https://programming-26.mooc.fi/",
+        "scope": "course-index"
       }
     ],
     "teaching": [
@@ -2261,11 +2325,11 @@
       },
       {
         "title": "逐步写出来",
-        "body": "先写出输入、输出与变量的含义，再把操作逐句翻译成代码。Python 可以在循环头把一对值解包给两个变量。True / False 是布尔值。"
+        "body": "for pred, label in zip(preds, labels): 每轮取相同位置的一对数。用 pred == label 判断是否相等，把 True 对应的次数累计到 correct，再除以总样本数。"
       },
       {
         "title": "检查与迁移",
-        "body": "运行示例验证直觉，再提交测试。通过后换一个输入，解释哪里会变化、哪里保持不变。"
+        "body": "本题保证两列表等长；双空时提前 return 0.0，避免除以零。第二个例题故意给不同长度，只演示 zip 会截断，不把它当作本题的合法输入。"
       }
     ],
     "examples": [
@@ -2332,7 +2396,9 @@
     "prerequisites": [
       "序列与字符串"
     ],
-    "estimatedMinutes": 20
+    "estimatedMinutes": 20,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "specific-official-sections-plus-labelled-course-index"
   },
   {
     "id": "py10",
@@ -2433,6 +2499,10 @@
       {
         "title": "边界与检查",
         "body": "factor=0 是合法值；返回新列表，并允许空输入。"
+      },
+      {
+        "title": "先用普通循环，再读简写",
+        "body": "可以先创建 result=[]，循环每个 value，把 value*factor+bias 追加到 result，最后 return result。参考实现中的 [value*factor+bias for value in values] 是列表推导式，表达的是同一过程，不是必须背下来的特殊解法。"
       }
     ],
     "examples": [
@@ -2455,11 +2525,13 @@
     "resources": [
       {
         "title": "Python：控制流与函数",
-        "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        "url": "https://docs.python.org/3/tutorial/controlflow.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "Helsinki Python MOOC",
-        "url": "https://programming-26.mooc.fi/"
+        "title": "Helsinki Python MOOC · 课程目录（延伸）",
+        "url": "https://programming-26.mooc.fi/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -2510,7 +2582,9 @@
     "prerequisites": [
       "序列与字符串"
     ],
-    "estimatedMinutes": 20
+    "estimatedMinutes": 20,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py11",
@@ -2639,11 +2713,13 @@
     "resources": [
       {
         "title": "Python：控制流与函数",
-        "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        "url": "https://docs.python.org/3/tutorial/controlflow.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "Helsinki Python MOOC",
-        "url": "https://programming-26.mooc.fi/"
+        "title": "Helsinki Python MOOC · 课程目录（延伸）",
+        "url": "https://programming-26.mooc.fi/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -2694,7 +2770,9 @@
     "prerequisites": [
       "序列与字符串"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py12",
@@ -2816,11 +2894,13 @@
     "resources": [
       {
         "title": "Python：控制流与函数",
-        "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        "url": "https://docs.python.org/3/tutorial/controlflow.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "Helsinki Python MOOC",
-        "url": "https://programming-26.mooc.fi/"
+        "title": "Helsinki Python MOOC · 课程目录（延伸）",
+        "url": "https://programming-26.mooc.fi/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -2872,7 +2952,9 @@
     "prerequisites": [
       "序列与字符串"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py13",
@@ -3012,11 +3094,13 @@
     "resources": [
       {
         "title": "Python：控制流与函数",
-        "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        "url": "https://docs.python.org/3/tutorial/controlflow.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "Helsinki Python MOOC",
-        "url": "https://programming-26.mooc.fi/"
+        "title": "Helsinki Python MOOC · 课程目录（延伸）",
+        "url": "https://programming-26.mooc.fi/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -3067,7 +3151,9 @@
     "prerequisites": [
       "序列与字符串"
     ],
-    "estimatedMinutes": 20
+    "estimatedMinutes": 20,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "p5",
@@ -3134,12 +3220,14 @@
     "kind": "实现",
     "resources": [
       {
-        "title": "Python：数据结构",
-        "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        "title": "Python 官方：字典",
+        "url": "https://docs.python.org/3/tutorial/datastructures.html#dictionaries",
+        "scope": "official-section"
       },
       {
-        "title": "Harvard CS50P",
-        "url": "https://cs50.harvard.edu/python/"
+        "title": "Harvard CS50P · 课程目录（延伸）",
+        "url": "https://cs50.harvard.edu/python/",
+        "scope": "course-index"
       }
     ],
     "teaching": [
@@ -3149,11 +3237,11 @@
       },
       {
         "title": "逐步写出来",
-        "body": "先写出输入、输出与变量的含义，再把操作逐句翻译成代码。字典类似 map / unordered_map，键和值之间用冒号；布尔判断不必加括号。"
+        "body": "先在函数里设 count=0，再逐条访问 record[\"loss\"]。只有 loss < threshold 才把 count 加 1，循环结束后 return count，而不是返回最后一条的判断。"
       },
       {
         "title": "检查与迁移",
-        "body": "运行示例验证直觉，再提交测试。通过后换一个输入，解释哪里会变化、哪里保持不变。"
+        "body": "这里是严格小于：loss 与 threshold 相等不计入。空 records 没有循环项，初始的 0 就是结果；model 等其他字段不参与计数。"
       }
     ],
     "examples": [
@@ -3220,7 +3308,9 @@
     "prerequisites": [
       "函数与组合"
     ],
-    "estimatedMinutes": 15
+    "estimatedMinutes": 15,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "specific-official-sections-plus-labelled-course-index"
   },
   {
     "id": "py14",
@@ -3329,11 +3419,13 @@
     "resources": [
       {
         "title": "Python：数据结构",
-        "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        "url": "https://docs.python.org/3/tutorial/datastructures.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "Harvard CS50P",
-        "url": "https://cs50.harvard.edu/python/"
+        "title": "Harvard CS50P · 课程目录（延伸）",
+        "url": "https://cs50.harvard.edu/python/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -3384,7 +3476,9 @@
     "prerequisites": [
       "函数与组合"
     ],
-    "estimatedMinutes": 20
+    "estimatedMinutes": 20,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py15",
@@ -3473,6 +3567,10 @@
       {
         "title": "边界与检查",
         "body": "组大小可能不同；不能假设每个模型有相同记录数。空输入返回 {}，不修改记录。"
+      },
+      {
+        "title": "读懂字典推导式",
+        "body": "示例中的 {k: totals[k]/counts[k] for k in totals} 是字典推导式：遍历每个分组 k，把该组均值作为结果字典的值。也可以用普通 for 循环逐项写 result[k]=totals[k]/counts[k]；两种写法都要使用该组自己的次数。"
       }
     ],
     "examples": [
@@ -3495,11 +3593,13 @@
     "resources": [
       {
         "title": "Python：数据结构",
-        "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        "url": "https://docs.python.org/3/tutorial/datastructures.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "Harvard CS50P",
-        "url": "https://cs50.harvard.edu/python/"
+        "title": "Harvard CS50P · 课程目录（延伸）",
+        "url": "https://cs50.harvard.edu/python/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -3550,7 +3650,9 @@
     "prerequisites": [
       "函数与组合"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py16",
@@ -3655,6 +3757,10 @@
       {
         "title": "边界与检查",
         "body": "sorted 不改输入；list.sort 会原地排序。不要只按 score 排，忽略并列规则。"
+      },
+      {
+        "title": "lambda 在排序中做什么",
+        "body": "lambda r: (-r[\"score\"], r[\"name\"]) 是一个只含表达式的小函数：接收一条 r，返回用于比较的元组。它等价于定义一个普通 sort_key(r) 并 return 这个元组；把函数本身传给 key，不是提前调用它得到一个排序结果。"
       }
     ],
     "examples": [
@@ -3677,11 +3783,13 @@
     "resources": [
       {
         "title": "Python：数据结构",
-        "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        "url": "https://docs.python.org/3/tutorial/datastructures.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "Harvard CS50P",
-        "url": "https://cs50.harvard.edu/python/"
+        "title": "Harvard CS50P · 课程目录（延伸）",
+        "url": "https://cs50.harvard.edu/python/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -3732,7 +3840,9 @@
     "prerequisites": [
       "函数与组合"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py17",
@@ -3840,6 +3950,10 @@
       {
         "title": "边界与检查",
         "body": "不要只做浅 copy。即使覆盖列表，也要复制它，结果不能与任一输入共享可变对象。"
+      },
+      {
+        "title": "递归只发生在双方都是字典时",
+        "body": "递归就是函数在更小的一层配置上调用自己。对某个键，默认值与覆盖值同时是字典才继续合并；只要其中一边不是字典，就用覆盖值的深副本替换，这也是递归停止继续深入的条件。"
       }
     ],
     "examples": [
@@ -3862,11 +3976,13 @@
     "resources": [
       {
         "title": "Python：数据结构",
-        "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        "url": "https://docs.python.org/3/tutorial/datastructures.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "Harvard CS50P",
-        "url": "https://cs50.harvard.edu/python/"
+        "title": "Harvard CS50P · 课程目录（延伸）",
+        "url": "https://cs50.harvard.edu/python/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -3917,7 +4033,9 @@
     "prerequisites": [
       "函数与组合"
     ],
-    "estimatedMinutes": 30
+    "estimatedMinutes": 30,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py18",
@@ -4051,11 +4169,13 @@
     "resources": [
       {
         "title": "Python：数据结构",
-        "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        "url": "https://docs.python.org/3/tutorial/datastructures.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "Harvard CS50P",
-        "url": "https://cs50.harvard.edu/python/"
+        "title": "Harvard CS50P · 课程目录（延伸）",
+        "url": "https://cs50.harvard.edu/python/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -4106,7 +4226,9 @@
     "prerequisites": [
       "函数与组合"
     ],
-    "estimatedMinutes": 30
+    "estimatedMinutes": 30,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py19",
@@ -4228,19 +4350,23 @@
     "resources": [
       {
         "title": "Python：输入、输出与文件",
-        "url": "https://docs.python.org/3/tutorial/inputoutput.html"
+        "url": "https://docs.python.org/3/tutorial/inputoutput.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "Python：异常处理",
-        "url": "https://docs.python.org/3/tutorial/errors.html"
+        "url": "https://docs.python.org/3/tutorial/errors.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "Python：csv 标准库",
-        "url": "https://docs.python.org/3/library/csv.html"
+        "url": "https://docs.python.org/3/library/csv.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "Python：json 标准库",
-        "url": "https://docs.python.org/3/library/json.html"
+        "url": "https://docs.python.org/3/library/json.html",
+        "scope": "chapter-reference"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -4291,7 +4417,9 @@
     "prerequisites": [
       "字典与实验数据"
     ],
-    "estimatedMinutes": 20
+    "estimatedMinutes": 20,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py20",
@@ -4304,7 +4432,7 @@
     "runtime": "python",
     "tag": "read_config",
     "intro": "with open(...) 在代码块结束时关闭文件。json.load 从文件读取，json.loads 从字符串读取。encoding=\"utf-8\" 让包含中文的配置跨平台保持一致。",
-    "example": "import json\ntext='{\"lr\": 0.1, \"name\": \"实验\"}'\nconfig=json.loads(text)\nprint(config[\"lr\"])\n",
+    "example": "import json\nimport tempfile\nfrom pathlib import Path\n\nwith tempfile.TemporaryDirectory() as folder:\n    path = Path(folder) / \"sample.json\"\n    path.write_text('{\"name\":\"示例实验\",\"lr\":0.1}', encoding=\"utf-8\")\n    with open(path, encoding=\"utf-8\") as stream:\n        config = json.load(stream)\n    print(config[\"name\"], config.get(\"lr\", 0.001))\n",
     "cpp": "把已有的编程思路迁移过来；优先理解对象、输入输出约定和边界行为。",
     "visual": "list",
     "quiz": {
@@ -4390,6 +4518,10 @@
       {
         "title": "边界与检查",
         "body": "缺少 lr 时使用默认值 0.001；显式的 lr=0 不能被默认值替换。文件错误与 JSON 格式错误保持抛出。"
+      },
+      {
+        "title": "文件读取与文本解析分两步理解",
+        "body": "上方先在自动清理的临时目录创建演示文件，再用 with open 和 json.load 真正读取它；临时目录仅用于让例子安全、自足。题目附件由运行器提供，你只需读取传入的 path。下面的 loads 小例题单独演示已有 JSON 文本的解析，不代表文件读取已经发生。"
       }
     ],
     "examples": [
@@ -4412,19 +4544,23 @@
     "resources": [
       {
         "title": "Python：输入、输出与文件",
-        "url": "https://docs.python.org/3/tutorial/inputoutput.html"
+        "url": "https://docs.python.org/3/tutorial/inputoutput.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "Python：异常处理",
-        "url": "https://docs.python.org/3/tutorial/errors.html"
+        "url": "https://docs.python.org/3/tutorial/errors.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "Python：csv 标准库",
-        "url": "https://docs.python.org/3/library/csv.html"
+        "url": "https://docs.python.org/3/library/csv.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "Python：json 标准库",
-        "url": "https://docs.python.org/3/library/json.html"
+        "url": "https://docs.python.org/3/library/json.html",
+        "scope": "chapter-reference"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -4481,7 +4617,9 @@
     "prerequisites": [
       "字典与实验数据"
     ],
-    "estimatedMinutes": 20
+    "estimatedMinutes": 20,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py21",
@@ -4579,19 +4717,23 @@
     "resources": [
       {
         "title": "Python：输入、输出与文件",
-        "url": "https://docs.python.org/3/tutorial/inputoutput.html"
+        "url": "https://docs.python.org/3/tutorial/inputoutput.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "Python：异常处理",
-        "url": "https://docs.python.org/3/tutorial/errors.html"
+        "url": "https://docs.python.org/3/tutorial/errors.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "Python：csv 标准库",
-        "url": "https://docs.python.org/3/library/csv.html"
+        "url": "https://docs.python.org/3/library/csv.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "Python：json 标准库",
-        "url": "https://docs.python.org/3/library/json.html"
+        "url": "https://docs.python.org/3/library/json.html",
+        "scope": "chapter-reference"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -4647,7 +4789,9 @@
     "prerequisites": [
       "字典与实验数据"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py22",
@@ -4761,19 +4905,23 @@
     "resources": [
       {
         "title": "Python：输入、输出与文件",
-        "url": "https://docs.python.org/3/tutorial/inputoutput.html"
+        "url": "https://docs.python.org/3/tutorial/inputoutput.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "Python：异常处理",
-        "url": "https://docs.python.org/3/tutorial/errors.html"
+        "url": "https://docs.python.org/3/tutorial/errors.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "Python：csv 标准库",
-        "url": "https://docs.python.org/3/library/csv.html"
+        "url": "https://docs.python.org/3/library/csv.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "Python：json 标准库",
-        "url": "https://docs.python.org/3/library/json.html"
+        "url": "https://docs.python.org/3/library/json.html",
+        "scope": "chapter-reference"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -4829,7 +4977,9 @@
     "prerequisites": [
       "字典与实验数据"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py23",
@@ -5003,19 +5153,23 @@
     "resources": [
       {
         "title": "Python：输入、输出与文件",
-        "url": "https://docs.python.org/3/tutorial/inputoutput.html"
+        "url": "https://docs.python.org/3/tutorial/inputoutput.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "Python：异常处理",
-        "url": "https://docs.python.org/3/tutorial/errors.html"
+        "url": "https://docs.python.org/3/tutorial/errors.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "Python：csv 标准库",
-        "url": "https://docs.python.org/3/library/csv.html"
+        "url": "https://docs.python.org/3/library/csv.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "Python：json 标准库",
-        "url": "https://docs.python.org/3/library/json.html"
+        "url": "https://docs.python.org/3/library/json.html",
+        "scope": "chapter-reference"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -5067,7 +5221,9 @@
     "prerequisites": [
       "字典与实验数据"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py24",
@@ -5184,19 +5340,23 @@
     "resources": [
       {
         "title": "Python：输入、输出与文件",
-        "url": "https://docs.python.org/3/tutorial/inputoutput.html"
+        "url": "https://docs.python.org/3/tutorial/inputoutput.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "Python：异常处理",
-        "url": "https://docs.python.org/3/tutorial/errors.html"
+        "url": "https://docs.python.org/3/tutorial/errors.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "Python：csv 标准库",
-        "url": "https://docs.python.org/3/library/csv.html"
+        "url": "https://docs.python.org/3/library/csv.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "Python：json 标准库",
-        "url": "https://docs.python.org/3/library/json.html"
+        "url": "https://docs.python.org/3/library/json.html",
+        "scope": "chapter-reference"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -5251,7 +5411,9 @@
     "prerequisites": [
       "字典与实验数据"
     ],
-    "estimatedMinutes": 35
+    "estimatedMinutes": 35,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py25",
@@ -5264,7 +5426,7 @@
     "runtime": "python",
     "tag": "class AverageMeter",
     "intro": "类把状态与更新方法放在一起。__init__ 初始化实例自己的计数与总和，self 指向当前实例。加权均值应累计 value×n，最后除以累计样本数。",
-    "example": "class Counter:\n    def __init__(self):\n        self.count=0\n    def update(self,n):\n        self.count+=n\n",
+    "example": "class WeightedTracker:\n    def __init__(self):\n        self.total = 0.0\n        self.count = 0\n\n    def update(self, value, n):\n        self.total += value * n\n        self.count += n\n\n    def compute(self):\n        return self.total / self.count if self.count else 0.0\n\nmeter = WeightedTracker()\nmeter.update(1, 1)\nmeter.update(3, 3)\nprint(meter.compute())\n",
     "cpp": "把已有的编程思路迁移过来；优先理解对象、输入输出约定和边界行为。",
     "visual": "list",
     "quiz": {
@@ -5343,6 +5505,10 @@
       {
         "title": "边界与检查",
         "body": "compute() 在 count=0 时返回 0.0，否则返回 total/count。不同实例不能共享状态。"
+      },
+      {
+        "title": "实例怎样调用方法",
+        "body": "meter=WeightedTracker() 会创建实例并调用 __init__；meter.update(1,1) 调用时，Python 自动把 meter 作为 self，所以不用再手动传 self。两次更新累计总和 10、样本数 4，compute 返回 2.5。任务还需实现 reset，把同一实例恢复到空状态。"
       }
     ],
     "examples": [
@@ -5365,11 +5531,13 @@
     "resources": [
       {
         "title": "Python：类与迭代器",
-        "url": "https://docs.python.org/3/tutorial/classes.html"
+        "url": "https://docs.python.org/3/tutorial/classes.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "Helsinki Python MOOC",
-        "url": "https://programming-26.mooc.fi/"
+        "title": "Helsinki Python MOOC · 课程目录（延伸）",
+        "url": "https://programming-26.mooc.fi/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -5420,7 +5588,9 @@
     "prerequisites": [
       "文件、异常与测试"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py26",
@@ -5528,11 +5698,13 @@
     "resources": [
       {
         "title": "Python：类与迭代器",
-        "url": "https://docs.python.org/3/tutorial/classes.html"
+        "url": "https://docs.python.org/3/tutorial/classes.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "Helsinki Python MOOC",
-        "url": "https://programming-26.mooc.fi/"
+        "title": "Helsinki Python MOOC · 课程目录（延伸）",
+        "url": "https://programming-26.mooc.fi/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -5583,7 +5755,9 @@
     "prerequisites": [
       "文件、异常与测试"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py27",
@@ -5619,7 +5793,7 @@
       ],
       "revision": 2
     },
-    "task": "定义 ListDataset(features,labels)，支持 len(ds)、ds[i]。数据长度不一致抛 ValueError；构造与取出时均复制特征行。标签为基本值。",
+    "task": "定义 ListDataset(features,labels)，features 为二维数值列表，行元素是不可变数值；labels 的元素为基本值。支持 len(ds)、ds[i]。数据长度不一致抛 ValueError；构造与取出时均复制特征行。",
     "signature": "class ListDataset",
     "tests": [
       {
@@ -5685,6 +5859,10 @@
       {
         "title": "边界与检查",
         "body": "索引越界保留 IndexError；修改输入或返回的行，不能污染内部数据。"
+      },
+      {
+        "title": "复制契约的范围",
+        "body": "本题每行只含不可变数值，因此复制外层特征列表和每一行就足够。若行内还有嵌套可变列表，浅复制不能保证完全隔离，那是上一章深复制问题的扩展，不是本题输入。"
       }
     ],
     "examples": [
@@ -5707,11 +5885,13 @@
     "resources": [
       {
         "title": "Python：类与迭代器",
-        "url": "https://docs.python.org/3/tutorial/classes.html"
+        "url": "https://docs.python.org/3/tutorial/classes.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "Helsinki Python MOOC",
-        "url": "https://programming-26.mooc.fi/"
+        "title": "Helsinki Python MOOC · 课程目录（延伸）",
+        "url": "https://programming-26.mooc.fi/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -5762,7 +5942,9 @@
     "prerequisites": [
       "文件、异常与测试"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py28",
@@ -5774,7 +5956,7 @@
     "minutes": 30,
     "runtime": "python",
     "tag": "class EarlyStop",
-    "intro": "Early stopping 持续观察验证指标，而不是只比较相邻两轮。这里记录历史最好 loss；改善幅度必须严格大于 min_delta，才清零等待计数。",
+    "intro": "Early stopping 持续观察验证指标，而不是只比较相邻两轮。这里维护用于判断显著改善的 best 基准；只有 loss < best-min_delta 时才更新 best 并清零等待计数。",
     "example": "best=0.5\nnew=0.48\nmin_delta=0.03\nprint(new < best-min_delta)\n",
     "cpp": "把已有的编程思路迁移过来；优先理解对象、输入输出约定和边界行为。",
     "visual": "list",
@@ -5859,7 +6041,7 @@
     "teaching": [
       {
         "title": "为什么要学",
-        "body": "Early stopping 持续观察验证指标，而不是只比较相邻两轮。这里记录历史最好 loss；改善幅度必须严格大于 min_delta，才清零等待计数。"
+        "body": "Early stopping 持续观察验证指标，而不是只比较相邻两轮。这里维护用于判断显著改善的 best 基准；只有 loss < best-min_delta 时才更新 best 并清零等待计数。"
       },
       {
         "title": "把过程拆开",
@@ -5868,6 +6050,10 @@
       {
         "title": "边界与检查",
         "body": "连续未改善轮数达到 patience 后 step 返回 True。相等不算改善；历史最好值不是上一轮的值。"
+      },
+      {
+        "title": "best 的精确含义",
+        "body": "当 min_delta>0，某次很小的下降不会更新 best，之后仍与上次达到显著改善门槛的基准比较。min_delta=0 时，best 才逐次记录严格下降后的历史最小值；不要把两个定义混用。"
       }
     ],
     "examples": [
@@ -5890,11 +6076,13 @@
     "resources": [
       {
         "title": "Python：类与迭代器",
-        "url": "https://docs.python.org/3/tutorial/classes.html"
+        "url": "https://docs.python.org/3/tutorial/classes.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "Helsinki Python MOOC",
-        "url": "https://programming-26.mooc.fi/"
+        "title": "Helsinki Python MOOC · 课程目录（延伸）",
+        "url": "https://programming-26.mooc.fi/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -5945,7 +6133,9 @@
     "prerequisites": [
       "文件、异常与测试"
     ],
-    "estimatedMinutes": 30
+    "estimatedMinutes": 30,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py29",
@@ -6050,11 +6240,13 @@
     "resources": [
       {
         "title": "Python：类与迭代器",
-        "url": "https://docs.python.org/3/tutorial/classes.html"
+        "url": "https://docs.python.org/3/tutorial/classes.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "Helsinki Python MOOC",
-        "url": "https://programming-26.mooc.fi/"
+        "title": "Helsinki Python MOOC · 课程目录（延伸）",
+        "url": "https://programming-26.mooc.fi/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -6105,7 +6297,9 @@
     "prerequisites": [
       "文件、异常与测试"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "py30",
@@ -6239,11 +6433,13 @@
     "resources": [
       {
         "title": "Python：类与迭代器",
-        "url": "https://docs.python.org/3/tutorial/classes.html"
+        "url": "https://docs.python.org/3/tutorial/classes.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "Helsinki Python MOOC",
-        "url": "https://programming-26.mooc.fi/"
+        "title": "Helsinki Python MOOC · 课程目录（延伸）",
+        "url": "https://programming-26.mooc.fi/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -6294,7 +6490,9 @@
     "prerequisites": [
       "文件、异常与测试"
     ],
-    "estimatedMinutes": 40
+    "estimatedMinutes": 40,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "t1",
@@ -6304,7 +6502,7 @@
     "minutes": 15,
     "runtime": "torch",
     "intro": "张量是多维数值数组。形状 [B, D] 表示 B 条样本，每条 D 个数。dim=1 沿每一行的特征维计算，得到每条样本的结果。",
-    "example": "import torch\nimport torch\nx = torch.tensor([[1., 3.], [2., 6.]])\nprint(x.shape)      # torch.Size([2, 2])\nprint(x.mean(dim=1)) # tensor([2., 4.])",
+    "example": "import torch\nx = torch.tensor([[1., 3.], [2., 6.]])\nprint(x.shape)      # torch.Size([2, 2])\nprint(x.mean(dim=1)) # tensor([2., 4.])",
     "cpp": "把二维数组理解为样本 × 特征。张量操作会一次处理整批数据。",
     "visual": "tensor",
     "quiz": {
@@ -6368,12 +6566,14 @@
     "kind": "实现",
     "resources": [
       {
-        "title": "PyTorch：Tensors",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html"
+        "title": "PyTorch 2.10 官方：torch.mean 的 dim 与输出形状",
+        "url": "https://docs.pytorch.org/docs/2.10/generated/torch.mean.html#torch.mean",
+        "scope": "official-section"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "teaching": [
@@ -6382,20 +6582,20 @@
         "body": "张量是多维数值数组。形状 [B, D] 表示 B 条样本，每条 D 个数。dim=1 沿每一行的特征维计算，得到每条样本的结果。"
       },
       {
-        "title": "逐步写出来",
-        "body": "先写出输入、输出与变量的含义，再把操作逐句翻译成代码。把二维数组理解为样本 × 特征。张量操作会一次处理整批数据。"
+        "title": "按本题接口写实现",
+        "body": "把输入x的两维标成[B,D]：B条样本、每条D个特征。row_means只沿dim=1取mean，返回[B]张量；例如[[1,3],[2,6]]得到[2,4]。dim=0会改成每列的跨样本均值，和本题接口不同。"
       },
       {
-        "title": "检查与迁移",
-        "body": "运行示例验证直觉，再提交测试。通过后换一个输入，解释哪里会变化、哪里保持不变。"
+        "title": "用本题的边界核对",
+        "body": "分别检查多行、多特征与D=1。D=1时每行均值就是那一行唯一的数；返回值仍须是torch.Tensor，不能用tolist或print替代return。"
       }
     ],
     "examples": [
       {
         "title": "跟踪已有例子",
-        "code": "import torch\nimport torch\nx = torch.tensor([[1., 3.], [2., 6.]])\nprint(x.shape)      # torch.Size([2, 2])\nprint(x.mean(dim=1)) # tensor([2., 4.])\n",
+        "code": "import torch\nx = torch.tensor([[1., 3.], [2., 6.]])\nprint(x.shape)      # torch.Size([2, 2])\nprint(x.mean(dim=1)) # tensor([2., 4.])\n",
         "output": "torch.Size([2, 2])\ntensor([2., 4.])",
-        "explanation": "先按行预测结果，再用「运行示例」验证。注意变量赋值或张量形状如何改变。"
+        "explanation": "输入是两条样本、每条两个特征。沿dim=1分别计算(1+3)/2与(2+6)/2，得到张量[2,4]，shape为[2]；dim=0则是另一种跨样本归约。"
       },
       {
         "title": "dim与keepdim",
@@ -6454,7 +6654,9 @@
     "prerequisites": [
       "类与数据流水线"
     ],
-    "estimatedMinutes": 15
+    "estimatedMinutes": 15,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "specific-official-sections-plus-labelled-course-index"
   },
   {
     "id": "pt01",
@@ -6558,12 +6760,12 @@
         "body": "图像批次通常是 [B,C,H,W]。送入线性层前把特征轴合并成 C×H×W，同时保留 B。非连续张量不能总用 view；flatten 或 reshape 会按需要处理存储布局。"
       },
       {
-        "title": "把过程拆开",
-        "body": "只合并第 1 维及之后的特征维，不能把 batch 一起展平。 flatten(start_dim=1) 直接表达这个目标。"
+        "title": "按本题接口写实现",
+        "body": "先把x.shape[0]认作批次轴，只合并第1维及后面的特征。flatten(start_dim=1)把[B,C,H,W]变成[B,C*H*W]；二维[B,D]输入不再改变形状。"
       },
       {
-        "title": "边界与检查",
-        "body": "检查转置后非连续输入与 B=0 的空批次，不要依赖 view(B,-1) 碰巧成功。"
+        "title": "用本题的边界核对",
+        "body": "用转置后的非连续张量检查元素顺序，再检查B=0仍得到[0,特征数]。view要求合适的存储布局，view(B,-1)在空批次上也可能无法推断维度；不要把batch一起展平。"
       }
     ],
     "examples": [
@@ -6586,11 +6788,13 @@
     "resources": [
       {
         "title": "PyTorch：Tensors",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -6641,7 +6845,9 @@
     "prerequisites": [
       "类与数据流水线"
     ],
-    "estimatedMinutes": 20
+    "estimatedMinutes": 20,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "pt02",
@@ -6724,12 +6930,12 @@
         "body": "logits 的形状 [B,C]，labels 的形状 [B]。需要为每条样本读取它自己对应的类别，而不是让同一组列应用到全部行。成对高级索引可以同时提供行号与列号。"
       },
       {
-        "title": "把过程拆开",
-        "body": "行号使用 torch.arange(B,device=logits.device)。 列号使用 labels，让行号和列号逐项配对。"
+        "title": "按本题接口写实现",
+        "body": "logits是[B,C]，labels是[B]。创建与logits同设备的行号arange(B)，和labels逐项配对索引，得到每条样本自己的目标类别分数，结果为[B]。"
       },
       {
-        "title": "边界与检查",
-        "body": "B=0 返回形状 [0]；不能用 logits[:,labels]，那会产生二维交叉选择。"
+        "title": "用本题的边界核对",
+        "body": "用不同样本选择不同类别检查配对语义，再检查单样本和B=0。logits[:,labels]会让所有行选择同一组列，形成[B,B]，并非本题目标；返回结果应保留dtype和输入梯度。"
       }
     ],
     "examples": [
@@ -6752,11 +6958,13 @@
     "resources": [
       {
         "title": "PyTorch：Tensors",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -6807,7 +7015,9 @@
     "prerequisites": [
       "类与数据流水线"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "pt03",
@@ -6902,7 +7112,7 @@
     ],
     "solution": "import torch\ndef masked_row_mean(x,mask):\n    return x.masked_fill(~mask,0).sum(1)/mask.sum(1).clamp_min(1)\n",
     "hints": [
-      "分子为每行 x*mask 的和，分母为每行 True 的数量。 使用 x.masked_fill(~mask,0)；句向量输入需要先给mask增加特征维。",
+      "先用x.masked_fill(~mask,0)替换无效位置，再逐行求和；分母是每行True的数量。不能用乘mask排除NaN/Inf。",
       "把分母 clamp_min(1)，全无效行的分子为0，最终返回0。",
       "不能除以特征总数；全无效行不允许 NaN，输出应保留梯度。"
     ],
@@ -6912,12 +7122,12 @@
         "body": "mask 表示哪些位置有效。求均值时先把无效值排除，再除以有效数量。把无效位置置零却仍按完整长度求均值，会使短序列受到额外惩罚。"
       },
       {
-        "title": "把过程拆开",
-        "body": "分子为每行 x*mask 的和，分母为每行 True 的数量。 把分母 clamp_min(1)，全无效行的分子为0，最终返回0。 用 masked_fill 将无效位置替换为0；不能仅乘mask，因为 NaN*0 和 Inf*0 仍是 NaN。"
+        "title": "按本题接口写实现",
+        "body": "先用x.masked_fill(~mask,0)将无效位置替换为0，再沿dim=1求和。分母必须是mask.sum(1)的有效数量，clamp_min(1)只保护全无效行；不能用完整特征宽度作分母。"
       },
       {
-        "title": "边界与检查",
-        "body": "不能除以特征总数；全无效行不允许 NaN，输出应保留梯度。"
+        "title": "用本题的边界核对",
+        "body": "有效数为0的行应得到0；有效数值本身为0仍要计数。无效位置允许NaN/Inf，乘mask无法排除它们，因为NaN*0与Inf*0仍是NaN。还要检查空批次、不修改x、以及有效位置的梯度。"
       }
     ],
     "examples": [
@@ -6940,11 +7150,13 @@
     "resources": [
       {
         "title": "PyTorch：Tensors",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -6995,7 +7207,9 @@
     "prerequisites": [
       "类与数据流水线"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "pt04",
@@ -7113,12 +7327,12 @@
         "body": "将变长 token 列表变成张量，需要同时固定形状和 dtype。token 编号使用 torch.long，mask 使用 torch.bool；空行和空批次也需要明确的二维形状。"
       },
       {
-        "title": "把过程拆开",
-        "body": "先计算 B 和最大长度 T，创建 [B,T] 的 long 零张量和 bool 假张量。 逐行把原序列写入前 length 个位置，对应 mask 设 True。"
+        "title": "按本题接口写实现",
+        "body": "由序列数得到B，由最大原长度得到T，分别创建long类型tokens[B,T]和bool类型mask[B,T]。每条原序列写入前length个位置，同时将这段mask设True，右侧保留补齐零。"
       },
       {
-        "title": "边界与检查",
-        "body": "空批次是 [0,0]，两个空序列是 [2,0]；不能根据 token 是否为0构造mask。"
+        "title": "用本题的边界核对",
+        "body": "空批次明确返回[0,0]；B条全空序列应保持[B,0]。零token可以是合法数据，所以mask依据原长度建立，不能使用tokens!=0；两项的dtype也必须分别检查。"
       }
     ],
     "examples": [
@@ -7141,11 +7355,13 @@
     "resources": [
       {
         "title": "PyTorch：Tensors",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -7196,7 +7412,9 @@
     "prerequisites": [
       "类与数据流水线"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "pt05",
@@ -7297,12 +7515,12 @@
         "body": "x 为 [N,D]、y 为 [M,D] 时，想比较任意两条向量，可以扩出 x 的列轴与 y 的行轴，广播到 [N,M,D]，沿最后一维求和。注意本题要平方距离，不开根号。"
       },
       {
-        "title": "把过程拆开",
-        "body": "x[:,None,:] 是 [N,1,D]，y[None,:,:] 是 [1,M,D]。 差的平方沿 dim=-1 求和得到 [N,M]，不要沿样本轴求和。"
+        "title": "按本题接口写实现",
+        "body": "x[:,None,:]是[N,1,D]，y[None,:,:]是[1,M,D]。相减广播成[N,M,D]，逐特征平方后只沿最后一维求和，得到任意两条样本之间的平方距离[N,M]。"
       },
       {
-        "title": "边界与检查",
-        "body": "支持 N 或 M 为0；不要转为 Python 列表，以便保留dtype、device和梯度。"
+        "title": "用本题的边界核对",
+        "body": "用N和M不同、相同向量距离为0、以及N=0或M=0检查shape。题目要求平方距离，不开根号；全部运算保留为张量，才能保留dtype、device和梯度。"
       }
     ],
     "examples": [
@@ -7325,11 +7543,13 @@
     "resources": [
       {
         "title": "PyTorch：Tensors",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -7380,7 +7600,9 @@
     "prerequisites": [
       "类与数据流水线"
     ],
-    "estimatedMinutes": 30
+    "estimatedMinutes": 30,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "t2",
@@ -7390,7 +7612,7 @@
     "minutes": 15,
     "runtime": "torch",
     "intro": "广播让长度为 1 的维度扩展参与计算。对 [B,D] 张量减去每行均值时，把均值保留成 [B,1]，就能让每行减去自己的数。",
-    "example": "import torch\nimport torch\nx = torch.tensor([[1., 3.], [2., 6.]])\nrow_mean = x.mean(dim=1, keepdim=True)\ny = x - row_mean\n# y = [[-1., 1.], [-2., 2.]]\nprint(y.tolist())\n",
+    "example": "import torch\nx = torch.tensor([[1., 3.], [2., 6.]])\nrow_mean = x.mean(dim=1, keepdim=True)\ny = x - row_mean\n# y = [[-1., 1.], [-2., 2.]]\nprint(y.tolist())\n",
     "cpp": "无需再写两层循环，先确认 [B,D] 与 [B,1] 能按对应维度广播。",
     "visual": "tensor",
     "quiz": {
@@ -7474,12 +7696,19 @@
     "kind": "实现",
     "resources": [
       {
-        "title": "PyTorch：Tensors",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html"
+        "title": "PyTorch 2.10 官方：广播的一般规则",
+        "url": "https://docs.pytorch.org/docs/2.10/notes/broadcasting.html#general-semantics",
+        "scope": "official-section"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "PyTorch 2.10 官方：torch.mean 与 keepdim",
+        "url": "https://docs.pytorch.org/docs/2.10/generated/torch.mean.html#torch.mean",
+        "scope": "official-section"
+      },
+      {
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "teaching": [
@@ -7488,18 +7717,18 @@
         "body": "广播让长度为 1 的维度扩展参与计算。对 [B,D] 张量减去每行均值时，把均值保留成 [B,1]，就能让每行减去自己的数。"
       },
       {
-        "title": "逐步写出来",
-        "body": "先写出输入、输出与变量的含义，再把操作逐句翻译成代码。无需再写两层循环，先确认 [B,D] 与 [B,1] 能按对应维度广播。"
+        "title": "按本题接口写实现",
+        "body": "先计算row_mean=x.mean(dim=1,keepdim=True)，其shape为[B,1]，再返回x-row_mean。长度1的特征轴会扩展到D，每一行都减去本行均值，输出仍为[B,D]。"
       },
       {
-        "title": "检查与迁移",
-        "body": "运行示例验证直觉，再提交测试。通过后换一个输入，解释哪里会变化、哪里保持不变。"
+        "title": "用本题的边界核对",
+        "body": "先用[[1,3],[2,6]]核对结果[[-1,1],[-2,2]]，再用B和D不同的输入检查。省略keepdim可能报广播错误；当B=D时也可能无报错却按列算错。D=1时每行结果应为0，不原地修改输入。"
       }
     ],
     "examples": [
       {
         "title": "保留行维，再做中心化",
-        "code": "import torch\nimport torch\nx = torch.tensor([[1., 3.], [2., 6.]])\nrow_mean = x.mean(dim=1, keepdim=True)\ny = x - row_mean\n# y = [[-1., 1.], [-2., 2.]]\nprint(y.tolist())\n",
+        "code": "import torch\nx = torch.tensor([[1., 3.], [2., 6.]])\nrow_mean = x.mean(dim=1, keepdim=True)\ny = x - row_mean\n# y = [[-1., 1.], [-2., 2.]]\nprint(y.tolist())\n",
         "output": "[[-1.0, 1.0], [-2.0, 2.0]]",
         "explanation": "每行均值分别为2和4。keepdim=True保留[B,1]，减法沿每行的特征维广播。"
       },
@@ -7560,7 +7789,9 @@
     "prerequisites": [
       "张量形状与索引"
     ],
-    "estimatedMinutes": 15
+    "estimatedMinutes": 15,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "specific-official-sections-plus-labelled-course-index"
   },
   {
     "id": "pt06",
@@ -7572,7 +7803,7 @@
     "minutes": 25,
     "runtime": "torch",
     "tag": "stable_softmax",
-    "intro": "直接对大 logits 取 exp 可能溢出。每行先减去最大值不会改变 softmax，因为分子分母同时乘同一常数；最大指数变成0，其余不大于0。",
+    "intro": "直接对大logits取exp可能溢出。每行先减去最大值不会改变softmax，因为分子分母的公共指数因子会抵消。中心化后的最大logit为0，其余不大于0，所以取exp后最大值为1。",
     "example": "import torch\nx=torch.tensor([[1000.,1001.]])\nz=x-x.max(dim=-1,keepdim=True).values\nprint(z.exp())\n",
     "cpp": "把已有的编程思路迁移过来；优先理解对象、输入输出约定和边界行为。",
     "visual": "tensor",
@@ -7645,15 +7876,15 @@
     "teaching": [
       {
         "title": "为什么要学",
-        "body": "直接对大 logits 取 exp 可能溢出。每行先减去最大值不会改变 softmax，因为分子分母同时乘同一常数；最大指数变成0，其余不大于0。"
+        "body": "直接对大logits取exp可能溢出。每行先减去最大值不会改变softmax，因为分子分母的公共指数因子会抵消。中心化后的最大logit为0，其余不大于0，所以取exp后最大值为1。"
       },
       {
-        "title": "把过程拆开",
-        "body": "沿最后一维取最大值，keepdim=True 方便广播。 对中心化值取 exp，再除以沿最后一维的总和。"
+        "title": "按本题接口写实现",
+        "body": "沿最后一维取最大值m并keepdim=True，计算z=x-m，再令e=exp(z)，最后e/e.sum(-1,keepdim=True)。同一行的公共指数因子在分子分母抵消，所以概率不因平移改变。"
       },
       {
-        "title": "边界与检查",
-        "body": "不能直接调用 torch.softmax 或 F.softmax；检查大数、负数、相同值与三维输入。 最后一维非空且元素有限，这是本题手写公式的输入约定。"
+        "title": "用本题的边界核对",
+        "body": "输入有限且最后一维非空。用1000级正数、负大数、相同值、单类别和三维张量核对稳定性与shape；结果应保留梯度。本题练习手写公式，不直接调用现成softmax。"
       }
     ],
     "examples": [
@@ -7676,11 +7907,13 @@
     "resources": [
       {
         "title": "PyTorch：Tensors",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -7732,6 +7965,8 @@
       "张量形状与索引"
     ],
     "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
     "forbiddenCalls": [
       "softmax"
     ]
@@ -7816,12 +8051,12 @@
         "body": "log(sum(exp(x))) 也会先溢出。把最大值 m 提出来，可写成 m+log(sum(exp(x-m)))。本题输出沿最后一维归约后的形状，不保留该维。"
       },
       {
-        "title": "把过程拆开",
-        "body": "先沿最后一维取最大值，暂时保留维度以便相减。 对中心化值 exp、sum、log，再加回 m。"
+        "title": "按本题接口写实现",
+        "body": "计算m=x.max(-1,keepdim=True).values，再求m+log(sum(exp(x-m)))。中间归约保留维度以便广播；最后只squeeze(-1)，使输出恰好删除原来的最后一维。"
       },
       {
-        "title": "边界与检查",
-        "body": "最后 squeeze(-1) 只去掉被归约的那一维；不能用无参数 squeeze 误删batch维。 最后一维非空且元素有限，这是本题手写公式的输入约定。"
+        "title": "用本题的边界核对",
+        "body": "输入有限且最后一维非空。一维输入归约成标量张量，[1,D]输入则得到[1]；无参数squeeze会把batch=1也删掉。用正负大数检查稳定性，并把减去的最大值加回来。"
       }
     ],
     "examples": [
@@ -7844,11 +8079,13 @@
     "resources": [
       {
         "title": "PyTorch：Tensors",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -7900,6 +8137,8 @@
       "张量形状与索引"
     ],
     "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
     "forbiddenCalls": [
       "logsumexp"
     ]
@@ -7995,12 +8234,16 @@
         "body": "分类交叉熵可写成 logsumexp(logits)-目标类别logit。忽略标签时，应只在有效样本上求平均。全部被忽略也要返回与输入计算图相连的零，才能安全 backward。"
       },
       {
-        "title": "把过程拆开",
-        "body": "先取 labels!=ignore_index 的有效行，再进行目标索引。 用 torch.logsumexp 减目标logit，再对有效行求mean。"
+        "title": "最小先导：同一张计算图里的零",
+        "body": "训练中的logits原本通过张量运算连接着模型参数。loss.backward()沿这条运算关系计算参数梯度；本节先知道这一点即可。logits.sum()*0虽然数值为0，仍保留到logits的连接；单独torch.tensor(0.)通常不需要梯度，也不连接logits，不能让梯度沿它回到模型。第9章会系统讲requires_grad、计算图和backward；这里先用“保留运算连接”的写法处理全部忽略的批次。"
       },
       {
-        "title": "边界与检查",
-        "body": "全无效时返回 logits.sum()*0。不要对 -100 直接做类别索引；不要调用现成 cross_entropy。"
+        "title": "按本题接口写实现",
+        "body": "先建立valid=labels!=ignore_index并过滤行，再用有效标签选取目标logit。每行交叉熵是logsumexp(有效logits)-目标logit，最后只对有效行取mean；不能先拿-100作类别索引。"
+      },
+      {
+        "title": "用本题的边界核对",
+        "body": "全部忽略或空批次时，有限logits的sum()*0提供与输入图连接的零；这不是修复模型NaN的办法。检查混合有效/忽略标签、只按有效行平均、以及零损失仍可反向。本题不直接调用现成cross_entropy。"
       }
     ],
     "examples": [
@@ -8022,12 +8265,14 @@
     ],
     "resources": [
       {
-        "title": "PyTorch：Tensors",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html"
+        "title": "PyTorch 官方教程：张量、函数与计算图（本节先导）",
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html#tensors-functions-and-computational-graph",
+        "scope": "official-section"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -8076,9 +8321,12 @@
       "解释一次失败的原因"
     ],
     "prerequisites": [
-      "张量形状与索引"
+      "已学张量形状与索引、pt07 数值稳定的 logsumexp",
+      "先读本节最小计算图先导：与输入相连的零和独立常量；t3 稍后系统练习自动微分"
     ],
     "estimatedMinutes": 35,
+    "prerequisiteAuditScope": "inline-primer-path-repair",
+    "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
     "forbiddenCalls": [
       "cross_entropy"
     ]
@@ -8187,12 +8435,12 @@
         "body": "多头注意力常把 [B,T,D] 变为 [B,H,T,D/H]。reshape 负责拆分特征维，permute 负责交换 head 与 token 轴。只做reshape会保持元素顺序，却不等于轴交换。"
       },
       {
-        "title": "把过程拆开",
-        "body": "验证 heads 为正且 D 能整除 heads，不满足抛ValueError。 先 reshape(B,T,H,D/H)，再 permute(0,2,1,3)。"
+        "title": "按本题接口写实现",
+        "body": "把[B,T,D]先reshape为[B,T,H,D/H]，此时每个token的特征仍在一起；再permute(0,2,1,3)交换token与head轴，得到[B,H,T,D/H]。"
       },
       {
-        "title": "边界与检查",
-        "body": "支持非连续输入；用可追踪编号检查每个token的特征是否仍然成组。"
+        "title": "用本题的边界核对",
+        "body": "先拒绝H<=0或D不能整除H。用arange编号检查每个token在各head中拿到哪段特征，再测试非连续输入。直接reshape(B,H,T,D/H)只有shape看起来相同，元素的语义归属可能已经错位。"
       }
     ],
     "examples": [
@@ -8215,11 +8463,13 @@
     "resources": [
       {
         "title": "PyTorch：Tensors",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -8270,7 +8520,9 @@
     "prerequisites": [
       "张量形状与索引"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "pt10",
@@ -8353,12 +8605,12 @@
         "body": "注意力先计算每个query与全部key的匹配分数，除以 sqrt(D)，沿key轴归一化，再加权求value。key长度与query长度可以不同，value特征宽度也可以不同。"
       },
       {
-        "title": "把过程拆开",
-        "body": "分数是 q@k.transpose(-1,-2)/sqrt(D)，形状 [B,Tq,Tk]。 softmax 必须沿最后的key维，再与 v 相乘。"
+        "title": "按本题接口写实现",
+        "body": "计算q@k.transpose(-1,-2)/sqrt(D)，分数shape为[B,Tq,Tk]。沿最后的key轴做softmax，为每个query分配一组key权重；再乘v[B,Tk,Dv]，得到[B,Tq,Dv]。"
       },
       {
-        "title": "边界与检查",
-        "body": "检查 Tq≠Tk 与 Dv≠D 的情况，不能依赖全部维度恰好相同。"
+        "title": "用本题的边界核对",
+        "body": "测试Tq和Tk不同、Dv和D不同的情况，避免各维碰巧相同掩盖错误。零分数时输出应是全部value的均值；改变query应影响权重，并保持计算图。本题不调用现成注意力函数。"
       }
     ],
     "examples": [
@@ -8381,11 +8633,13 @@
     "resources": [
       {
         "title": "PyTorch：Tensors",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -8437,6 +8691,8 @@
       "张量形状与索引"
     ],
     "estimatedMinutes": 35,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
     "forbiddenCalls": [
       "scaled_dot_product_attention"
     ]
@@ -8449,7 +8705,7 @@
     "minutes": 15,
     "runtime": "torch",
     "intro": "requires_grad=True 告诉 PyTorch 记录运算。对标量结果调用 backward()，梯度会累积在输入的 .grad 中。每次练习创建新张量，就不会混入之前的梯度。",
-    "example": "import torch\nimport torch\nx = torch.tensor(3., requires_grad=True)\ny = x ** 2\ny.backward()\nprint(x.grad.item())  # 6.0",
+    "example": "import torch\nx = torch.tensor(3., requires_grad=True)\ny = x ** 2\ny.backward()\nprint(x.grad.item())  # 6.0",
     "cpp": "item() 把单元素张量变成 Python 数值。梯度说明输入稍微增加时，结果怎样变化。",
     "visual": "gradient",
     "quiz": {
@@ -8506,12 +8762,14 @@
     "kind": "实现",
     "resources": [
       {
-        "title": "PyTorch：自动微分",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html"
+        "title": "PyTorch 官方教程：计算梯度",
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html#computing-gradients",
+        "scope": "official-section"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "teaching": [
@@ -8520,20 +8778,20 @@
         "body": "requires_grad=True 告诉 PyTorch 记录运算。对标量结果调用 backward()，梯度会累积在输入的 .grad 中。每次练习创建新张量，就不会混入之前的梯度。"
       },
       {
-        "title": "逐步写出来",
-        "body": "先写出输入、输出与变量的含义，再把操作逐句翻译成代码。item() 把单元素张量变成 Python 数值。梯度说明输入稍微增加时，结果怎样变化。"
+        "title": "按本题接口写实现",
+        "body": "主示例与第一概念题先用y=x²说明求导：x=3时函数值9、梯度6。完整代码题改为y=x²+3x，因此导数为2x+3；创建浮点叶子x，构造该损失，backward后返回x.grad.item()。"
       },
       {
-        "title": "检查与迁移",
-        "body": "运行示例验证直觉，再提交测试。通过后换一个输入，解释哪里会变化、哪里保持不变。"
+        "title": "用本题的边界核对",
+        "body": "明确区分函数值、梯度和所选函数：完整题x=2时函数值10、梯度7；不能照搬x²的梯度4。每次调用新建叶子，检查0与负输入；不要先把损失item()成Python数值再求导。"
       }
     ],
     "examples": [
       {
         "title": "跟踪已有例子",
-        "code": "import torch\nimport torch\nx = torch.tensor(3., requires_grad=True)\ny = x ** 2\ny.backward()\nprint(x.grad.item())  # 6.0\n",
+        "code": "import torch\nx = torch.tensor(3., requires_grad=True)\ny = x ** 2\ny.backward()\nprint(x.grad.item())  # 6.0\n",
         "output": "6.0",
-        "explanation": "先按行预测结果，再用「运行示例」验证。注意变量赋值或张量形状如何改变。"
+        "explanation": "本例只对y=x²求导：x=3时函数值为9、梯度为6。完整代码题用y=x²+3x，同在x=3时函数值为18、梯度为9；必须先确认正在求导的是哪一个函数。"
       },
       {
         "title": "backward会累加梯度",
@@ -8592,7 +8850,9 @@
     "prerequisites": [
       "广播与数值稳定"
     ],
-    "estimatedMinutes": 15
+    "estimatedMinutes": 15,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "specific-official-sections-plus-labelled-course-index"
   },
   {
     "id": "pt11",
@@ -8671,12 +8931,12 @@
         "body": "backward 把新梯度加到叶子张量的 .grad 中，而不是覆盖。两份独立前向图可以先后反向，得到梯度总和；要比较单独一次的梯度，必须清空旧值并重新前向。"
       },
       {
-        "title": "把过程拆开",
-        "body": "创建浮点叶子x；先对x² backward，再对3x的独立新图 backward，记录累计梯度。 将 x.grad 置为 None 或清零，再重新计算 x² 并 backward。"
+        "title": "按本题接口写实现",
+        "body": "对同一叶子x，先由新图计算x²并backward，再由另一份新图计算3x并backward，记录累计的2x+3。随后将x.grad置None或清零，重新前向x²并backward，记录仅2x的梯度。"
       },
       {
-        "title": "边界与检查",
-        "body": "返回累计梯度与清空后的梯度。不要对已经释放的同一图反复 backward。"
+        "title": "用本题的边界核对",
+        "body": "返回两个Python数值，顺序是累计梯度、清空后的梯度。x=0能区分3和0，负数检查符号。两份独立图可以分别反向；包含已释放中间量的旧图不能直接重复backward，清梯度也不会重建旧图。"
       }
     ],
     "examples": [
@@ -8699,11 +8959,13 @@
     "resources": [
       {
         "title": "PyTorch：自动微分",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -8755,7 +9017,9 @@
     "prerequisites": [
       "广播与数值稳定"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "pt12",
@@ -8844,12 +9108,12 @@
         "body": "torch.tensor(existing_tensor) 会复制数据并建立新张量，原来的计算图关系不会保留。用 stack 合并现有标量张量，或者直接保留张量运算，才会让梯度回到原输入。"
       },
       {
-        "title": "把过程拆开",
-        "body": "求 sum(x_i²) 时直接使用 x.square().sum()。 如果逐项生成标量张量，应使用 torch.stack 而不是 torch.tensor(list_of_tensors)。"
+        "title": "按本题接口写实现",
+        "body": "把数值列表构造成float64、requires_grad=True的叶子x，直接用x.square().sum()形成损失再backward。如果逐项组合已有标量张量，用stack保留关系，而不是torch.tensor重新包装。"
       },
       {
-        "title": "边界与检查",
-        "body": "返回一维张量的梯度值，不能只手写解析导数，必须通过 backward 得到。"
+        "title": "用本题的边界核对",
+        "body": "返回x.grad这个一维张量，而非Python列表；空列表也应给空梯度张量。检查正负值与0，并实际调用autograd，不能直接写出2*x冒充求导过程。item只用于报告，不用于重建损失。"
       }
     ],
     "examples": [
@@ -8872,11 +9136,13 @@
     "resources": [
       {
         "title": "PyTorch：自动微分",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -8928,7 +9194,9 @@
     "prerequisites": [
       "广播与数值稳定"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "pt13",
@@ -9031,12 +9299,12 @@
         "body": "中心差分 [f(x+eps)-f(x-eps)]/(2eps) 可以近似导数。它适合核对自定义损失，不用于替代高效的反向传播。float64 能减少小步长下的相消误差。"
       },
       {
-        "title": "把过程拆开",
-        "body": "函数固定为 f(x)=x³+2x²-4x。用float64、requires_grad=True计算精确autograd梯度。 另用中心差分和传入的正eps估计导数。"
+        "title": "按本题接口写实现",
+        "body": "固定同一个函数f(x)=x³+2x²-4x：一条路线用float64叶子和backward取得autograd梯度；另一条路线在x.detach()的前后两点求[f(x+eps)-f(x-eps)]/(2eps)。"
       },
       {
-        "title": "边界与检查",
-        "body": "返回 (autograd梯度,数值梯度)，两者均为Python数值，不能直接代入解析公式。"
+        "title": "用本题的边界核对",
+        "body": "返回(autograd梯度,中心差分梯度)两个Python数值，数值近似必须使用传入的正eps。检查正数、0、负数和普通小数；步长过小会放大相消误差，不能简单认为越小越准，也不能两项都代解析公式。"
       }
     ],
     "examples": [
@@ -9059,11 +9327,13 @@
     "resources": [
       {
         "title": "PyTorch：自动微分",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -9114,7 +9384,9 @@
     "prerequisites": [
       "广播与数值稳定"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "pt14",
@@ -9222,12 +9494,12 @@
         "body": "全局范数把全部参数梯度当成一个长向量，先计算L2范数，再统一缩放。逐个元素截断或逐个参数各自归一化，都不是相同操作。没有梯度的参数应跳过。"
       },
       {
-        "title": "把过程拆开",
-        "body": "先收集 grad is not None 的梯度，计算合并L2范数。 系数 min(1,max_norm/(total_norm+1e-6))；用 no_grad 原地乘到所有有效grad。"
+        "title": "按本题接口写实现",
+        "body": "收集所有非None的参数梯度，把它们的平方和相加后开方得到全局L2范数。按min(1,max_norm/(原范数+1e-6))求一个共同系数，在no_grad中原地乘到每份grad。"
       },
       {
-        "title": "边界与检查",
-        "body": "返回裁剪前范数。max_norm≥0；没有梯度时返回0，不修改参数值。不能调用现成 clip_grad_norm_。"
+        "title": "用本题的边界核对",
+        "body": "返回裁剪前的Python范数，参数值本身不变。范数小于上限时不能放大梯度；max_norm=0应清成零，没有梯度时返回0。不要逐元素截断或分别归一化每个参数，也不调用现成clip_grad_norm_。"
       }
     ],
     "examples": [
@@ -9250,11 +9522,13 @@
     "resources": [
       {
         "title": "PyTorch：自动微分",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -9306,6 +9580,8 @@
       "广播与数值稳定"
     ],
     "estimatedMinutes": 30,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
     "forbiddenCalls": [
       "clip_grad_norm_"
     ]
@@ -9378,12 +9654,12 @@
         "body": "多个micro-batch模拟一个大batch时，若每批使用mean loss，应该乘以本批样本数/总样本数后再backward。简单除以批次数，只在所有批次同样大时才等价。"
       },
       {
-        "title": "把过程拆开",
-        "body": "w为从0开始的浮点叶子。每批预测w*x，均方误差先求sum，再除全部样本总数。 遍历micro-batch累计梯度，中途不能清空；至少包含一个样本。"
+        "title": "按本题接口写实现",
+        "body": "本题每批x和y是一维、逐样本对应。w从0开始，先统计所有批次的总样本数；每批计算sum((w*x-y)²)/总数再backward，中途不清w.grad。"
       },
       {
-        "title": "边界与检查",
-        "body": "返回w.grad.item()。测试包含不等批次大小，不能对各批均值简单平均。"
+        "title": "用本题的边界核对",
+        "body": "最终返回w.grad.item()。用3条和1条的不等批次检查权重；再把同一数据换一种拆批方式，梯度应一致。把每批mean简单除以批次数只适用于等大批次，不能替代本题整体mean。"
       }
     ],
     "examples": [
@@ -9406,11 +9682,13 @@
     "resources": [
       {
         "title": "PyTorch：自动微分",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -9462,7 +9740,9 @@
     "prerequisites": [
       "广播与数值稳定"
     ],
-    "estimatedMinutes": 30
+    "estimatedMinutes": 30,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "t4",
@@ -9472,7 +9752,7 @@
     "minutes": 20,
     "runtime": "torch",
     "intro": "nn.Module 是模型的基类。__init__ 保存层，forward 描述输入怎样变成输出。nn.Linear(3,2) 把每条样本的 3 个特征映射为 2 个输出。",
-    "example": "import torch\nimport torch\nfrom torch import nn\n\nclass MyModel(nn.Module):\n    def __init__(self):\n        super().__init__()\n        self.layer = nn.Linear(3, 2)\n\n    def forward(self, x):\n        return self.layer(x)\nm=MyModel()\nprint(list(m(torch.ones(1,3)).shape))\n",
+    "example": "import torch\nfrom torch import nn\n\nclass MyModel(nn.Module):\n    def __init__(self):\n        super().__init__()\n        self.layer = nn.Linear(3, 2)\n\n    def forward(self, x):\n        return self.layer(x)\nm=MyModel()\nprint(list(m(torch.ones(1,3)).shape))\n",
     "cpp": "self 类似 this；super().__init__() 初始化父类。调用 model(x) 会进入 forward。",
     "visual": "tensor",
     "quiz": {
@@ -9541,12 +9821,9 @@
     "kind": "实现",
     "resources": [
       {
-        "title": "PyTorch：构建神经网络",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html"
-      },
-      {
-        "title": "PyTorch：Dataset 与 DataLoader",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html"
+        "title": "PyTorch 官方教程：nn.Linear",
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html#nn-linear",
+        "scope": "official-section"
       }
     ],
     "teaching": [
@@ -9555,26 +9832,26 @@
         "body": "nn.Module 是模型的基类。__init__ 保存层，forward 描述输入怎样变成输出。nn.Linear(3,2) 把每条样本的 3 个特征映射为 2 个输出。"
       },
       {
-        "title": "逐步写出来",
-        "body": "先写出输入、输出与变量的含义，再把操作逐句翻译成代码。self 类似 this；super().__init__() 初始化父类。调用 model(x) 会进入 forward。"
+        "title": "按本题接口写实现",
+        "body": "定义继承nn.Module的TinyModel，在__init__先super().__init__()，再把nn.Linear(3,2)存成实例属性；forward只调用这个层。输入[B,3]映射为[B,2]，batch轴不变。"
       },
       {
-        "title": "检查与迁移",
-        "body": "运行示例验证直觉，再提交测试。通过后换一个输入，解释哪里会变化、哪里保持不变。"
+        "title": "用本题的边界核对",
+        "body": "weight形状[2,3]有6个数，bias形状[2]有2个数，共8个注册参数；batch大小改变不会改变参数数。检查单样本仍为[1,2]，调用model(x)的结果能参与求导；普通Tensor属性不等于Parameter。"
       }
     ],
     "examples": [
       {
         "title": "实例化后调用模型",
-        "code": "import torch\nimport torch\nfrom torch import nn\n\nclass MyModel(nn.Module):\n    def __init__(self):\n        super().__init__()\n        self.layer = nn.Linear(3, 2)\n\n    def forward(self, x):\n        return self.layer(x)\nm=MyModel()\nprint(list(m(torch.ones(1,3)).shape))\n",
+        "code": "import torch\nfrom torch import nn\n\nclass MyModel(nn.Module):\n    def __init__(self):\n        super().__init__()\n        self.layer = nn.Linear(3, 2)\n\n    def forward(self, x):\n        return self.layer(x)\nm=MyModel()\nprint(list(m(torch.ones(1,3)).shape))\n",
         "output": "[1, 2]",
         "explanation": "输入一条样本、三个特征；Linear(3,2)将最后一维映射为两个输出，保留样本维。"
       },
       {
-        "title": "只有Parameter会自动注册",
+        "title": "普通Tensor属性不是可训练参数",
         "code": "import torch\nclass M(torch.nn.Module):\n    def __init__(self):\n        super().__init__()\n        self.w=torch.ones(2)\nprint(list(M().parameters()))\n",
         "output": "[]",
-        "explanation": "普通张量属性不是自动注册的可训练参数。"
+        "explanation": "self.w只是普通Tensor，不会自动出现在parameters()里。保存nn.Linear等子模块会注册其Parameter；这里区分的是普通张量属性与可训练参数，并不是说Module没有其他注册机制。"
       }
     ],
     "pitfalls": [
@@ -9627,7 +9904,9 @@
     "prerequisites": [
       "梯度与训练排错"
     ],
-    "estimatedMinutes": 20
+    "estimatedMinutes": 20,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "specific-official-sections-plus-labelled-course-index"
   },
   {
     "id": "pt16",
@@ -9706,12 +9985,12 @@
         "body": "Sequential 把上一层的输出传给下一层。分类模型最后通常输出原始logits，交叉熵内部会完成稳定归一化。提前softmax会改变损失的输入含义。"
       },
       {
-        "title": "把过程拆开",
-        "body": "返回 Linear→ReLU→Linear 的nn.Module，所有维度来自函数参数。 最后输出logits，不加softmax。Linear默认有bias。"
+        "title": "按本题接口写实现",
+        "body": "make_mlp按传入维度组装Linear(in_dim,hidden)→ReLU→Linear(hidden,classes)，两层均含bias并注册在返回的nn.Module中。forward结果为原始logits，不在最后额外softmax。"
       },
       {
-        "title": "边界与检查",
-        "body": "检查参数注册与batch=1的形状；两层参数数应为 in_dim*hidden+hidden+hidden*classes+classes。"
+        "title": "用本题的边界核对",
+        "body": "检查不同in_dim/hidden/classes以及batch=1的输出维。参数总数应为in_dim*hidden+hidden+hidden*classes+classes；分类交叉熵处理logits的稳定归一化，argmax或先softmax都会改变训练接口。"
       }
     ],
     "examples": [
@@ -9734,11 +10013,13 @@
     "resources": [
       {
         "title": "PyTorch：构建神经网络",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "PyTorch：Dataset 与 DataLoader",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html",
+        "scope": "chapter-reference"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -9789,7 +10070,9 @@
     "prerequisites": [
       "梯度与训练排错"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "pt17",
@@ -9873,12 +10156,12 @@
         "body": "Dataset描述怎样取一条样本，DataLoader负责组批与打乱。构造时clone输入，返回时再clone样本，能隔离外部修改，避免实验数据被悄悄污染。"
       },
       {
-        "title": "把过程拆开",
-        "body": "继承torch.utils.data.Dataset，先验证x与y首维长度一致。 保存两者clone；__len__返回样本数，__getitem__返回两项的clone。"
+        "title": "按本题接口写实现",
+        "body": "FeatureDataset先验证x与y的首维样本数一致，再分别clone保存。__len__返回样本数，__getitem__(i)返回本条特征与标签各自的clone；Dataset负责单条取样，DataLoader负责组批与打乱。"
       },
       {
-        "title": "边界与检查",
-        "body": "长度不一致抛ValueError。外部修改原始输入或取出的样本，不应影响数据集。"
+        "title": "用本题的边界核对",
+        "body": "长度不一致抛ValueError。构造后修改原x/y，以及修改取出的特征/标签，都不能污染内部数据；只保存引用或只在构造时clone仍不够。取单条样本与完整batch的shape也要区分。"
       }
     ],
     "examples": [
@@ -9901,11 +10184,13 @@
     "resources": [
       {
         "title": "PyTorch：构建神经网络",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "PyTorch：Dataset 与 DataLoader",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html",
+        "scope": "chapter-reference"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -9956,7 +10241,9 @@
     "prerequisites": [
       "梯度与训练排错"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "pt18",
@@ -10066,12 +10353,12 @@
         "body": "collate_fn接收一组样本。等长特征用stack新建batch轴，标签统一转成long。cat连接已有轴，不会自动给你新增batch维。"
       },
       {
-        "title": "把过程拆开",
-        "body": "空样本列表抛ValueError。 分别收集特征与标签，特征torch.stack，标签torch.tensor(...,dtype=torch.long)。"
+        "title": "按本题接口写实现",
+        "body": "collate_samples接收一组(等长一维特征,整数标签)。将特征用torch.stack新增batch轴，标签用torch.tensor(...,dtype=torch.long)汇成[B]；返回(特征[B,D],标签[B])。"
       },
       {
-        "title": "边界与检查",
-        "body": "单样本仍是[1,D]；返回batch不可与输入特征共享存储。"
+        "title": "用本题的边界核对",
+        "body": "空样本列表抛ValueError。B=1时仍需[1,D]与[1]，不能随意squeeze；组批结果应有独立存储，修改batch不能影响输入特征。cat只拼已有轴，不会自动形成所需batch轴。"
       }
     ],
     "examples": [
@@ -10094,11 +10381,13 @@
     "resources": [
       {
         "title": "PyTorch：构建神经网络",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "PyTorch：Dataset 与 DataLoader",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html",
+        "scope": "chapter-reference"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -10149,7 +10438,9 @@
     "prerequisites": [
       "梯度与训练排错"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "pt19",
@@ -10222,12 +10513,12 @@
         "body": "迁移学习可冻结backbone、仅更新head。requires_grad控制参数是否求导，优化器参数列表控制哪些参数会更新。eval模式改变某些层的行为，并不自动冻结参数。"
       },
       {
-        "title": "把过程拆开",
-        "body": "模型已含backbone和head子模块。 backbone参数requires_grad设False，head全部设True。"
+        "title": "按本题接口写实现",
+        "body": "遍历model.backbone.parameters()把requires_grad设False，遍历model.head.parameters()把requires_grad设True，然后返回head参数的list供优化器使用；包含之前已冻结的head也必须重新启用。"
       },
       {
-        "title": "边界与检查",
-        "body": "返回head参数的list，用于创建优化器；不要用model.eval代替冻结。"
+        "title": "用本题的边界核对",
+        "body": "同时核对主体全部冻结、head全部可求导，以及返回的是原head参数而非Tensor副本。eval只改变Dropout等层行为，不自动冻结参数；优化器接收哪些参数也必须单独管理。"
       }
     ],
     "examples": [
@@ -10250,11 +10541,13 @@
     "resources": [
       {
         "title": "PyTorch：构建神经网络",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "PyTorch：Dataset 与 DataLoader",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html",
+        "scope": "chapter-reference"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -10305,7 +10598,9 @@
     "prerequisites": [
       "梯度与训练排错"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "pt20",
@@ -10402,12 +10697,12 @@
         "body": "预测需要eval和no_grad。若预测前模型在训练，结束后应恢复train，否则后续Dropout会悄悄失效。保存原模式并在finally中恢复，也能覆盖前向失败的情况。"
       },
       {
-        "title": "把过程拆开",
-        "body": "先保存was_training=model.training，再调用eval。 在with torch.no_grad()中前向并返回输出。"
+        "title": "按本题接口写实现",
+        "body": "预测前保存was_training=model.training，再model.eval()，在with torch.no_grad()里调用model(x)。使用try/finally，使返回输出或前向抛错后都执行model.train(was_training)。"
       },
       {
-        "title": "边界与检查",
-        "body": "finally内model.train(was_training)，保证原状态恢复。"
+        "title": "用本题的边界核对",
+        "body": "用Dropout检查eval行为，用requires_grad输入检查前向是否真的关闭图记录，再分别验证原train和原eval能恢复。只有x.grad为None并不能证明没有建图；finally也要覆盖模型抛异常的路径。"
       }
     ],
     "examples": [
@@ -10430,11 +10725,13 @@
     "resources": [
       {
         "title": "PyTorch：构建神经网络",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "PyTorch：Dataset 与 DataLoader",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html",
+        "scope": "chapter-reference"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -10486,7 +10783,9 @@
     "prerequisites": [
       "梯度与训练排错"
     ],
-    "estimatedMinutes": 30
+    "estimatedMinutes": 30,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "t5",
@@ -10553,12 +10852,9 @@
     "kind": "实现",
     "resources": [
       {
-        "title": "PyTorch：优化训练循环",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html"
-      },
-      {
-        "title": "PyTorch：保存与加载模型",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html"
+        "title": "PyTorch 官方教程：优化器与更新步骤",
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html#optimizer",
+        "scope": "official-section"
       }
     ],
     "teaching": [
@@ -10567,12 +10863,12 @@
         "body": "一次训练步骤是：清空旧梯度 → 前向计算 → 计算损失 → 反向传播 → 更新参数。优化器负责修改参数；backward 本身只计算梯度。"
       },
       {
-        "title": "逐步写出来",
-        "body": "先写出输入、输出与变量的含义，再把操作逐句翻译成代码。zero_grad 防止旧梯度继续累积。学习率控制参数每次走多远。"
+        "title": "按本题接口写实现",
+        "body": "update_weight(start)创建需要梯度的浮点标量w，交给SGD(lr=0.1)。按zero_grad→计算(w-3)²→backward→step执行一次；backward给出2(w-3)，step才按w-=0.1*grad修改参数。"
       },
       {
-        "title": "检查与迁移",
-        "body": "运行示例验证直觉，再提交测试。通过后换一个输入，解释哪里会变化、哪里保持不变。"
+        "title": "用本题的边界核对",
+        "body": "从0开始应更新到0.6，从5开始到4.6，已经在3则保持3。返回更新后的w.item()，不是更新前loss或梯度；若把此步骤放入循环，每次独立更新都要防止旧梯度意外累积。"
       }
     ],
     "examples": [
@@ -10639,7 +10935,9 @@
     "prerequisites": [
       "模型与数据加载"
     ],
-    "estimatedMinutes": 20
+    "estimatedMinutes": 20,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "specific-official-sections-plus-labelled-course-index"
   },
   {
     "id": "pt21",
@@ -10723,12 +11021,12 @@
         "body": "一轮损失应将所有误差平方合并后除以总元素数。先算每批mean再等权平均，在尾批较小时会产生偏差。评估时还要关闭梯度并临时进入eval。"
       },
       {
-        "title": "把过程拆开",
-        "body": "保存模型模式，并在eval、no_grad中遍历(x,y)批次。 累计平方误差sum与目标元素数，而不是batch数量。"
+        "title": "按本题接口写实现",
+        "body": "epoch_mse保存原模式，eval+no_grad遍历(x,y)，累计所有预测误差的平方sum和y.numel()。最后总平方误差/总目标元素数，而不是先算每批mean再对批次平均。"
       },
       {
-        "title": "边界与检查",
-        "body": "无数据返回0.0；finally恢复原模式。返回Python浮点。"
+        "title": "用本题的边界核对",
+        "body": "用尾批大小不同的数据检查加权；没有目标元素时返回Python 0.0。预测与y须按同一目标形状对应，避免广播扩大误差矩阵。成功和异常都在finally恢复原模式，不进行backward或参数更新。"
       }
     ],
     "examples": [
@@ -10751,11 +11049,13 @@
     "resources": [
       {
         "title": "PyTorch：优化训练循环",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "PyTorch：保存与加载模型",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html",
+        "scope": "chapter-reference"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -10806,7 +11106,9 @@
     "prerequisites": [
       "模型与数据加载"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "pt22",
@@ -10898,12 +11200,12 @@
         "body": "准确率不能覆盖所有分类表现。以1为正类，precision=TP/(TP+FP)，recall=TP/(TP+FN)，F1=2TP/(2TP+FP+FN)。本题约定零分母时返回0。"
       },
       {
-        "title": "把过程拆开",
-        "body": "输入logits用>=0映射为正类，标签是0或1。 用布尔张量统计TP、FP、FN，转Python数值后计算各指标。"
+        "title": "按本题接口写实现",
+        "body": "以logits>=0判为正类，以labels==1作真实正类，利用布尔交集统计TP、FP、FN。转成Python计数后分别算precision=TP/(TP+FP)、recall=TP/(TP+FN)、F1=2TP/(2TP+FP+FN)。"
       },
       {
-        "title": "边界与检查",
-        "body": "空输入以及没有预测正例时也需要明确输出，不能出现NaN。"
+        "title": "用本题的边界核对",
+        "body": "每个指标单独保护零分母并按本题返回0；空输入同样不产生NaN。检查logit恰为0时属于正类，以及没有预测正例、没有真实正例等情况；三种指标不能用accuracy代替。"
       }
     ],
     "examples": [
@@ -10926,11 +11228,13 @@
     "resources": [
       {
         "title": "PyTorch：优化训练循环",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "PyTorch：保存与加载模型",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html",
+        "scope": "chapter-reference"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -10981,7 +11285,9 @@
     "prerequisites": [
       "模型与数据加载"
     ],
-    "estimatedMinutes": 25
+    "estimatedMinutes": 25,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "pt23",
@@ -11072,12 +11378,12 @@
         "body": "评估循环需要同时管住模式、梯度与指标聚合。CrossEntropyLoss接收logits与long标签；sum reduction便于按全部样本计算平均，而非等权平均每批结果。"
       },
       {
-        "title": "把过程拆开",
-        "body": "在eval与no_grad下迭代(x,y)，求交叉熵sum、预测正确数与样本数。 最终loss=sum_loss/count，accuracy=correct/count，空集两项为0。"
+        "title": "按本题接口写实现",
+        "body": "evaluate_classifier在eval+no_grad下用logits[B,C]和long标签[B]求交叉熵sum，累计argmax(1)预测正确数和样本数；最终用总样本数分别平均loss与accuracy。"
       },
       {
-        "title": "边界与检查",
-        "body": "finally恢复原模式；不能更新参数或生成验证输入梯度。"
+        "title": "用本题的边界核对",
+        "body": "空数据两项为Python 0；尾批大小不同时仍按每条样本同权聚合。不要先argmax再算交叉熵，不要在验证时反向或step；保存原模式并在finally恢复，前向期间确实要关闭梯度记录。"
       }
     ],
     "examples": [
@@ -11100,11 +11406,13 @@
     "resources": [
       {
         "title": "PyTorch：优化训练循环",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "PyTorch：保存与加载模型",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html",
+        "scope": "chapter-reference"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -11155,7 +11463,9 @@
     "prerequisites": [
       "模型与数据加载"
     ],
-    "estimatedMinutes": 35
+    "estimatedMinutes": 35,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "pt24",
@@ -11228,12 +11538,12 @@
         "body": "checkpoint通常包含模型参数、优化器状态和epoch。state_dict描述这些数值。保存后若继续训练，最佳状态的内存副本必须深复制；磁盘checkpoint则在保存时写入数值快照。"
       },
       {
-        "title": "把过程拆开",
-        "body": "save_checkpoint(model,optimizer,epoch,path) 用torch.save保存model、optimizer、epoch三个键。 load_checkpoint按CPU、weights_only=True加载，再恢复两个state_dict，返回epoch。"
+        "title": "按本题接口写实现",
+        "body": "save_checkpoint用torch.save保存model.state_dict()、optimizer.state_dict()与epoch三个键。load_checkpoint按CPU和weights_only=True加载，分别恢复模型与优化器状态，再返回保存的epoch。"
       },
       {
-        "title": "边界与检查",
-        "body": "测试会在保存后修改参数，再加载检查是否恢复。返回epoch而不是下一轮编号。"
+        "title": "用本题的边界核对",
+        "body": "保存后先改模型参数或优化器学习率，再加载检查恢复；动量等状态也属于优化器而非模型。返回的是保存轮数，不擅自加1。磁盘保存已写入快照；若只在内存缓存最佳state_dict，需要deepcopy隔离后续更新。"
       }
     ],
     "examples": [
@@ -11256,11 +11566,13 @@
     "resources": [
       {
         "title": "PyTorch：优化训练循环",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "PyTorch：保存与加载模型",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html",
+        "scope": "chapter-reference"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -11311,7 +11623,9 @@
     "prerequisites": [
       "模型与数据加载"
     ],
-    "estimatedMinutes": 30
+    "estimatedMinutes": 30,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "pt25",
@@ -11398,12 +11712,12 @@
         "body": "训练步骤应该能重复调用而不累积上一轮梯度。先train、zero_grad，再前向、交叉熵、backward和step。返回Python损失值用于记录，但不能在反向前用item替代张量loss。"
       },
       {
-        "title": "把过程拆开",
-        "body": "设置model.train()，再optimizer.zero_grad。 使用原始logits与long标签计算交叉熵，调用backward和step。"
+        "title": "按本题接口写实现",
+        "body": "train_step先model.train()，再optimizer.zero_grad()，用原始分类logits与long标签计算交叉熵张量loss，接着backward和step。最后返回Python loss值供日志使用。"
       },
       {
-        "title": "边界与检查",
-        "body": "最后返回loss.item()；旧梯度可能预先存在，测试会检查清空行为。"
+        "title": "用本题的边界核对",
+        "body": "预先放入旧梯度也应被清掉，原eval模型需切回train。可以另存metric=loss.item()用于日志，但不能用loss=loss.item()覆盖仍要反向的张量；item无需机械地等到backward后，关键是保留loss的图。"
       }
     ],
     "examples": [
@@ -11426,11 +11740,13 @@
     "resources": [
       {
         "title": "PyTorch：优化训练循环",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
         "title": "PyTorch：保存与加载模型",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html",
+        "scope": "chapter-reference"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -11482,7 +11798,9 @@
     "prerequisites": [
       "模型与数据加载"
     ],
-    "estimatedMinutes": 30
+    "estimatedMinutes": 30,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "t6",
@@ -11547,12 +11865,14 @@
     "kind": "实现",
     "resources": [
       {
-        "title": "PyTorch：优化训练循环",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html"
+        "title": "PyTorch 官方教程：训练与评估循环",
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html#full-implementation",
+        "scope": "official-section"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "teaching": [
@@ -11561,12 +11881,12 @@
         "body": "把一次更新放进循环，就得到训练过程。这里拟合 y=2x+1：模型只有斜率 w 和截距 b，均方误差把预测与目标联系起来。"
       },
       {
-        "title": "逐步写出来",
-        "body": "先写出输入、输出与变量的含义，再把操作逐句翻译成代码。先用小任务确认训练循环确实能学到参数，再扩大到更复杂的数据与网络。"
+        "title": "按本题接口写实现",
+        "body": "按题面创建一维x=[-2,-1,0,1,2]与同形y=2*x+1，w、b均为需要梯度的零标量。SGD学习率0.1，循环100次，每次清梯度、算mean((w*x+b-y)²)、backward再step。"
       },
       {
-        "title": "检查与迁移",
-        "body": "运行示例验证直觉，再提交测试。通过后换一个输入，解释哪里会变化、哪里保持不变。"
+        "title": "用本题的边界核对",
+        "body": "返回训练后的(w.item(),b.item())，应分别接近2和1，而不是只确认没报错。预测与目标必须同形，不能混用[N]和[N,1]造成[N,N]广播。代码里step前的loss与交互中更新后参数的当前loss属于相邻两组参数，要分清记录时点。"
       }
     ],
     "examples": [
@@ -11574,7 +11894,7 @@
         "title": "先构造可检查的数据",
         "code": "import torch\nx=torch.tensor([[1.],[2.],[3.]])\ny=2*x+1\nprint(y.tolist())\nprint(list(x.shape),list(y.shape))\n",
         "output": "[[3.0], [5.0], [7.0]]\n[3, 1] [3, 1]",
-        "explanation": "三条样本、每条一个特征；标签也保留 [N,1]，防止预测与标签意外广播成 [N,N]。"
+        "explanation": "此例用[N,1]特征和同形标签演示形状检查。完整代码题使用一维x、y；两种表示都可描述数据，但不要混用[N]与[N,1]相减，否则会意外广播成[N,N]。"
       },
       {
         "title": "模型误差怎样定义",
@@ -11633,7 +11953,9 @@
     "prerequisites": [
       "训练、评估与恢复"
     ],
-    "estimatedMinutes": 35
+    "estimatedMinutes": 35,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "specific-official-sections-plus-labelled-course-index"
   },
   {
     "id": "pt26",
@@ -11725,7 +12047,7 @@
     "solution": "import torch\ndef fit_binary(x,y,steps=100,lr=0.1):\n    m=torch.nn.Linear(x.shape[1],1).to(x)\n    torch.nn.init.zeros_(m.weight)\n    torch.nn.init.zeros_(m.bias)\n    o=torch.optim.SGD(m.parameters(),lr=lr)\n    losses=[]\n    for _ in range(steps):\n        o.zero_grad()\n        loss=torch.nn.functional.binary_cross_entropy_with_logits(m(x).squeeze(-1),y.to(dtype=x.dtype))\n        losses.append(loss.item())\n        loss.backward()\n        o.step()\n    return {\"weight\":m.weight.detach().flatten().tolist(),\"bias\":m.bias.item(),\"losses\":losses}\n",
     "hints": [
       "创建Linear(D,1)，权重和bias都初始化0，用SGD与给定lr。 用 Linear(...).to(x) 匹配输入dtype。",
-      "完整batch训练steps轮，预测squeeze(-1)，labels转float，每轮记录更新前loss.item。",
+      "完整batch训练steps轮，预测squeeze(-1)，目标转为x.dtype；每轮记录更新前loss.item()，再backward和step。",
       "返回weight、bias、losses三个键，weight是一维Python列表，bias是数值，losses长度等于steps。"
     ],
     "teaching": [
@@ -11734,12 +12056,12 @@
         "body": "二分类线性模型输出一个logit，用BCEWithLogitsLoss直接训练，避免手动sigmoid后再取log造成数值不稳定。每轮记录标量loss，检查训练是否真的下降。"
       },
       {
-        "title": "把过程拆开",
-        "body": "创建Linear(D,1)，权重和bias都初始化0，用SGD与给定lr。 完整batch训练steps轮，预测squeeze(-1)，labels转float，每轮记录更新前loss.item。 Linear(...).to(x) 匹配特征的设备与dtype；目标用 y.to(dtype=x.dtype)，避免 Double/Float 不匹配。"
+        "title": "按本题接口写实现",
+        "body": "创建Linear(D,1).to(x)匹配特征dtype，权重与bias清零。每轮将输出squeeze(-1)成[B]，目标y转到x.dtype，直接用BCEWithLogitsLoss，按给定lr完成SGD；把每轮更新前的loss.item()存入列表。"
       },
       {
-        "title": "边界与检查",
-        "body": "返回weight、bias、losses三个键，weight是一维Python列表，bias是数值，losses长度等于steps。"
+        "title": "用本题的边界核对",
+        "body": "返回一维Python weight列表、数值bias和长度等于steps的losses。float32/float64输入都需匹配模型与标签；steps=0保留零参数及空曲线，lr=0不更新。单logit不先sigmoid，也不先argmax，检查损失确实下降。"
       }
     ],
     "examples": [
@@ -11762,11 +12084,13 @@
     "resources": [
       {
         "title": "PyTorch：优化训练循环",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -11817,7 +12141,9 @@
     "prerequisites": [
       "训练、评估与恢复"
     ],
-    "estimatedMinutes": 40
+    "estimatedMinutes": 40,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "pt27",
@@ -11930,12 +12256,12 @@
         "body": "混淆矩阵每行是真实类别，每列是预测类别。对每个类别分别计算F1，再对所有C类等权平均，就是macro F1；即使某类没有出现，也按本题约定计0。"
       },
       {
-        "title": "把过程拆开",
-        "body": "通过targets*C+preds编码配对，再bincount得到[C,C]矩阵。 TP是对角线，FP是列和减TP，FN是行和减TP。"
+        "title": "按本题接口写实现",
+        "body": "用targets*C+preds编码每条配对，bincount(minlength=C*C)后reshape为[C,C]，行是真实类、列是预测类。TP取对角线，FP取列和减TP，FN取行和减TP。"
       },
       {
-        "title": "边界与检查",
-        "body": "逐类2TP/(2TP+FP+FN)，零分母为0，最后对全部类别求mean。"
+        "title": "用本题的边界核对",
+        "body": "逐类F1=2TP/(2TP+FP+FN)，零分母记0，再对全部C类等权mean；未出现类也按约定占一个位置。空样本仍返回完整C×C零矩阵，结果矩阵转Python二维列表，不把macro改成按样本数加权。"
       }
     ],
     "examples": [
@@ -11958,11 +12284,13 @@
     "resources": [
       {
         "title": "PyTorch：优化训练循环",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -12013,7 +12341,9 @@
     "prerequisites": [
       "训练、评估与恢复"
     ],
-    "estimatedMinutes": 35
+    "estimatedMinutes": 35,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "pt28",
@@ -12136,12 +12466,12 @@
         "body": "序列特征是[B,T,D]，mask是[B,T]。mask要在最后增加一维以广播到特征轴；沿T求和并除有效token数，得到[B,D]的句向量。"
       },
       {
-        "title": "把过程拆开",
-        "body": "mask.unsqueeze(-1) 变成[B,T,1]，沿dim=1求和。 分母mask.sum(1,keepdim=True)得到[B,1]，clamp_min(1)。 用 masked_fill 将无效位置替换为0；不能仅乘mask，因为 NaN*0 和 Inf*0 仍是 NaN。"
+        "title": "按本题接口写实现",
+        "body": "把mask[B,T]用unsqueeze(-1)变为[B,T,1]，用masked_fill屏蔽无效特征，再沿dim=1求和得到[B,D]。分母用mask.sum(1,keepdim=True)得到[B,1]，clamp_min(1)后与分子广播相除。"
       },
       {
-        "title": "边界与检查",
-        "body": "全无效句返回零向量，空token维同样支持，保留输入梯度。"
+        "title": "用本题的边界核对",
+        "body": "全无效句和T=0都返回[B,D]零向量，B=0仍保留特征维。有效位置保证有限，无效NaN/Inf必须用替换而非乘零排除；不修改输入，并让有效位置继续参与梯度。"
       }
     ],
     "examples": [
@@ -12164,11 +12494,13 @@
     "resources": [
       {
         "title": "PyTorch：优化训练循环",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -12219,7 +12551,9 @@
     "prerequisites": [
       "训练、评估与恢复"
     ],
-    "estimatedMinutes": 30
+    "estimatedMinutes": 30,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   },
   {
     "id": "pt29",
@@ -12303,12 +12637,12 @@
         "body": "自回归模型中，第i个token只能看到0到i的key。先把未来位置分数设为负无穷，再softmax；若先softmax后置零，剩余权重没有重新归一化。"
       },
       {
-        "title": "把过程拆开",
-        "body": "q、k、v的序列长度相同，先算缩放点积分数。 创建严格上三角布尔mask，masked_fill为-inf，再沿key维softmax。"
+        "title": "按本题接口写实现",
+        "body": "先按q@k.transpose(-1,-2)/sqrt(D)形成[B,T,T]分数。创建diagonal=1的严格上三角bool mask，将未来key的分数填为-inf，再沿最后key轴softmax并乘v。"
       },
       {
-        "title": "边界与检查",
-        "body": "不能调用现成scaled_dot_product_attention；测试会改变未来value，检查前面的输出不变。"
+        "title": "用本题的边界核对",
+        "body": "当前token本身仍可见，不能连对角线也遮掉。改动未来value时，前面输出应完全不受影响；仅在softmax后把未来权重置0会破坏剩余权重归一化。本题手写实现，不直接调用现成因果注意力。"
       }
     ],
     "examples": [
@@ -12331,11 +12665,13 @@
     "resources": [
       {
         "title": "PyTorch：优化训练循环",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -12387,6 +12723,8 @@
       "训练、评估与恢复"
     ],
     "estimatedMinutes": 40,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
     "forbiddenCalls": [
       "scaled_dot_product_attention"
     ]
@@ -12476,12 +12814,12 @@
         "body": "小实验也应区分训练集与验证集。训练损失负责更新参数，验证损失只报告泛化表现。先在可控合成数据上检验流程，再迁移到真实任务。"
       },
       {
-        "title": "把过程拆开",
-        "body": "用Linear(D,2)，权重和bias清零，SGD(lr)训练epochs轮，交叉熵输入原始logits。 训练完成后切eval，在no_grad下独立计算train_loss、val_loss、val_accuracy。"
+        "title": "按本题接口写实现",
+        "body": "创建零初始化Linear(D,2)，只用train_x/train_y按给定epochs与lr完成SGD和交叉熵训练。训练后切eval，在no_grad下分别求训练损失、独立验证损失与验证accuracy，返回model和三个Python指标。"
       },
       {
-        "title": "边界与检查",
-        "body": "返回字典含model和三个Python指标；model保持eval。验证数据不可参与反向传播。"
+        "title": "用本题的边界核对",
+        "body": "返回model保持eval。验证数据不能参与反向、step或拼回训练；detach验证输入并不能阻止其标签影响模型参数。检查已知合成规则能学到，再在同一训练集下改动验证标签，确认训练后参数不随验证标签改变。"
       }
     ],
     "examples": [
@@ -12504,11 +12842,13 @@
     "resources": [
       {
         "title": "PyTorch：优化训练循环",
-        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html"
+        "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+        "scope": "chapter-reference"
       },
       {
-        "title": "ARENA：Fundamentals",
-        "url": "https://learn.arena.education/chapter0_fundamentals/"
+        "title": "ARENA：Fundamentals · 课程目录（延伸）",
+        "url": "https://learn.arena.education/chapter0_fundamentals/",
+        "scope": "course-index"
       }
     ],
     "success": "这一关已通过。回想哪些边界让你修改了实现，再尝试不看参考重写。",
@@ -12559,6 +12899,8 @@
     "prerequisites": [
       "训练、评估与恢复"
     ],
-    "estimatedMinutes": 40
+    "estimatedMinutes": 40,
+    "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+    "resourceAuditScope": "chapter-reference-category-only-not-every-claim"
   }
 ]

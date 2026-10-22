@@ -11,7 +11,10 @@ let count=0;
 for (const entry of await readdir('dist',{withFileTypes:true})) {
   if (!entry.isFile() || entry.name.startsWith('.') || entry.name.endsWith('.pyc')) continue;
   const response=await worker.fetch(new Request('https://build.example/'+entry.name));
-  assert.equal(response.status,200,entry.name);assert.equal(await response.text(),await readFile(resolve('dist',entry.name),'utf8'),entry.name+' byte-equivalent UTF-8 body');
+  assert.equal(response.status,200,entry.name);
+  const binaryType=entry.name.endsWith('.png')?'image/png':entry.name.endsWith('.ico')?'image/x-icon':null;
+  if(binaryType){assert.deepEqual(Buffer.from(await response.arrayBuffer()),await readFile(resolve('dist',entry.name)),entry.name+' exact binary bytes');assert.equal(response.headers.get('Content-Type'),binaryType);}
+  else assert.equal(await response.text(),await readFile(resolve('dist',entry.name),'utf8'),entry.name+' byte-equivalent UTF-8 body');
   assert.equal(response.headers.get('X-Content-Type-Options'),'nosniff');
   const cached=await worker.fetch(new Request('https://build.example/'+entry.name,{headers:{'If-None-Match':response.headers.get('ETag')}}));assert.equal(cached.status,304);
   const head=await worker.fetch(new Request('https://build.example/'+entry.name,{method:'HEAD'}));assert.equal(head.status,200);assert.equal(await head.text(),'');count++;

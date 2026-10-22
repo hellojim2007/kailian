@@ -131,6 +131,7 @@ print((x - x.mean(dim=1, keepdim=True)).tolist())
 ## 练习时，你会拿到什么
 
 - **完整的示例与明确契约。** 先看代码和实际输出，任务写明返回值、形状、类型及关键边界。
+- **12 个对应本课的概念实验。** 动手改变配对、阈值、形状与梯度，观察结果；其余 60 节使用各自例题、预测题和代码练习。
 - **从空白开始的编辑器。** 写完整程序、函数或实验组件；标准输入和练习附件由运行环境提供。
 - **能定位问题的反馈。** 对照实际值与期望值，查看失败验收；主线提示逐步展开，参考实现不会自动通关。
 - **可回访的学习记录。** 地图支持搜索、难度与状态筛选；代码草稿、理解题和考核尝试随学习保留。
@@ -249,10 +250,15 @@ python -X utf8 verify_api.py
 node verify_progress.mjs
 node verify_assessment_state.mjs
 node verify_progress_sync_state.mjs
+node verify_lab_alignment.mjs
+node verify_python_labs.mjs
+node verify_torch_labs.mjs
 node --test cloud/pages-auth.test.mjs cloud/verify.mjs
 ```
 
 `verify_api.py` 需要先在另一终端启动 `python server.py`。这些检查分别覆盖参考实现、例题输出、独立语义对照、考核判题、API 契约、旧进度迁移与账号同步状态。内容可靠性还依赖持续复核；发现题目问题时，欢迎附题号、输入及实际结果提交 [Issue](https://github.com/hellojim2007/kailian/issues)。[内容复核记录](CONTENT_AUDIT.md)
+
+最新一轮逐课记录：[Python 36 节](PYTHON_LESSON_REVIEW.md) · [PyTorch 36 节](TORCH_LESSON_REVIEW.md) · [交互、学习路径与资料对应关系](CONTENT_INTERACTION_AUDIT.md)。交互检查将实验绑定到精确题目 ID，未知 ID 不会回退到通用动画。
 
 </details>
 

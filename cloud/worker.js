@@ -139,7 +139,10 @@ async function handle(request, env) {
   if (!['GET', 'HEAD'].includes(request.method)) return new Response('Method not allowed', {status: 405, headers: {Allow: 'GET, HEAD'}});
   const headers = {'Content-Type': asset.type, 'Cache-Control': 'no-cache', 'ETag': asset.etag, 'X-Content-Type-Options': 'nosniff', 'Referrer-Policy': 'same-origin'};
   if (request.headers.get('If-None-Match') === asset.etag) return new Response(null, {status: 304, headers});
-  return new Response(request.method === 'HEAD' ? null : asset.body, {headers});
+  const body = request.method === 'HEAD' ? null : asset.encoding === 'base64'
+    ? Uint8Array.from(atob(asset.body), character => character.charCodeAt(0))
+    : asset.body;
+  return new Response(body, {headers});
 }
 
 export default {

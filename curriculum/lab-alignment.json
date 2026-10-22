@@ -1,0 +1,1779 @@
+{
+  "version": 1,
+  "scope": "12 explicit lesson-specific labs; the remaining 60 lessons intentionally have no concept lab. Examples, quizzes and code tasks remain available on all lessons.",
+  "lessons": [
+    {
+      "lessonId": "p1",
+      "ordinal": 1,
+      "title": "第一行，自己来",
+      "chapter": "c01",
+      "objective": "让变量保存初值、执行加法赋值，并输出更新后的值",
+      "widgetId": "lab-p1",
+      "domId": "lab-p1",
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
+      "learningPathHints": [],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/introduction.html#numbers",
+          "scope": "official-section"
+        },
+        {
+          "url": "https://cs50.harvard.edu/python/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "py01",
+      "ordinal": 2,
+      "title": "输入不是数值",
+      "chapter": "c01",
+      "objective": "把标准输入转换为数值，并按题目约定计算和输出",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [],
+      "resources": [
+        {
+          "url": "https://cs50.harvard.edu/python/",
+          "scope": "course-index"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html",
+          "scope": "chapter-reference"
+        }
+      ]
+    },
+    {
+      "lessonId": "py02",
+      "ordinal": 3,
+      "title": "条件要覆盖边界",
+      "chapter": "c01",
+      "objective": "用条件分支覆盖成绩区间及边界",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [],
+      "resources": [
+        {
+          "url": "https://cs50.harvard.edu/python/",
+          "scope": "course-index"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html",
+          "scope": "chapter-reference"
+        }
+      ]
+    },
+    {
+      "lessonId": "p3",
+      "ordinal": 4,
+      "title": "一次处理一批",
+      "chapter": "c01",
+      "objective": "按顺序遍历全部分数，在循环体中逐个加分并输出",
+      "widgetId": "lab-p3",
+      "domId": "lab-p3",
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
+      "learningPathHints": [],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#for-statements",
+          "scope": "official-section"
+        },
+        {
+          "url": "https://cs50.harvard.edu/python/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "py03",
+      "ordinal": 5,
+      "title": "range 的终点在哪里",
+      "chapter": "c01",
+      "objective": "理解 range 的终点约定，完成循环累计",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [],
+      "resources": [
+        {
+          "url": "https://cs50.harvard.edu/python/",
+          "scope": "course-index"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html",
+          "scope": "chapter-reference"
+        }
+      ]
+    },
+    {
+      "lessonId": "py04",
+      "ordinal": 6,
+      "title": "while 也需要退出条件",
+      "chapter": "c01",
+      "objective": "用循环状态与 break 正确处理退出条件",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [],
+      "resources": [
+        {
+          "url": "https://cs50.harvard.edu/python/",
+          "scope": "course-index"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html",
+          "scope": "chapter-reference"
+        }
+      ]
+    },
+    {
+      "lessonId": "p2",
+      "ordinal": 7,
+      "title": "让数据排成一列",
+      "chapter": "c02",
+      "objective": "读取列表长度，区分正索引与负索引",
+      "widgetId": "lab-p2",
+      "domId": "lab-p2",
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
+      "learningPathHints": [
+        "起步与控制流"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/introduction.html#lists",
+          "scope": "official-section"
+        },
+        {
+          "url": "https://programming-26.mooc.fi/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "py05",
+      "ordinal": 8,
+      "title": "切片与独立副本",
+      "chapter": "c02",
+      "objective": "按约定切片并返回独立的列表副本",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "inline-primer-path-repair",
+      "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
+      "learningPathHints": [
+        "已学起步与控制流、p2 列表索引",
+        "先读本节函数接口先导：def、形参、缩进与 return；p4 稍后系统练习函数"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#defining-functions",
+          "scope": "official-section"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/introduction.html#lists",
+          "scope": "official-section"
+        },
+        {
+          "url": "https://programming-26.mooc.fi/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "py06",
+      "ordinal": 9,
+      "title": "清洗文本与词频输入",
+      "chapter": "c02",
+      "objective": "用字符串操作将文本清洗为词语序列",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "起步与控制流"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/datastructures.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://programming-26.mooc.fi/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "py07",
+      "ordinal": 10,
+      "title": "滑动窗口均值",
+      "chapter": "c02",
+      "objective": "使用滑动窗口状态计算连续均值",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "起步与控制流"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/datastructures.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://programming-26.mooc.fi/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "py08",
+      "ordinal": 11,
+      "title": "去重但保留顺序",
+      "chapter": "c02",
+      "objective": "去除重复值，同时保留首次出现顺序",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "起步与控制流"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/datastructures.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://programming-26.mooc.fi/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "py09",
+      "ordinal": 12,
+      "title": "把变长序列排成批次",
+      "chapter": "c02",
+      "objective": "将变长列表补齐成批次，并构造有效位置 mask",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "起步与控制流"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/datastructures.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://programming-26.mooc.fi/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "p4",
+      "ordinal": 13,
+      "title": "把操作装进函数",
+      "chapter": "c03",
+      "objective": "定义接收列表的 mean 函数，用 return 交回平均值",
+      "widgetId": "lab-p4",
+      "domId": "lab-p4",
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
+      "learningPathHints": [
+        "序列与字符串"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html#defining-functions",
+          "scope": "official-section"
+        },
+        {
+          "url": "https://programming-26.mooc.fi/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "p6",
+      "ordinal": 14,
+      "title": "做一个小型评估器",
+      "chapter": "c03",
+      "objective": "用 zip 逐对比较预测与标签，统计 accuracy 并处理双空输入",
+      "widgetId": "lab-p6",
+      "domId": "lab-p6",
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
+      "learningPathHints": [
+        "序列与字符串"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/library/functions.html#zip",
+          "scope": "official-section"
+        },
+        {
+          "url": "https://programming-26.mooc.fi/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "py10",
+      "ordinal": 15,
+      "title": "让默认参数可控",
+      "chapter": "c03",
+      "objective": "用默认参数和关键字参数控制数值变换",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "序列与字符串"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://programming-26.mooc.fi/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "py11",
+      "ordinal": 16,
+      "title": "按需产出小批次",
+      "chapter": "c03",
+      "objective": "用生成器按需产生小批次，并处理末尾不足一批的数据",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "序列与字符串"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://programming-26.mooc.fi/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "py12",
+      "ordinal": 17,
+      "title": "修复悄悄共享的历史",
+      "chapter": "c03",
+      "objective": "修复可变默认参数造成的跨调用状态共享",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "序列与字符串"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://programming-26.mooc.fi/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "py13",
+      "ordinal": 18,
+      "title": "把契约写成明确的异常",
+      "chapter": "c03",
+      "objective": "验证概率数据契约，用明确异常报告无效输入",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "序列与字符串"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/controlflow.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://programming-26.mooc.fi/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "p5",
+      "ordinal": 19,
+      "title": "给实验结果起名字",
+      "chapter": "c04",
+      "objective": "读取字典中的 loss 字段，统计严格低于阈值的记录",
+      "widgetId": "lab-p5",
+      "domId": "lab-p5",
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
+      "learningPathHints": [
+        "函数与组合"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/datastructures.html#dictionaries",
+          "scope": "official-section"
+        },
+        {
+          "url": "https://cs50.harvard.edu/python/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "py14",
+      "ordinal": 20,
+      "title": "用字典统计标签",
+      "chapter": "c04",
+      "objective": "用字典累计各标签出现次数",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "函数与组合"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/datastructures.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://cs50.harvard.edu/python/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "py15",
+      "ordinal": 21,
+      "title": "分组平均不能混在一起",
+      "chapter": "c04",
+      "objective": "按组累计数值和数量，计算各组平均值",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "函数与组合"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/datastructures.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://cs50.harvard.edu/python/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "py16",
+      "ordinal": 22,
+      "title": "让榜单排序可重复",
+      "chapter": "c04",
+      "objective": "组合排序键，使并列实验结果的排序可重复",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "函数与组合"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/datastructures.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://cs50.harvard.edu/python/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "py17",
+      "ordinal": 23,
+      "title": "合并配置但别共享内部状态",
+      "chapter": "c04",
+      "objective": "递归合并配置，并避免嵌套可变对象共享",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "函数与组合"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/datastructures.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://cs50.harvard.edu/python/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "py18",
+      "ordinal": 24,
+      "title": "选出最好的有效 checkpoint",
+      "chapter": "c04",
+      "objective": "过滤无效 checkpoint，按指标选出有效最优结果",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "函数与组合"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/datastructures.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://cs50.harvard.edu/python/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "py19",
+      "ordinal": 25,
+      "title": "只处理你预料到的错误",
+      "chapter": "c05",
+      "objective": "只捕获约定的解析异常，并区分错误类型",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "字典与实验数据"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/inputoutput.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/errors.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/csv.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/json.html",
+          "scope": "chapter-reference"
+        }
+      ]
+    },
+    {
+      "lessonId": "py20",
+      "ordinal": 26,
+      "title": "真正读取一份 JSON 文件",
+      "chapter": "c05",
+      "objective": "从真实 JSON 文件读取配置并遵守异常契约",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "字典与实验数据"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/inputoutput.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/errors.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/csv.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/json.html",
+          "scope": "chapter-reference"
+        }
+      ]
+    },
+    {
+      "lessonId": "py21",
+      "ordinal": 27,
+      "title": "CSV 不能直接按逗号切",
+      "chapter": "c05",
+      "objective": "用 CSV 解析器正确处理包含逗号和引号的字段",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "字典与实验数据"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/inputoutput.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/errors.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/csv.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/json.html",
+          "scope": "chapter-reference"
+        }
+      ]
+    },
+    {
+      "lessonId": "py22",
+      "ordinal": 28,
+      "title": "逐行解析不完美的日志",
+      "chapter": "c05",
+      "objective": "逐行处理 JSONL，按约定对待空行和错误记录",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "字典与实验数据"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/inputoutput.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/errors.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/csv.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/json.html",
+          "scope": "chapter-reference"
+        }
+      ]
+    },
+    {
+      "lessonId": "py23",
+      "ordinal": 29,
+      "title": "把数据约定变成断言",
+      "chapter": "c05",
+      "objective": "用断言检验批次数据的结构与取值契约",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "字典与实验数据"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/inputoutput.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/errors.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/csv.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/json.html",
+          "scope": "chapter-reference"
+        }
+      ]
+    },
+    {
+      "lessonId": "py24",
+      "ordinal": 30,
+      "title": "综合：生成可重跑的实验报告",
+      "chapter": "c05",
+      "objective": "读取实验记录、分组汇总，并写出可重复的报告",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "字典与实验数据"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/inputoutput.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/tutorial/errors.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/csv.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.python.org/3/library/json.html",
+          "scope": "chapter-reference"
+        }
+      ]
+    },
+    {
+      "lessonId": "py25",
+      "ordinal": 31,
+      "title": "用类维护加权均值",
+      "chapter": "c06",
+      "objective": "用类保存累计状态，维护按样本数加权的均值",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "文件、异常与测试"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/classes.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://programming-26.mooc.fi/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "py26",
+      "ordinal": 32,
+      "title": "累计分类结果而非累计比例",
+      "chapter": "c06",
+      "objective": "累计预测正确数和总样本数，计算整体准确率",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "文件、异常与测试"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/classes.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://programming-26.mooc.fi/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "py27",
+      "ordinal": 33,
+      "title": "实现一个可索引数据集",
+      "chapter": "c06",
+      "objective": "实现可索引数据集，并保护内部数据免受外部修改",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "文件、异常与测试"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/classes.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://programming-26.mooc.fi/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "py28",
+      "ordinal": 34,
+      "title": "实现提前停止状态机",
+      "chapter": "c06",
+      "objective": "维护最佳指标与连续未改进次数，实现提前停止状态机",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "文件、异常与测试"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/classes.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://programming-26.mooc.fi/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "py29",
+      "ordinal": 35,
+      "title": "把小函数组合成处理流水线",
+      "chapter": "c06",
+      "objective": "按顺序组合可调用的处理步骤",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "文件、异常与测试"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/classes.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://programming-26.mooc.fi/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "py30",
+      "ordinal": 36,
+      "title": "综合：按组划分，防止数据泄漏",
+      "chapter": "c06",
+      "objective": "按组划分数据，避免组泄漏和可变数据共享",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "文件、异常与测试"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.python.org/3/tutorial/classes.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://programming-26.mooc.fi/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "t1",
+      "ordinal": 37,
+      "title": "先看形状，再做计算",
+      "chapter": "c07",
+      "objective": "沿特征维求每行均值，解释输入与输出形状",
+      "widgetId": "torch-row-means",
+      "domId": "lab-t1",
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
+      "learningPathHints": [
+        "类与数据流水线"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.mean.html#torch.mean",
+          "scope": "official-section"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt01",
+      "ordinal": 38,
+      "title": "展平特征，保留样本维",
+      "chapter": "c07",
+      "objective": "保留样本维展平特征，并处理非连续张量",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "类与数据流水线"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt02",
+      "ordinal": 39,
+      "title": "取出每条样本的目标分数",
+      "chapter": "c07",
+      "objective": "按每条样本的目标标签索引出对应分数",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "类与数据流水线"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt03",
+      "ordinal": 40,
+      "title": "只平均有效位置",
+      "chapter": "c07",
+      "objective": "按 mask 只平均有效位置，并处理无有效项的行",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "类与数据流水线"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt04",
+      "ordinal": 41,
+      "title": "构造张量版 padding 与 mask",
+      "chapter": "c07",
+      "objective": "把变长张量补齐，返回对应的有效位置 mask",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "类与数据流水线"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt05",
+      "ordinal": 42,
+      "title": "向量化成对平方距离",
+      "chapter": "c07",
+      "objective": "用广播和向量化计算两组向量的成对平方距离",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "类与数据流水线"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "t2",
+      "ordinal": 43,
+      "title": "给每条样本同一把尺",
+      "chapter": "c08",
+      "objective": "把行均值保留为列向量，正确广播以完成逐行中心化",
+      "widgetId": "torch-center-rows",
+      "domId": "lab-t2",
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
+      "learningPathHints": [
+        "张量形状与索引"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/notes/broadcasting.html#general-semantics",
+          "scope": "official-section"
+        },
+        {
+          "url": "https://docs.pytorch.org/docs/2.10/generated/torch.mean.html#torch.mean",
+          "scope": "official-section"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt06",
+      "ordinal": 44,
+      "title": "数值稳定的 softmax",
+      "chapter": "c08",
+      "objective": "减去行最大值，稳定计算 softmax",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "张量形状与索引"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt07",
+      "ordinal": 45,
+      "title": "稳定计算 logsumexp",
+      "chapter": "c08",
+      "objective": "通过最大值平移稳定计算 logsumexp",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "张量形状与索引"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt08",
+      "ordinal": 46,
+      "title": "忽略 padding 的交叉熵",
+      "chapter": "c08",
+      "objective": "忽略指定位置计算交叉熵，并保留正确梯度行为",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "inline-primer-path-repair",
+      "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
+      "learningPathHints": [
+        "已学张量形状与索引、pt07 数值稳定的 logsumexp",
+        "先读本节最小计算图先导：与输入相连的零和独立常量；t3 稍后系统练习自动微分"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html#tensors-functions-and-computational-graph",
+          "scope": "official-section"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt09",
+      "ordinal": 47,
+      "title": "拆分多头时别打乱 token",
+      "chapter": "c08",
+      "objective": "拆分注意力头，保持 token 与各维度的对应关系",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "张量形状与索引"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt10",
+      "ordinal": 48,
+      "title": "手写缩放点积注意力",
+      "chapter": "c08",
+      "objective": "计算缩放点积分数、softmax 权重及加权输出",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "张量形状与索引"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "t3",
+      "ordinal": 49,
+      "title": "让机器帮你求导",
+      "chapter": "c09",
+      "objective": "构建标量计算图，用 backward 读取输入梯度",
+      "widgetId": "torch-autograd-functions",
+      "domId": "lab-t3",
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
+      "learningPathHints": [
+        "广播与数值稳定"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html#computing-gradients",
+          "scope": "official-section"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt11",
+      "ordinal": 50,
+      "title": "区分累积与清空梯度",
+      "chapter": "c09",
+      "objective": "观察重复反向传播的梯度累积，并正确清空梯度",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "广播与数值稳定"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt12",
+      "ordinal": 51,
+      "title": "修复被重新包装断开的图",
+      "chapter": "c09",
+      "objective": "修复重新包装张量造成的计算图断开",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "广播与数值稳定"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt13",
+      "ordinal": 52,
+      "title": "用有限差分核对 autograd",
+      "chapter": "c09",
+      "objective": "用有限差分检查 autograd 梯度",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "广播与数值稳定"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt14",
+      "ordinal": 53,
+      "title": "按全局范数裁剪梯度",
+      "chapter": "c09",
+      "objective": "按所有参数的全局范数裁剪梯度",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "广播与数值稳定"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt15",
+      "ordinal": 54,
+      "title": "梯度累积也要按样本数加权",
+      "chapter": "c09",
+      "objective": "按样本数加权各微批次损失，得到正确累计梯度",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "广播与数值稳定"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "t4",
+      "ordinal": 55,
+      "title": "把计算装进模型",
+      "chapter": "c10",
+      "objective": "在 nn.Module 中注册 Linear 层，并理解输入输出形状",
+      "widgetId": "torch-linear-shapes",
+      "domId": "lab-t4",
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
+      "learningPathHints": [
+        "梯度与训练排错"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html#nn-linear",
+          "scope": "official-section"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt16",
+      "ordinal": 56,
+      "title": "构建可配置的两层 MLP",
+      "chapter": "c10",
+      "objective": "用指定维度与激活函数构建两层 MLP",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "梯度与训练排错"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html",
+          "scope": "chapter-reference"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt17",
+      "ordinal": 57,
+      "title": "让 Dataset 管好自己的数据",
+      "chapter": "c10",
+      "objective": "实现保护自身数据的 PyTorch Dataset",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "梯度与训练排错"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html",
+          "scope": "chapter-reference"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt18",
+      "ordinal": 58,
+      "title": "自己实现 collate_fn",
+      "chapter": "c10",
+      "objective": "用 collate_fn 将若干样本合并为张量批次",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "梯度与训练排错"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html",
+          "scope": "chapter-reference"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt19",
+      "ordinal": 59,
+      "title": "只训练分类头",
+      "chapter": "c10",
+      "objective": "冻结骨干参数，仅让分类头参与训练",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "梯度与训练排错"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html",
+          "scope": "chapter-reference"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt20",
+      "ordinal": 60,
+      "title": "预测后恢复原来的模式",
+      "chapter": "c10",
+      "objective": "在评估模式和 no_grad 下预测，并恢复原模式",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "梯度与训练排错"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html",
+          "scope": "chapter-reference"
+        }
+      ]
+    },
+    {
+      "lessonId": "t5",
+      "ordinal": 61,
+      "title": "完成一次参数更新",
+      "chapter": "c11",
+      "objective": "依次清梯度、算损失、反向传播和 SGD 更新，解释参数变化",
+      "widgetId": "torch-sgd-step",
+      "domId": "lab-t5",
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
+      "learningPathHints": [
+        "模型与数据加载"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html#optimizer",
+          "scope": "official-section"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt21",
+      "ordinal": 62,
+      "title": "整个 epoch 的 MSE",
+      "chapter": "c11",
+      "objective": "按样本数加权，计算整个 epoch 的 MSE",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "模型与数据加载"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html",
+          "scope": "chapter-reference"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt22",
+      "ordinal": 63,
+      "title": "二分类指标的零分母",
+      "chapter": "c11",
+      "objective": "根据二分类计数计算指标，并处理零分母",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "模型与数据加载"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html",
+          "scope": "chapter-reference"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt23",
+      "ordinal": 64,
+      "title": "完整的分类评估循环",
+      "chapter": "c11",
+      "objective": "实现按样本累计指标的完整分类评估循环",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "模型与数据加载"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html",
+          "scope": "chapter-reference"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt24",
+      "ordinal": 65,
+      "title": "保存的是状态，不是引用",
+      "chapter": "c11",
+      "objective": "保存并恢复模型和优化器状态，避免保留可变引用",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "模型与数据加载"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html",
+          "scope": "chapter-reference"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt25",
+      "ordinal": 66,
+      "title": "写一个可复用的分类训练步骤",
+      "chapter": "c11",
+      "objective": "实现清理旧梯度并更新模型的一次分类训练步骤",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "模型与数据加载"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html",
+          "scope": "chapter-reference"
+        }
+      ]
+    },
+    {
+      "lessonId": "t6",
+      "ordinal": 67,
+      "title": "训练你的第一条直线",
+      "chapter": "c12",
+      "objective": "重复训练线性模型，观察损失以及斜率和截距的收敛",
+      "widgetId": "torch-affine-training",
+      "domId": "lab-t6",
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "specific-official-sections-plus-labelled-course-index",
+      "learningPathHints": [
+        "训练、评估与恢复"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html#full-implementation",
+          "scope": "official-section"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt26",
+      "ordinal": 68,
+      "title": "综合：训练二分类直线",
+      "chapter": "c12",
+      "objective": "训练二分类线性模型，并记录损失变化",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "训练、评估与恢复"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt27",
+      "ordinal": 69,
+      "title": "综合：混淆矩阵与 macro F1",
+      "chapter": "c12",
+      "objective": "构造混淆矩阵，计算各类指标及 macro F1",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "训练、评估与恢复"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt28",
+      "ordinal": 70,
+      "title": "综合：带 mask 的句向量池化",
+      "chapter": "c12",
+      "objective": "使用 mask 对有效 token 向量做句级池化",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "训练、评估与恢复"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt29",
+      "ordinal": 71,
+      "title": "挑战：不偷看未来的注意力",
+      "chapter": "c12",
+      "objective": "构造因果 mask，让注意力无法读取未来 token",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "训练、评估与恢复"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    },
+    {
+      "lessonId": "pt30",
+      "ordinal": 72,
+      "title": "结业实验：训练与独立验证",
+      "chapter": "c12",
+      "objective": "分开训练与独立验证，完成可复现的分类实验",
+      "widgetId": null,
+      "domId": null,
+      "prerequisiteAuditScope": "chapter-path-hint-not-complete-skill-graph",
+      "resourceAuditScope": "chapter-reference-category-only-not-every-claim",
+      "learningPathHints": [
+        "训练、评估与恢复"
+      ],
+      "resources": [
+        {
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html",
+          "scope": "chapter-reference"
+        },
+        {
+          "url": "https://learn.arena.education/chapter0_fundamentals/",
+          "scope": "course-index"
+        }
+      ]
+    }
+  ],
+  "auditScope": {
+    "lessonIdsAndOrder": "all 72 checked against current lessons.json and course.json",
+    "widgetAssignment": "12 explicit lesson ID mappings; 60 intentionally null, never inferred from visual",
+    "prerequisites": "chapter-path metadata only, with two identified inline-primer repairs; not a full skill dependency graph",
+    "resources": "14 lessons receive verified official section anchors; remaining lessons have chapter references and labelled course indexes, not individual-claim verification",
+    "teachingAndCode": "Python/Torch per-lesson teaching and numeric oracle audits are recorded separately; this manifest is not their replacement"
+  }
+}

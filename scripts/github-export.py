@@ -1,5 +1,6 @@
 """Produce a reviewed source tree for the connected GitHub API (no credentials)."""
 import argparse
+import base64
 import json
 from pathlib import Path
 import subprocess
@@ -20,6 +21,9 @@ else:
         path=ROOT/name
         if path.is_symlink() or not path.is_file():
             raise RuntimeError('Only regular source files may be mirrored')
-        content=path.read_text(encoding='utf-8')
-        rows.append({'path':name,'mode':'100644','type':'blob','content':content})
+        if path.suffix.lower() in {'.png','.ico'}:
+            rows.append({'path':name,'mode':'100644','type':'blob','_base64':base64.b64encode(path.read_bytes()).decode('ascii')})
+        else:
+            content=path.read_text(encoding='utf-8')
+            rows.append({'path':name,'mode':'100644','type':'blob','content':content})
     print(json.dumps(rows,ensure_ascii=False))
