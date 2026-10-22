@@ -1,0 +1,78 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="530" viewBox="0 0 1280 530" role="img" aria-labelledby="title description">
+  <title id="title">开练的学习闭环</title>
+  <desc id="description">学习讲解、预测输出、独立实现、判题反馈、分层考核，再根据建议的 1、3、7 天间隔用独立题目复习。主线建议 20 至 30 小时，考核额外 310 分钟，等待间隔不计学习时间。</desc>
+  <defs>
+    <linearGradient id="paper" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#fafaff"/><stop offset="1" stop-color="#f1f7f7"/></linearGradient>
+    <linearGradient id="loop" x1="0" y1="0" x2="1" y2="0"><stop stop-color="#8b75dd"/><stop offset=".55" stop-color="#55a6b0"/><stop offset="1" stop-color="#82b288"/></linearGradient>
+    <marker id="arrow" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="m1 1 6 3.5L1 8" fill="none" stroke="#a4a9be" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+    <marker id="return" markerWidth="9" markerHeight="9" refX="7" refY="4.5" orient="auto"><path d="m1 1 6 3.5L1 8" fill="none" stroke="#927cda" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></marker>
+  </defs>
+  <rect x="1" y="1" width="1278" height="528" rx="24" fill="url(#paper)" stroke="#dfe3ef"/>
+  <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+    <text x="48" y="54" font-size="12" font-weight="600" letter-spacing="2.8" fill="#807594">THE LEARNING LOOP</text>
+    <text x="48" y="100" font-size="29" font-weight="700" fill="#253047">把一次看懂，变成隔天也写得出来。</text>
+    <text x="48" y="127" font-size="14" fill="#7a849c">每个环节都留下一次可验证的行动，错因成为下一轮训练的线索。</text>
+    <g transform="translate(48 157)">
+      <rect width="216" height="188" rx="17" fill="#fff" stroke="#dcd3f3"/>
+      <rect x="16" y="16" width="38" height="38" rx="11" fill="#eee8ff"/>
+      <path d="M25 27h9q4 0 4 4v13q-2-3-6-3h-7zm26 0h-9q-4 0-4 4v13q2-3 6-3h7z" transform="translate(-3 -2)" stroke="#8b6dcc" stroke-width="1.4" fill="none" stroke-linejoin="round"/>
+      <text x="185" y="42" text-anchor="end" font-size="11" fill="#aca4bf">01</text>
+      <text x="18" y="88" font-size="23" font-weight="700" fill="#57417c">学一点</text>
+      <text x="18" y="117" font-size="13" fill="#7c8294">分步讲解 · 完整例题</text>
+      <text x="18" y="143" font-size="12" fill="#9b94aa">先理解状态怎么改变</text>
+      <rect x="18" y="161" width="57" height="3" rx="1.5" fill="#b7a5e0"/>
+    </g>
+    <g transform="translate(290 157)">
+      <rect width="216" height="188" rx="17" fill="#fff" stroke="#ccdff5"/>
+      <rect x="16" y="16" width="38" height="38" rx="11" fill="#e6f0ff"/>
+      <path d="m26 28-5 6 5 6m17-12 5 6-5 6m-10-14-2 16" fill="none" stroke="#5f92cf" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="185" y="42" text-anchor="end" font-size="11" fill="#a0b1c8">02</text>
+      <text x="18" y="88" font-size="23" font-weight="700" fill="#345b8c">预测一下</text>
+      <text x="18" y="117" font-size="13" fill="#7c8294">先写答案 · 再核对输出</text>
+      <text x="18" y="143" font-size="12" fill="#929fb0">让直觉接受一次检验</text>
+      <rect x="18" y="161" width="57" height="3" rx="1.5" fill="#8ab5e4"/>
+    </g>
+    <g transform="translate(532 157)">
+      <rect width="216" height="188" rx="17" fill="#fff" stroke="#cce7e1"/>
+      <rect x="16" y="16" width="38" height="38" rx="11" fill="#e4f6f0"/>
+      <path d="m25 40 2-7 12-12 5 5-12 12-7 2m12-17 5 5" fill="none" stroke="#539d8b" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="185" y="42" text-anchor="end" font-size="11" fill="#9abcb3">03</text>
+      <text x="18" y="88" font-size="23" font-weight="700" fill="#377669">独立实现</text>
+      <text x="18" y="117" font-size="13" fill="#7c8294">从空白写 · 完整代码</text>
+      <text x="18" y="143" font-size="12" fill="#8da99f">同时照顾正常与边界</text>
+      <rect x="18" y="161" width="57" height="3" rx="1.5" fill="#81c3b2"/>
+    </g>
+    <g transform="translate(774 157)">
+      <rect width="216" height="188" rx="17" fill="#fff" stroke="#ecdab8"/>
+      <rect x="16" y="16" width="38" height="38" rx="11" fill="#fff4df"/>
+      <path d="m24 34 7 7 14-16" fill="none" stroke="#c29a4f" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="185" y="42" text-anchor="end" font-size="11" fill="#c2b18d">04</text>
+      <text x="18" y="88" font-size="23" font-weight="700" fill="#8d6b35">判题反馈</text>
+      <text x="18" y="117" font-size="13" fill="#7c8294">实际值 / 期望值 / 错因</text>
+      <text x="18" y="143" font-size="12" fill="#b2a080">把失败变成可修的细节</text>
+      <rect x="18" y="161" width="57" height="3" rx="1.5" fill="#d9b77c"/>
+    </g>
+    <g transform="translate(1016 157)">
+      <rect width="216" height="188" rx="17" fill="#fff" stroke="#e6cfe2"/>
+      <rect x="16" y="16" width="38" height="38" rx="11" fill="#faeaf5"/>
+      <rect x="25" y="26" width="20" height="19" rx="3" fill="none" stroke="#b47aa6" stroke-width="1.5"/>
+      <path d="M25 32h20m-14-9v6m8-6v6m-8 8h3m4 0h3" fill="none" stroke="#b47aa6" stroke-width="1.5" stroke-linecap="round"/>
+      <text x="185" y="42" text-anchor="end" font-size="11" fill="#c3a5bc">05</text>
+      <text x="18" y="88" font-size="23" font-weight="700" fill="#895476">延迟考核</text>
+      <text x="18" y="117" font-size="13" fill="#7c8294">章末 / 累计 / 阶段</text>
+      <text x="18" y="143" font-size="12" fill="#b396ab">换新情境，检验能否迁移</text>
+      <rect x="18" y="161" width="57" height="3" rx="1.5" fill="#d4a1c5"/>
+    </g>
+    <g fill="none" stroke="#a4a9be" stroke-width="1.5" marker-end="url(#arrow)">
+      <path d="M271 250h11"/><path d="M513 250h11"/><path d="M755 250h11"/><path d="M997 250h11"/>
+    </g>
+    <path d="M1124 359v17q0 20-24 20H180q-24 0-24-20v-17" fill="none" stroke="url(#loop)" stroke-width="1.8" stroke-dasharray="5 5" marker-end="url(#return)"/>
+    <rect x="372" y="375" width="536" height="69" rx="14" fill="#f1edf9" stroke="#ded6ec"/>
+    <text x="640" y="403" text-anchor="middle" font-size="15" font-weight="650" fill="#6a598d">1 / 3 / 7 天 · 用独立题目重新提取知识</text>
+    <text x="640" y="426" text-anchor="middle" font-size="12" fill="#91869f">建议间隔可调整，等待时间不计入学习工时。</text>
+    <path d="M48 470H1232" stroke="#e0e4ee"/>
+    <text x="48" y="499" font-size="12" fill="#838ba0">主线建议 20–30 小时</text>
+    <text x="640" y="499" text-anchor="middle" font-size="12" fill="#838ba0">考核与讲评额外 310 分钟</text>
+    <text x="1232" y="499" text-anchor="end" font-size="12" fill="#838ba0">每一次修改，都有反馈</text>
+  </g>
+</svg>

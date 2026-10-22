@@ -1,0 +1,646 @@
+[
+  {
+    "id": "p1",
+    "group": "Python 起步",
+    "title": "第一行，自己来",
+    "tag": "变量 · 输出",
+    "minutes": 8,
+    "runtime": "python",
+    "intro": "变量就是给一个值起名字。Python 会自己识别类型；换行结束一句代码，通常不用分号。",
+    "example": "score = 70\nscore = score + 5\nprint(score)  # 75",
+    "cpp": "C++ 的 int score = 70; 在这里写成 score = 70。",
+    "visual": "values",
+    "quiz": {
+      "question": "运行 score = 70 后，再执行 score = score + 5，score 是多少？",
+      "options": [
+        "70，变量赋值后不会变",
+        "75，右边先计算，再赋给左边",
+        "报错，因为没有声明 int"
+      ],
+      "answer": 1,
+      "why": [
+        "变量可以重新赋值。等号会把右边的新值保存到左边。",
+        "对。先用旧值 70 算出 75，再更新 score。",
+        "Python 不需要先写 int，类型由值决定。"
+      ]
+    },
+    "task": "从空白写一个程序：让 score 等于 75，在原值上增加 5，再输出 score。",
+    "signature": "完整程序 · 使用 print 输出",
+    "tests": [
+      {
+        "label": "输出更新后的分数",
+        "expected": "80",
+        "stdout": true
+      }
+    ],
+    "hints": [
+      "第一句可以写 score = 75。",
+      "增加 5 可以写 score = score + 5，也可以写 score += 5。",
+      "最后用 print(score) 输出变量。"
+    ],
+    "solution": "score = 75\nscore += 5\nprint(score)\n",
+    "success": "你已经从空白写出了第一个 Python 程序。下一关把一个值扩展成一组值。"
+  },
+  {
+    "id": "p2",
+    "group": "Python 起步",
+    "title": "让数据排成一列",
+    "tag": "列表 · 索引",
+    "minutes": 10,
+    "runtime": "python",
+    "intro": "列表用方括号存一组值。索引从 0 开始；-1 表示最后一个。len 返回元素数量，列表中的值也可以修改。",
+    "example": "scores = [60, 75, 90]\nprint(scores[0])   # 60\nscores[1] += 5\nprint(scores[-1])  # 90",
+    "cpp": "列表有点像 vector：scores[1] 是第二个元素；len(scores) 对应 size()。",
+    "visual": "list",
+    "quiz": {
+      "question": "scores = [60, 75, 90]，scores[1] 取到什么？",
+      "options": [
+        "60",
+        "75",
+        "90"
+      ],
+      "answer": 1,
+      "why": [
+        "第一个元素的索引是 0。",
+        "对。索引从 0 开始，第二个元素是 scores[1]。",
+        "90 是第三个元素，用 scores[2] 或 scores[-1]。"
+      ]
+    },
+    "task": "创建 scores = [60, 75, 90]。先输出列表长度，再在新的一行输出最后一个分数。",
+    "signature": "完整程序 · 输出两行",
+    "tests": [
+      {
+        "label": "长度与最后一个元素",
+        "expected": "3\n90",
+        "stdout": true
+      }
+    ],
+    "hints": [
+      "用方括号创建列表：scores = [60, 75, 90]。",
+      "len(scores) 得到长度。",
+      "两次 print 分别输出 len(scores) 和 scores[-1]。"
+    ],
+    "solution": "scores = [60, 75, 90]\nprint(len(scores))\nprint(scores[-1])\n",
+    "success": "现在你能创建、访问和修改一组数据了。"
+  },
+  {
+    "id": "p3",
+    "group": "Python 起步",
+    "title": "一次处理一批",
+    "tag": "循环 · 缩进",
+    "minutes": 12,
+    "runtime": "python",
+    "intro": "for 可以直接遍历列表里的值。冒号表示接下来是一段代码；循环体统一缩进 4 个空格。缩进在 Python 中决定程序结构。",
+    "example": "values = [1, 2, 3]\nfor value in values:\n    print(value * 2)\nprint(\"完成\")",
+    "cpp": "对应 C++ 的 for (auto value : values)。Python 用冒号和缩进组织代码块。",
+    "visual": "list",
+    "quiz": {
+      "question": "下面哪一句会执行三次？",
+      "code": "for x in [1, 2, 3]:\n    print(x)\nprint(\"done\")",
+      "options": [
+        "print(x)",
+        "print(\"done\")",
+        "两句都执行三次"
+      ],
+      "answer": 0,
+      "why": [
+        "对。只有缩进在 for 里面的 print(x) 属于循环体。",
+        "它没有缩进，属于循环结束后的代码，只执行一次。",
+        "是否属于循环体，由缩进决定。"
+      ]
+    },
+    "task": "给定 scores = [60, 75, 90]，用 for 循环逐个输出「分数加 5」的结果，每个结果占一行。",
+    "signature": "完整程序 · 输出三行",
+    "tests": [
+      {
+        "label": "批量提高分数",
+        "expected": "65\n80\n95",
+        "stdout": true
+      }
+    ],
+    "hints": [
+      "先创建列表，再写 for score in scores:。",
+      "冒号后换行，下一行缩进 4 个空格。",
+      "循环体写 print(score + 5)。"
+    ],
+    "solution": "scores = [60, 75, 90]\nfor score in scores:\n    print(score + 5)\n",
+    "success": "批量处理是训练循环的起点。你已经掌握了它的 Python 写法。"
+  },
+  {
+    "id": "p4",
+    "group": "Python 起步",
+    "title": "把操作装进函数",
+    "tag": "def · return",
+    "minutes": 12,
+    "runtime": "python",
+    "intro": "def 定义函数，参数接收输入，return 把结果交给调用者。print 只负责显示，不能代替 return。你可以使用 sum 和 len 处理列表。",
+    "example": "def add_bonus(score):\n    return score + 5\n\nresult = add_bonus(70)\nprint(result)  # 75",
+    "cpp": "def add_bonus(score): 类似函数声明；不必写返回值类型，但需要显式 return。",
+    "visual": "values",
+    "quiz": {
+      "question": "要让 y = mean([2, 4]) 得到一个数，mean 里应该用什么？",
+      "options": [
+        "print(result)",
+        "return result",
+        "只写 result，不用其他语句"
+      ],
+      "answer": 1,
+      "why": [
+        "print 只显示；没有 return 的函数默认返回 None。",
+        "对。return 把值传回调用位置，之后还能继续计算。",
+        "普通函数不会自动返回最后一行表达式。"
+      ]
+    },
+    "task": "独立定义 mean(values)，返回非空数值列表的平均值。直接返回数值，不要用 print 代替 return。",
+    "signature": "def mean(values) → 数值",
+    "tests": [
+      {
+        "label": "两个数",
+        "expr": "mean([2, 4])",
+        "expected": 3
+      },
+      {
+        "label": "包含负数",
+        "expr": "mean([-3, 0, 3])",
+        "expected": 0
+      },
+      {
+        "label": "单个值",
+        "expr": "mean([7])",
+        "expected": 7
+      }
+    ],
+    "hints": [
+      "函数头写 def mean(values):，下一行缩进。",
+      "列表总和用 sum(values)，数量用 len(values)。",
+      "在函数体 return sum(values) / len(values)。"
+    ],
+    "solution": "def mean(values):\n    return sum(values) / len(values)\n",
+    "success": "你写出了一个能处理不同输入的函数，不再只处理固定样例。"
+  },
+  {
+    "id": "p5",
+    "group": "Python 实战",
+    "title": "给实验结果起名字",
+    "tag": "字典 · 条件",
+    "minutes": 12,
+    "runtime": "python",
+    "intro": "字典把名字映射到值。用 record[\"loss\"] 读取字段；if 只在条件满足时执行代码。if 和 for 一样，用冒号与缩进。",
+    "example": "record = {\"model\": \"MLP\", \"loss\": 0.25}\nif record[\"loss\"] < 0.5:\n    print(\"达标\")",
+    "cpp": "字典类似 map / unordered_map，键和值之间用冒号；布尔判断不必加括号。",
+    "visual": "values",
+    "quiz": {
+      "question": "record = {\"loss\": 0.25}，怎样读取 loss？",
+      "options": [
+        "record.loss",
+        "record[\"loss\"]",
+        "record(0)"
+      ],
+      "answer": 1,
+      "why": [
+        "普通字典不能用点号读取键。",
+        "对。方括号里写键的名字。",
+        "圆括号用于调用函数，不用于读取字典。"
+      ]
+    },
+    "task": "定义 count_good(records, threshold)，统计列表中 loss 严格小于 threshold 的记录数量。records 的每项是包含 loss 的字典；空列表返回 0。",
+    "signature": "def count_good(records, threshold) → 整数",
+    "tests": [
+      {
+        "label": "筛选达标实验",
+        "expr": "count_good([{'loss': 0.2}, {'loss': 0.7}, {'loss': 0.1}], 0.5)",
+        "expected": 2
+      },
+      {
+        "label": "边界：相等不计入",
+        "expr": "count_good([{'loss': 0.5}], 0.5)",
+        "expected": 0
+      },
+      {
+        "label": "空实验列表",
+        "expr": "count_good([], 0.5)",
+        "expected": 0
+      }
+    ],
+    "hints": [
+      "先设 count = 0，遍历 records。",
+      "用 if record['loss'] < threshold: 判断。",
+      "条件内 count += 1；循环结束后 return count。"
+    ],
+    "solution": "def count_good(records, threshold):\n    count = 0\n    for record in records:\n        if record['loss'] < threshold:\n            count += 1\n    return count\n",
+    "success": "这已经是一段真实实验脚本会用到的数据处理逻辑。"
+  },
+  {
+    "id": "p6",
+    "group": "Python 实战",
+    "title": "做一个小型评估器",
+    "tag": "zip · 函数组合",
+    "minutes": 15,
+    "runtime": "python",
+    "intro": "zip 把两组数据按位置配对。for a, b in zip(xs, ys) 会同时取出一对值。比较相等用 ==；赋值用 =。",
+    "example": "preds = [1, 0, 1]\nlabels = [1, 1, 1]\nfor pred, label in zip(preds, labels):\n    print(pred == label)",
+    "cpp": "Python 可以在循环头把一对值解包给两个变量。True / False 是布尔值。",
+    "visual": "list",
+    "quiz": {
+      "question": "preds=[1,0,1]、labels=[1,1,1]，分类准确率是多少？",
+      "options": [
+        "1/3",
+        "2/3",
+        "3/3"
+      ],
+      "answer": 1,
+      "why": [
+        "第一项与第三项都预测正确。",
+        "对。三次预测中有两次正确。",
+        "第二项预测为 0，实际为 1。"
+      ]
+    },
+    "task": "定义 accuracy(preds, labels)，返回预测正确的比例。两列表等长；当它们都为空时返回 0.0。",
+    "signature": "def accuracy(preds, labels) → 浮点数",
+    "tests": [
+      {
+        "label": "部分正确",
+        "expr": "accuracy([1, 0, 1], [1, 1, 1])",
+        "expected": 0.6666666666666666
+      },
+      {
+        "label": "全部正确",
+        "expr": "accuracy([0, 1], [0, 1])",
+        "expected": 1
+      },
+      {
+        "label": "没有样本",
+        "expr": "accuracy([], [])",
+        "expected": 0
+      },
+      {
+        "label": "全部错误",
+        "expr": "accuracy([0, 0], [1, 1])",
+        "expected": 0
+      }
+    ],
+    "hints": [
+      "先处理 len(labels) == 0 的情况，返回 0.0。",
+      "用 zip 配对，统计 pred == label 的次数。",
+      "正确次数除以总样本数。"
+    ],
+    "solution": "def accuracy(preds, labels):\n    if len(labels) == 0:\n        return 0.0\n    correct = 0\n    for pred, label in zip(preds, labels):\n        if pred == label:\n            correct += 1\n    return correct / len(labels)\n",
+    "success": "Python 基础关完成。下一组把列表计算迁移到张量。"
+  },
+  {
+    "id": "t1",
+    "group": "张量与 PyTorch",
+    "title": "先看形状，再做计算",
+    "tag": "Tensor · shape · dim",
+    "minutes": 15,
+    "runtime": "torch",
+    "intro": "张量是多维数值数组。形状 [B, D] 表示 B 条样本，每条 D 个数。dim=1 沿每一行的特征维计算，得到每条样本的结果。",
+    "example": "import torch\nx = torch.tensor([[1., 3.], [2., 6.]])\nprint(x.shape)      # torch.Size([2, 2])\nprint(x.mean(dim=1)) # tensor([2., 4.])",
+    "cpp": "把二维数组理解为样本 × 特征。张量操作会一次处理整批数据。",
+    "visual": "tensor",
+    "quiz": {
+      "question": "x 的形状是 [3, 4]。x.mean(dim=1) 的形状是什么？",
+      "options": [
+        "[3]：每行一个平均值",
+        "[4]：每列一个平均值",
+        "[3, 4]：形状不变"
+      ],
+      "answer": 0,
+      "why": [
+        "对。长度为 4 的维被归约，每条样本保留一个值。",
+        "dim=0 才会沿样本维求均值，得到每列结果。",
+        "默认 keepdim=False，被求均值的维会消失。"
+      ]
+    },
+    "task": "导入 torch，定义 row_means(x)。x 是二维浮点张量，返回每一行的平均值，结果必须仍是 torch.Tensor。",
+    "signature": "def row_means(x) → Tensor，形状 [B]",
+    "tests": [
+      {
+        "label": "两行张量",
+        "expr": "row_means(torch.tensor([[1., 3.], [2., 6.]]))",
+        "expected": [
+          2,
+          4
+        ]
+      },
+      {
+        "label": "三行、每行一个数",
+        "expr": "row_means(torch.tensor([[2.], [4.], [6.]]))",
+        "expected": [
+          2,
+          4,
+          6
+        ]
+      },
+      {
+        "label": "保持张量类型",
+        "expr": "isinstance(row_means(torch.ones(2, 3)), torch.Tensor)",
+        "expected": true
+      }
+    ],
+    "hints": [
+      "第一行 import torch。",
+      "mean 的 dim 参数决定沿哪个维度聚合。",
+      "函数体可以 return x.mean(dim=1)。"
+    ],
+    "solution": "import torch\n\ndef row_means(x):\n    return x.mean(dim=1)\n",
+    "success": "你开始用形状推理来控制批量计算了。"
+  },
+  {
+    "id": "t2",
+    "group": "张量与 PyTorch",
+    "title": "给每条样本同一把尺",
+    "tag": "广播 · keepdim",
+    "minutes": 15,
+    "runtime": "torch",
+    "intro": "广播让长度为 1 的维度扩展参与计算。对 [B,D] 张量减去每行均值时，把均值保留成 [B,1]，就能让每行减去自己的数。",
+    "example": "import torch\nx = torch.tensor([[1., 3.], [2., 6.]])\nrow_mean = x.mean(dim=1, keepdim=True)\ny = x - row_mean\n# y = [[-1., 1.], [-2., 2.]]",
+    "cpp": "无需再写两层循环，先确认 [B,D] 与 [B,1] 能按对应维度广播。",
+    "visual": "tensor",
+    "quiz": {
+      "question": "[3,4] 的 x，要减去各行均值，均值最好保留为什么形状？",
+      "options": [
+        "[3]",
+        "[3,1]",
+        "[1,3]"
+      ],
+      "answer": 1,
+      "why": [
+        "广播从最后一维对齐，3 与 4 不匹配。",
+        "对。[3,1] 可以扩展成 [3,4]，每行都使用自己的均值。",
+        "最后一维 3 与 4 不匹配。"
+      ]
+    },
+    "task": "导入 torch，定义 center_rows(x)。每一行减去该行平均值，保持原来的二维形状，返回新张量。",
+    "signature": "def center_rows(x) → Tensor，形状保持不变",
+    "tests": [
+      {
+        "label": "按行去均值",
+        "expr": "center_rows(torch.tensor([[1., 3.], [2., 6.]]))",
+        "expected": [
+          [
+            -1,
+            1
+          ],
+          [
+            -2,
+            2
+          ]
+        ]
+      },
+      {
+        "label": "不同的样本数和特征数",
+        "expr": "center_rows(torch.tensor([[1.,2.,3.],[4.,5.,6.]]))",
+        "expected": [
+          [
+            -1,
+            0,
+            1
+          ],
+          [
+            -1,
+            0,
+            1
+          ]
+        ]
+      },
+      {
+        "label": "单特征",
+        "expr": "center_rows(torch.tensor([[7.],[9.]]))",
+        "expected": [
+          [
+            0
+          ],
+          [
+            0
+          ]
+        ]
+      }
+    ],
+    "hints": [
+      "mean(dim=1, keepdim=True) 的形状是 [B,1]。",
+      "直接让 x 减去这个均值张量。",
+      "不要原地修改输入，return x - x.mean(dim=1, keepdim=True)。"
+    ],
+    "solution": "import torch\n\ndef center_rows(x):\n    return x - x.mean(dim=1, keepdim=True)\n",
+    "success": "广播与归约是读模型代码时最常用的组合之一。"
+  },
+  {
+    "id": "t3",
+    "group": "张量与 PyTorch",
+    "title": "让机器帮你求导",
+    "tag": "autograd · backward",
+    "minutes": 15,
+    "runtime": "torch",
+    "intro": "requires_grad=True 告诉 PyTorch 记录运算。对标量结果调用 backward()，梯度会累积在输入的 .grad 中。每次练习创建新张量，就不会混入之前的梯度。",
+    "example": "import torch\nx = torch.tensor(3., requires_grad=True)\ny = x ** 2\ny.backward()\nprint(x.grad.item())  # 6.0",
+    "cpp": "item() 把单元素张量变成 Python 数值。梯度说明输入稍微增加时，结果怎样变化。",
+    "visual": "gradient",
+    "quiz": {
+      "question": "y = x²，在 x=3 时执行 y.backward()，x.grad 是多少？",
+      "options": [
+        "9：函数值",
+        "6：导数 2x",
+        "1：每次 backward 增加 1"
+      ],
+      "answer": 1,
+      "why": [
+        "9 是 y 的值；梯度是函数值随 x 的变化率。",
+        "对。dy/dx=2x，代入 x=3 得 6。",
+        "梯度由计算图决定，不是固定值。"
+      ]
+    },
+    "task": "导入 torch，定义 gradient_at(value)。创建需要梯度的浮点标量 x，计算 y=x²+3x，反向传播后返回 x 的梯度（Python 数值）。",
+    "signature": "def gradient_at(value) → 数值",
+    "tests": [
+      {
+        "label": "x=2",
+        "expr": "gradient_at(2)",
+        "expected": 7
+      },
+      {
+        "label": "x=0",
+        "expr": "gradient_at(0)",
+        "expected": 3
+      },
+      {
+        "label": "负数输入",
+        "expr": "gradient_at(-2)",
+        "expected": -1
+      }
+    ],
+    "hints": [
+      "torch.tensor(float(value), requires_grad=True)。",
+      "定义 y = x ** 2 + 3 * x，然后 y.backward()。",
+      "return x.grad.item()。"
+    ],
+    "solution": "import torch\n\ndef gradient_at(value):\n    x = torch.tensor(float(value), requires_grad=True)\n    y = x ** 2 + 3 * x\n    y.backward()\n    return x.grad.item()\n",
+    "success": "你已亲手走通计算图、反向传播和读取梯度。"
+  },
+  {
+    "id": "t4",
+    "group": "训练第一步",
+    "title": "把计算装进模型",
+    "tag": "nn.Module · Linear",
+    "minutes": 18,
+    "runtime": "torch",
+    "intro": "nn.Module 是模型的基类。__init__ 保存层，forward 描述输入怎样变成输出。nn.Linear(3,2) 把每条样本的 3 个特征映射为 2 个输出。",
+    "example": "import torch\nfrom torch import nn\n\nclass MyModel(nn.Module):\n    def __init__(self):\n        super().__init__()\n        self.layer = nn.Linear(3, 2)\n\n    def forward(self, x):\n        return self.layer(x)",
+    "cpp": "self 类似 this；super().__init__() 初始化父类。调用 model(x) 会进入 forward。",
+    "visual": "tensor",
+    "quiz": {
+      "question": "nn.Linear(3,2) 接收形状 [5,3] 的输入，输出形状是什么？",
+      "options": [
+        "[3,2]",
+        "[5,2]",
+        "[2,5]"
+      ],
+      "answer": 1,
+      "why": [
+        "3 是输入特征数，5 条样本仍然存在。",
+        "对。样本数 5 不变，每条样本变成 2 个输出。",
+        "Linear 不会把样本维移动到最后。"
+      ]
+    },
+    "task": "导入 torch 和 nn，定义 TinyModel 类，继承 nn.Module。内部使用一个 nn.Linear(3,2)，在 forward 中调用这一层。",
+    "signature": "class TinyModel(nn.Module)",
+    "tests": [
+      {
+        "label": "批量输出形状",
+        "expr": "list(TinyModel()(torch.ones(5, 3)).shape)",
+        "expected": [
+          5,
+          2
+        ]
+      },
+      {
+        "label": "单条样本",
+        "expr": "list(TinyModel()(torch.zeros(1, 3)).shape)",
+        "expected": [
+          1,
+          2
+        ]
+      },
+      {
+        "label": "参数已注册",
+        "expr": "sum(p.numel() for p in TinyModel().parameters())",
+        "expected": 8
+      },
+      {
+        "label": "输出能够求导",
+        "expr": "TinyModel()(torch.ones(2, 3)).requires_grad",
+        "expected": true
+      }
+    ],
+    "hints": [
+      "先写 import torch 与 from torch import nn。",
+      "__init__ 中调用 super().__init__()，保存 self.layer = nn.Linear(3, 2)。",
+      "forward(self, x) 中 return self.layer(x)。"
+    ],
+    "solution": "import torch\nfrom torch import nn\n\nclass TinyModel(nn.Module):\n    def __init__(self):\n        super().__init__()\n        self.layer = nn.Linear(3, 2)\n\n    def forward(self, x):\n        return self.layer(x)\n",
+    "success": "这是一个有可训练参数的真实 PyTorch 模型。"
+  },
+  {
+    "id": "t5",
+    "group": "训练第一步",
+    "title": "完成一次参数更新",
+    "tag": "loss · optimizer",
+    "minutes": 18,
+    "runtime": "torch",
+    "intro": "一次训练步骤是：清空旧梯度 → 前向计算 → 计算损失 → 反向传播 → 更新参数。优化器负责修改参数；backward 本身只计算梯度。",
+    "example": "optimizer.zero_grad()\npred = model(x)\nloss = ((pred - target) ** 2).mean()\nloss.backward()\noptimizer.step()",
+    "cpp": "zero_grad 防止旧梯度继续累积。学习率控制参数每次走多远。",
+    "visual": "gradient",
+    "quiz": {
+      "question": "哪一步真正让优化器修改模型参数？",
+      "options": [
+        "loss.backward()",
+        "optimizer.step()",
+        "optimizer.zero_grad()"
+      ],
+      "answer": 1,
+      "why": [
+        "backward 计算并存储梯度；参数还没更新。",
+        "对。step 根据梯度和学习率更新参数。",
+        "zero_grad 清空旧梯度。"
+      ]
+    },
+    "task": "导入 torch，定义 update_weight(start)。用一个 requires_grad=True 的浮点标量 w，优化 loss=(w-3)²。用 SGD、学习率 0.1 完成一次训练步骤，返回更新后的 w.item()。",
+    "signature": "def update_weight(start) → 数值",
+    "tests": [
+      {
+        "label": "从 w=0 出发",
+        "expr": "update_weight(0)",
+        "expected": 0.6
+      },
+      {
+        "label": "从 w=5 出发",
+        "expr": "update_weight(5)",
+        "expected": 4.6
+      },
+      {
+        "label": "已经在最小点",
+        "expr": "update_weight(3)",
+        "expected": 3
+      }
+    ],
+    "hints": [
+      "w = torch.tensor(float(start), requires_grad=True)，optimizer = torch.optim.SGD([w], lr=0.1)。",
+      "zero_grad 后算 loss = (w - 3) ** 2，再 loss.backward()。",
+      "optimizer.step() 后 return w.item()。"
+    ],
+    "solution": "import torch\n\ndef update_weight(start):\n    w = torch.tensor(float(start), requires_grad=True)\n    optimizer = torch.optim.SGD([w], lr=0.1)\n    optimizer.zero_grad()\n    loss = (w - 3) ** 2\n    loss.backward()\n    optimizer.step()\n    return w.item()\n",
+    "success": "从前向计算到参数更新，你已经走通最小训练闭环。"
+  },
+  {
+    "id": "t6",
+    "group": "训练第一步",
+    "title": "训练你的第一条直线",
+    "tag": "训练循环 · 小实验",
+    "minutes": 25,
+    "runtime": "torch",
+    "intro": "把一次更新放进循环，就得到训练过程。这里拟合 y=2x+1：模型只有斜率 w 和截距 b，均方误差把预测与目标联系起来。",
+    "example": "x = torch.tensor([-2., -1., 0., 1., 2.])\ny = 2 * x + 1\n# 预测：pred = w * x + b\n# 损失：((pred - y) ** 2).mean()",
+    "cpp": "先用小任务确认训练循环确实能学到参数，再扩大到更复杂的数据与网络。",
+    "visual": "gradient",
+    "quiz": {
+      "question": "想判断训练程序是否真的有效，最有帮助的是？",
+      "options": [
+        "代码没有报错就够了",
+        "检查损失下降、参数是否接近目标",
+        "只看代码行数是否足够多"
+      ],
+      "answer": 1,
+      "why": [
+        "能运行只说明语法和部分运行条件通过。",
+        "对。这里有已知目标 w=2、b=1，可以直接检查是否学到。",
+        "程序长短不能说明学习是否正确。"
+      ]
+    },
+    "task": "定义 fit_line()，用 PyTorch 训练 y=wx+b。数据 x=[-2,-1,0,1,2]、目标 y=2x+1；w、b 从 0 开始，SGD 学习率 0.1，训练 100 次。返回 (w.item(), b.item())，误差允许 0.01。",
+    "signature": "def fit_line() → (w, b)",
+    "tests": [
+      {
+        "label": "学到斜率与截距",
+        "expr": "fit_line()",
+        "expected": [
+          2,
+          1
+        ],
+        "tolerance": 0.01
+      },
+      {
+        "label": "返回两个 Python 数值",
+        "expr": "all(isinstance(v, (int, float)) for v in fit_line())",
+        "expected": true
+      }
+    ],
+    "hints": [
+      "创建 x、y，以及需要梯度的 w、b；把 [w,b] 交给 SGD。",
+      "for _ in range(100): 内依次 zero_grad、算均方误差、backward、step。",
+      "循环外 return (w.item(), b.item())。"
+    ],
+    "solution": "import torch\n\ndef fit_line():\n    x = torch.tensor([-2., -1., 0., 1., 2.])\n    y = 2 * x + 1\n    w = torch.tensor(0., requires_grad=True)\n    b = torch.tensor(0., requires_grad=True)\n    optimizer = torch.optim.SGD([w, b], lr=0.1)\n    for _ in range(100):\n        optimizer.zero_grad()\n        pred = w * x + b\n        loss = ((pred - y) ** 2).mean()\n        loss.backward()\n        optimizer.step()\n    return (w.item(), b.item())\n",
+    "success": "第一轮通关。你能独立写出数据处理、张量计算与最小训练循环了。"
+  }
+]

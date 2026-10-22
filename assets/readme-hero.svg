@@ -1,0 +1,89 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="700" viewBox="0 0 1280 700" role="img" aria-labelledby="title description">
+  <title id="title">开练 · 把看懂练成写得出来</title>
+  <desc id="description">Python 与 PyTorch 交互学习平台。72 道完整练习、144 道理解题、144 个讲解例题、18 份考核、136 道新增题、24 道独立复习题。</desc>
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#111827"/><stop offset=".52" stop-color="#202146"/><stop offset="1" stop-color="#102c36"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2=".3"><stop stop-color="#a899ff"/><stop offset=".5" stop-color="#80baff"/><stop offset="1" stop-color="#65e8c7"/></linearGradient>
+    <linearGradient id="button" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#a79aff"/><stop offset="1" stop-color="#8073f6"/></linearGradient>
+    <radialGradient id="glow"><stop stop-color="#8b7afe" stop-opacity=".25"/><stop offset="1" stop-color="#8b7afe" stop-opacity="0"/></radialGradient>
+    <pattern id="grid" width="38" height="38" patternUnits="userSpaceOnUse"><path d="M38 0H0V38" fill="none" stroke="#c2c8ff" stroke-opacity=".055"/></pattern>
+    <clipPath id="cover"><rect x="1" y="1" width="1278" height="698" rx="30"/></clipPath>
+  </defs>
+  <g clip-path="url(#cover)">
+    <rect width="1280" height="700" fill="url(#bg)"/>
+    <rect width="1280" height="700" fill="url(#grid)"/>
+    <circle cx="770" cy="100" r="430" fill="url(#glow)"/>
+    <path d="M960-130 1460 220 1120 450 620 100Z" fill="#84e7d8" opacity=".025"/>
+    <circle cx="1224" cy="90" r="181" fill="none" stroke="#8b9af6" stroke-opacity=".09"/>
+    <circle cx="1224" cy="90" r="222" fill="none" stroke="#8b9af6" stroke-opacity=".055"/>
+    <g font-family="-apple-system,BlinkMacSystemFont,'Segoe UI','Microsoft YaHei','Noto Sans CJK SC',sans-serif">
+      <g transform="translate(64 48)">
+        <rect width="29" height="29" rx="9" fill="url(#accent)"/>
+        <path d="M10 8 21 14.5 10 21Z" fill="#19203d"/>
+        <text x="42" y="21" fill="#eef0ff" font-size="19" font-weight="700" letter-spacing="2">KAILIAN</text>
+        <text x="178" y="20" fill="#838fb0" font-size="13">A PRACTICE-FIRST LEARNING LAB</text>
+      </g>
+      <rect x="64" y="116" width="230" height="30" rx="15" fill="#b4a7ff" fill-opacity=".1" stroke="#b4a7ff" stroke-opacity=".22"/>
+      <circle cx="82" cy="131" r="3" fill="#8edbc8"/>
+      <text x="95" y="136" font-size="12" font-weight="600" letter-spacing="1.4" fill="#c9c2ff">PYTHON × PYTORCH</text>
+      <text x="59" y="259" font-size="108" font-weight="750" fill="#f5f5ff" letter-spacing="6">开练</text>
+      <rect x="64" y="280" width="78" height="5" rx="2.5" fill="url(#accent)"/>
+      <text x="64" y="336" font-size="34" font-weight="650" fill="#f0f0ff">把「看懂」练成「写得出来」。</text>
+      <text x="66" y="376" font-size="17" fill="#aab4ce" letter-spacing="1">讲解 · 预测 · 独立实现 · 分层考核</text>
+      <g transform="translate(64 412)">
+        <rect width="180" height="49" rx="13" fill="url(#button)"/>
+        <path d="M24 17 36 24.5 24 32Z" fill="#171d39"/>
+        <text x="49" y="31" fill="#161c36" font-weight="700" font-size="16">开始下一次训练</text>
+        <rect x="194" width="153" height="49" rx="13" fill="#ffffff" fill-opacity=".035" stroke="#b7c1e4" stroke-opacity=".17"/>
+        <text x="213" y="31" fill="#d1d9f1" font-size="14">122 道编程任务</text>
+      </g>
+      <g transform="translate(768 112)">
+        <rect x="0" y="10" width="447" height="345" rx="20" fill="#030915" opacity=".25"/>
+        <rect width="447" height="345" rx="20" fill="#151d31" stroke="#727da7" stroke-opacity=".4"/>
+        <path d="M20 0H427Q447 0 447 20V46H0V20Q0 0 20 0" fill="#202941"/>
+        <circle cx="22" cy="23" r="4" fill="#fc8c91"/><circle cx="38" cy="23" r="4" fill="#f5ce7d"/><circle cx="54" cy="23" r="4" fill="#77d6b1"/>
+        <text x="83" y="28" font-size="11" fill="#abb8da" letter-spacing=".5">predict_then_run.py</text>
+        <text x="398" y="28" font-size="10" fill="#7887ab">PY</text>
+        <text x="24" y="86" font-size="11" fill="#939fc5" letter-spacing="1.1">先预测，再运行。</text>
+        <g font-family="Consolas,'Liberation Mono',monospace" font-size="18">
+          <text x="24" y="129" fill="#556384" font-size="13">1</text><text x="56" y="129" fill="#dce6ff">score <tspan fill="#8797c0">=</tspan> <tspan fill="#f5d48d">70</tspan></text>
+          <text x="24" y="164" fill="#556384" font-size="13">2</text><text x="56" y="164" fill="#dce6ff">score <tspan fill="#8797c0">+=</tspan> <tspan fill="#f5d48d">5</tspan></text>
+          <text x="24" y="199" fill="#556384" font-size="13">3</text><text x="56" y="199" fill="#bfaeff">print<tspan fill="#dce6ff">(score)</tspan></text>
+        </g>
+        <rect x="22" y="229" width="403" height="91" rx="12" fill="#65d7b2" fill-opacity=".065" stroke="#65d7b2" stroke-opacity=".22"/>
+        <text x="39" y="254" font-size="11" letter-spacing="1" fill="#7eae9e">STANDARD OUTPUT</text>
+        <text x="39" y="291" font-family="Consolas,monospace" font-size="30" fill="#93edcd">75</text>
+        <circle cx="389" cy="275" r="13" fill="#6be0b8" fill-opacity=".13"/>
+        <path d="m383 275 4 4 8-9" fill="none" stroke="#91ebcc" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      </g>
+      <path d="M64 492H1216" stroke="#c1c8e9" stroke-opacity=".11"/>
+      <g transform="translate(64 514)">
+        <rect width="180" height="103" rx="14" fill="#afa0ff" fill-opacity=".075" stroke="#afa0ff" stroke-opacity=".16"/>
+        <text x="20" y="47" font-size="36" font-weight="700" fill="#c2b6ff">72</text><text x="20" y="77" font-size="13" fill="#b6c1dc">完整编程练习</text>
+      </g>
+      <g transform="translate(256 514)">
+        <rect width="180" height="103" rx="14" fill="#79b7ff" fill-opacity=".065" stroke="#79b7ff" stroke-opacity=".15"/>
+        <text x="20" y="47" font-size="36" font-weight="700" fill="#91c4ff">144</text><text x="20" y="77" font-size="13" fill="#b6c1dc">理解测验</text>
+      </g>
+      <g transform="translate(448 514)">
+        <rect width="180" height="103" rx="14" fill="#6bdfcc" fill-opacity=".055" stroke="#6bdfcc" stroke-opacity=".15"/>
+        <text x="20" y="47" font-size="36" font-weight="700" fill="#83e7d4">144</text><text x="20" y="77" font-size="13" fill="#b6c1dc">可运行讲解例题</text>
+      </g>
+      <g transform="translate(640 514)">
+        <rect width="180" height="103" rx="14" fill="#f2cc84" fill-opacity=".06" stroke="#f2cc84" stroke-opacity=".15"/>
+        <text x="20" y="47" font-size="36" font-weight="700" fill="#f2d494">18</text><text x="20" y="77" font-size="13" fill="#b6c1dc">分层考核</text>
+      </g>
+      <g transform="translate(832 514)">
+        <rect width="180" height="103" rx="14" fill="#e8a0c6" fill-opacity=".055" stroke="#e8a0c6" stroke-opacity=".15"/>
+        <text x="20" y="47" font-size="36" font-weight="700" fill="#efb4d3">136</text><text x="20" y="77" font-size="13" fill="#b6c1dc">新增考核与复习题</text>
+      </g>
+      <g transform="translate(1024 514)">
+        <rect width="180" height="103" rx="14" fill="#9dd58f" fill-opacity=".055" stroke="#9dd58f" stroke-opacity=".15"/>
+        <text x="20" y="47" font-size="36" font-weight="700" fill="#b3dfaa">24</text><text x="20" y="77" font-size="13" fill="#b6c1dc">独立延迟复习题</text>
+      </g>
+      <text x="65" y="657" font-size="12" fill="#8392b4">20–30 小时实践主线 · 考核额外 310 分钟 · 新增 136 题已包含 50 道编程题与 24 道独立复习题</text>
+      <text x="1173" y="657" text-anchor="end" font-size="12" fill="#a2aec9">READ. PREDICT. BUILD.</text>
+    </g>
+  </g>
+  <rect x="1" y="1" width="1278" height="698" rx="30" fill="none" stroke="#6977aa" stroke-opacity=".25"/>
+</svg>

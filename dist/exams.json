@@ -1,0 +1,5274 @@
+{
+  "version": 1,
+  "additionalMinutes": 310,
+  "exams": [
+    {
+      "id": "chapter-c01",
+      "kind": "chapter",
+      "title": "第 1 章 · 输入与控制流验收",
+      "chapters": [
+        "c01"
+      ],
+      "minutes": 10,
+      "itemIds": [
+        "ax-py-c01-stock",
+        "ax-py-c01-scan",
+        "ax-py-c01-input",
+        "ax-py-c01-branches",
+        "ax-py-c01-fare",
+        "ax-py-c01-sentinel"
+      ],
+      "description": "独立追踪变量与循环，识别分支顺序问题，再写两个完整程序。"
+    },
+    {
+      "id": "chapter-c02",
+      "kind": "chapter",
+      "title": "第 2 章 · 序列与文本验收",
+      "chapters": [
+        "c02"
+      ],
+      "minutes": 10,
+      "itemIds": [
+        "ax-py-c02-copy",
+        "ax-py-c02-tokens",
+        "ax-py-c02-mask",
+        "ax-py-c02-shared",
+        "ax-py-c02-peak",
+        "ax-py-c02-dictionary-order"
+      ],
+      "description": "区分副本与共享引用，处理真实零值、窗口边界和文本顺序。"
+    },
+    {
+      "id": "chapter-c03",
+      "kind": "chapter",
+      "title": "第 3 章 · 函数与生成器验收",
+      "chapters": [
+        "c03"
+      ],
+      "minutes": 10,
+      "itemIds": [
+        "ax-py-c03-return",
+        "ax-py-c03-default-list",
+        "ax-py-c03-generator",
+        "ax-py-c03-invalid-average",
+        "ax-py-c03-weighted-hits",
+        "ax-py-c03-budget-stream"
+      ],
+      "description": "区分打印与返回、显式零值与默认值，独立写有清晰契约的函数。"
+    },
+    {
+      "id": "cumulative-03",
+      "kind": "cumulative",
+      "title": "累计测验 · Python 前三章",
+      "chapters": [
+        "c01",
+        "c02",
+        "c03"
+      ],
+      "minutes": 25,
+      "itemIds": [
+        "ax-py-cum03-references",
+        "ax-py-cum03-lazy",
+        "ax-py-cum03-default-bug",
+        "ax-py-cum03-window-boundary",
+        "ax-py-cum03-target-runs",
+        "ax-py-cum03-chunk-totals"
+      ],
+      "description": "交错检查控制流、序列副本、函数参数和惰性迭代，不依赖原练习的固定数据。"
+    },
+    {
+      "id": "chapter-c04",
+      "kind": "chapter",
+      "title": "第 4 章 · 字典与实验数据验收",
+      "chapters": [
+        "c04"
+      ],
+      "minutes": 10,
+      "itemIds": [
+        "ax-py-c04-counts",
+        "ax-py-c04-config",
+        "ax-py-c04-weighting",
+        "ax-py-c04-checkpoint",
+        "ax-py-c04-team-counts",
+        "ax-py-c04-qualified-ranking"
+      ],
+      "description": "检查嵌套副本、指标有效性与分组权重，并实现完整的分组榜单。"
+    },
+    {
+      "id": "chapter-c05",
+      "kind": "chapter",
+      "title": "第 5 章 · 文件与错误处理验收",
+      "chapters": [
+        "c05"
+      ],
+      "minutes": 10,
+      "itemIds": [
+        "ax-py-c05-csv",
+        "ax-py-c05-json-structure",
+        "ax-py-c05-json-api",
+        "ax-py-c05-exception",
+        "ax-py-c05-csv-to-json",
+        "ax-py-c05-number-log"
+      ],
+      "description": "用明确的文件格式与异常边界处理数据，验证返回结果及实际写出的文件。"
+    },
+    {
+      "id": "chapter-c06",
+      "kind": "chapter",
+      "title": "第 6 章 · 类与数据流水线验收",
+      "chapters": [
+        "c06"
+      ],
+      "minutes": 10,
+      "itemIds": [
+        "ax-py-c06-protocol",
+        "ax-py-c06-compose",
+        "ax-py-c06-aggregation",
+        "ax-py-c06-early-stop",
+        "ax-py-c06-recent-mean",
+        "ax-py-c06-transform-dataset"
+      ],
+      "description": "检查对象协议、加权统计、提前停止规则，并实现有独立状态的数据组件。"
+    },
+    {
+      "id": "cumulative-06",
+      "kind": "cumulative",
+      "title": "累计测验 · Python 六章联考",
+      "chapters": [
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "c05",
+        "c06"
+      ],
+      "minutes": 25,
+      "itemIds": [
+        "ax-py-cum06-json-groups",
+        "ax-py-cum06-instance-state",
+        "ax-py-cum06-leakage",
+        "ax-py-cum06-mutation",
+        "ax-py-cum06-counter-diff",
+        "ax-py-cum06-latest-log"
+      ],
+      "description": "把结构验证、字典聚合、真实文件和对象状态放在同一份卷中复用。"
+    },
+    {
+      "id": "stage-python",
+      "kind": "stage",
+      "title": "Python 阶段考核 · 独立实验脚本",
+      "chapters": [
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "c05",
+        "c06"
+      ],
+      "minutes": 45,
+      "itemIds": [
+        "ax-py-stage-return-alias",
+        "ax-py-stage-stable-ranking",
+        "ax-py-stage-config-isolation",
+        "ax-py-stage-exception-scope",
+        "ax-py-stage-validation-boundary",
+        "ax-py-stage-session-summary",
+        "ax-py-stage-prediction-ledger",
+        "ax-py-stage-team-export"
+      ],
+      "description": "在新情境中独立追踪语义、判断实现边界，并完成聚合函数、状态组件与真实文件转换。"
+    },
+    {
+      "id": "chapter-c07",
+      "kind": "chapter",
+      "title": "张量形状与索引 · 章末验收",
+      "chapters": [
+        "c07"
+      ],
+      "minutes": 10,
+      "itemIds": [
+        "ax-torch-07-o1",
+        "ax-torch-07-o2",
+        "ax-torch-07-m1",
+        "ax-torch-07-m2",
+        "ax-torch-07-c1",
+        "ax-torch-07-c2"
+      ],
+      "description": "闭卷检查批次轴、有效位置和向量化索引，提交后统一讲评。"
+    },
+    {
+      "id": "chapter-c08",
+      "kind": "chapter",
+      "title": "广播与数值稳定 · 章末验收",
+      "chapters": [
+        "c08"
+      ],
+      "minutes": 10,
+      "itemIds": [
+        "ax-torch-08-o1",
+        "ax-torch-08-o2",
+        "ax-torch-08-m1",
+        "ax-torch-08-m2",
+        "ax-torch-08-c1",
+        "ax-torch-08-c2"
+      ],
+      "description": "检查维度语义、稳定损失和注意力的数据流。"
+    },
+    {
+      "id": "chapter-c09",
+      "kind": "chapter",
+      "title": "梯度与训练排错 · 章末验收",
+      "chapters": [
+        "c09"
+      ],
+      "minutes": 10,
+      "itemIds": [
+        "ax-torch-09-o1",
+        "ax-torch-09-o2",
+        "ax-torch-09-m1",
+        "ax-torch-09-m2",
+        "ax-torch-09-c1",
+        "ax-torch-09-c2"
+      ],
+      "description": "区分函数值、梯度、计算图和累积权重。"
+    },
+    {
+      "id": "cumulative-09",
+      "kind": "cumulative",
+      "title": "累计验收 · Python 到自动微分",
+      "chapters": [
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "c05",
+        "c06",
+        "c07",
+        "c08",
+        "c09"
+      ],
+      "minutes": 25,
+      "itemIds": [
+        "ax-torch-cum09-o1",
+        "ax-torch-cum09-o2",
+        "ax-torch-cum09-m1",
+        "ax-torch-cum09-m2",
+        "ax-torch-cum09-c1",
+        "ax-torch-cum09-c2"
+      ],
+      "description": "把Python分组、数据校验与张量梯度放在新任务中综合检查。"
+    },
+    {
+      "id": "chapter-c10",
+      "kind": "chapter",
+      "title": "模型与数据加载 · 章末验收",
+      "chapters": [
+        "c10"
+      ],
+      "minutes": 10,
+      "itemIds": [
+        "ax-torch-10-o1",
+        "ax-torch-10-o2",
+        "ax-torch-10-m1",
+        "ax-torch-10-m2",
+        "ax-torch-10-c1",
+        "ax-torch-10-c2"
+      ],
+      "description": "在新数据接口中检验参数注册、组批与模式管理。"
+    },
+    {
+      "id": "chapter-c11",
+      "kind": "chapter",
+      "title": "训练、评估与恢复 · 章末验收",
+      "chapters": [
+        "c11"
+      ],
+      "minutes": 10,
+      "itemIds": [
+        "ax-torch-11-o1",
+        "ax-torch-11-o2",
+        "ax-torch-11-m1",
+        "ax-torch-11-m2",
+        "ax-torch-11-c1",
+        "ax-torch-11-c2"
+      ],
+      "description": "通过指标聚合和真实续训检验训练代码的完整性。"
+    },
+    {
+      "id": "chapter-c12",
+      "kind": "chapter",
+      "title": "综合实验与挑战 · 章末验收",
+      "chapters": [
+        "c12"
+      ],
+      "minutes": 10,
+      "itemIds": [
+        "ax-torch-12-o1",
+        "ax-torch-12-o2",
+        "ax-torch-12-m1",
+        "ax-torch-12-m2",
+        "ax-torch-12-c1",
+        "ax-torch-12-c2"
+      ],
+      "description": "检查因果信息边界、序列聚合和完整拟合过程。"
+    },
+    {
+      "id": "cumulative-12",
+      "kind": "cumulative",
+      "title": "累计验收 · 从数据到独立评估",
+      "chapters": [
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "c05",
+        "c06",
+        "c07",
+        "c08",
+        "c09",
+        "c10",
+        "c11",
+        "c12"
+      ],
+      "minutes": 25,
+      "itemIds": [
+        "ax-torch-cum12-o1",
+        "ax-torch-cum12-o2",
+        "ax-torch-cum12-m1",
+        "ax-torch-cum12-m2",
+        "ax-torch-cum12-c1",
+        "ax-torch-cum12-c2"
+      ],
+      "description": "结合Python状态管理、采样权重和带padding的真实评估循环。"
+    },
+    {
+      "id": "stage-torch",
+      "kind": "stage",
+      "title": "阶段验收 · 完整数据、训练与评估",
+      "chapters": [
+        "c01",
+        "c02",
+        "c03",
+        "c04",
+        "c05",
+        "c06",
+        "c07",
+        "c08",
+        "c09",
+        "c10",
+        "c11",
+        "c12"
+      ],
+      "minutes": 45,
+      "itemIds": [
+        "ax-torch-stage-o1",
+        "ax-torch-stage-o2",
+        "ax-torch-stage-m1",
+        "ax-torch-stage-m2",
+        "ax-torch-stage-m3",
+        "ax-torch-stage-c1",
+        "ax-torch-stage-c2",
+        "ax-torch-stage-c3"
+      ],
+      "description": "独立完成记录清洗、训练统计、真实SGD和无泄漏验证；交卷后统一查看讲评。"
+    }
+  ],
+  "items": [
+    {
+      "id": "ax-py-c01-stock",
+      "chapter": "c01",
+      "kind": "output",
+      "prompt": "写出这段仓库记录程序的完整标准输出。",
+      "explanation": "reserved 先保存 9；改变 boxes 不会自动重算它，最后再加 3。",
+      "skills": [
+        "p1"
+      ],
+      "points": 2,
+      "code": "boxes = 14\nreserved = boxes - 5\nboxes = 3\nreserved += boxes\nprint(boxes, reserved)\n",
+      "expectedStdout": "3 12",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c01-scan",
+      "chapter": "c01",
+      "kind": "output",
+      "prompt": "写出完整标准输出，每个 print 的结果各占一行。",
+      "explanation": "range 依次产生 2、5、8，不含终点 9；循环外的输出只执行一次。",
+      "skills": [
+        "p3",
+        "py03"
+      ],
+      "points": 2,
+      "code": "total = 0\nfor value in range(2, 9, 3):\n    total += value\n    print(total)\nprint(\"done\")\n",
+      "expectedStdout": "2\n7\n15\ndone",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c01-input",
+      "chapter": "c01",
+      "kind": "choice",
+      "prompt": "标准输入是一行 24。运行代码后会输出什么？",
+      "explanation": "input() 得到字符串 \"24\"，与字符串 \"6\" 相加是在拼接；int 转换才会做数值加法。",
+      "skills": [
+        "py01"
+      ],
+      "points": 1,
+      "options": [
+        "24 6",
+        "246",
+        "抛出 TypeError"
+      ],
+      "answer": 1,
+      "runtime": "python",
+      "code": "value = input()\nprint(value + \"6\")\n"
+    },
+    {
+      "id": "ax-py-c01-branches",
+      "chapter": "c01",
+      "kind": "choice",
+      "prompt": "这段程序原本想对温度分三级。关于输入温度 35，哪项判断正确？",
+      "explanation": "if/elif 只执行首个成立分支；要优先识别高温，应先判断 >=30。",
+      "skills": [
+        "py02"
+      ],
+      "points": 1,
+      "options": [
+        "输出 hot，因为后面的条件更严格",
+        "输出 warm，因为首个分支已匹配；hot 分支不会执行",
+        "依次输出 warm 和 hot"
+      ],
+      "answer": 1,
+      "runtime": "python",
+      "code": "temperature = 35\nif temperature >= 20:\n    print(\"warm\")\nelif temperature >= 30:\n    print(\"hot\")\nelse:\n    print(\"cold\")\n"
+    },
+    {
+      "id": "ax-py-c01-fare",
+      "chapter": "c01",
+      "kind": "code",
+      "prompt": "标准输入是一行整数 age。age<0 时输出 INVALID；0–5 岁输出 0；6–17 岁输出 8；18 岁及以上输出 15。只输出一个结果，不输出输入提示。",
+      "explanation": "先排除负值，再按从小到大的上界判断；边界 5/6 和 17/18 决定分支是否完整。",
+      "skills": [
+        "py01",
+        "py02"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-c01-fare",
+      "signature": "完整程序 · input / if / print",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c01-sentinel",
+      "chapter": "c01",
+      "kind": "code",
+      "prompt": "标准输入为一行整数，可为空。把第一个 0 当作结束标记，0 及其后所有数均忽略。输出结束标记之前能被 3 整除的数的个数；负数也按同一整除规则处理。没有 0 时检查整行。",
+      "explanation": "先判断标记再计数，才能忽略 0 以及后续项。这里只累计个数，不能把满足条件的数直接求和。",
+      "skills": [
+        "p1",
+        "p3",
+        "py04"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-c01-sentinel",
+      "signature": "完整程序 · 循环 / break / 计数",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c02-copy",
+      "chapter": "c02",
+      "kind": "output",
+      "prompt": "写出两行完整输出，注意切片复制的范围。",
+      "explanation": "切片新建外层列表；替换 tail 的元素不修改 readings。右边界索引 3 不包含。",
+      "skills": [
+        "p2",
+        "py05"
+      ],
+      "points": 2,
+      "code": "readings = [8, 6, 4, 2]\ntail = readings[1:3]\ntail[0] = 99\nprint(readings[-1], readings[0])\nprint(tail)\n",
+      "expectedStdout": "2 8\n[99, 4]",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c02-tokens",
+      "chapter": "c02",
+      "kind": "output",
+      "prompt": "写出完整标准输出。这里没有文件或隐藏输入。",
+      "explanation": "默认 split 处理空格、制表符与换行；lower 不会删除感叹号。",
+      "skills": [
+        "py06"
+      ],
+      "points": 2,
+      "code": "text = \"  NET\\tLab!\\nNET  \"\nwords = text.lower().split()\nprint(len(words))\nprint(words[1])\n",
+      "expectedStdout": "3\nlab!",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c02-mask",
+      "chapter": "c02",
+      "kind": "choice",
+      "prompt": "长度不同的原序列是 [0,7] 与 [4]。右侧补 0 后，哪一组 mask 正确？",
+      "explanation": "mask 描述原位置是否存在。第一行的 0 是有效数据，第二行末尾的 0 才是 padding。",
+      "skills": [
+        "py09"
+      ],
+      "points": 1,
+      "options": [
+        "[[True,True],[True,False]]",
+        "[[True,True],[True,True]]",
+        "[[False,True],[True,False]]"
+      ],
+      "answer": 0,
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c02-shared",
+      "chapter": "c02",
+      "kind": "choice",
+      "prompt": "想得到两行彼此独立的结果。下列代码的问题是什么？",
+      "explanation": "外层乘法复制的是同一行的引用。循环中分别创建每一行，才能避免共享状态。",
+      "skills": [
+        "py05",
+        "py09"
+      ],
+      "points": 1,
+      "options": [
+        "没有问题，两行独立",
+        "两行共享同一个内部列表，修改任一行都会影响另一行",
+        "整数不能放进二维列表"
+      ],
+      "answer": 1,
+      "runtime": "python",
+      "code": "rows = [[0, 0]] * 2\nrows[1][0] = 5\nprint(rows)\n"
+    },
+    {
+      "id": "ax-py-c02-peak",
+      "chapter": "c02",
+      "kind": "code",
+      "prompt": "标准输入共两行：第一行为正整数 k，第二行为整数列表（可以为空）。求任意连续 k 项的最大总和并输出；若项数不足 k，输出 EMPTY。k 保证大于 0。允许简单循环实现，不要求特定复杂度。",
+      "explanation": "以第一个真实窗口初始化 best，避免全负值时错误地返回 0；起点应包含最后一个完整窗口。",
+      "skills": [
+        "p2",
+        "py05",
+        "py07"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-c02-peak",
+      "signature": "完整程序 · 切片 / 窗口 / 边界",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c02-dictionary-order",
+      "chapter": "c02",
+      "kind": "code",
+      "prompt": "标准输入为一行文本。按任意空白分词、转为小写，再按首次出现顺序输出不重复的词，用一个空格连接；标点保留。空白行只输出空行。",
+      "explanation": "先按同一规则规范化，再检查是否见过。集合负责成员判断，列表保留首次出现的顺序。",
+      "skills": [
+        "py06",
+        "py08"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-c02-dictionary-order",
+      "signature": "完整程序 · 文本清洗 / 保序去重",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c03-return",
+      "chapter": "c03",
+      "kind": "output",
+      "prompt": "写出完整标准输出，包括函数内和函数外的 print。",
+      "explanation": "函数内打印长度 2，但调用表达式得到 return 的 7；显式 extra=0 会覆盖默认值。",
+      "skills": [
+        "p4",
+        "py10"
+      ],
+      "points": 2,
+      "code": "def shipping(items, extra=2):\n    print(len(items))\n    return sum(items) + extra\nresult = shipping([3, 4], extra=0)\nprint(result)\n",
+      "expectedStdout": "2\n7",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c03-default-list",
+      "chapter": "c03",
+      "kind": "output",
+      "prompt": "写出两行完整输出。",
+      "explanation": "显式传入 saved 时更新它；没有传入时创建新的列表，因此第二次不会改 saved。",
+      "skills": [
+        "py12"
+      ],
+      "points": 2,
+      "code": "def collect(value, bucket=None):\n    if bucket is None:\n        bucket = []\n    bucket.append(value)\n    return bucket\nsaved = []\nprint(collect(4, saved))\nprint(collect(9), saved)\n",
+      "expectedStdout": "[4]\n[9] [4]",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c03-generator",
+      "chapter": "c03",
+      "kind": "choice",
+      "prompt": "执行到 line = stream() 后，哪项描述正确？",
+      "explanation": "含 yield 的函数调用先创建生成器；函数体在 next 或迭代时才开始执行。",
+      "skills": [
+        "py11"
+      ],
+      "points": 1,
+      "options": [
+        "尚未输出 begin，line 是生成器对象",
+        "已输出 begin，line 是整数 2",
+        "已经输出 begin，line 是 [2]"
+      ],
+      "answer": 0,
+      "runtime": "python",
+      "code": "def stream():\n    print(\"begin\")\n    yield 2\nline = stream()\n"
+    },
+    {
+      "id": "ax-py-c03-invalid-average",
+      "chapter": "c03",
+      "kind": "choice",
+      "prompt": "函数要求概率全在 [0,1] 且非空。哪种验证能同时拒绝空列表与 NaN？",
+      "explanation": "NaN 的 <0 与 >1 都为 False；正向区间判断对 NaN 为 False。sum 为零则可能只是全零合法输入。",
+      "skills": [
+        "py13"
+      ],
+      "points": 1,
+      "options": [
+        "if any(x < 0 or x > 1 for x in values): raise ValueError()",
+        "if not sum(values): raise ValueError()",
+        "if not values or any(not 0 <= x <= 1 for x in values): raise ValueError()"
+      ],
+      "answer": 2,
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c03-weighted-hits",
+      "chapter": "c03",
+      "kind": "code",
+      "prompt": "定义 weighted_accuracy(preds,labels,weights)。三个输入是等长列表，weights 为有限非负数。返回正确预测对应的权重之和 / 总权重；总权重为 0 时返回 0.0。长度不一致抛 ValueError。不得修改输入。",
+      "explanation": "分子只累计正确项的权重，分母累计所有权重。先验证长度，避免 zip 静默截断。",
+      "skills": [
+        "p4",
+        "p6",
+        "py13"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-c03-weighted-hits",
+      "signature": "def weighted_accuracy(preds, labels, weights)",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c03-budget-stream",
+      "chapter": "c03",
+      "kind": "code",
+      "prompt": "定义 within_budget(costs,budget)，返回生成器。costs 是有限非负数列表，budget 为有限数。按原序逐项产出费用，只有累计费用不超过 budget 才产出；遇到首个无法容纳的费用就结束，后续不再跳选。budget<0 在开始迭代时抛 ValueError。不修改 costs。",
+      "explanation": "累计后是否越界决定能否 yield；遇到无法容纳的费用使用 break，因此不会从后面挑便宜项填空。",
+      "skills": [
+        "py10",
+        "py11",
+        "py13"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-c03-budget-stream",
+      "signature": "def within_budget(costs, budget)",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c04-counts",
+      "chapter": "c04",
+      "kind": "output",
+      "prompt": "写出完整标准输出。字典的键顺序按首次插入顺序保留。",
+      "explanation": "已有键更新不会重新插入；cat 出现两次。",
+      "skills": [
+        "py14"
+      ],
+      "points": 2,
+      "code": "counts = {}\nfor label in ['dog', 'cat', 'dog', 'bird', 'cat']:\n    counts[label] = counts.get(label, 0) + 1\nprint(list(counts))\nprint(counts['cat'])\n",
+      "expectedStdout": "['dog', 'cat', 'bird']\n2",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c04-config",
+      "chapter": "c04",
+      "kind": "output",
+      "prompt": "写出完整标准输出。",
+      "explanation": "浅复制与 original 共享内部 tags；deep 中的追加不影响 original。get 保留显式的零。",
+      "skills": [
+        "py17",
+        "p5"
+      ],
+      "points": 2,
+      "code": "import copy\noriginal = {'tags': ['fast'], 'limit': 0}\nshallow = original.copy()\ndeep = copy.deepcopy(original)\nshallow['tags'].append('cpu')\ndeep['tags'].append('gpu')\nprint(original['tags'])\nprint(original.get('limit', 8))\n",
+      "expectedStdout": "['fast', 'cpu']\n0",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c04-weighting",
+      "chapter": "c04",
+      "kind": "choice",
+      "prompt": "模型 A 的两条 loss 是 0 和 4，模型 B 的一条 loss 是 10。三条记录的整体均值是多少？",
+      "explanation": "两个组的样本数不同，不能等权平均组均值；总和 14 除以总记录数 3 才是整体均值。",
+      "skills": [
+        "py15"
+      ],
+      "points": 1,
+      "options": [
+        "14/3，因为每条记录应有相同权重",
+        "7，因为只需最大与最小值",
+        "6，因为两个模型均值是 2 和 10"
+      ],
+      "answer": 0,
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c04-checkpoint",
+      "chapter": "c04",
+      "kind": "choice",
+      "prompt": "下面候选中，按有限 loss 最小、并列 epoch 最早的规则应返回哪个 epoch？",
+      "explanation": "epoch=1 的 NaN 应先过滤；剩下两条 loss 相同，所以取较早的 epoch=4。",
+      "skills": [
+        "py16",
+        "py18"
+      ],
+      "points": 1,
+      "options": [
+        "1",
+        "4",
+        "6"
+      ],
+      "answer": 1,
+      "runtime": "python",
+      "code": "records = [\n    {\"epoch\": 1, \"loss\": float(\"nan\")},\n    {\"epoch\": 6, \"loss\": 0.2},\n    {\"epoch\": 4, \"loss\": 0.2},\n]\n"
+    },
+    {
+      "id": "ax-py-c04-team-counts",
+      "chapter": "c04",
+      "kind": "code",
+      "prompt": "定义 team_counts(events)。events 是字典列表，每项有字符串 team 和 status，status 保证为 ok 或 failed。返回 {team:{ok:成功数,failed:失败数}}，每个出现的 team 都保留这两个键，即使其中一个计数为 0。空输入返回 {}，不得修改 events。",
+      "explanation": "为每个 team 单独创建计数器；两个状态都设初值，才能区分没有该状态与遗漏该字段。",
+      "skills": [
+        "p5",
+        "py14",
+        "py15"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-c04-team-counts",
+      "signature": "def team_counts(events)",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c04-qualified-ranking",
+      "chapter": "c04",
+      "kind": "code",
+      "prompt": "定义 qualified_teams(records,min_count)。每条记录含字符串 team 和有限数值 score；min_count 为正整数。按 team 分组，保留记录数至少 min_count 的组，按组平均 score 降序、team 升序返回组名列表。不得修改 records。",
+      "explanation": "先累计每组总分与次数，再筛记录数，最后用均值排序；直接按总分排序会偏向记录多的组。",
+      "skills": [
+        "py14",
+        "py15",
+        "py16"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-c04-qualified-ranking",
+      "signature": "def qualified_teams(records, min_count)",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c05-csv",
+      "chapter": "c05",
+      "kind": "output",
+      "prompt": "写出完整标准输出。CSV 数据直接写在代码中。",
+      "explanation": "引号中的逗号属于 name 字段；DictReader 的数值字段仍是字符串，需要显式转成数值。",
+      "skills": [
+        "py21"
+      ],
+      "points": 2,
+      "code": "import csv\nimport io\ntext = 'name,score\\n\"north,lab\",4\\nsouth,6\\n'\nrows = list(csv.DictReader(io.StringIO(text)))\nprint(len(rows), rows[0]['name'])\nprint(sum(float(row['score']) for row in rows))\n",
+      "expectedStdout": "2 north,lab\n10.0",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c05-json-structure",
+      "chapter": "c05",
+      "kind": "output",
+      "prompt": "写出两行完整输出。所有 JSON 数据均在代码中给出。",
+      "explanation": "null 是合法 JSON，但不是字典记录；坏 JSON 也计为无效，空白行不计。JSON 的 true 解析为 Python True。",
+      "skills": [
+        "py22",
+        "py24"
+      ],
+      "points": 2,
+      "code": "import json\nrecords = []\ninvalid = 0\nfor line in ['{\"ok\":true}', 'null', '{oops}', '   ']:\n    if not line.strip():\n        continue\n    try:\n        value = json.loads(line)\n    except json.JSONDecodeError:\n        invalid += 1\n        continue\n    if isinstance(value, dict):\n        records.append(value)\n    else:\n        invalid += 1\nprint(len(records), invalid)\nprint(records[0]['ok'])\n",
+      "expectedStdout": "1 2\nTrue",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c05-json-api",
+      "chapter": "c05",
+      "kind": "choice",
+      "prompt": "变量 raw 是字符串 '{\"rate\":0}'。怎样正确解析，并在 rate 缺失时默认使用 2，同时保留合法的 0？",
+      "explanation": "loads 接受字符串；load 接受文件对象。get 的默认值只在键缺失时使用，or 会错误替换合法零值。",
+      "skills": [
+        "py20"
+      ],
+      "points": 1,
+      "options": [
+        "json.loads(raw).get(\"rate\") or 2",
+        "json.load(raw).get(\"rate\",2)",
+        "json.loads(raw).get(\"rate\",2)"
+      ],
+      "answer": 2,
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c05-exception",
+      "chapter": "c05",
+      "kind": "choice",
+      "prompt": "这个转换函数为什么不适合作为严格解析器？",
+      "explanation": "ratio 未定义会抛 NameError，却被 except Exception 吞掉。应只捕获预期转换错误，让程序错误暴露。",
+      "skills": [
+        "py19",
+        "py23"
+      ],
+      "points": 1,
+      "options": [
+        "float 只能转换整数",
+        "它不能捕获 ValueError",
+        "它把程序自身的 NameError 也当作输入错误吞掉了"
+      ],
+      "answer": 2,
+      "runtime": "python",
+      "code": "def parse(text):\n    try:\n        return float(text) * ratio\n    except Exception:\n        return None\n"
+    },
+    {
+      "id": "ax-py-c05-csv-to-json",
+      "chapter": "c05",
+      "kind": "code",
+      "prompt": "定义 export_passes(input_path,output_path,minimum)。输入为 UTF-8 CSV，列名 name、score；score 保证是有限数值字符串。按原序收集 score>=minimum 的 name，返回名称列表，并以 UTF-8 JSON 数组覆盖写入 output_path。只有表头时返回并写入 []。文件或解析错误保持抛出。",
+      "explanation": "CSV 解析负责引号语义，数值转换负责阈值。输出是一份完整 JSON 数组，重复运行必须使用覆盖写。",
+      "skills": [
+        "py20",
+        "py21",
+        "py24"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-c05-csv-to-json",
+      "signature": "def export_passes(input_path, output_path, minimum)",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c05-number-log",
+      "chapter": "c05",
+      "kind": "code",
+      "prompt": "定义 sum_number_log(path)，读取 UTF-8 文本。空白行忽略；其余每行尝试转为 float，只接受有限数值。返回 (有效数值之和,无效非空行数)。无法转换、NaN、正负无穷均计为无效；文件不存在时保留 FileNotFoundError。空有效集总和为 0.0。",
+      "explanation": "先跳过空白，再捕获 float 转换的 ValueError；解析成功后还要用 isfinite 排除 NaN 与无穷大。",
+      "skills": [
+        "py19",
+        "py22",
+        "py23"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-c05-number-log",
+      "signature": "def sum_number_log(path)",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c06-protocol",
+      "chapter": "c06",
+      "kind": "output",
+      "prompt": "写出完整标准输出。",
+      "explanation": "构造时复制外层列表，所以 source 追加不改变长度；负索引通过 __getitem__ 保留。",
+      "skills": [
+        "py27"
+      ],
+      "points": 2,
+      "code": "class Shelf:\n    def __init__(self, values):\n        self.values = list(values)\n    def __len__(self):\n        return len(self.values)\n    def __getitem__(self, index):\n        return self.values[index] * 10\nsource = [2, 4]\nshelf = Shelf(source)\nsource.append(8)\nprint(len(shelf), shelf[-1])\n",
+      "expectedStdout": "2 40",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c06-compose",
+      "chapter": "c06",
+      "kind": "output",
+      "prompt": "写出完整标准输出。",
+      "explanation": "构造时复制变换列表，外部追加不生效；原顺序是先减 1、再乘 3。",
+      "skills": [
+        "py29"
+      ],
+      "points": 2,
+      "code": "class Pipeline:\n    def __init__(self, functions):\n        self.functions = list(functions)\n    def __call__(self, value):\n        for function in self.functions:\n            value = function(value)\n        return value\noperations = [lambda x: x - 1, lambda x: x * 3]\npipeline = Pipeline(operations)\noperations.append(lambda x: x + 100)\nprint(pipeline(5))\n",
+      "expectedStdout": "12",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c06-aggregation",
+      "chapter": "c06",
+      "kind": "choice",
+      "prompt": "两个批次分别有 2 个和 6 个样本，正确率是 1.0 与 0.5。整体正确率应如何累计？",
+      "explanation": "可合并状态是正确数与样本数；两个批次分别正确 2 和 3 个，总共 5/8。",
+      "skills": [
+        "py25",
+        "py26"
+      ],
+      "points": 1,
+      "options": [
+        "(1.0+0.5)/8 = 0.1875",
+        "(1.0+0.5)/2 = 0.75",
+        "(2*1.0+6*0.5)/8 = 0.625"
+      ],
+      "answer": 2,
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c06-early-stop",
+      "chapter": "c06",
+      "kind": "choice",
+      "prompt": "某 early stopping 的 best=0.50、min_delta=0.04、bad=1、patience=2。新 loss=0.47，采用严格 loss<best-min_delta 才改善的规则。这一步应怎样更新？",
+      "explanation": "0.47 并不小于 0.46，改善幅度不足，等待计数应增加到 2。",
+      "skills": [
+        "py28"
+      ],
+      "points": 1,
+      "options": [
+        "best 保留 0.50，bad 仍为 1，继续",
+        "best 改为 0.47，bad 清零，继续",
+        "best 保留 0.50，bad 变 2，停止"
+      ],
+      "answer": 2,
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c06-recent-mean",
+      "chapter": "c06",
+      "kind": "code",
+      "prompt": "定义 RecentMean(size)。size 为正整数，否则抛 ValueError。支持 add(value)、compute()、reset()：只保留最近 size 个有限数值；compute 返回它们的均值，空状态返回 0.0；reset 清空。实例相互独立。",
+      "explanation": "窗口满后移除最旧项，保证统计的是最近数据；实例状态要在 __init__ 中分别创建。",
+      "skills": [
+        "py25",
+        "py27"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-c06-recent-mean",
+      "signature": "class RecentMean(size)",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-c06-transform-dataset",
+      "chapter": "c06",
+      "kind": "code",
+      "prompt": "定义 TransformedDataset(rows,transform)。rows 是二维数值列表，元素为不可变数值；transform 是接受一行列表并返回一个结果的函数。构造时复制每一行。支持 len(ds)、ds[i]（包括负索引）：每次把该行的新副本交给 transform，再返回变换结果。输入修改或 transform 原地修改行，都不能污染内部数据。索引越界保留 IndexError。",
+      "explanation": "构造时复制保护输入隔离；取出时再复制，保护内部数据不被有副作用的 transform 修改。",
+      "skills": [
+        "py27",
+        "py29",
+        "py30"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-c06-transform-dataset",
+      "signature": "class TransformedDataset(rows, transform)",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-cum03-references",
+      "chapter": "c03",
+      "kind": "output",
+      "prompt": "写出完整标准输出，分别跟踪原列表、切片和函数返回值。",
+      "explanation": "函数修改了 copied，返回新增的总和 7；source 与 copied 的外层容器独立。",
+      "skills": [
+        "p1",
+        "py05",
+        "p4"
+      ],
+      "points": 2,
+      "code": "def append_total(values):\n    values.append(sum(values))\n    return values[-1]\nsource = [2, 5]\ncopied = source[:]\nresult = append_total(copied)\nprint(source)\nprint(copied, result)\n",
+      "expectedStdout": "[2, 5]\n[2, 5, 7] 7",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-cum03-lazy",
+      "chapter": "c03",
+      "kind": "output",
+      "prompt": "写出完整标准输出，包含生成器执行时的打印。",
+      "explanation": "创建生成器时不执行循环；next 消费第一项，list 消费余项。factor=0 是有效的显式参数。",
+      "skills": [
+        "p3",
+        "py10",
+        "py11"
+      ],
+      "points": 2,
+      "code": "def scaled(values, factor=2):\n    for value in values:\n        print('take', value)\n        yield value * factor\nstream = scaled([3, 1], factor=0)\nprint('ready')\nprint(next(stream))\nprint(list(stream))\n",
+      "expectedStdout": "ready\ntake 3\n0\ntake 1\n[0]",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-cum03-default-bug",
+      "chapter": "c03",
+      "kind": "choice",
+      "prompt": "这段函数中最关键的错误及正确修复是什么？",
+      "explanation": "共享来自可变默认对象；删掉 return 不会改变共享状态。None 哨兵能把未传入与显式空列表区分开。",
+      "skills": [
+        "py12",
+        "p4"
+      ],
+      "points": 1,
+      "options": [
+        "append 不能用于函数参数；改成 print(value)",
+        "return 会导致共享；删掉 return 即可",
+        "默认 history 只在定义时创建一次；用 None 默认值并在函数内新建列表"
+      ],
+      "answer": 2,
+      "runtime": "python",
+      "code": "def archive(value, history=[]):\n    history.append(value)\n    return history\n"
+    },
+    {
+      "id": "ax-py-cum03-window-boundary",
+      "chapter": "c03",
+      "kind": "choice",
+      "prompt": "列表 xs 长度是 4，想检查每个连续 2 项窗口。哪一种起点循环完整且不越界？",
+      "explanation": "合法起点为 0、1、2，共 4-2+1 个；少加 1 会漏最后窗口。",
+      "skills": [
+        "py03",
+        "py07"
+      ],
+      "points": 1,
+      "options": [
+        "range(len(xs)-2)",
+        "range(len(xs)-2+1)",
+        "range(len(xs)+1)"
+      ],
+      "answer": 1,
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-cum03-target-runs",
+      "chapter": "c03",
+      "kind": "code",
+      "prompt": "定义 target_runs(values,target)，values 为整数列表。按原序返回每一段连续等于 target 的区间长度；非 target 元素分隔区间。不记录长度 0 的区间，不修改输入。例：[1,1,2,1] 对 target=1 返回 [2,1]。",
+      "explanation": "遇到非目标时结算当前段；循环结束后还要结算尾段。不能把所有目标元素的数量当成一段。",
+      "skills": [
+        "py02",
+        "p3",
+        "py05",
+        "p4"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-cum03-target-runs",
+      "signature": "def target_runs(values, target)",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-cum03-chunk-totals",
+      "chapter": "c03",
+      "kind": "code",
+      "prompt": "定义 chunk_totals(values,size=2)，返回生成器，依次产出每个连续非重叠批次的总和；最后不足 size 项的批次也保留。values 是有限数值列表，size 必须是正整数（不含 bool），非法时在迭代开始抛 ValueError。不修改 values。",
+      "explanation": "非重叠起点以 size 为步长；yield 产出聚合后的数值，切片自动保留最后不足一批的部分。",
+      "skills": [
+        "py03",
+        "py05",
+        "p4",
+        "py10",
+        "py11",
+        "py13"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-cum03-chunk-totals",
+      "signature": "def chunk_totals(values, size=2)",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-cum06-json-groups",
+      "chapter": "c06",
+      "kind": "output",
+      "prompt": "写出完整标准输出，数据均在代码中。",
+      "explanation": "按字典键分组累加后，sorted 对 (键,值) 元组排序；零值记录应保留。",
+      "skills": [
+        "py14",
+        "py16",
+        "py20"
+      ],
+      "points": 2,
+      "code": "import json\ntotals = {}\nfor line in ['{\"team\":\"b\",\"value\":2}', '{\"team\":\"a\",\"value\":0}', '{\"team\":\"b\",\"value\":3}']:\n    row = json.loads(line)\n    key = row['team']\n    totals[key] = totals.get(key, 0) + row['value']\nprint(sorted(totals.items()))\n",
+      "expectedStdout": "[('a', 0), ('b', 5)]",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-cum06-instance-state",
+      "chapter": "c06",
+      "kind": "output",
+      "prompt": "写出两行完整输出。",
+      "explanation": "每次构造都创建新的列表；first 的两次更新不会影响 second。sum([]) 为 0。",
+      "skills": [
+        "p4",
+        "py25"
+      ],
+      "points": 2,
+      "code": "class Counter:\n    def __init__(self):\n        self.values = []\n    def add(self, value):\n        self.values.append(value)\n    def total(self):\n        return sum(self.values)\nfirst = Counter()\nsecond = Counter()\nfirst.add(3)\nfirst.add(-1)\nprint(first.total())\nprint(second.total())\n",
+      "expectedStdout": "2\n0",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-cum06-leakage",
+      "chapter": "c06",
+      "kind": "choice",
+      "prompt": "同一病人的多条记录高度相关，计划用验证集评估对新病人的效果。哪种划分最符合目标？",
+      "explanation": "目标是新病人泛化，同一病人的相关记录应保持组隔离；逐条随机或按条数拆分都会让病人信息跨两侧。",
+      "skills": [
+        "py30"
+      ],
+      "points": 1,
+      "options": [
+        "先按病人标识分组，同一病人的全部记录只进入一侧",
+        "把每位病人的第一条放训练，其余放验证",
+        "逐条随机划分所有记录，不记录病人标识"
+      ],
+      "answer": 0,
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-cum06-mutation",
+      "chapter": "c06",
+      "kind": "choice",
+      "prompt": "一个数据集构造函数保存 self.rows=list(rows)。输入 rows=[[1,2]]。哪项风险仍然存在？",
+      "explanation": "list(rows) 只复制外层；复制每行才能隔离二维数值数据。存在更深层可变结构时还需考虑深复制。",
+      "skills": [
+        "py17",
+        "py27"
+      ],
+      "points": 1,
+      "options": [
+        "外层列表仍是同一个对象",
+        "内层行仍共享，调用者修改 rows[0][0] 会污染内部数据",
+        "数值 1 会变成字符串"
+      ],
+      "answer": 1,
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-cum06-counter-diff",
+      "chapter": "c06",
+      "kind": "code",
+      "prompt": "定义 counter_diff(before,after)。两者为 {字符串:非负整数} 字典。返回包含双方所有键的新字典，每键对应 {before:旧计数,after:新计数,delta:新减旧}。任一侧缺键按 0 处理，显式零值保留；不得修改输入。返回字典的键顺序无要求。",
+      "explanation": "键集合是并集，缺失项通过 get 补零；每个结果记录重新创建，避免与输入共享可变状态。",
+      "skills": [
+        "py08",
+        "py14",
+        "py17"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-cum06-counter-diff",
+      "signature": "def counter_diff(before, after)",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-cum06-latest-log",
+      "chapter": "c06",
+      "kind": "code",
+      "prompt": "定义 read_latest_metrics(path)，读取 UTF-8 JSONL。有效行必须是字典，run 为字符串，metric 为有限的内置 int/float 且不含 bool。空白行忽略；坏 JSON、非字典或字段不合约的非空行计为无效。返回 (按 run 保留最后一次有效 metric 的字典,无效行数)。无效行不得覆盖此前有效值。文件错误保持抛出。",
+      "explanation": "先确认结构与字段有效，再替换该 run 的旧值。bool 是 int 的子类，精确类型检查才能把它排除。",
+      "skills": [
+        "py14",
+        "py18",
+        "py19",
+        "py22",
+        "py23"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-cum06-latest-log",
+      "signature": "def read_latest_metrics(path)",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-stage-return-alias",
+      "chapter": "c06",
+      "kind": "output",
+      "prompt": "写出完整标准输出。",
+      "explanation": "传入零不会使用默认增量；函数返回外层副本，追加结果不改原列表。",
+      "skills": [
+        "p1",
+        "py03",
+        "py05",
+        "py10"
+      ],
+      "points": 2,
+      "code": "def update(values, increment=1):\n    copied = values[:]\n    for index in range(len(copied)):\n        copied[index] += increment\n    return copied\noriginal = [1, 4]\nresult = update(original, increment=0)\nresult.append(8)\nprint(original)\nprint(result)\n",
+      "expectedStdout": "[1, 4]\n[1, 4, 8]",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-stage-stable-ranking",
+      "chapter": "c06",
+      "kind": "output",
+      "prompt": "写出完整标准输出。",
+      "explanation": "三组均值都为 3，所以按名称升序；第二行的组大小不应影响并列规则。",
+      "skills": [
+        "py15",
+        "py16"
+      ],
+      "points": 2,
+      "code": "scores = {'beta': [2, 4], 'alpha': [3], 'gamma': [1, 5]}\nnames = sorted(scores, key=lambda name: (-sum(scores[name]) / len(scores[name]), name))\nprint(names)\nprint([len(scores[name]) for name in names])\n",
+      "expectedStdout": "['alpha', 'beta', 'gamma']\n[1, 2, 2]",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-stage-config-isolation",
+      "chapter": "c06",
+      "kind": "choice",
+      "prompt": "配置包含任意深度的字典与列表，且无循环引用。新实验配置修改后必须完全不影响默认配置。哪项足够？",
+      "explanation": "赋值共享全部对象，浅复制只分离外层；deepcopy 才能隔离这里任意深度的可变对象。",
+      "skills": [
+        "py05",
+        "py17"
+      ],
+      "points": 1,
+      "options": [
+        "new = defaults.copy()",
+        "new = copy.deepcopy(defaults)",
+        "new = defaults"
+      ],
+      "answer": 1,
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-stage-exception-scope",
+      "chapter": "c06",
+      "kind": "choice",
+      "prompt": "函数需要：缺文件时抛 FileNotFoundError，JSON 格式错时抛 JSONDecodeError，合法但缺 lr 时用默认值。哪个方案符合？",
+      "explanation": "缺失键的默认值与读取失败是不同情形；只用 get 处理缺字段，不吞掉文件和格式错误。",
+      "skills": [
+        "py19",
+        "py20",
+        "py23"
+      ],
+      "points": 1,
+      "options": [
+        "对 JSON 字符串调用 dict(text)",
+        "用 with open + json.load，再用 config.get(\"lr\",默认值)，不捕获这两个错误",
+        "except Exception 后返回默认配置"
+      ],
+      "answer": 1,
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-stage-validation-boundary",
+      "chapter": "c06",
+      "kind": "choice",
+      "prompt": "同一文档切成多个片段后训练分类器，验证集要评估对新文档的效果。哪项最可靠？",
+      "explanation": "对象不同不代表信息独立；需要组隔离、样本唯一性和数据副本隔离共同保证划分契约。",
+      "skills": [
+        "py17",
+        "py27",
+        "py30"
+      ],
+      "points": 1,
+      "options": [
+        "按 document_id 分组划分，拒绝重复 sample_id，并复制输出记录",
+        "把原列表浅复制两次，再独立打乱",
+        "只确认训练与验证列表不是同一个对象"
+      ],
+      "answer": 0,
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-stage-session-summary",
+      "chapter": "c06",
+      "kind": "code",
+      "prompt": "定义 session_summary(events)。每项是 {session:字符串,value:有限数值}。按 session 首次出现顺序返回列表，每项为 {session,count,total,last}：记录数、数值总和、该 session 最后一次的 value。空输入返回 []；不得修改或复用输入字典。",
+      "explanation": "字典保存首次插入顺序；每组状态分别累计 count、total，并在每次事件时替换 last。",
+      "skills": [
+        "py06",
+        "py14",
+        "py15",
+        "py17"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-stage-session-summary",
+      "signature": "def session_summary(events)",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-stage-prediction-ledger",
+      "chapter": "c06",
+      "kind": "code",
+      "prompt": "定义 PredictionLedger，支持 add(preds,labels)、report()、reset()。add 的两个输入是列表，长度须一致，所有元素须为内置整数 0 或 1（不含 bool），否则抛 ValueError 且不改变已有统计。report 返回新的 {count,correct,accuracy} 字典；无样本 accuracy=0.0。多次 add 等价于拼接样本；reset 清空；实例独立。",
+      "explanation": "先完整验证批次，再改计数，才能保证失败操作不留下部分状态。全局准确率用累计正确数除以累计样本数。",
+      "skills": [
+        "p6",
+        "py13",
+        "py23",
+        "py25",
+        "py26"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-stage-prediction-ledger",
+      "signature": "class PredictionLedger",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-stage-team-export",
+      "chapter": "c06",
+      "kind": "code",
+      "prompt": "定义 export_team_totals(input_path,output_path)。读取 UTF-8 CSV，列 team、amount；team 作为字符串原样使用，amount 保证是有限数值字符串。按 team 累加 amount，返回 {team:总额}，并将同一字典以 UTF-8 JSON 覆盖写入 output_path。空数据写 {}；重复执行不追加；文件错误保持抛出。",
+      "explanation": "CSV 的字段引用规则交给 DictReader；每组单独累加，再一次性覆盖写出完整 JSON 对象。",
+      "skills": [
+        "py14",
+        "py15",
+        "py20",
+        "py21",
+        "py24"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-stage-team-export",
+      "signature": "def export_team_totals(input_path, output_path)",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-review-c01-control",
+      "chapter": "c01",
+      "kind": "output",
+      "prompt": "写出完整标准输出。",
+      "explanation": "只检查 0 之前的 5、2、8，其中 5 与 8 达到阈值；后面的 7 不参与。",
+      "skills": [
+        "p1",
+        "py02",
+        "p3",
+        "py04"
+      ],
+      "points": 2,
+      "code": "count = 0\nfor number in [5, 2, 8, 0, 7]:\n    if number == 0:\n        break\n    if number >= 5:\n        count += 1\nprint(count)\n",
+      "expectedStdout": "2",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-review-c01-duration",
+      "chapter": "c01",
+      "kind": "code",
+      "prompt": "标准输入是一行非负整数 seconds。把它换算为完整分钟数和剩余秒数，用一个空格分隔输出。例如 125 秒输出 2 5。只输出数字，不输出单位或提示。",
+      "explanation": "整除得到完整分钟，余数得到不足一分钟的秒数，两者满足 seconds=minutes*60+remainder。",
+      "skills": [
+        "py01"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-review-c01-duration",
+      "signature": "完整程序 · 数值转换 / // / %",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-review-c02-inner-copy",
+      "chapter": "c02",
+      "kind": "output",
+      "prompt": "写出完整标准输出。",
+      "explanation": "外层切片隔离了 append 行操作，但原有内层列表仍共享，所以第一行变化。",
+      "skills": [
+        "p2",
+        "py05",
+        "py09"
+      ],
+      "points": 2,
+      "code": "rows = [[1], [2]]\ncopied = rows[:]\ncopied[0].append(9)\ncopied.append([3])\nprint(len(rows))\nprint(rows[0])\n",
+      "expectedStdout": "2\n[1, 9]",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-review-c02-differences",
+      "chapter": "c02",
+      "kind": "code",
+      "prompt": "标准输入为一行整数，可为空。按原序输出每对相邻数的“后项减前项”，用一个空格分隔。少于两个数时输出空行。不得额外输出列表括号。",
+      "explanation": "第一个合法后项索引是 1；每对相邻数只产出一个差，所以输出项数比输入少 1。",
+      "skills": [
+        "p2",
+        "py05",
+        "py07"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-review-c02-differences",
+      "signature": "完整程序 · 相邻位置 / 空边界",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-review-c03-none",
+      "chapter": "c03",
+      "kind": "choice",
+      "prompt": "函数默认 items=None；调用者显式传入 [] 时，函数要原地更新这个空列表。应如何判断需要新建容器？",
+      "explanation": "只有 None 表示未提供。空列表虽然为假，仍是调用者主动提供并希望更新的容器。",
+      "skills": [
+        "py10",
+        "py12"
+      ],
+      "points": 1,
+      "options": [
+        "if items is None",
+        "if len(items)==0",
+        "if not items"
+      ],
+      "answer": 0,
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-review-c03-clamp",
+      "chapter": "c03",
+      "kind": "code",
+      "prompt": "定义 clamp_values(values,low=0,high=1)，把每个有限数值限制到闭区间 [low,high]，返回新列表。low、high 为有限数值；low>high 抛 ValueError。不得修改 values；low==high 合法。",
+      "explanation": "先验证区间，再逐项做截断；返回新列表，空数据也不能跳过非法参数检查。",
+      "skills": [
+        "p4",
+        "py10",
+        "py13"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-review-c03-clamp",
+      "signature": "def clamp_values(values, low=0, high=1)",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-review-c04-get",
+      "chapter": "c04",
+      "kind": "output",
+      "prompt": "写出完整标准输出。",
+      "explanation": "get 只在键不存在时使用默认值；已存在的 0 和 None 都原样保留。",
+      "skills": [
+        "p5",
+        "py17"
+      ],
+      "points": 2,
+      "code": "settings = {'retry': 0, 'mode': None}\nprint(settings.get('retry', 3))\nprint(settings.get('mode', 'auto'))\nprint(settings.get('timeout', 9))\n",
+      "expectedStdout": "0\nNone\n9",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-review-c04-required-key",
+      "chapter": "c04",
+      "kind": "code",
+      "prompt": "定义 first_missing(config,required)，config 为字典，required 为字符串列表。按 required 的顺序返回第一个不存在于 config 的键；所有键都存在时返回 None。值为 None、0 或空字符串都算存在；不得修改输入。",
+      "explanation": "成员判断检查键是否存在；不能用 config.get(key) 的真假值区分缺失与合法空值。",
+      "skills": [
+        "p5",
+        "py14"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-review-c04-required-key",
+      "signature": "def first_missing(config, required)",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-review-c05-json-value",
+      "chapter": "c05",
+      "kind": "choice",
+      "prompt": "一份按行读取的日志依次含空白行、[1,2]、{\"ok\":true}、broken；约定只接受 JSON 字典，空白忽略。有效记录数和无效行数分别是多少？",
+      "explanation": "数组是合法 JSON 但不符合记录结构，broken 是坏 JSON，两者都计无效；空白行不计。",
+      "skills": [
+        "py20",
+        "py22",
+        "py23"
+      ],
+      "points": 1,
+      "options": [
+        "1 和 3",
+        "1 和 2",
+        "2 和 1"
+      ],
+      "answer": 1,
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-review-c05-enabled",
+      "chapter": "c05",
+      "kind": "code",
+      "prompt": "定义 load_enabled_names(path)。文件是 UTF-8 JSON 数组，每项保证是字典，含字符串 name，可选 enabled。仅当 enabled 的值恰好为布尔 True 时保留 name，按原序返回列表；缺失、False、数字 1 都不保留。文件和 JSON 格式错误保持抛出。",
+      "explanation": "本题要求的是恰好 True，用 is True 区分布尔开关与数值 1，不能仅凭真假值筛选。",
+      "skills": [
+        "py20",
+        "py23"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-review-c05-enabled",
+      "signature": "def load_enabled_names(path)",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-review-c06-shared-argument",
+      "chapter": "c06",
+      "kind": "output",
+      "prompt": "写出完整标准输出。",
+      "explanation": "take 每次返回外层副本；这些行内元素是不可变整数，调用者追加不会改变内部列表。",
+      "skills": [
+        "py25",
+        "py27"
+      ],
+      "points": 2,
+      "code": "class Bag:\n    def __init__(self, values):\n        self.values = list(values)\n    def take(self):\n        return self.values[:]\nbag = Bag([7, 8])\nfirst = bag.take()\nfirst.append(9)\nprint(bag.take())\n",
+      "expectedStdout": "[7, 8]",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-py-review-c06-range",
+      "chapter": "c06",
+      "kind": "code",
+      "prompt": "定义 RunningRange，支持 add(value)、bounds()、reset()。value 为有限数值；bounds 返回目前所有输入的 (最小值,最大值)，空状态返回 None。reset 清空；实例独立。",
+      "explanation": "空状态使用 None，不能把零当成未初始化；之后分别维护全局最小值和最大值。",
+      "skills": [
+        "py25",
+        "py26",
+        "py28"
+      ],
+      "points": 4,
+      "exerciseId": "ax-py-review-c06-range",
+      "signature": "class RunningRange",
+      "runtime": "python"
+    },
+    {
+      "id": "ax-torch-07-o1",
+      "chapter": "c07",
+      "kind": "output",
+      "prompt": "写出完整标准输出，每个print占一行。",
+      "explanation": "批次轴保留为2；第1条样本的三个块分别从12、16、20开始。",
+      "skills": [
+        "pt01",
+        "t1"
+      ],
+      "points": 2,
+      "code": "import torch\nx=torch.arange(24).reshape(2,3,4)\nprint(list(x.flatten(1).shape))\nprint(x[1,:,0].tolist())\n",
+      "expectedStdout": "[2, 12]\n[12, 16, 20]",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-07-o2",
+      "chapter": "c07",
+      "kind": "output",
+      "prompt": "零也可能是合法token。写出两行标准输出。",
+      "explanation": "布尔索引选取有效位置；token值0不能代替独立mask。",
+      "skills": [
+        "pt04",
+        "pt02"
+      ],
+      "points": 2,
+      "code": "import torch\ntokens=torch.tensor([[0,5,0],[8,0,0]])\nmask=torch.tensor([[True,True,False],[True,False,False]])\nprint(tokens[mask].tolist())\nprint(mask.sum(1).tolist())\n",
+      "expectedStdout": "[0, 5, 8]\n[2, 1]",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-07-m1",
+      "chapter": "c07",
+      "kind": "choice",
+      "prompt": "传感器矩阵是[天数,传感器数]。要保留每天所有传感器的一个平均值，正确表达式是？",
+      "explanation": "dim=1归约传感器轴，结果长度为天数。dim=0得到每个传感器的跨天均值；全部展平则只剩一个数。",
+      "skills": [
+        "t1"
+      ],
+      "points": 1,
+      "options": [
+        "x.flatten().mean()",
+        "x.mean(dim=1)",
+        "x.mean(dim=0)"
+      ],
+      "answer": 1,
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-07-m2",
+      "chapter": "c07",
+      "kind": "choice",
+      "prompt": "用值0右补齐token序列后，哪种mask构造能同时保留合法的零token？",
+      "explanation": "有效性来自原长度，而非token取值。tokens!=0会误删合法零；整行置True又会把padding纳入计算。",
+      "skills": [
+        "pt04",
+        "pt03"
+      ],
+      "points": 1,
+      "options": [
+        "tokens != 0",
+        "依据每条原序列长度，将前length个位置设True",
+        "整行只要出现非零就全部设True"
+      ],
+      "answer": 1,
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-07-c1",
+      "chapter": "c07",
+      "kind": "code",
+      "prompt": "实现 sensor_summary(x,valid)。x是CPU二维浮点张量[B,D]，D>=1，valid是同形bool。有效元素有限，无效元素可为NaN/Inf。返回字典{mean,peak}，两项均为[B]张量：每行有效均值与最大值，全无效行两项均为0；支持B=0，不改输入，mean保留梯度。",
+      "explanation": "先按mask替换无效值再归约；最大值必须用-inf屏蔽，不能用0覆盖合法负数。全无效行单独归零。",
+      "skills": [
+        "t1",
+        "pt03"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-07-c1",
+      "signature": "def sensor_summary(x, valid)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-07-c2",
+      "chapter": "c07",
+      "kind": "code",
+      "prompt": "图像已提取为任意至少二维张量x[B,...]，每条样本展平后有F>=1个特征。centers是[K,F]浮点张量，K>=1，两者CPU、同dtype且有限。实现 assign_prototypes(x,centers)，返回[B] long张量，每条样本分配到平方欧氏距离最近的中心；距离相同取较小中心索引。支持非连续x与空B，不修改输入。",
+      "explanation": "展平只合并特征维；广播构造成对距离后沿中心轴argmin。argmin天然保留第一个最小值。",
+      "skills": [
+        "pt01",
+        "pt05",
+        "pt02"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-07-c2",
+      "signature": "def assign_prototypes(x, centers)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-08-o1",
+      "chapter": "c08",
+      "kind": "output",
+      "prompt": "写出两行标准输出。",
+      "explanation": "不保留归约维时，[2]按列广播；[2,1]才对应每行自己的均值。",
+      "skills": [
+        "t2"
+      ],
+      "points": 2,
+      "code": "import torch\nx=torch.tensor([[2.,4.],[10.,14.]])\nprint((x-x.mean(1)).tolist())\nprint((x-x.mean(1,keepdim=True)).tolist())\n",
+      "expectedStdout": "[[-1.0, -8.0], [7.0, 2.0]]\n[[-1.0, 1.0], [-2.0, 2.0]]",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-08-o2",
+      "chapter": "c08",
+      "kind": "output",
+      "prompt": "编号特征拆成两头后，写出标准输出。",
+      "explanation": "第0头取每个token前两个特征；第1头取后两个，再各自求和。",
+      "skills": [
+        "pt09"
+      ],
+      "points": 2,
+      "code": "import torch\nx=torch.arange(8).reshape(1,2,4)\nh=x.reshape(1,2,2,2).permute(0,2,1,3)\nprint(h.sum(-1).tolist())\n",
+      "expectedStdout": "[[[1, 9], [5, 13]]]",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-08-m1",
+      "chapter": "c08",
+      "kind": "choice",
+      "prompt": "输入是[-1200,-1201]的float32张量。直接log(exp(x).sum())得到-inf，根本原因与修复是？",
+      "explanation": "极小指数在float32中下溢为0，log(0)为-inf。logsumexp的平移公式将指数限制在可表示范围；排序和转整数都不能解决。",
+      "skills": [
+        "pt06",
+        "pt07"
+      ],
+      "points": 1,
+      "options": [
+        "指数下溢；先减最大值计算再加回最大值",
+        "log只支持正整数；先转long",
+        "元素顺序错误；先排序"
+      ],
+      "answer": 0,
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-08-m2",
+      "chapter": "c08",
+      "kind": "choice",
+      "prompt": "分数scores形状[B,Tq,Tk]，value形状[B,Tk,Dv]。哪种归一化与输出组合正确？",
+      "explanation": "每个query在全部key间分配权重，因此沿最后的Tk轴归一化；乘value时Tk被归约，Dv保留。",
+      "skills": [
+        "pt10"
+      ],
+      "points": 1,
+      "options": [
+        "沿Tk做softmax后乘value，输出[B,Tq,Dv]",
+        "沿B做softmax，输出[B,Tq,Tk]",
+        "沿Tq做softmax，输出[B,Tk,Dv]"
+      ],
+      "answer": 0,
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-08-c1",
+      "chapter": "c08",
+      "kind": "code",
+      "prompt": "实现 smoothed_nll(logits,labels,epsilon)。logits是CPU有限浮点[B,C]、C>=1，labels为合法类别long[B]，0<=epsilon<=1。每条样本损失=(1-epsilon)*目标类负log概率+epsilon*所有C类负log概率的均值，再对B取均值。返回标量张量，不先softmax后log；B=0时返回连接logits计算图的0。",
+      "explanation": "用logsumexp减去各类logit得到稳定的负log概率，再混合目标类与均匀目标。空批次的零必须连接输入图。",
+      "skills": [
+        "pt06",
+        "pt07",
+        "pt08"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-08-c1",
+      "signature": "def smoothed_nll(logits, labels, epsilon)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-08-c2",
+      "chapter": "c08",
+      "kind": "code",
+      "prompt": "实现 merge_heads(h)，将CPU张量[B,H,T,Dh]恢复为[B,T,H*Dh]，每个token按head编号拼接特征。H>=1、Dh>=1，B或T可以为0；支持非连续输入且保留梯度。",
+      "explanation": "先交换head与token轴，再合并head和头内特征。直接reshape会把不同token的特征混在一起。",
+      "skills": [
+        "pt09",
+        "t2"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-08-c2",
+      "signature": "def merge_heads(h)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-09-o1",
+      "chapter": "c09",
+      "kind": "output",
+      "prompt": "写出两行标准输出。",
+      "explanation": "第一图贡献6，detach分支将其中一个x当常数3，第二图再贡献3；清空后只剩最后的2。",
+      "skills": [
+        "t3",
+        "pt11",
+        "pt12"
+      ],
+      "points": 2,
+      "code": "import torch\nx=torch.tensor(3.,requires_grad=True)\nx.square().backward()\n(x.detach()*x).backward()\nprint(x.grad.item())\nx.grad=None\n(2*x).backward()\nprint(x.grad.item())\n",
+      "expectedStdout": "9.0\n2.0",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-09-o2",
+      "chapter": "c09",
+      "kind": "output",
+      "prompt": "写出输出；有限差分使用代码中的步长，不把近似当精确导数。",
+      "explanation": "四次函数在1处解析导数为4；eps=0.5的中心差分为5，说明有限步长仍有截断误差。",
+      "skills": [
+        "pt13"
+      ],
+      "points": 2,
+      "code": "import torch\nx=torch.tensor(1.,dtype=torch.float64,requires_grad=True)\n(x**4).backward()\ne=0.5\nnumerical=((x.detach()+e)**4-(x.detach()-e)**4)/(2*e)\nprint(round(x.grad.item(),3),round(numerical.item(),3))\n",
+      "expectedStdout": "4.0 5.0",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-09-m1",
+      "chapter": "c09",
+      "kind": "choice",
+      "prompt": "两个micro-batch分别含2条和5条样本，每批loss都是mean。要模拟所有7条样本的mean梯度，应怎样反向？",
+      "explanation": "整体mean给每条样本相同权重。批次mean需按本批样本数/总数加权，且累积期间保留已算梯度。",
+      "skills": [
+        "pt15",
+        "pt11"
+      ],
+      "points": 1,
+      "options": [
+        "每批loss除以2，逐批清梯度",
+        "直接把两个mean相加",
+        "分别乘2/7和5/7，逐批backward且中途不清梯度"
+      ],
+      "answer": 2,
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-09-m2",
+      "chapter": "c09",
+      "kind": "choice",
+      "prompt": "两组梯度全局L2范数为10，max_norm为5。正确的全局范数裁剪应怎样处理？",
+      "explanation": "全局裁剪将所有参数梯度视为一个向量，用相同系数缩放，保留其方向；逐组归一化与逐元素截断均会改变方向。",
+      "skills": [
+        "pt14"
+      ],
+      "points": 1,
+      "options": [
+        "每个梯度元素截到[-5,5]",
+        "各组分别裁成范数5",
+        "所有梯度统一乘约0.5，参数数值本身不动"
+      ],
+      "answer": 2,
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-09-c1",
+      "chapter": "c09",
+      "kind": "code",
+      "prompt": "实现 weighted_square_gradient(values,weights)。两者是同长有限Python数值列表，可为空。用真实autograd求 sum(weights[i]*x[i]**2) 对x的梯度，返回一维float64张量；不要直接代入解析导数。",
+      "explanation": "权重参与损失而不作为待求导变量；x必须是需要梯度的叶子。空向量求和仍能连接计算图。",
+      "skills": [
+        "t3",
+        "pt12"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-09-c1",
+      "signature": "def weighted_square_gradient(values, weights)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-09-c2",
+      "chapter": "c09",
+      "kind": "code",
+      "prompt": "实现 accumulated_l1_grad(batches)。batches是非空list，每项(x,y)为同长一维CPU float32张量，至少总计1条样本，元素有限；单批允许为空。创建w=0的标量叶子，对所有样本的mean绝对误差 abs(w*x-y) 逐批backward累积，返回w梯度的Python float；误差为0时采用PyTorch的abs梯度0。",
+      "explanation": "各批sum除以同一个总样本数，保证尾批不被过度加权。abs的梯度取决于误差符号，零点按PyTorch约定为0。",
+      "skills": [
+        "pt11",
+        "pt13",
+        "pt15"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-09-c2",
+      "signature": "def accumulated_l1_grad(batches)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-10-o1",
+      "chapter": "c10",
+      "kind": "output",
+      "prompt": "仅输出参数数量和形状，不需要知道随机初始化值。",
+      "explanation": "普通Tensor属性shift不会自动成为Parameter；Linear无bias，只有2×3个权重，batch维保留。",
+      "skills": [
+        "t4",
+        "pt16"
+      ],
+      "points": 2,
+      "code": "import torch\nclass Bridge(torch.nn.Module):\n    def __init__(self):\n        super().__init__()\n        self.linear=torch.nn.Linear(2,3,bias=False)\n        self.shift=torch.ones(3)\n    def forward(self,x):\n        return self.linear(x)+self.shift\nm=Bridge()\nprint(sum(p.numel() for p in m.parameters()))\nprint(list(m(torch.ones(4,2)).shape))\n",
+      "expectedStdout": "6\n[4, 3]",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-10-o2",
+      "chapter": "c10",
+      "kind": "output",
+      "prompt": "写出标准输出。",
+      "explanation": "stack增加batch轴；只有一条样本也不能把特征或标签的batch轴squeeze掉。",
+      "skills": [
+        "pt17",
+        "pt18"
+      ],
+      "points": 2,
+      "code": "import torch\nsamples=[(torch.tensor([2.,4.]),1)]\nx=torch.stack([p[0] for p in samples])\ny=torch.tensor([p[1] for p in samples],dtype=torch.long)\nprint(list(x.shape),list(y.shape))\nprint(y.dtype==torch.long)\n",
+      "expectedStdout": "[1, 2] [1]\nTrue",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-10-m1",
+      "chapter": "c10",
+      "kind": "choice",
+      "prompt": "模型含Dropout。验证时已调用model.eval()，还希望不构建计算图，应该再做什么？",
+      "explanation": "eval控制Dropout等层的行为，no_grad控制运算记录。清梯度和batch大小都不等于关闭梯度记录。",
+      "skills": [
+        "pt20"
+      ],
+      "points": 1,
+      "options": [
+        "把batch大小设1即可",
+        "with torch.no_grad(): 包住验证前向",
+        "optimizer.zero_grad()就能关闭计算图"
+      ],
+      "answer": 1,
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-10-m2",
+      "chapter": "c10",
+      "kind": "choice",
+      "prompt": "只训练新分类头：backbone已requires_grad_(False)，但head之前也被冻结。哪一步不可省？",
+      "explanation": "冻结和启用都要显式管理；优化器需要真正注册的参数，普通Tensor副本不再对应模型原参数。",
+      "skills": [
+        "pt19",
+        "t4"
+      ],
+      "points": 1,
+      "options": [
+        "把整个model.eval()当冻结开关",
+        "重新启用head的requires_grad，并把head参数交给优化器",
+        "只把head参数复制成普通Tensor"
+      ],
+      "answer": 1,
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-10-c1",
+      "chapter": "c10",
+      "kind": "code",
+      "prompt": "实现 make_regressor(widths)。widths为至少含2个正整数的list，依次表示输入、各隐藏层和输出宽度；返回nn.Module，由相邻Linear组成，除最后一层外每层后接ReLU，所有Linear含bias。widths长度不足2或存在非正维度时抛ValueError。无需验证非整数输入。",
+      "explanation": "按相邻维度组装网络，每个隐藏Linear后加ReLU。输出层保持原始数值；使用ModuleList或Sequential等注册层。",
+      "skills": [
+        "t4",
+        "pt16"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-10-c1",
+      "signature": "def make_regressor(widths)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-10-c2",
+      "chapter": "c10",
+      "kind": "code",
+      "prompt": "实现 WindowDataset(series,window)，继承torch.utils.data.Dataset。series是一维CPU浮点张量，window是正整数；window<=0抛ValueError。样本i为(series[i:i+window],series[i+window])，故长度max(N-window,0)。只接受0<=i<len(ds)的整数索引，越界抛IndexError。构造与返回都隔离存储，不让外部修改污染数据集。",
+      "explanation": "先按预测任务定义样本数量和目标偏移，再实现Dataset协议。clone同时保护原输入与取出的样本。",
+      "skills": [
+        "pt17",
+        "pt18"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-10-c2",
+      "signature": "class WindowDataset(torch.utils.data.Dataset)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-11-o1",
+      "chapter": "c11",
+      "kind": "output",
+      "prompt": "两批平方误差总和分别为12和16，元素数为3和1。写出输出。",
+      "explanation": "全体元素MSE是28/4=7。等权平均批次mean使尾批16获得与大批同样权重，得到错误的10。",
+      "skills": [
+        "pt21",
+        "pt23"
+      ],
+      "points": 2,
+      "code": "sums=[12,16]\ncounts=[3,1]\nprint(sum(sums)/sum(counts))\nprint(sum(s/n for s,n in zip(sums,counts))/len(sums))\n",
+      "expectedStdout": "7.0\n10.0",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-11-o2",
+      "chapter": "c11",
+      "kind": "output",
+      "prompt": "写出两行标准输出。",
+      "explanation": "state_dict中的张量可能共享参数存储；deepcopy才得到不随后续更新改变的内存快照。",
+      "skills": [
+        "pt24"
+      ],
+      "points": 2,
+      "code": "import torch,copy\nm=torch.nn.Linear(1,1,bias=False)\nwith torch.no_grad():\n    m.weight.zero_()\nshallow=m.state_dict()\ndeep=copy.deepcopy(m.state_dict())\nwith torch.no_grad():\n    m.weight.add_(3)\nprint(shallow[\"weight\"].tolist())\nprint(deep[\"weight\"].tolist())\n",
+      "expectedStdout": "[[3.0]]\n[[0.0]]",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-11-m1",
+      "chapter": "c11",
+      "kind": "choice",
+      "prompt": "真实标签[1,1,0]，模型全预测0。按本课程零分母返回0的约定，precision、recall、F1分别是？",
+      "explanation": "没有预测正例，precision按约定为0；两个真实正例都漏掉，recall为0，TP为0所以F1也为0。",
+      "skills": [
+        "pt22"
+      ],
+      "points": 1,
+      "options": [
+        "0、0、0",
+        "1、0、1",
+        "NaN、1、NaN"
+      ],
+      "answer": 0,
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-11-m2",
+      "chapter": "c11",
+      "kind": "choice",
+      "prompt": "训练循环先loss=criterion(...).item()，再loss.backward()。最直接的修复是？",
+      "explanation": "item后的Python数值不带计算图。训练用张量loss与日志用数值可以分别保存；多step不能恢复丢失的图。",
+      "skills": [
+        "t5",
+        "pt25"
+      ],
+      "points": 1,
+      "options": [
+        "保留原张量loss做backward，另用loss.item()记录数值",
+        "给optimizer.step()多调用一次",
+        "把Python float转成long"
+      ],
+      "answer": 0,
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-11-c1",
+      "chapter": "c11",
+      "kind": "code",
+      "prompt": "实现 evaluate_binary(model,batches)。每批(x,y)的模型输出和y均为一维[B]，y是0/1浮点张量。临时eval并关闭梯度，按全部样本聚合BCEWithLogitsLoss与logit>=0的准确率，返回{loss:Python float,accuracy:Python float}。空数据两项0；成功或异常都恢复原train/eval模式，不更新参数。",
+      "explanation": "累计sum损失和样本数，避免尾批偏差。eval、no_grad与finally恢复模式分别解决层行为、图记录和后续训练状态。",
+      "skills": [
+        "pt20",
+        "pt21",
+        "pt22",
+        "pt23"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-11-c1",
+      "signature": "def evaluate_binary(model, batches)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-11-c2",
+      "chapter": "c11",
+      "kind": "code",
+      "prompt": "实现 resume_sgd_step(model,optimizer,path,x,y)。path是可信CPU checkpoint，键为model、optimizer、epoch；模型及SGD优化器结构匹配，模型输出与y均为[B,1]。先恢复两种state_dict，切train，清旧梯度，用mean MSE完成一次更新。返回(保存epoch+1,本次更新前MSE的Python float)。加载使用map_location=\"cpu\",weights_only=True。",
+      "explanation": "续训必须恢复优化器的动量等状态，不只恢复学习率；先清旧梯度再用新损失反向。保存epoch与下一轮编号按题面区分。",
+      "skills": [
+        "pt24",
+        "pt25",
+        "t5"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-11-c2",
+      "signature": "def resume_sgd_step(model, optimizer, path, x, y)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-12-o1",
+      "chapter": "c12",
+      "kind": "output",
+      "prompt": "写出两行输出；macro F1包括全部3类，零分母类别记0。",
+      "explanation": "列和是各类预测数。逐类F1分别0.8、2/3、0，对三类等权平均约0.4889。",
+      "skills": [
+        "pt27"
+      ],
+      "points": 2,
+      "code": "import torch\ncm=torch.tensor([[2,0,0],[1,1,0],[0,0,0]])\ntp=cm.diag().double()\nden=cm.sum(0)+cm.sum(1)\nf1=torch.where(den>0,2*tp/den.clamp_min(1),torch.zeros_like(tp))\nprint(cm.sum(0).tolist())\nprint(round(f1.mean().item(),4))\n",
+      "expectedStdout": "[3, 1, 0]\n0.4889",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-12-o2",
+      "chapter": "c12",
+      "kind": "output",
+      "prompt": "写出因果平均的输出。",
+      "explanation": "第i行只在0..i上归一化；零分数使每个可见value等权，因此分别取各前缀均值。",
+      "skills": [
+        "pt29"
+      ],
+      "points": 2,
+      "code": "import torch\nscores=torch.zeros(3,3,dtype=torch.float64)\nscores=scores.masked_fill(torch.triu(torch.ones(3,3,dtype=torch.bool),1),float(\"-inf\"))\nv=torch.tensor([2.,6.,10.],dtype=torch.float64)\nprint([round(z,2) for z in (scores.softmax(-1)@v).tolist()])\n",
+      "expectedStdout": "[2.0, 4.0, 6.0]",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-12-m1",
+      "chapter": "c12",
+      "kind": "choice",
+      "prompt": "模型Linear(D,1)输出单logit，标签是0/1浮点数。哪种二分类训练接口最合适？",
+      "explanation": "BCEWithLogitsLoss内部做稳定的sigmoid与log计算；重复sigmoid改变损失含义，单logit也没有可供类别argmax的维。",
+      "skills": [
+        "pt26",
+        "t6"
+      ],
+      "points": 1,
+      "options": [
+        "BCEWithLogitsLoss直接接收logit与同形标签",
+        "先sigmoid再交给BCEWithLogitsLoss",
+        "先argmax得到整数，再用MSE"
+      ],
+      "answer": 0,
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-12-m2",
+      "chapter": "c12",
+      "kind": "choice",
+      "prompt": "训练完成后为了报告独立验证表现，应怎样处理验证数据？",
+      "explanation": "detach只能切断输入图，不能阻止验证标签影响模型参数。独立验证要求验证数据不参加训练更新。",
+      "skills": [
+        "pt30",
+        "pt28"
+      ],
+      "points": 1,
+      "options": [
+        "只要不调用验证输入.grad，怎样使用都行",
+        "detach后拼回训练集再训练几轮",
+        "仅在eval与no_grad下评估，不能参与本次参数更新"
+      ],
+      "answer": 2,
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-12-c1",
+      "chapter": "c12",
+      "kind": "code",
+      "prompt": "实现 prefix_masked_mean(x,valid)。x形状[B,T,D]、valid为bool[B,T]，CPU浮点，有效位置有限，无效可含NaN/Inf。返回同形张量，第t步仅平均0..t内有效token；此前没有有效token时返回零。支持空B/T，不修改输入并保留有效输入梯度。",
+      "explanation": "累积和与有效计数必须同步沿序列轴进行；只用前缀信息自然避免未来泄漏，masked_fill屏蔽非有限padding。",
+      "skills": [
+        "pt28",
+        "pt29"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-12-c1",
+      "signature": "def prefix_masked_mean(x, valid)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-12-c2",
+      "chapter": "c12",
+      "kind": "code",
+      "prompt": "实现 fit_affine(x,y,steps=100,lr=0.1)。x是非空CPU float32[N,D]、D>=1，y为同样本数[N,1] float32，数据有限。创建含bias的Linear(D,1)，权重和bias清零，用全批SGD和mean MSE训练steps次，返回{weight:一维Python列表,bias:Python float}。steps>=0；遵守传入lr，不修改输入。",
+      "explanation": "从可控多特征目标验证完整优化流程。必须按目标形状[N,1]计算MSE，避免广播成[N,N]。",
+      "skills": [
+        "t6",
+        "pt26",
+        "pt30"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-12-c2",
+      "signature": "def fit_affine(x, y, steps=100, lr=0.1)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-cum09-o1",
+      "chapter": "c09",
+      "kind": "output",
+      "prompt": "写出两行标准输出。",
+      "explanation": "字典保留首次插入顺序；切片建立新列表，追加不会修改原分组。",
+      "skills": [
+        "p2",
+        "p5",
+        "py14",
+        "py15"
+      ],
+      "points": 2,
+      "code": "groups={}\nfor name,value in [(\"b\",2),(\"a\",0),(\"b\",6)]:\n    groups.setdefault(name,[]).append(value)\ncopy_of_b=groups[\"b\"][:]\ncopy_of_b.append(10)\nprint(list(groups))\nprint(groups[\"b\"],copy_of_b)\n",
+      "expectedStdout": "['b', 'a']\n[2, 6] [2, 6, 10]",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-cum09-o2",
+      "chapter": "c09",
+      "kind": "output",
+      "prompt": "写出标准输出。",
+      "explanation": "行列索引逐项配对，目标分数为9与3；减去对应行均值5与6，得到4和-3。",
+      "skills": [
+        "t1",
+        "pt02",
+        "t2"
+      ],
+      "points": 2,
+      "code": "import torch\nx=torch.tensor([[1.,5.,9.],[3.,6.,9.]])\nlabels=torch.tensor([2,0])\nselected=x[torch.arange(2),labels]\nprint(selected.tolist())\nprint((selected-x.mean(1)).tolist())\n",
+      "expectedStdout": "[9.0, 3.0]\n[4.0, -3.0]",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-cum09-m1",
+      "chapter": "c09",
+      "kind": "choice",
+      "prompt": "程序用float(\"nan\")读入一个损失记录，随后按loss最小挑checkpoint。哪项处理最可靠？",
+      "explanation": "NaN不满足通常的全序比较，且int(NaN)会报错。应在进入最优选择前检查有限性。",
+      "skills": [
+        "py18",
+        "py19",
+        "py13"
+      ],
+      "points": 1,
+      "options": [
+        "先把所有loss转int",
+        "先判断math.isfinite(loss)，无效记录不进入排序",
+        "NaN总比所有数大，可以直接min"
+      ],
+      "answer": 1,
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-cum09-m2",
+      "chapter": "c09",
+      "kind": "choice",
+      "prompt": "已得到多个需要梯度的标量loss，怎样合成总损失并保留回到各输入的图？",
+      "explanation": "stack是可微组合操作；重新构造torch.tensor会重新包装数值，item则直接转Python数值，均会丢失原图关系。",
+      "skills": [
+        "p4",
+        "pt12",
+        "pt11"
+      ],
+      "points": 1,
+      "options": [
+        "torch.tensor(losses).sum()",
+        "torch.stack(losses).sum()",
+        "sum(v.item() for v in losses)"
+      ],
+      "answer": 1,
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-cum09-c1",
+      "chapter": "c09",
+      "kind": "code",
+      "prompt": "实现 pack_events(rows)。rows是字典list，每项含sample字符串与features有限数值list；非空时所有features具有相同正长度D。按sample首次出现顺序分组，将各组特征逐维求均值，返回(keys,means)，keys为字符串list，means为float32[G,D]张量。空rows返回([],float32[0,0]张量)，不修改输入。",
+      "explanation": "先用Python字典维护组与顺序，再把同组矩阵转成张量沿样本轴平均。组大小不应被误当特征维。",
+      "skills": [
+        "py14",
+        "py15",
+        "p5",
+        "t1"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-cum09-c1",
+      "signature": "def pack_events(rows)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-cum09-c2",
+      "chapter": "c09",
+      "kind": "code",
+      "prompt": "实现 batch_linear_gradient(batches,initial)。initial是有限CPU float32[D]，D>=1；batches为非空list，每项X[B,D]和y[B]为有限CPU float32，总样本数大于0，允许某批B=0。以initial的副本为需梯度叶子，对整体mean((X@w-y)**2)逐批backward，返回[D]梯度张量；不修改initial或其已有.grad。",
+      "explanation": "参数副本切断外部历史图；各批sum除以全部样本数后累积，矩阵乘法将梯度送回向量参数。",
+      "skills": [
+        "pt01",
+        "pt11",
+        "pt12",
+        "pt15"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-cum09-c2",
+      "signature": "def batch_linear_gradient(batches, initial)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-cum12-o1",
+      "chapter": "c12",
+      "kind": "output",
+      "prompt": "写出标准输出。",
+      "explanation": "状态类累计的是加权总和与真实数量，(2×3+10×1)/4=4。",
+      "skills": [
+        "py25",
+        "pt21"
+      ],
+      "points": 2,
+      "code": "class Meter:\n    def __init__(self):self.total=0;self.n=0\n    def update(self,value,n):self.total+=value*n;self.n+=n\nm=Meter()\nm.update(2,3)\nm.update(10,1)\nprint(m.total,m.n,m.total/m.n)\n",
+      "expectedStdout": "16 4 4.0",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-cum12-o2",
+      "chapter": "c12",
+      "kind": "output",
+      "prompt": "写出标准输出。",
+      "explanation": "eval让Dropout成为恒等映射；后续乘法在no_grad中不建图，最后恢复原train模式。",
+      "skills": [
+        "pt19",
+        "pt20"
+      ],
+      "points": 2,
+      "code": "import torch\nm=torch.nn.Dropout(1.0)\nx=torch.ones(2,requires_grad=True)\nold=m.training\nm.eval()\nwith torch.no_grad():y=m(x)*2\nm.train(old)\nprint(m.training,y.requires_grad,y.tolist())\n",
+      "expectedStdout": "True False [2.0, 2.0]",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-cum12-m1",
+      "chapter": "c12",
+      "kind": "choice",
+      "prompt": "Adam模型续训时只恢复model.state_dict，优化器使用全新状态。即使学习率相同，最可能发生什么？",
+      "explanation": "Adam的历史一阶、二阶估计属于优化器状态。恢复模型权重不等于恢复完整优化过程。",
+      "skills": [
+        "pt24",
+        "pt25"
+      ],
+      "points": 1,
+      "options": [
+        "模型所有参数会自动变成零",
+        "一定逐步复现原训练轨迹",
+        "丢失动量等优化器状态，更新轨迹可能改变"
+      ],
+      "answer": 2,
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-cum12-m2",
+      "chapter": "c12",
+      "kind": "choice",
+      "prompt": "要比较两种模型的独立验证表现，哪种标准化流程正确？",
+      "explanation": "预处理参数也属于从数据学习的状态，应仅由训练数据确定。单独重拟合验证统计会改变模型实际看到的坐标。",
+      "skills": [
+        "py30",
+        "pt30"
+      ],
+      "points": 1,
+      "options": [
+        "用训练集计算均值/尺度，原样应用到验证集",
+        "训练与验证拼在一起拟合标准化参数",
+        "分别标准化验证集以使其均值必为0"
+      ],
+      "answer": 0,
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-cum12-c1",
+      "chapter": "c12",
+      "kind": "code",
+      "prompt": "实现 balanced_sample_weights(labels)。labels是CPU一维long张量，类别编号为非负整数且不要求连续。返回同长float32张量，每个样本权重=其类别出现次数的倒数。空输入返回形状[0] float32，不修改labels。",
+      "explanation": "统计类别频率后再映射回原样本位置；不能直接按类别排序输出权重，否则会丢失样本对应关系。",
+      "skills": [
+        "py14",
+        "p5",
+        "pt02",
+        "pt18"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-cum12-c1",
+      "signature": "def balanced_sample_weights(labels)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-cum12-c2",
+      "chapter": "c12",
+      "kind": "code",
+      "prompt": "实现 evaluate_masked_tokens(model,batches)。每项x[B,T,D]、y[B,T]，model输出有限logits[B,T,C]，C>=1；y为long，有效标签合法，-100为忽略项。eval+no_grad下按全部有效token聚合交叉熵和准确率，返回{loss:float,accuracy:float,count:int}；没有有效token时loss/accuracy均0。成功或异常均恢复原模式，不更新参数。",
+      "explanation": "先按二维mask选出有效token，将[B,T,C]化为[有效数,C]。分母是有效token总数，既不是batch数也不是序列数。",
+      "skills": [
+        "pt08",
+        "pt18",
+        "pt20",
+        "pt23",
+        "pt28"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-cum12-c2",
+      "signature": "def evaluate_masked_tokens(model, batches)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-stage-o1",
+      "chapter": "c12",
+      "kind": "output",
+      "prompt": "写出标准输出。",
+      "explanation": "检查键是否存在能保留合法的0；if r.get(\"x\")会误删这条数据。",
+      "skills": [
+        "p5",
+        "py13",
+        "py19",
+        "py24"
+      ],
+      "points": 2,
+      "code": "rows=[{\"x\":0,\"y\":1},{\"x\":2,\"y\":5},{\"y\":7}]\nvalid=[r for r in rows if \"x\" in r and \"y\" in r]\nprint(len(valid),sum(r[\"y\"] for r in valid))\nprint([r[\"x\"] for r in valid])\n",
+      "expectedStdout": "2 6\n[0, 2]",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-stage-o2",
+      "chapter": "c12",
+      "kind": "output",
+      "prompt": "一次SGD更新后写出输出。",
+      "explanation": "初始MSE=(9+25)/2=17，权重梯度-13、bias梯度-8，学习率0.1对应参数1.3和0.8。",
+      "skills": [
+        "t5",
+        "t6",
+        "pt25"
+      ],
+      "points": 2,
+      "code": "import torch\nm=torch.nn.Linear(1,1)\nwith torch.no_grad():\n    m.weight.zero_();m.bias.zero_()\no=torch.optim.SGD(m.parameters(),lr=0.1)\nx=torch.tensor([[1.],[2.]])\ny=torch.tensor([[3.],[5.]])\no.zero_grad()\nloss=(m(x)-y).square().mean()\nloss.backward();o.step()\nprint(round(loss.item(),2),round(m.weight.item(),2),round(m.bias.item(),2))\n",
+      "expectedStdout": "17.0 1.3 0.8",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-stage-m1",
+      "chapter": "c12",
+      "kind": "choice",
+      "prompt": "下面哪项最能证明验证样本没有参与参数训练？",
+      "explanation": "输入无.grad或被detach并不能阻止验证标签参与loss更新参数；训练结果对验证标签保持不变才检查了数据边界。",
+      "skills": [
+        "py30",
+        "pt30"
+      ],
+      "points": 1,
+      "options": [
+        "程序调用过detach",
+        "验证输入的.grad是None",
+        "同一训练集与超参数下，改动验证标签不会改变训练后的模型参数"
+      ],
+      "answer": 2,
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-stage-m2",
+      "chapter": "c12",
+      "kind": "choice",
+      "prompt": "模型仍是train模式，但评估前向已放入no_grad。包含Dropout的验证指标为何仍可能不可靠？",
+      "explanation": "图记录与层行为是独立开关。no_grad不把Dropout切换到评估行为，验证通常同时使用eval与no_grad。",
+      "skills": [
+        "pt19",
+        "pt20",
+        "pt23"
+      ],
+      "points": 1,
+      "options": [
+        "no_grad会随机修改模型权重",
+        "Dropout仍按训练行为丢弃激活，还需要eval",
+        "no_grad只对long张量有效"
+      ],
+      "answer": 1,
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-stage-m3",
+      "chapter": "c12",
+      "kind": "choice",
+      "prompt": "最后一批只有1条样本，其余批有8条。记录一轮mean loss时最稳妥的做法是？",
+      "explanation": "sum再除总数让每条样本权重相同。批次mean直接平均会放大尾批；丢弃则不能报告全部数据表现。",
+      "skills": [
+        "py25",
+        "pt15",
+        "pt21"
+      ],
+      "points": 1,
+      "options": [
+        "累计每批sum loss，最后除全部样本数",
+        "丢掉最后一批的loss",
+        "所有批的mean直接平均"
+      ],
+      "answer": 0,
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-stage-c1",
+      "chapter": "c12",
+      "kind": "code",
+      "prompt": "实现 prepare_regression(rows,feature_names)。rows是dict列表；feature_names是非空且不重复的字符串列表。只保留所有指定特征及target均存在、类型为int/float（排除bool）且有限的记录，其他记录跳过。按原行顺序与feature_names顺序返回float32张量(x[N,D],y[N,1])；空结果仍保留D。不修改输入，不转换数值字符串。",
+      "explanation": "字段存在性、类型和有限性分开检查，合法零值不能用真值过滤。先固定列顺序，再显式保留空张量的二维形状。",
+      "skills": [
+        "py13",
+        "py19",
+        "py24",
+        "pt01",
+        "pt17"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-stage-c1",
+      "signature": "def prepare_regression(rows, feature_names)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-stage-c2",
+      "chapter": "c12",
+      "kind": "code",
+      "prompt": "实现 fit_standardized_regressor(x,y,steps=100,lr=0.1)。x为非空有限CPU float32[N,D]、D>=1，y为float32[N,1]。仅由x拟合逐列mean与总体std(unbiased=False)，scale=std.clamp_min(1e-6)。标准化后，用零初始化含bias的Linear(D,1)和SGD训练steps次mean MSE；记录每次更新前loss.item()。返回{model,mean:[D]张量,scale:[D]张量,losses:Python float列表}。steps>=0；不改输入。",
+      "explanation": "预处理状态与模型一起返回，供验证阶段复用。总体std适用于本题约定，常数列需保护；训练图、日志值和参数更新各司其职。",
+      "skills": [
+        "t1",
+        "t2",
+        "t5",
+        "t6",
+        "pt16",
+        "pt25",
+        "pt30"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-stage-c2",
+      "signature": "def fit_standardized_regressor(x, y, steps=100, lr=0.1)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-stage-c3",
+      "chapter": "c12",
+      "kind": "code",
+      "prompt": "实现 evaluate_saved_regressor(bundle,x,y)。bundle含model、训练集拟合的mean[D]与scale[D]>0；模型输出[N,1]。x是CPU有限float32[N,D]，y为float32[N,1]。只能复用bundle统计做标准化，临时eval+no_grad评估，返回{mse:Python float,mae:Python float,count:Python int}，count=N；空N两项误差0。成功或异常均恢复原模式，不更新参数或修改输入。",
+      "explanation": "验证数据必须使用训练坐标系。eval与no_grad分别控制层和图，finally避免验证失败后遗留错误模式；按全部目标元素计算误差。",
+      "skills": [
+        "pt20",
+        "pt21",
+        "pt23",
+        "pt30"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-stage-c3",
+      "signature": "def evaluate_saved_regressor(bundle, x, y)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-r07-o",
+      "chapter": "c07",
+      "kind": "output",
+      "prompt": "写出两行标准输出。",
+      "explanation": "转置改变逻辑轴顺序；flatten按当前张量的逻辑顺序合并特征，非连续不等于顺序丢失。",
+      "skills": [
+        "pt01",
+        "pt05"
+      ],
+      "points": 2,
+      "code": "import torch\nx=torch.arange(12).reshape(2,2,3).transpose(1,2)\nprint(list(x.shape))\nprint(x.flatten(1)[0].tolist())\n",
+      "expectedStdout": "[2, 3, 2]\n[0, 3, 1, 4, 2, 5]",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-r07-c",
+      "chapter": "c07",
+      "kind": "code",
+      "prompt": "实现 length_mask(lengths,max_len)。lengths为整数list，0<=每个长度<=max_len，max_len>=0。返回CPU bool[B,max_len]张量，每行前length个位置True，其余False；支持空list与max_len=0。",
+      "explanation": "比较位置编号和各行长度，通过[B,1]与[1,T]广播一次构造所有有效位。",
+      "skills": [
+        "pt04",
+        "t2"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-r07-c",
+      "signature": "def length_mask(lengths, max_len)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-r08-o",
+      "chapter": "c08",
+      "kind": "output",
+      "prompt": "写出标准输出。",
+      "explanation": "大数与负大数都先平移到0；相同logit的概率相等，不受公共偏移影响。",
+      "skills": [
+        "pt06",
+        "pt07"
+      ],
+      "points": 2,
+      "code": "import torch\nx=torch.tensor([[1000.,1000.],[-1000.,-1000.]],dtype=torch.float64)\nz=x-x.max(-1,keepdim=True).values\np=z.exp()/z.exp().sum(-1,keepdim=True)\nprint(p.tolist())\n",
+      "expectedStdout": "[[0.5, 0.5], [0.5, 0.5]]",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-r08-c",
+      "chapter": "c08",
+      "kind": "code",
+      "prompt": "实现 weighted_values(scores,values)。scores是有限CPU浮点[B,K]、values为同dtype[B,K,D]，K,D>=1。沿K对scores做稳定softmax，再对value加权，返回[B,D]；支持B=0且保留两输入的梯度。不修改输入。",
+      "explanation": "softmax沿候选K轴分配权重，unsqueeze使同一权重作用到该候选的全部特征，然后沿K归约。",
+      "skills": [
+        "pt06",
+        "pt10",
+        "t2"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-r08-c",
+      "signature": "def weighted_values(scores, values)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-r09-o",
+      "chapter": "c09",
+      "kind": "output",
+      "prompt": "写出标准输出。",
+      "explanation": "detach分支仍贡献函数值10，但不贡献回到x的梯度；可微分支只贡献3。",
+      "skills": [
+        "pt12",
+        "t3"
+      ],
+      "points": 2,
+      "code": "import torch\nx=torch.tensor(2.,requires_grad=True)\na=x*3\nb=x.detach()*5\n(a+b).backward()\nprint((a+b).item(),x.grad.item())\n",
+      "expectedStdout": "16.0 3.0",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-r09-c",
+      "chapter": "c09",
+      "kind": "code",
+      "prompt": "实现 grad_wrt_input(matrix,x)。matrix为有限CPU float64[M,D]，x为float64[D]，D>=1、M>=0。用真实autograd计算 sum((matrix@x)**2) 对x的梯度并返回[D]张量。不得修改x、matrix或x已有.grad；允许x本来requires_grad=True。",
+      "explanation": "在独立叶子副本上求导，避免累积到调用者已有.grad；矩阵乘法的反向传播会合并所有输出行贡献。",
+      "skills": [
+        "pt12",
+        "pt13",
+        "pt15"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-r09-c",
+      "signature": "def grad_wrt_input(matrix, x)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-r10-m",
+      "chapter": "c10",
+      "kind": "choice",
+      "prompt": "collate_fn仅收到一条一维特征向量样本（向量长度D）。输出batch应该怎样组织？",
+      "explanation": "单样本仍是一个batch。删除batch轴会让模型输入和指标代码在尾批大小1时突然改变含义。",
+      "skills": [
+        "pt17",
+        "pt18"
+      ],
+      "points": 1,
+      "options": [
+        "特征[1,D]、标签[1]，保留batch轴",
+        "无论如何squeeze所有长度1的维",
+        "特征[D]、标签标量"
+      ],
+      "answer": 0,
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-r10-c",
+      "chapter": "c10",
+      "kind": "code",
+      "prompt": "实现 PairedClassifier(left_dim,right_dim,classes)，继承nn.Module。参数均为正整数；模型含一个带bias的Linear(left_dim+right_dim,classes)。forward(left,right)按最后一维拼接两个同batch的二维浮点特征，返回原始logits[B,classes]。支持B=0，参数注册，保留左右输入梯度。",
+      "explanation": "cat合并已有的特征轴，而stack会额外新增一轴。将Linear保存为Module属性才能注册其参数。",
+      "skills": [
+        "t4",
+        "pt16",
+        "pt18"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-r10-c",
+      "signature": "class PairedClassifier(torch.nn.Module)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-r11-o",
+      "chapter": "c11",
+      "kind": "output",
+      "prompt": "阈值是logit>=0为正类，写出TP、FP、FN。",
+      "explanation": "零logit也预测正类；第0和3条为TP，第2条为FP，第1条为FN。",
+      "skills": [
+        "pt22",
+        "pt23"
+      ],
+      "points": 2,
+      "code": "import torch\nlogits=torch.tensor([0.,-1.,2.,3.])\ny=torch.tensor([1,1,0,1])\np=logits>=0\nt=y==1\nprint((p&t).sum().item(),(p&~t).sum().item(),(~p&t).sum().item())\n",
+      "expectedStdout": "2 1 1",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-r11-c",
+      "chapter": "c11",
+      "kind": "code",
+      "prompt": "实现 snapshot_train_state(model,optimizer,epoch)，返回键model、optimizer、epoch的字典，前两项分别是对应state_dict的独立深拷贝。此处不写磁盘；以后修改模型参数、优化器学习率或动量张量，均不能改变该快照。epoch是Python int。",
+      "explanation": "内存里的最佳训练状态必须递归复制容器和张量。只复制外层dict，或直接保存state_dict引用，都不足以隔离后续更新。",
+      "skills": [
+        "pt24",
+        "pt25",
+        "py17"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-r11-c",
+      "signature": "def snapshot_train_state(model, optimizer, epoch)",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-r12-o",
+      "chapter": "c12",
+      "kind": "output",
+      "prompt": "写出标准输出。",
+      "explanation": "无有效前缀返回0；随后分别平均[8]和[8,20]，未来值20不能影响第1步。",
+      "skills": [
+        "pt28",
+        "pt29"
+      ],
+      "points": 2,
+      "code": "import torch\nx=torch.tensor([[[2.],[8.],[20.]]])\nmask=torch.tensor([[False,True,True]])\ntotal=x.masked_fill(~mask.unsqueeze(-1),0).cumsum(1)\ncount=mask.cumsum(1).unsqueeze(-1).clamp_min(1)\nprint((total/count).flatten().tolist())\n",
+      "expectedStdout": "[0.0, 8.0, 14.0]",
+      "runtime": "torch"
+    },
+    {
+      "id": "ax-torch-r12-c",
+      "chapter": "c12",
+      "kind": "code",
+      "prompt": "实现 masked_class_counts(logits,labels,valid)。logits为有限CPU浮点[B,T,C]、C>=1，labels为long[B,T]，valid为同形bool；有效标签在[0,C)，无效标签可为-100。返回long[C,C]混淆矩阵，行是真实类、列是argmax预测类（平局选首类）。忽略所有无效位置，支持空B/T，不修改输入。",
+      "explanation": "先过滤无效位置再用真实类*C+预测类编码计数，避免-100进入索引。minlength保证未出现类别仍保留完整矩阵。",
+      "skills": [
+        "pt27",
+        "pt28",
+        "pt30"
+      ],
+      "points": 4,
+      "exerciseId": "ax-torch-r12-c",
+      "signature": "def masked_class_counts(logits, labels, valid)",
+      "runtime": "torch"
+    }
+  ],
+  "exercises": [
+    {
+      "id": "ax-py-c01-fare",
+      "runtime": "python",
+      "task": "标准输入是一行整数 age。age<0 时输出 INVALID；0–5 岁输出 0；6–17 岁输出 8；18 岁及以上输出 15。只输出一个结果，不输出输入提示。",
+      "signature": "完整程序 · input / if / print",
+      "solution": "age = int(input())\nif age < 0:\n    print('INVALID')\nelif age <= 5:\n    print(0)\nelif age <= 17:\n    print(8)\nelse:\n    print(15)\n",
+      "tests": [
+        {
+          "stdout": true,
+          "stdin": "-1\n",
+          "expected": "INVALID",
+          "label": "负年龄"
+        },
+        {
+          "stdout": true,
+          "stdin": "0\n",
+          "expected": "0",
+          "label": "零岁"
+        },
+        {
+          "stdout": true,
+          "stdin": "5\n",
+          "expected": "0",
+          "label": "免费上界"
+        },
+        {
+          "stdout": true,
+          "stdin": "6\n",
+          "expected": "8",
+          "label": "优惠下界"
+        },
+        {
+          "stdout": true,
+          "stdin": "17\n",
+          "expected": "8",
+          "label": "优惠上界"
+        },
+        {
+          "stdout": true,
+          "stdin": "18\n",
+          "expected": "15",
+          "label": "成人下界"
+        }
+      ]
+    },
+    {
+      "id": "ax-py-c01-sentinel",
+      "runtime": "python",
+      "task": "标准输入为一行整数，可为空。把第一个 0 当作结束标记，0 及其后所有数均忽略。输出结束标记之前能被 3 整除的数的个数；负数也按同一整除规则处理。没有 0 时检查整行。",
+      "signature": "完整程序 · 循环 / break / 计数",
+      "solution": "values = list(map(int, input().split()))\ncount = 0\nfor value in values:\n    if value == 0:\n        break\n    if value % 3 == 0:\n        count += 1\nprint(count)\n",
+      "tests": [
+        {
+          "stdout": true,
+          "stdin": "3 4 6 0 9\n",
+          "expected": "2",
+          "label": "标记后不再计数"
+        },
+        {
+          "stdout": true,
+          "stdin": "0 3\n",
+          "expected": "0",
+          "label": "首项结束"
+        },
+        {
+          "stdout": true,
+          "stdin": "-6 -2 12\n",
+          "expected": "2",
+          "label": "负数与没有标记"
+        },
+        {
+          "stdout": true,
+          "stdin": "\n",
+          "expected": "0",
+          "label": "空行"
+        },
+        {
+          "stdout": true,
+          "stdin": "1 2 4\n",
+          "expected": "0",
+          "label": "无匹配"
+        }
+      ]
+    },
+    {
+      "id": "ax-py-c02-peak",
+      "runtime": "python",
+      "task": "标准输入共两行：第一行为正整数 k，第二行为整数列表（可以为空）。求任意连续 k 项的最大总和并输出；若项数不足 k，输出 EMPTY。k 保证大于 0。允许简单循环实现，不要求特定复杂度。",
+      "signature": "完整程序 · 切片 / 窗口 / 边界",
+      "solution": "k = int(input())\nvalues = list(map(int, input().split()))\nif len(values) < k:\n    print('EMPTY')\nelse:\n    best = sum(values[:k])\n    for start in range(1, len(values) - k + 1):\n        total = sum(values[start:start + k])\n        if total > best:\n            best = total\n    print(best)\n",
+      "tests": [
+        {
+          "stdout": true,
+          "stdin": "2\n4 -3 7 2\n",
+          "expected": "9",
+          "label": "最大窗口在末尾"
+        },
+        {
+          "stdout": true,
+          "stdin": "2\n-8 -2 -5\n",
+          "expected": "-7",
+          "label": "全负值不能用零初始化"
+        },
+        {
+          "stdout": true,
+          "stdin": "1\n-3 6 2\n",
+          "expected": "6",
+          "label": "单项窗口"
+        },
+        {
+          "stdout": true,
+          "stdin": "3\n1 2\n",
+          "expected": "EMPTY",
+          "label": "长度不足"
+        },
+        {
+          "stdout": true,
+          "stdin": "1\n\n",
+          "expected": "EMPTY",
+          "label": "空列表"
+        }
+      ]
+    },
+    {
+      "id": "ax-py-c02-dictionary-order",
+      "runtime": "python",
+      "task": "标准输入为一行文本。按任意空白分词、转为小写，再按首次出现顺序输出不重复的词，用一个空格连接；标点保留。空白行只输出空行。",
+      "signature": "完整程序 · 文本清洗 / 保序去重",
+      "solution": "words = input().lower().split()\nseen = set()\nkept = []\nfor word in words:\n    if word not in seen:\n        seen.add(word)\n        kept.append(word)\nprint(' '.join(kept))\n",
+      "tests": [
+        {
+          "stdout": true,
+          "stdin": "Blue RED blue green RED\n",
+          "expected": "blue red green",
+          "label": "大小写合并且保序"
+        },
+        {
+          "stdout": true,
+          "stdin": "  A\tB   a!\n",
+          "expected": "a b a!",
+          "label": "任意空白与保留标点"
+        },
+        {
+          "stdout": true,
+          "stdin": "\n",
+          "expected": "",
+          "label": "空白输入"
+        },
+        {
+          "stdout": true,
+          "stdin": "模型 模型 Lab\n",
+          "expected": "模型 lab",
+          "label": "Unicode"
+        },
+        {
+          "stdout": true,
+          "stdin": "z z z\n",
+          "expected": "z",
+          "label": "全部重复"
+        }
+      ]
+    },
+    {
+      "id": "ax-py-c03-weighted-hits",
+      "runtime": "python",
+      "task": "定义 weighted_accuracy(preds,labels,weights)。三个输入是等长列表，weights 为有限非负数。返回正确预测对应的权重之和 / 总权重；总权重为 0 时返回 0.0。长度不一致抛 ValueError。不得修改输入。",
+      "signature": "def weighted_accuracy(preds, labels, weights)",
+      "solution": "def weighted_accuracy(preds, labels, weights):\n    if len(preds) != len(labels) or len(labels) != len(weights):\n        raise ValueError('length mismatch')\n    total = sum(weights)\n    if total == 0:\n        return 0.0\n    correct = sum(weight for pred, label, weight in zip(preds, labels, weights) if pred == label)\n    return correct / total\n",
+      "tests": [
+        {
+          "expr": "weighted_accuracy([1,0,1],[1,1,1],[1,6,3])",
+          "expected": 0.4,
+          "label": "按权重而非样本数"
+        },
+        {
+          "expr": "weighted_accuracy([],[],[])",
+          "expected": 0.0,
+          "label": "空输入"
+        },
+        {
+          "expr": "weighted_accuracy([1],[0],[0])",
+          "expected": 0.0,
+          "label": "零总权重"
+        },
+        {
+          "expr": "weighted_accuracy([0,1],[0,1],[2,8])",
+          "expected": 1.0,
+          "label": "全部正确"
+        },
+        {
+          "expr": "weighted_accuracy([1],[1,0],[1])",
+          "expected": null,
+          "label": "长度不一致",
+          "raises": "ValueError"
+        }
+      ]
+    },
+    {
+      "id": "ax-py-c03-budget-stream",
+      "runtime": "python",
+      "task": "定义 within_budget(costs,budget)，返回生成器。costs 是有限非负数列表，budget 为有限数。按原序逐项产出费用，只有累计费用不超过 budget 才产出；遇到首个无法容纳的费用就结束，后续不再跳选。budget<0 在开始迭代时抛 ValueError。不修改 costs。",
+      "signature": "def within_budget(costs, budget)",
+      "solution": "def within_budget(costs, budget):\n    if budget < 0:\n        raise ValueError('negative budget')\n    total = 0\n    for cost in costs:\n        if total + cost > budget:\n            break\n        total += cost\n        yield cost\n",
+      "tests": [
+        {
+          "expr": "list(within_budget([2,4,1],5))",
+          "expected": [
+            2
+          ],
+          "label": "首个超额后停止"
+        },
+        {
+          "expr": "list(within_budget([2,3,1],5))",
+          "expected": [
+            2,
+            3
+          ],
+          "label": "恰好用尽预算"
+        },
+        {
+          "expr": "list(within_budget([0,0,1],0))",
+          "expected": [
+            0,
+            0
+          ],
+          "label": "零费用也可产出"
+        },
+        {
+          "expr": "list(within_budget([],0))",
+          "expected": [],
+          "label": "空输入"
+        },
+        {
+          "expr": "list(within_budget([1],-1))",
+          "expected": null,
+          "label": "负预算",
+          "raises": "ValueError"
+        },
+        {
+          "expr": "isinstance(within_budget([],-1),__import__(\"types\").GeneratorType)",
+          "expected": true,
+          "label": "真正生成器且创建时尚不抛负预算异常"
+        }
+      ]
+    },
+    {
+      "id": "ax-py-c04-team-counts",
+      "runtime": "python",
+      "task": "定义 team_counts(events)。events 是字典列表，每项有字符串 team 和 status，status 保证为 ok 或 failed。返回 {team:{ok:成功数,failed:失败数}}，每个出现的 team 都保留这两个键，即使其中一个计数为 0。空输入返回 {}，不得修改 events。",
+      "signature": "def team_counts(events)",
+      "solution": "def team_counts(events):\n    result = {}\n    for event in events:\n        team = event['team']\n        if team not in result:\n            result[team] = {'ok': 0, 'failed': 0}\n        result[team][event['status']] += 1\n    return result\n",
+      "tests": [
+        {
+          "expr": "team_counts([{\"team\":\"red\",\"status\":\"ok\"},{\"team\":\"blue\",\"status\":\"failed\"},{\"team\":\"red\",\"status\":\"ok\"}])",
+          "expected": {
+            "red": {
+              "ok": 2,
+              "failed": 0
+            },
+            "blue": {
+              "ok": 0,
+              "failed": 1
+            }
+          },
+          "label": "交错分组且保留零计数"
+        },
+        {
+          "expr": "team_counts([])",
+          "expected": {},
+          "label": "空记录"
+        },
+        {
+          "expr": "team_counts([{\"team\":\"\",\"status\":\"failed\"}])",
+          "expected": {
+            "": {
+              "ok": 0,
+              "failed": 1
+            }
+          },
+          "label": "空字符串也是合法组名"
+        },
+        {
+          "expr": "events",
+          "expected": [
+            {
+              "team": "x",
+              "status": "ok"
+            }
+          ],
+          "label": "不改输入",
+          "setup": "events=[{\"team\":\"x\",\"status\":\"ok\"}]\nteam_counts(events)\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-py-c04-qualified-ranking",
+      "runtime": "python",
+      "task": "定义 qualified_teams(records,min_count)。每条记录含字符串 team 和有限数值 score；min_count 为正整数。按 team 分组，保留记录数至少 min_count 的组，按组平均 score 降序、team 升序返回组名列表。不得修改 records。",
+      "signature": "def qualified_teams(records, min_count)",
+      "solution": "def qualified_teams(records, min_count):\n    totals = {}\n    counts = {}\n    for record in records:\n        team = record['team']\n        totals[team] = totals.get(team, 0) + record['score']\n        counts[team] = counts.get(team, 0) + 1\n    eligible = [team for team in totals if counts[team] >= min_count]\n    return sorted(eligible, key=lambda team: (-totals[team] / counts[team], team))\n",
+      "tests": [
+        {
+          "expr": "qualified_teams([{\"team\":\"b\",\"score\":2},{\"team\":\"a\",\"score\":3},{\"team\":\"b\",\"score\":4},{\"team\":\"c\",\"score\":99}],2)",
+          "expected": [
+            "b"
+          ],
+          "label": "数量门槛先筛选"
+        },
+        {
+          "expr": "qualified_teams([{\"team\":\"b\",\"score\":2},{\"team\":\"a\",\"score\":2},{\"team\":\"c\",\"score\":3}],1)",
+          "expected": [
+            "c",
+            "a",
+            "b"
+          ],
+          "label": "均分降序并列名字升序"
+        },
+        {
+          "expr": "qualified_teams([],1)",
+          "expected": [],
+          "label": "空输入"
+        },
+        {
+          "expr": "qualified_teams([{\"team\":\"x\",\"score\":0}],2)",
+          "expected": [],
+          "label": "全组不合格"
+        },
+        {
+          "expr": "qualified_teams([{\"team\":\"a\",\"score\":0},{\"team\":\"a\",\"score\":6},{\"team\":\"b\",\"score\":4}],1)",
+          "expected": [
+            "b",
+            "a"
+          ],
+          "label": "按均值而非总分排序"
+        },
+        {
+          "expr": "rows",
+          "expected": [
+            {
+              "team": "z",
+              "score": 1
+            },
+            {
+              "team": "a",
+              "score": 8
+            }
+          ],
+          "label": "不原地排序或修改记录",
+          "setup": "rows=[{\"team\":\"z\",\"score\":1},{\"team\":\"a\",\"score\":8}]\nqualified_teams(rows,1)\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-py-c05-csv-to-json",
+      "runtime": "python",
+      "task": "定义 export_passes(input_path,output_path,minimum)。输入为 UTF-8 CSV，列名 name、score；score 保证是有限数值字符串。按原序收集 score>=minimum 的 name，返回名称列表，并以 UTF-8 JSON 数组覆盖写入 output_path。只有表头时返回并写入 []。文件或解析错误保持抛出。",
+      "signature": "def export_passes(input_path, output_path, minimum)",
+      "solution": "import csv\nimport json\ndef export_passes(input_path, output_path, minimum):\n    with open(input_path, encoding='utf-8', newline='') as stream:\n        result = [row['name'] for row in csv.DictReader(stream) if float(row['score']) >= minimum]\n    with open(output_path, 'w', encoding='utf-8') as stream:\n        json.dump(result, stream, ensure_ascii=False)\n    return result\n",
+      "tests": [
+        {
+          "expr": "export_passes(\"teams.csv\",\"selected.json\",3)",
+          "expected": [
+            "北,区",
+            "south"
+          ],
+          "label": "带逗号名称与相等阈值"
+        },
+        {
+          "expr": "__import__(\"json\").loads(open(\"selected.json\",encoding=\"utf-8\").read())",
+          "expected": [
+            "北,区",
+            "south"
+          ],
+          "label": "真正写入 JSON 数组",
+          "setup": "export_passes(\"teams.csv\",\"selected.json\",3)\n"
+        },
+        {
+          "expr": "export_passes(\"empty.csv\",\"selected.json\",0)",
+          "expected": [],
+          "label": "只有表头"
+        },
+        {
+          "expr": "__import__(\"json\").loads(open(\"selected.json\",encoding=\"utf-8\").read())",
+          "expected": [],
+          "label": "重复运行覆盖旧结果",
+          "setup": "export_passes(\"teams.csv\",\"selected.json\",3)\nexport_passes(\"empty.csv\",\"selected.json\",0)\n"
+        },
+        {
+          "expr": "export_passes(\"missing.csv\",\"selected.json\",0)",
+          "expected": null,
+          "label": "缺文件不吞错",
+          "raises": "FileNotFoundError"
+        }
+      ],
+      "fixtures": {
+        "teams.csv": "name,score\n\"北,区\",3\nwest,2.5\nsouth,4\n",
+        "empty.csv": "name,score\n"
+      }
+    },
+    {
+      "id": "ax-py-c05-number-log",
+      "runtime": "python",
+      "task": "定义 sum_number_log(path)，读取 UTF-8 文本。空白行忽略；其余每行尝试转为 float，只接受有限数值。返回 (有效数值之和,无效非空行数)。无法转换、NaN、正负无穷均计为无效；文件不存在时保留 FileNotFoundError。空有效集总和为 0.0。",
+      "signature": "def sum_number_log(path)",
+      "solution": "import math\ndef sum_number_log(path):\n    total = 0.0\n    invalid = 0\n    with open(path, encoding='utf-8') as stream:\n        for line in stream:\n            text = line.strip()\n            if not text:\n                continue\n            try:\n                value = float(text)\n            except ValueError:\n                invalid += 1\n                continue\n            if not math.isfinite(value):\n                invalid += 1\n            else:\n                total += value\n    return total, invalid\n",
+      "tests": [
+        {
+          "expr": "sum_number_log(\"mixed.txt\")",
+          "expected": [
+            2.5,
+            3
+          ],
+          "label": "空白、格式错与非有限值"
+        },
+        {
+          "expr": "sum_number_log(\"blank.txt\")",
+          "expected": [
+            0.0,
+            0
+          ],
+          "label": "全空白"
+        },
+        {
+          "expr": "sum_number_log(\"zeros.txt\")",
+          "expected": [
+            0.0,
+            0
+          ],
+          "label": "合法零和负数不拒绝"
+        },
+        {
+          "expr": "sum_number_log(\"missing.txt\")",
+          "expected": null,
+          "label": "缺文件保持异常",
+          "raises": "FileNotFoundError"
+        }
+      ],
+      "fixtures": {
+        "mixed.txt": " 1.5 \n\noops\n-2\nnan\n3\ninf\n",
+        "blank.txt": "\n \t\n",
+        "zeros.txt": "0\n-2\n2\n"
+      }
+    },
+    {
+      "id": "ax-py-c06-recent-mean",
+      "runtime": "python",
+      "task": "定义 RecentMean(size)。size 为正整数，否则抛 ValueError。支持 add(value)、compute()、reset()：只保留最近 size 个有限数值；compute 返回它们的均值，空状态返回 0.0；reset 清空。实例相互独立。",
+      "signature": "class RecentMean(size)",
+      "solution": "class RecentMean:\n    def __init__(self, size):\n        if type(size) is not int or size <= 0:\n            raise ValueError('positive integer size required')\n        self.size = size\n        self.values = []\n    def add(self, value):\n        self.values.append(value)\n        if len(self.values) > self.size:\n            self.values.pop(0)\n    def compute(self):\n        return sum(self.values) / len(self.values) if self.values else 0.0\n    def reset(self):\n        self.values = []\n",
+      "tests": [
+        {
+          "expr": "RecentMean(2).compute()",
+          "expected": 0.0,
+          "label": "空状态"
+        },
+        {
+          "expr": "meter.compute()",
+          "expected": 7.0,
+          "label": "只取最近两项",
+          "setup": "meter=RecentMean(2)\nfor value in [2,6,8]:\n    meter.add(value)\n"
+        },
+        {
+          "expr": "meter.compute()",
+          "expected": 0.0,
+          "label": "重置",
+          "setup": "meter=RecentMean(1)\nmeter.add(5)\nmeter.reset()\n"
+        },
+        {
+          "expr": "second.compute()",
+          "expected": 0.0,
+          "label": "独立实例",
+          "setup": "first=RecentMean(2)\nsecond=RecentMean(2)\nfirst.add(7)\n"
+        },
+        {
+          "expr": "RecentMean(0)",
+          "expected": null,
+          "label": "拒绝零窗口",
+          "raises": "ValueError"
+        },
+        {
+          "expr": "RecentMean(True)",
+          "expected": null,
+          "label": "布尔值不作大小",
+          "raises": "ValueError"
+        }
+      ]
+    },
+    {
+      "id": "ax-py-c06-transform-dataset",
+      "runtime": "python",
+      "task": "定义 TransformedDataset(rows,transform)。rows 是二维数值列表，元素为不可变数值；transform 是接受一行列表并返回一个结果的函数。构造时复制每一行。支持 len(ds)、ds[i]（包括负索引）：每次把该行的新副本交给 transform，再返回变换结果。输入修改或 transform 原地修改行，都不能污染内部数据。索引越界保留 IndexError。",
+      "signature": "class TransformedDataset(rows, transform)",
+      "solution": "class TransformedDataset:\n    def __init__(self, rows, transform):\n        self.rows = [list(row) for row in rows]\n        self.transform = transform\n    def __len__(self):\n        return len(self.rows)\n    def __getitem__(self, index):\n        return self.transform(list(self.rows[index]))\n",
+      "tests": [
+        {
+          "expr": "len(TransformedDataset([[1],[2]],sum))",
+          "expected": 2,
+          "label": "长度协议"
+        },
+        {
+          "expr": "TransformedDataset([[1,2],[3,4]],sum)[-1]",
+          "expected": 7,
+          "label": "负索引与变换"
+        },
+        {
+          "expr": "ds[0]",
+          "expected": [
+            1,
+            2,
+            9
+          ],
+          "label": "构造及每次访问都隔离",
+          "setup": "rows=[[1,2]]\ndef extend(row):\n    row.append(9)\n    return row\nds=TransformedDataset(rows,extend)\nrows[0][0]=88\nds[0]\n"
+        },
+        {
+          "expr": "TransformedDataset([],sum)[0]",
+          "expected": null,
+          "label": "越界",
+          "raises": "IndexError"
+        },
+        {
+          "expr": "ds[0]",
+          "expected": 5,
+          "label": "独立调用",
+          "setup": "ds=TransformedDataset([[2,3]],sum)\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-py-cum03-target-runs",
+      "runtime": "python",
+      "task": "定义 target_runs(values,target)，values 为整数列表。按原序返回每一段连续等于 target 的区间长度；非 target 元素分隔区间。不记录长度 0 的区间，不修改输入。例：[1,1,2,1] 对 target=1 返回 [2,1]。",
+      "signature": "def target_runs(values, target)",
+      "solution": "def target_runs(values, target):\n    result = []\n    length = 0\n    for value in values:\n        if value == target:\n            length += 1\n        elif length:\n            result.append(length)\n            length = 0\n    if length:\n        result.append(length)\n    return result\n",
+      "tests": [
+        {
+          "expr": "target_runs([4,4,1,4,2,4,4,4],4)",
+          "expected": [
+            2,
+            1,
+            3
+          ],
+          "label": "多段与尾段"
+        },
+        {
+          "expr": "target_runs([],0)",
+          "expected": [],
+          "label": "空列表"
+        },
+        {
+          "expr": "target_runs([2,2],1)",
+          "expected": [],
+          "label": "没有目标"
+        },
+        {
+          "expr": "target_runs([0,0,0],0)",
+          "expected": [
+            3
+          ],
+          "label": "目标为零"
+        },
+        {
+          "expr": "values",
+          "expected": [
+            1,
+            1,
+            2
+          ],
+          "label": "不修改输入",
+          "setup": "values=[1,1,2]\ntarget_runs(values,1)\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-py-cum03-chunk-totals",
+      "runtime": "python",
+      "task": "定义 chunk_totals(values,size=2)，返回生成器，依次产出每个连续非重叠批次的总和；最后不足 size 项的批次也保留。values 是有限数值列表，size 必须是正整数（不含 bool），非法时在迭代开始抛 ValueError。不修改 values。",
+      "signature": "def chunk_totals(values, size=2)",
+      "solution": "def chunk_totals(values, size=2):\n    if type(size) is not int or size <= 0:\n        raise ValueError('positive integer size required')\n    for start in range(0, len(values), size):\n        yield sum(values[start:start + size])\n",
+      "tests": [
+        {
+          "expr": "list(chunk_totals([3,5,7,9,2]))",
+          "expected": [
+            8,
+            16,
+            2
+          ],
+          "label": "默认大小与尾批"
+        },
+        {
+          "expr": "list(chunk_totals([2,-2,3],size=3))",
+          "expected": [
+            3
+          ],
+          "label": "显式大小"
+        },
+        {
+          "expr": "list(chunk_totals([],4))",
+          "expected": [],
+          "label": "空列表"
+        },
+        {
+          "expr": "list(chunk_totals([1],0))",
+          "expected": null,
+          "label": "零大小非法",
+          "raises": "ValueError"
+        },
+        {
+          "expr": "list(chunk_totals([1],True))",
+          "expected": null,
+          "label": "布尔值非法",
+          "raises": "ValueError"
+        },
+        {
+          "expr": "isinstance(chunk_totals([],0),__import__(\"types\").GeneratorType)",
+          "expected": true,
+          "label": "真正生成器且创建时尚不触发参数异常"
+        }
+      ]
+    },
+    {
+      "id": "ax-py-cum06-counter-diff",
+      "runtime": "python",
+      "task": "定义 counter_diff(before,after)。两者为 {字符串:非负整数} 字典。返回包含双方所有键的新字典，每键对应 {before:旧计数,after:新计数,delta:新减旧}。任一侧缺键按 0 处理，显式零值保留；不得修改输入。返回字典的键顺序无要求。",
+      "signature": "def counter_diff(before, after)",
+      "solution": "def counter_diff(before, after):\n    result = {}\n    for key in set(before) | set(after):\n        old = before.get(key, 0)\n        new = after.get(key, 0)\n        result[key] = {'before': old, 'after': new, 'delta': new - old}\n    return result\n",
+      "tests": [
+        {
+          "expr": "counter_diff({\"a\":3,\"b\":0},{\"a\":1,\"c\":5})",
+          "expected": {
+            "a": {
+              "before": 3,
+              "after": 1,
+              "delta": -2
+            },
+            "b": {
+              "before": 0,
+              "after": 0,
+              "delta": 0
+            },
+            "c": {
+              "before": 0,
+              "after": 5,
+              "delta": 5
+            }
+          },
+          "label": "新增删除与零值"
+        },
+        {
+          "expr": "counter_diff({},{})",
+          "expected": {},
+          "label": "双方为空"
+        },
+        {
+          "expr": "counter_diff({\"x\":2},{\"x\":2})",
+          "expected": {
+            "x": {
+              "before": 2,
+              "after": 2,
+              "delta": 0
+            }
+          },
+          "label": "计数无变化"
+        },
+        {
+          "expr": "[before,after]",
+          "expected": [
+            {
+              "x": 1
+            },
+            {
+              "y": 2
+            }
+          ],
+          "label": "输入独立",
+          "setup": "before={\"x\":1}\nafter={\"y\":2}\nr=counter_diff(before,after)\nr[\"x\"][\"before\"]=99\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-py-cum06-latest-log",
+      "runtime": "python",
+      "task": "定义 read_latest_metrics(path)，读取 UTF-8 JSONL。有效行必须是字典，run 为字符串，metric 为有限的内置 int/float 且不含 bool。空白行忽略；坏 JSON、非字典或字段不合约的非空行计为无效。返回 (按 run 保留最后一次有效 metric 的字典,无效行数)。无效行不得覆盖此前有效值。文件错误保持抛出。",
+      "signature": "def read_latest_metrics(path)",
+      "solution": "import json\nimport math\ndef read_latest_metrics(path):\n    latest = {}\n    invalid = 0\n    with open(path, encoding='utf-8') as stream:\n        for line in stream:\n            if not line.strip():\n                continue\n            try:\n                row = json.loads(line)\n            except json.JSONDecodeError:\n                invalid += 1\n                continue\n            if not isinstance(row, dict):\n                invalid += 1\n                continue\n            value = row.get('metric')\n            valid_number = type(value) is int or (type(value) is float and math.isfinite(value))\n            if not isinstance(row.get('run'), str) or not valid_number:\n                invalid += 1\n                continue\n            latest[row['run']] = value\n    return latest, invalid\n",
+      "tests": [
+        {
+          "expr": "read_latest_metrics(\"latest.jsonl\")",
+          "expected": [
+            {
+              "a": 0.3,
+              "b": 0
+            },
+            3
+          ],
+          "label": "最后有效值与坏行统计"
+        },
+        {
+          "expr": "read_latest_metrics(\"empty.jsonl\")",
+          "expected": [
+            {},
+            0
+          ],
+          "label": "空白文件"
+        },
+        {
+          "expr": "read_latest_metrics(\"bad.jsonl\")",
+          "expected": [
+            {},
+            3
+          ],
+          "label": "非法字段与非有限指标"
+        },
+        {
+          "expr": "read_latest_metrics(\"missing.jsonl\")",
+          "expected": null,
+          "label": "缺文件",
+          "raises": "FileNotFoundError"
+        }
+      ],
+      "fixtures": {
+        "latest.jsonl": "{\"run\":\"a\",\"metric\":1}\n{\"run\":\"b\",\"metric\":0}\n{\"run\":\"a\",\"metric\":0.3}\n{\"run\":\"a\",\"metric\":true}\nbroken\n[]\n\n",
+        "empty.jsonl": " \n\t\n",
+        "bad.jsonl": "{\"run\":2,\"metric\":1}\n{\"run\":\"x\",\"metric\":NaN}\n{\"run\":\"x\"}\n"
+      }
+    },
+    {
+      "id": "ax-py-stage-session-summary",
+      "runtime": "python",
+      "task": "定义 session_summary(events)。每项是 {session:字符串,value:有限数值}。按 session 首次出现顺序返回列表，每项为 {session,count,total,last}：记录数、数值总和、该 session 最后一次的 value。空输入返回 []；不得修改或复用输入字典。",
+      "signature": "def session_summary(events)",
+      "solution": "def session_summary(events):\n    summaries = {}\n    for event in events:\n        key = event['session']\n        if key not in summaries:\n            summaries[key] = {'session': key, 'count': 0, 'total': 0, 'last': event['value']}\n        row = summaries[key]\n        row['count'] += 1\n        row['total'] += event['value']\n        row['last'] = event['value']\n    return list(summaries.values())\n",
+      "tests": [
+        {
+          "expr": "session_summary([{\"session\":\"b\",\"value\":2},{\"session\":\"a\",\"value\":0},{\"session\":\"b\",\"value\":-1}])",
+          "expected": [
+            {
+              "session": "b",
+              "count": 2,
+              "total": 1,
+              "last": -1
+            },
+            {
+              "session": "a",
+              "count": 1,
+              "total": 0,
+              "last": 0
+            }
+          ],
+          "label": "交错分组、首次顺序与最后值"
+        },
+        {
+          "expr": "session_summary([])",
+          "expected": [],
+          "label": "空事件"
+        },
+        {
+          "expr": "session_summary([{\"session\":\"\",\"value\":0}])",
+          "expected": [
+            {
+              "session": "",
+              "count": 1,
+              "total": 0,
+              "last": 0
+            }
+          ],
+          "label": "空名称和零值合法"
+        },
+        {
+          "expr": "events",
+          "expected": [
+            {
+              "session": "x",
+              "value": 2
+            }
+          ],
+          "label": "返回记录不复用输入",
+          "setup": "events=[{\"session\":\"x\",\"value\":2}]\nr=session_summary(events)\nr[0][\"total\"]=99\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-py-stage-prediction-ledger",
+      "runtime": "python",
+      "task": "定义 PredictionLedger，支持 add(preds,labels)、report()、reset()。add 的两个输入是列表，长度须一致，所有元素须为内置整数 0 或 1（不含 bool），否则抛 ValueError 且不改变已有统计。report 返回新的 {count,correct,accuracy} 字典；无样本 accuracy=0.0。多次 add 等价于拼接样本；reset 清空；实例独立。",
+      "signature": "class PredictionLedger",
+      "solution": "class PredictionLedger:\n    def __init__(self):\n        self.reset()\n    def add(self, preds, labels):\n        if len(preds) != len(labels):\n            raise ValueError('length mismatch')\n        if any(type(value) is not int or value not in (0, 1) for value in preds + labels):\n            raise ValueError('binary integers required')\n        self.count += len(labels)\n        self.correct += sum(pred == label for pred, label in zip(preds, labels))\n    def report(self):\n        return {'count': self.count, 'correct': self.correct,\n                'accuracy': self.correct / self.count if self.count else 0.0}\n    def reset(self):\n        self.count = 0\n        self.correct = 0\n",
+      "tests": [
+        {
+          "expr": "PredictionLedger().report()",
+          "expected": {
+            "count": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "label": "空账本"
+        },
+        {
+          "expr": "ledger.report()",
+          "expected": {
+            "count": 4,
+            "correct": 3,
+            "accuracy": 0.75
+          },
+          "label": "不等批次按样本累计",
+          "setup": "ledger=PredictionLedger()\nledger.add([1,0,1],[1,1,1])\nledger.add([0],[0])\n"
+        },
+        {
+          "expr": "ledger.add([1],[1,0])",
+          "expected": null,
+          "label": "拒绝长度不一致",
+          "setup": "ledger=PredictionLedger()\n",
+          "raises": "ValueError"
+        },
+        {
+          "expr": "ledger.add([True],[1])",
+          "expected": null,
+          "label": "拒绝 bool",
+          "setup": "ledger=PredictionLedger()\n",
+          "raises": "ValueError"
+        },
+        {
+          "expr": "ledger.report()",
+          "expected": {
+            "count": 1,
+            "correct": 1,
+            "accuracy": 1.0
+          },
+          "label": "失败更新不污染已有统计",
+          "setup": "ledger=PredictionLedger()\nledger.add([1],[1])\ntry:\n    ledger.add([1,2],[1,0])\nexcept ValueError:\n    pass\n"
+        },
+        {
+          "expr": "ledger.report()",
+          "expected": {
+            "count": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "label": "重置",
+          "setup": "ledger=PredictionLedger()\nledger.add([1],[1])\nledger.reset()\n"
+        },
+        {
+          "expr": "ledger.report()",
+          "expected": {
+            "count": 1,
+            "correct": 1,
+            "accuracy": 1.0
+          },
+          "label": "返回报告副本",
+          "setup": "ledger=PredictionLedger()\nledger.add([1],[1])\nsnapshot=ledger.report()\nsnapshot[\"count\"]=99\n"
+        },
+        {
+          "expr": "second.report()",
+          "expected": {
+            "count": 0,
+            "correct": 0,
+            "accuracy": 0.0
+          },
+          "label": "实例状态独立",
+          "setup": "first=PredictionLedger()\nsecond=PredictionLedger()\nfirst.add([1],[1])\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-py-stage-team-export",
+      "runtime": "python",
+      "task": "定义 export_team_totals(input_path,output_path)。读取 UTF-8 CSV，列 team、amount；team 作为字符串原样使用，amount 保证是有限数值字符串。按 team 累加 amount，返回 {team:总额}，并将同一字典以 UTF-8 JSON 覆盖写入 output_path。空数据写 {}；重复执行不追加；文件错误保持抛出。",
+      "signature": "def export_team_totals(input_path, output_path)",
+      "solution": "import csv\nimport json\ndef export_team_totals(input_path, output_path):\n    totals = {}\n    with open(input_path, encoding='utf-8', newline='') as stream:\n        for row in csv.DictReader(stream):\n            team = row['team']\n            totals[team] = totals.get(team, 0) + float(row['amount'])\n    with open(output_path, 'w', encoding='utf-8') as stream:\n        json.dump(totals, stream, ensure_ascii=False)\n    return totals\n",
+      "tests": [
+        {
+          "expr": "export_team_totals(\"amounts.csv\",\"totals.json\")",
+          "expected": {
+            "北,组": 1.5,
+            "south": 0.0
+          },
+          "label": "带逗号组名、负值与零"
+        },
+        {
+          "expr": "__import__(\"json\").loads(open(\"totals.json\",encoding=\"utf-8\").read())",
+          "expected": {
+            "北,组": 1.5,
+            "south": 0.0
+          },
+          "label": "实际 JSON 与返回一致",
+          "setup": "export_team_totals(\"amounts.csv\",\"totals.json\")\n"
+        },
+        {
+          "expr": "export_team_totals(\"empty.csv\",\"totals.json\")",
+          "expected": {},
+          "label": "空数据"
+        },
+        {
+          "expr": "__import__(\"json\").loads(open(\"totals.json\",encoding=\"utf-8\").read())",
+          "expected": {},
+          "label": "覆盖旧输出",
+          "setup": "export_team_totals(\"amounts.csv\",\"totals.json\")\nexport_team_totals(\"empty.csv\",\"totals.json\")\n"
+        },
+        {
+          "expr": "export_team_totals(\"missing.csv\",\"totals.json\")",
+          "expected": null,
+          "label": "保留文件异常",
+          "raises": "FileNotFoundError"
+        }
+      ],
+      "fixtures": {
+        "amounts.csv": "team,amount\n\"北,组\",2.5\nsouth,0\n\"北,组\",-1\n",
+        "empty.csv": "team,amount\n"
+      }
+    },
+    {
+      "id": "ax-py-review-c01-duration",
+      "runtime": "python",
+      "task": "标准输入是一行非负整数 seconds。把它换算为完整分钟数和剩余秒数，用一个空格分隔输出。例如 125 秒输出 2 5。只输出数字，不输出单位或提示。",
+      "signature": "完整程序 · 数值转换 / // / %",
+      "solution": "seconds = int(input())\nprint(seconds // 60, seconds % 60)\n",
+      "tests": [
+        {
+          "stdout": true,
+          "stdin": "125\n",
+          "expected": "2 5",
+          "label": "跨多分钟"
+        },
+        {
+          "stdout": true,
+          "stdin": "0\n",
+          "expected": "0 0",
+          "label": "零秒"
+        },
+        {
+          "stdout": true,
+          "stdin": "59\n",
+          "expected": "0 59",
+          "label": "不足一分钟"
+        },
+        {
+          "stdout": true,
+          "stdin": "60\n",
+          "expected": "1 0",
+          "label": "恰好一分钟"
+        }
+      ]
+    },
+    {
+      "id": "ax-py-review-c02-differences",
+      "runtime": "python",
+      "task": "标准输入为一行整数，可为空。按原序输出每对相邻数的“后项减前项”，用一个空格分隔。少于两个数时输出空行。不得额外输出列表括号。",
+      "signature": "完整程序 · 相邻位置 / 空边界",
+      "solution": "values = list(map(int, input().split()))\nresult = []\nfor index in range(1, len(values)):\n    result.append(str(values[index] - values[index - 1]))\nprint(' '.join(result))\n",
+      "tests": [
+        {
+          "stdout": true,
+          "stdin": "3 8 6 6\n",
+          "expected": "5 -2 0",
+          "label": "正负与零差"
+        },
+        {
+          "stdout": true,
+          "stdin": "9\n",
+          "expected": "",
+          "label": "单项"
+        },
+        {
+          "stdout": true,
+          "stdin": "\n",
+          "expected": "",
+          "label": "空行"
+        },
+        {
+          "stdout": true,
+          "stdin": "-4 -1\n",
+          "expected": "3",
+          "label": "负输入"
+        }
+      ]
+    },
+    {
+      "id": "ax-py-review-c03-clamp",
+      "runtime": "python",
+      "task": "定义 clamp_values(values,low=0,high=1)，把每个有限数值限制到闭区间 [low,high]，返回新列表。low、high 为有限数值；low>high 抛 ValueError。不得修改 values；low==high 合法。",
+      "signature": "def clamp_values(values, low=0, high=1)",
+      "solution": "def clamp_values(values, low=0, high=1):\n    if low > high:\n        raise ValueError('invalid interval')\n    return [max(low, min(value, high)) for value in values]\n",
+      "tests": [
+        {
+          "expr": "clamp_values([-2,.4,3])",
+          "expected": [
+            0,
+            0.4,
+            1
+          ],
+          "label": "默认区间"
+        },
+        {
+          "expr": "clamp_values([-3,0,5],low=-1,high=2)",
+          "expected": [
+            -1,
+            0,
+            2
+          ],
+          "label": "关键字参数"
+        },
+        {
+          "expr": "clamp_values([1,2],2,2)",
+          "expected": [
+            2,
+            2
+          ],
+          "label": "零宽区间"
+        },
+        {
+          "expr": "clamp_values([],2,1)",
+          "expected": null,
+          "label": "空输入也验证区间",
+          "raises": "ValueError"
+        },
+        {
+          "expr": "xs",
+          "expected": [
+            -1,
+            2
+          ],
+          "label": "不修改或复用输入",
+          "setup": "xs=[-1,2]\nout=clamp_values(xs)\nout.append(9)\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-py-review-c04-required-key",
+      "runtime": "python",
+      "task": "定义 first_missing(config,required)，config 为字典，required 为字符串列表。按 required 的顺序返回第一个不存在于 config 的键；所有键都存在时返回 None。值为 None、0 或空字符串都算存在；不得修改输入。",
+      "signature": "def first_missing(config, required)",
+      "solution": "def first_missing(config, required):\n    for key in required:\n        if key not in config:\n            return key\n    return None\n",
+      "tests": [
+        {
+          "expr": "first_missing({\"x\":0},[\"x\",\"y\",\"z\"])",
+          "expected": "y",
+          "label": "首个缺失键"
+        },
+        {
+          "expr": "first_missing({\"x\":None,\"y\":\"\"},[\"x\",\"y\"])",
+          "expected": null,
+          "label": "空值也算存在"
+        },
+        {
+          "expr": "first_missing({},[])",
+          "expected": null,
+          "label": "没有必需键"
+        },
+        {
+          "expr": "first_missing({},[\"b\",\"a\"])",
+          "expected": "b",
+          "label": "按要求顺序而非排序"
+        }
+      ]
+    },
+    {
+      "id": "ax-py-review-c05-enabled",
+      "runtime": "python",
+      "task": "定义 load_enabled_names(path)。文件是 UTF-8 JSON 数组，每项保证是字典，含字符串 name，可选 enabled。仅当 enabled 的值恰好为布尔 True 时保留 name，按原序返回列表；缺失、False、数字 1 都不保留。文件和 JSON 格式错误保持抛出。",
+      "signature": "def load_enabled_names(path)",
+      "solution": "import json\ndef load_enabled_names(path):\n    with open(path, encoding='utf-8') as stream:\n        rows = json.load(stream)\n    return [row['name'] for row in rows if row.get('enabled') is True]\n",
+      "tests": [
+        {
+          "expr": "load_enabled_names(\"flags.json\")",
+          "expected": [
+            "b",
+            "e"
+          ],
+          "label": "精确布尔状态与原序"
+        },
+        {
+          "expr": "load_enabled_names(\"empty.json\")",
+          "expected": [],
+          "label": "空数组"
+        },
+        {
+          "expr": "load_enabled_names(\"missing.json\")",
+          "expected": null,
+          "label": "缺文件",
+          "raises": "FileNotFoundError"
+        },
+        {
+          "expr": "load_enabled_names(\"invalid.json\")",
+          "expected": null,
+          "label": "坏 JSON",
+          "raises": "JSONDecodeError"
+        }
+      ],
+      "fixtures": {
+        "flags.json": "[{\"name\":\"a\",\"enabled\":1},{\"name\":\"b\",\"enabled\":true},{\"name\":\"c\"},{\"name\":\"d\",\"enabled\":false},{\"name\":\"e\",\"enabled\":true}]",
+        "empty.json": "[]",
+        "invalid.json": "{broken"
+      }
+    },
+    {
+      "id": "ax-py-review-c06-range",
+      "runtime": "python",
+      "task": "定义 RunningRange，支持 add(value)、bounds()、reset()。value 为有限数值；bounds 返回目前所有输入的 (最小值,最大值)，空状态返回 None。reset 清空；实例独立。",
+      "signature": "class RunningRange",
+      "solution": "class RunningRange:\n    def __init__(self):\n        self.reset()\n    def add(self, value):\n        if self.minimum is None:\n            self.minimum = value\n            self.maximum = value\n        else:\n            self.minimum = min(self.minimum, value)\n            self.maximum = max(self.maximum, value)\n    def bounds(self):\n        if self.minimum is None:\n            return None\n        return self.minimum, self.maximum\n    def reset(self):\n        self.minimum = None\n        self.maximum = None\n",
+      "tests": [
+        {
+          "expr": "RunningRange().bounds()",
+          "expected": null,
+          "label": "空状态"
+        },
+        {
+          "expr": "state.bounds()",
+          "expected": [
+            -4,
+            7
+          ],
+          "label": "正负值与完整范围",
+          "setup": "state=RunningRange()\nfor value in [2,7,-4,0]:\n    state.add(value)\n"
+        },
+        {
+          "expr": "state.bounds()",
+          "expected": [
+            0,
+            0
+          ],
+          "label": "零作为首值",
+          "setup": "state=RunningRange()\nstate.add(0)\n"
+        },
+        {
+          "expr": "state.bounds()",
+          "expected": null,
+          "label": "重置",
+          "setup": "state=RunningRange()\nstate.add(4)\nstate.reset()\n"
+        },
+        {
+          "expr": "second.bounds()",
+          "expected": null,
+          "label": "实例独立",
+          "setup": "first=RunningRange()\nsecond=RunningRange()\nfirst.add(9)\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-07-c1",
+      "runtime": "torch",
+      "task": "实现 sensor_summary(x,valid)。x是CPU二维浮点张量[B,D]，D>=1，valid是同形bool。有效元素有限，无效元素可为NaN/Inf。返回字典{mean,peak}，两项均为[B]张量：每行有效均值与最大值，全无效行两项均为0；支持B=0，不改输入，mean保留梯度。",
+      "signature": "def sensor_summary(x, valid)",
+      "solution": "import torch\ndef sensor_summary(x,valid):\n    counts=valid.sum(1)\n    mean=x.masked_fill(~valid,0).sum(1)/counts.clamp_min(1)\n    peak=x.masked_fill(~valid,float('-inf')).max(1).values\n    peak=torch.where(counts>0,peak,torch.zeros_like(peak))\n    return {'mean':mean,'peak':peak}\n",
+      "tests": [
+        {
+          "expr": "sensor_summary(torch.tensor([[2.,8.,99.],[-5.,-2.,7.]]),torch.tensor([[True,True,False],[True,True,False]]))",
+          "expected": {
+            "mean": [
+              5,
+              -3.5
+            ],
+            "peak": [
+              8,
+              -2
+            ]
+          },
+          "label": "均值与负数最大值"
+        },
+        {
+          "expr": "sensor_summary(torch.tensor([[float(\"nan\"),float(\"inf\")]]),torch.tensor([[False,False]]))",
+          "expected": {
+            "mean": [
+              0
+            ],
+            "peak": [
+              0
+            ]
+          },
+          "label": "全无效非有限位置"
+        },
+        {
+          "expr": "[list(r[k].shape) for k in (\"mean\",\"peak\")]",
+          "expected": [
+            [
+              0
+            ],
+            [
+              0
+            ]
+          ],
+          "label": "空批次形状",
+          "setup": "r=sensor_summary(torch.empty(0,3),torch.empty(0,3,dtype=torch.bool))\n"
+        },
+        {
+          "expr": "x.grad",
+          "expected": [
+            [
+              0.5,
+              0,
+              0.5
+            ]
+          ],
+          "label": "仅有效位置参与梯度",
+          "setup": "x=torch.tensor([[1.,99.,3.]],requires_grad=True)\nsensor_summary(x,torch.tensor([[True,False,True]]))[\"mean\"].sum().backward()\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-07-c2",
+      "runtime": "torch",
+      "task": "图像已提取为任意至少二维张量x[B,...]，每条样本展平后有F>=1个特征。centers是[K,F]浮点张量，K>=1，两者CPU、同dtype且有限。实现 assign_prototypes(x,centers)，返回[B] long张量，每条样本分配到平方欧氏距离最近的中心；距离相同取较小中心索引。支持非连续x与空B，不修改输入。",
+      "signature": "def assign_prototypes(x, centers)",
+      "solution": "import torch\ndef assign_prototypes(x,centers):\n    flat=x.flatten(1)\n    distances=((flat[:,None,:]-centers[None,:,:])**2).sum(-1)\n    return distances.argmin(1)\n",
+      "tests": [
+        {
+          "expr": "assign_prototypes(torch.tensor([[[0.,0.]],[[4.,3.]],[[1.,0.]]]),torch.tensor([[0.,0.],[4.,4.]]))",
+          "expected": [
+            0,
+            1,
+            0
+          ],
+          "label": "批量原型分配"
+        },
+        {
+          "expr": "assign_prototypes(torch.tensor([[[1.,1.]]]),torch.tensor([[0.,0.],[2.,2.]]))",
+          "expected": [
+            0
+          ],
+          "label": "平局取首索引"
+        },
+        {
+          "expr": "list(assign_prototypes(torch.empty(0,2,3),torch.ones(2,6)).shape)",
+          "expected": [
+            0
+          ],
+          "label": "空批次"
+        },
+        {
+          "expr": "assign_prototypes(x,c)",
+          "expected": [
+            1
+          ],
+          "label": "非连续特征顺序",
+          "setup": "x=torch.arange(6.).reshape(1,2,3).transpose(1,2)\nc=torch.tensor([[0.,0.,0.,0.,0.,0.],[0.,3.,1.,4.,2.,5.]])\n"
+        },
+        {
+          "expr": "result.dtype==torch.long and torch.equal(x,old)",
+          "expected": true,
+          "label": "整数索引且不修改输入",
+          "setup": "x=torch.tensor([[[1.,2.]],[[3.,4.]]]);old=x.clone()\nresult=assign_prototypes(x,torch.zeros(1,2))\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-08-c1",
+      "runtime": "torch",
+      "task": "实现 smoothed_nll(logits,labels,epsilon)。logits是CPU有限浮点[B,C]、C>=1，labels为合法类别long[B]，0<=epsilon<=1。每条样本损失=(1-epsilon)*目标类负log概率+epsilon*所有C类负log概率的均值，再对B取均值。返回标量张量，不先softmax后log；B=0时返回连接logits计算图的0。",
+      "signature": "def smoothed_nll(logits, labels, epsilon)",
+      "solution": "import torch\ndef smoothed_nll(logits,labels,epsilon):\n    if logits.shape[0]==0:\n        return logits.sum()*0\n    negative_log_probs=torch.logsumexp(logits,-1,keepdim=True)-logits\n    target=negative_log_probs[torch.arange(len(labels),device=logits.device),labels]\n    return ((1-epsilon)*target+epsilon*negative_log_probs.mean(-1)).mean()\n",
+      "tests": [
+        {
+          "expr": "smoothed_nll(torch.tensor([[0.,1.0986122886681098]],dtype=torch.float64),torch.tensor([1]),0.4).item()",
+          "expected": 0.5074045301854029,
+          "label": "非均匀概率的中间平滑系数"
+        },
+        {
+          "expr": "smoothed_nll(torch.tensor([[1000.,1001.]],dtype=torch.float64),torch.tensor([1]),1.).item()",
+          "expected": 0.813261687518,
+          "label": "平滑到均匀目标且稳定"
+        },
+        {
+          "expr": "torch.allclose(smoothed_nll(x,y,0),torch.nn.functional.cross_entropy(x,y))",
+          "expected": true,
+          "label": "零平滑退化成交叉熵",
+          "setup": "x=torch.tensor([[1.,-2.,4.],[2.,0.,-1.]])\ny=torch.tensor([2,0])\n"
+        },
+        {
+          "expr": "x.grad",
+          "expected": [],
+          "label": "空批次仍能反向",
+          "setup": "x=torch.empty(0,3,requires_grad=True)\nsmoothed_nll(x,torch.empty(0,dtype=torch.long),0.2).backward()\n"
+        },
+        {
+          "expr": "x.grad.sum(1)",
+          "expected": [
+            0,
+            0
+          ],
+          "label": "梯度保持平移不变性",
+          "setup": "x=torch.tensor([[1.,2.,0.],[0.,3.,1.]],requires_grad=True)\nsmoothed_nll(x,torch.tensor([0,1]),0.2).backward()\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-08-c2",
+      "runtime": "torch",
+      "task": "实现 merge_heads(h)，将CPU张量[B,H,T,Dh]恢复为[B,T,H*Dh]，每个token按head编号拼接特征。H>=1、Dh>=1，B或T可以为0；支持非连续输入且保留梯度。",
+      "signature": "def merge_heads(h)",
+      "solution": "import torch\ndef merge_heads(h):\n    b,heads,t,width=h.shape\n    return h.permute(0,2,1,3).reshape(b,t,heads*width)\n",
+      "tests": [
+        {
+          "expr": "merge_heads(torch.tensor([[[[0,1],[4,5]],[[2,3],[6,7]]]]))",
+          "expected": [
+            [
+              [
+                0,
+                1,
+                2,
+                3
+              ],
+              [
+                4,
+                5,
+                6,
+                7
+              ]
+            ]
+          ],
+          "label": "token特征归位"
+        },
+        {
+          "expr": "list(merge_heads(torch.empty(0,2,3,4)).shape)",
+          "expected": [
+            0,
+            3,
+            8
+          ],
+          "label": "空批次"
+        },
+        {
+          "expr": "list(merge_heads(torch.empty(2,3,0,4)).shape)",
+          "expected": [
+            2,
+            0,
+            12
+          ],
+          "label": "空序列"
+        },
+        {
+          "expr": "x.grad",
+          "expected": [
+            [
+              [
+                [
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ]
+              ],
+              [
+                [
+                  1,
+                  1
+                ],
+                [
+                  1,
+                  1
+                ]
+              ]
+            ]
+          ],
+          "label": "梯度不中断",
+          "setup": "x=torch.ones(1,2,2,2,requires_grad=True)\nmerge_heads(x).sum().backward()\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-09-c1",
+      "runtime": "torch",
+      "task": "实现 weighted_square_gradient(values,weights)。两者是同长有限Python数值列表，可为空。用真实autograd求 sum(weights[i]*x[i]**2) 对x的梯度，返回一维float64张量；不要直接代入解析导数。",
+      "signature": "def weighted_square_gradient(values, weights)",
+      "solution": "import torch\ndef weighted_square_gradient(values,weights):\n    x=torch.tensor(values,dtype=torch.float64,requires_grad=True)\n    w=torch.tensor(weights,dtype=torch.float64)\n    (w*x.square()).sum().backward()\n    return x.grad\n",
+      "tests": [
+        {
+          "expr": "weighted_square_gradient([2,-3,0],[0.5,2,9])",
+          "expected": [
+            2,
+            -12,
+            0
+          ],
+          "label": "正负值与零"
+        },
+        {
+          "expr": "weighted_square_gradient([],[])",
+          "expected": [],
+          "label": "空向量"
+        },
+        {
+          "expr": "str(weighted_square_gradient([1],[2]).dtype)",
+          "expected": "torch.float64",
+          "label": "梯度dtype"
+        },
+        {
+          "expr": "_uses_autograd(weighted_square_gradient,[1.,2.],[3.,4.])",
+          "expected": true,
+          "label": "实际自动微分",
+          "setup": "def _uses_autograd(function,*args):\n    with torch.autograd.profiler.profile(use_cpu=True) as trace:\n        function(*args)\n    return any('autograd::engine::evaluate_function' in event.name for event in trace.function_events)\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-09-c2",
+      "runtime": "torch",
+      "task": "实现 accumulated_l1_grad(batches)。batches是非空list，每项(x,y)为同长一维CPU float32张量，至少总计1条样本，元素有限；单批允许为空。创建w=0的标量叶子，对所有样本的mean绝对误差 abs(w*x-y) 逐批backward累积，返回w梯度的Python float；误差为0时采用PyTorch的abs梯度0。",
+      "signature": "def accumulated_l1_grad(batches)",
+      "solution": "import torch\ndef accumulated_l1_grad(batches):\n    w=torch.tensor(0.,requires_grad=True)\n    n=sum(x.numel() for x,y in batches)\n    for x,y in batches:\n        ((w*x-y).abs().sum()/n).backward()\n    return w.grad.item()\n",
+      "tests": [
+        {
+          "expr": "accumulated_l1_grad([(torch.tensor([1.,2.,3.]),torch.tensor([1.,1.,1.])),(torch.tensor([4.]),torch.tensor([-1.]))])",
+          "expected": -0.5,
+          "label": "不等批次的L1梯度"
+        },
+        {
+          "expr": "accumulated_l1_grad([(torch.tensor([-2.,3.]),torch.tensor([1.,0.]))])",
+          "expected": 1,
+          "label": "零误差采用零次梯度"
+        },
+        {
+          "expr": "accumulated_l1_grad([(torch.empty(0),torch.empty(0)),(torch.tensor([2.]),torch.tensor([1.]))])",
+          "expected": -2,
+          "label": "允许一个空micro-batch"
+        },
+        {
+          "expr": "_uses_autograd(accumulated_l1_grad,[(torch.tensor([1.]),torch.tensor([2.]))])",
+          "expected": true,
+          "label": "真实逐批反向",
+          "setup": "def _uses_autograd(function,*args):\n    with torch.autograd.profiler.profile(use_cpu=True) as trace:\n        function(*args)\n    return any('autograd::engine::evaluate_function' in event.name for event in trace.function_events)\n"
+        },
+        {
+          "expr": "isinstance(accumulated_l1_grad([(torch.ones(1),torch.zeros(1))]),float)",
+          "expected": true,
+          "label": "返回Python浮点数"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-10-c1",
+      "runtime": "torch",
+      "task": "实现 make_regressor(widths)。widths为至少含2个正整数的list，依次表示输入、各隐藏层和输出宽度；返回nn.Module，由相邻Linear组成，除最后一层外每层后接ReLU，所有Linear含bias。widths长度不足2或存在非正维度时抛ValueError。无需验证非整数输入。",
+      "signature": "def make_regressor(widths)",
+      "solution": "import torch\ndef make_regressor(widths):\n    if len(widths)<2 or any(w<=0 for w in widths):\n        raise ValueError('invalid widths')\n    layers=[]\n    for i in range(len(widths)-1):\n        layers.append(torch.nn.Linear(widths[i],widths[i+1]))\n        if i<len(widths)-2:\n            layers.append(torch.nn.ReLU())\n    return torch.nn.Sequential(*layers)\n",
+      "tests": [
+        {
+          "expr": "m(torch.tensor([[-1.,-1.],[1.,1.]]))",
+          "expected": [
+            [
+              0
+            ],
+            [
+              6
+            ]
+          ],
+          "label": "隐藏层确实应用非线性",
+          "setup": "m=make_regressor([2,3,1])\nlinears=[v for v in m.modules() if isinstance(v,torch.nn.Linear)]\nwith torch.no_grad():\n    for layer in linears:\n        layer.weight.fill_(1);layer.bias.zero_()\n"
+        },
+        {
+          "expr": "sum(p.numel() for p in make_regressor([3,4,2,1]).parameters())",
+          "expected": 29,
+          "label": "全部参数已注册"
+        },
+        {
+          "expr": "sum(isinstance(m,torch.nn.ReLU) for m in make_regressor([2,1]).modules())",
+          "expected": 0,
+          "label": "仅输出层不加ReLU"
+        },
+        {
+          "expr": "make_regressor([3,0,1])",
+          "expected": null,
+          "label": "拒绝非正宽度",
+          "raises": "ValueError"
+        },
+        {
+          "expr": "make_regressor([3])",
+          "expected": null,
+          "label": "拒绝缺少输出宽度",
+          "raises": "ValueError"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-10-c2",
+      "runtime": "torch",
+      "task": "实现 WindowDataset(series,window)，继承torch.utils.data.Dataset。series是一维CPU浮点张量，window是正整数；window<=0抛ValueError。样本i为(series[i:i+window],series[i+window])，故长度max(N-window,0)。只接受0<=i<len(ds)的整数索引，越界抛IndexError。构造与返回都隔离存储，不让外部修改污染数据集。",
+      "signature": "class WindowDataset(torch.utils.data.Dataset)",
+      "solution": "import torch\nclass WindowDataset(torch.utils.data.Dataset):\n    def __init__(self,series,window):\n        if window<=0:\n            raise ValueError('positive window required')\n        self.series=series.clone()\n        self.window=window\n    def __len__(self):\n        return max(len(self.series)-self.window,0)\n    def __getitem__(self,i):\n        if i<0 or i>=len(self):\n            raise IndexError('sample index out of range')\n        return self.series[i:i+self.window].clone(),self.series[i+self.window].clone()\n",
+      "tests": [
+        {
+          "expr": "WindowDataset(torch.tensor([1.,3.,5.,7.]),2)[1]",
+          "expected": [
+            [
+              3,
+              5
+            ],
+            7
+          ],
+          "label": "窗口与下一时刻目标"
+        },
+        {
+          "expr": "len(WindowDataset(torch.ones(2),4))",
+          "expected": 0,
+          "label": "序列短于窗口"
+        },
+        {
+          "expr": "ds[0]",
+          "expected": [
+            [
+              1,
+              2
+            ],
+            3
+          ],
+          "label": "构造与返回均无别名",
+          "setup": "s=torch.tensor([1.,2.,3.])\nds=WindowDataset(s,2)\ns[0]=99\na,b=ds[0]\na[0]=88\nb.fill_(77)\n"
+        },
+        {
+          "expr": "WindowDataset(torch.ones(3),1)[-1]",
+          "expected": null,
+          "label": "接口明确不支持负索引",
+          "raises": "IndexError"
+        },
+        {
+          "expr": "WindowDataset(torch.ones(3),0)",
+          "expected": null,
+          "label": "非法窗口",
+          "raises": "ValueError"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-11-c1",
+      "runtime": "torch",
+      "task": "实现 evaluate_binary(model,batches)。每批(x,y)的模型输出和y均为一维[B]，y是0/1浮点张量。临时eval并关闭梯度，按全部样本聚合BCEWithLogitsLoss与logit>=0的准确率，返回{loss:Python float,accuracy:Python float}。空数据两项0；成功或异常都恢复原train/eval模式，不更新参数。",
+      "signature": "def evaluate_binary(model, batches)",
+      "solution": "import torch\ndef evaluate_binary(model,batches):\n    mode=model.training\n    model.eval()\n    total=0.0\n    correct=0\n    count=0\n    try:\n        with torch.no_grad():\n            for x,y in batches:\n                logits=model(x)\n                total+=torch.nn.functional.binary_cross_entropy_with_logits(logits,y,reduction='sum').item()\n                correct+=((logits>=0)==(y==1)).sum().item()\n                count+=y.numel()\n        return {'loss':total/count if count else 0.0,'accuracy':correct/count if count else 0.0}\n    finally:\n        model.train(mode)\n",
+      "tests": [
+        {
+          "expr": "evaluate_binary(torch.nn.Identity(),[(torch.zeros(3),torch.tensor([1.,1.,1.])),(torch.zeros(1),torch.tensor([0.]))])",
+          "expected": {
+            "loss": 0.69314718056,
+            "accuracy": 0.75
+          },
+          "label": "尾批按样本聚合"
+        },
+        {
+          "expr": "evaluate_binary(torch.nn.Identity(),[])",
+          "expected": {
+            "loss": 0,
+            "accuracy": 0
+          },
+          "label": "空数据"
+        },
+        {
+          "expr": "m.training and bool(m.flags) and not any(m.flags)",
+          "expected": true,
+          "label": "前向关闭梯度并恢复模式",
+          "setup": "class Probe(torch.nn.Module):\n    def __init__(self):\n        super().__init__();self.flags=[]\n    def forward(self,x):\n        self.flags.append(torch.is_grad_enabled());return x\nm=Probe()\nevaluate_binary(m,[(torch.ones(1,requires_grad=True),torch.ones(1))])\n"
+        },
+        {
+          "expr": "m.training",
+          "expected": false,
+          "label": "原eval保持不变",
+          "setup": "m=torch.nn.Identity();m.eval()\nevaluate_binary(m,[])\n"
+        },
+        {
+          "expr": "m.training",
+          "expected": true,
+          "label": "异常仍恢复模式",
+          "setup": "class Broken(torch.nn.Module):\n    def forward(self,x):raise RuntimeError(\"fail\")\nm=Broken()\ntry:evaluate_binary(m,[(torch.ones(1),torch.ones(1))])\nexcept RuntimeError:pass\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-11-c2",
+      "runtime": "torch",
+      "task": "实现 resume_sgd_step(model,optimizer,path,x,y)。path是可信CPU checkpoint，键为model、optimizer、epoch；模型及SGD优化器结构匹配，模型输出与y均为[B,1]。先恢复两种state_dict，切train，清旧梯度，用mean MSE完成一次更新。返回(保存epoch+1,本次更新前MSE的Python float)。加载使用map_location=\"cpu\",weights_only=True。",
+      "signature": "def resume_sgd_step(model, optimizer, path, x, y)",
+      "solution": "import torch\ndef resume_sgd_step(model,optimizer,path,x,y):\n    state=torch.load(path,map_location='cpu',weights_only=True)\n    model.load_state_dict(state['model'])\n    optimizer.load_state_dict(state['optimizer'])\n    model.train()\n    optimizer.zero_grad()\n    loss=((model(x)-y)**2).mean()\n    loss.backward()\n    optimizer.step()\n    return state['epoch']+1,loss.item()\n",
+      "tests": [
+        {
+          "expr": "result",
+          "expected": [
+            6,
+            4
+          ],
+          "label": "恢复轮数并返回更新前损失",
+          "setup": "m=torch.nn.Linear(1,1,bias=False)\nwith torch.no_grad():m.weight.fill_(1)\no=torch.optim.SGD(m.parameters(),lr=0.1,momentum=0.5)\no.state[m.weight]['momentum_buffer']=torch.tensor([[2.]])\ntorch.save({'model':m.state_dict(),'optimizer':o.state_dict(),'epoch':5},'resume.pt')\nwith torch.no_grad():m.weight.fill_(9)\nm.weight.grad=torch.tensor([[100.]])\no.param_groups[0]['lr']=9\nm.eval()\nresult=resume_sgd_step(m,o,'resume.pt',torch.tensor([[2.]]),torch.tensor([[0.]]))\n"
+        },
+        {
+          "expr": "m.weight",
+          "expected": [
+            [
+              0.1
+            ]
+          ],
+          "label": "恢复momentum后正确更新",
+          "setup": "m=torch.nn.Linear(1,1,bias=False)\nwith torch.no_grad():m.weight.fill_(1)\no=torch.optim.SGD(m.parameters(),lr=0.1,momentum=0.5)\no.state[m.weight]['momentum_buffer']=torch.tensor([[2.]])\ntorch.save({'model':m.state_dict(),'optimizer':o.state_dict(),'epoch':5},'resume.pt')\nwith torch.no_grad():m.weight.fill_(9)\nm.weight.grad=torch.tensor([[100.]])\no.param_groups[0]['lr']=9\nm.eval()\nresult=resume_sgd_step(m,o,'resume.pt',torch.tensor([[2.]]),torch.tensor([[0.]]))\n"
+        },
+        {
+          "expr": "o.state[m.weight][\"momentum_buffer\"]",
+          "expected": [
+            [
+              9
+            ]
+          ],
+          "label": "优化器动量必须恢复",
+          "setup": "m=torch.nn.Linear(1,1,bias=False)\nwith torch.no_grad():m.weight.fill_(1)\no=torch.optim.SGD(m.parameters(),lr=0.1,momentum=0.5)\no.state[m.weight]['momentum_buffer']=torch.tensor([[2.]])\ntorch.save({'model':m.state_dict(),'optimizer':o.state_dict(),'epoch':5},'resume.pt')\nwith torch.no_grad():m.weight.fill_(9)\nm.weight.grad=torch.tensor([[100.]])\no.param_groups[0]['lr']=9\nm.eval()\nresult=resume_sgd_step(m,o,'resume.pt',torch.tensor([[2.]]),torch.tensor([[0.]]))\n"
+        },
+        {
+          "expr": "m.training and isinstance(result[1],float)",
+          "expected": true,
+          "label": "训练模式和Python标量",
+          "setup": "m=torch.nn.Linear(1,1,bias=False)\nwith torch.no_grad():m.weight.fill_(1)\no=torch.optim.SGD(m.parameters(),lr=0.1,momentum=0.5)\no.state[m.weight]['momentum_buffer']=torch.tensor([[2.]])\ntorch.save({'model':m.state_dict(),'optimizer':o.state_dict(),'epoch':5},'resume.pt')\nwith torch.no_grad():m.weight.fill_(9)\nm.weight.grad=torch.tensor([[100.]])\no.param_groups[0]['lr']=9\nm.eval()\nresult=resume_sgd_step(m,o,'resume.pt',torch.tensor([[2.]]),torch.tensor([[0.]]))\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-12-c1",
+      "runtime": "torch",
+      "task": "实现 prefix_masked_mean(x,valid)。x形状[B,T,D]、valid为bool[B,T]，CPU浮点，有效位置有限，无效可含NaN/Inf。返回同形张量，第t步仅平均0..t内有效token；此前没有有效token时返回零。支持空B/T，不修改输入并保留有效输入梯度。",
+      "signature": "def prefix_masked_mean(x, valid)",
+      "solution": "import torch\ndef prefix_masked_mean(x,valid):\n    total=x.masked_fill(~valid.unsqueeze(-1),0).cumsum(1)\n    counts=valid.cumsum(1).unsqueeze(-1).clamp_min(1)\n    return total/counts\n",
+      "tests": [
+        {
+          "expr": "prefix_masked_mean(torch.tensor([[[2.],[99.],[6.],[10.]]]),torch.tensor([[True,False,True,True]]))",
+          "expected": [
+            [
+              [
+                2
+              ],
+              [
+                2
+              ],
+              [
+                4
+              ],
+              [
+                6
+              ]
+            ]
+          ],
+          "label": "每步只使用有效前缀"
+        },
+        {
+          "expr": "prefix_masked_mean(torch.tensor([[[float(\"nan\")],[4.]]]),torch.tensor([[False,True]]))",
+          "expected": [
+            [
+              [
+                0
+              ],
+              [
+                4
+              ]
+            ]
+          ],
+          "label": "首个有效token之前为零"
+        },
+        {
+          "expr": "list(prefix_masked_mean(torch.empty(2,0,3),torch.empty(2,0,dtype=torch.bool)).shape)",
+          "expected": [
+            2,
+            0,
+            3
+          ],
+          "label": "空序列"
+        },
+        {
+          "expr": "x.grad",
+          "expected": [
+            [
+              [
+                1.5
+              ],
+              [
+                0
+              ],
+              [
+                0.5
+              ]
+            ]
+          ],
+          "label": "因果累计的输入梯度",
+          "setup": "x=torch.tensor([[[2.],[9.],[6.]]],requires_grad=True)\nprefix_masked_mean(x,torch.tensor([[True,False,True]]))[:,-2:].sum().backward()\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-12-c2",
+      "runtime": "torch",
+      "task": "实现 fit_affine(x,y,steps=100,lr=0.1)。x是非空CPU float32[N,D]、D>=1，y为同样本数[N,1] float32，数据有限。创建含bias的Linear(D,1)，权重和bias清零，用全批SGD和mean MSE训练steps次，返回{weight:一维Python列表,bias:Python float}。steps>=0；遵守传入lr，不修改输入。",
+      "signature": "def fit_affine(x, y, steps=100, lr=0.1)",
+      "solution": "import torch\ndef fit_affine(x,y,steps=100,lr=0.1):\n    x=x.detach();y=y.detach()\n    m=torch.nn.Linear(x.shape[1],1)\n    torch.nn.init.zeros_(m.weight)\n    torch.nn.init.zeros_(m.bias)\n    o=torch.optim.SGD(m.parameters(),lr=lr)\n    for _ in range(steps):\n        o.zero_grad()\n        loss=((m(x)-y)**2).mean()\n        loss.backward()\n        o.step()\n    return {'weight':m.weight.detach().flatten().tolist(),'bias':m.bias.item()}\n",
+      "tests": [
+        {
+          "expr": "fit_affine(torch.tensor([[1.],[2.]]),torch.tensor([[3.],[5.]]),steps=1)",
+          "expected": {
+            "weight": [
+              1.3
+            ],
+            "bias": 0.8
+          },
+          "label": "一次更新的真实梯度"
+        },
+        {
+          "expr": "fit_affine(torch.ones(2,3),torch.ones(2,1),steps=0)",
+          "expected": {
+            "weight": [
+              0,
+              0,
+              0
+            ],
+            "bias": 0
+          },
+          "label": "零步与维度配置"
+        },
+        {
+          "expr": "fit_affine(torch.ones(2,2),torch.ones(2,1),steps=3,lr=0)",
+          "expected": {
+            "weight": [
+              0,
+              0
+            ],
+            "bias": 0
+          },
+          "label": "零学习率"
+        },
+        {
+          "expr": "fit_affine(x,y,steps=180)",
+          "expected": {
+            "weight": [
+              2,
+              -1
+            ],
+            "bias": 0.5
+          },
+          "label": "学习多特征仿射关系",
+          "setup": "x=torch.tensor([[-1.,-1.],[-1.,1.],[1.,-1.],[1.,1.]])\ny=2*x[:,:1]-x[:,1:2]+0.5\n",
+          "tolerance": 0.001
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-cum09-c1",
+      "runtime": "torch",
+      "task": "实现 pack_events(rows)。rows是字典list，每项含sample字符串与features有限数值list；非空时所有features具有相同正长度D。按sample首次出现顺序分组，将各组特征逐维求均值，返回(keys,means)，keys为字符串list，means为float32[G,D]张量。空rows返回([],float32[0,0]张量)，不修改输入。",
+      "signature": "def pack_events(rows)",
+      "solution": "import torch\ndef pack_events(rows):\n    if not rows:return [],torch.empty(0,0,dtype=torch.float32)\n    groups={}\n    for row in rows:\n        groups.setdefault(row['sample'],[]).append(row['features'])\n    keys=list(groups)\n    means=torch.stack([torch.tensor(groups[k],dtype=torch.float32).mean(0) for k in keys])\n    return keys,means\n",
+      "tests": [
+        {
+          "expr": "pack_events([{\"sample\":\"b\",\"features\":[2,4]},{\"sample\":\"a\",\"features\":[0,8]},{\"sample\":\"b\",\"features\":[6,10]}])",
+          "expected": [
+            [
+              "b",
+              "a"
+            ],
+            [
+              [
+                4,
+                7
+              ],
+              [
+                0,
+                8
+              ]
+            ]
+          ],
+          "label": "稳定分组与逐维均值"
+        },
+        {
+          "expr": "list(pack_events([])[1].shape)",
+          "expected": [
+            0,
+            0
+          ],
+          "label": "空记录形状"
+        },
+        {
+          "expr": "pack_events([{\"sample\":\"x\",\"features\":[0]}])",
+          "expected": [
+            [
+              "x"
+            ],
+            [
+              [
+                0
+              ]
+            ]
+          ],
+          "label": "合法零特征"
+        },
+        {
+          "expr": "rows==old",
+          "expected": true,
+          "label": "不污染原记录",
+          "setup": "import copy\nrows=[{\"sample\":\"x\",\"features\":[1,2]}]\nold=copy.deepcopy(rows)\npack_events(rows)\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-cum09-c2",
+      "runtime": "torch",
+      "task": "实现 batch_linear_gradient(batches,initial)。initial是有限CPU float32[D]，D>=1；batches为非空list，每项X[B,D]和y[B]为有限CPU float32，总样本数大于0，允许某批B=0。以initial的副本为需梯度叶子，对整体mean((X@w-y)**2)逐批backward，返回[D]梯度张量；不修改initial或其已有.grad。",
+      "signature": "def batch_linear_gradient(batches, initial)",
+      "solution": "import torch\ndef batch_linear_gradient(batches,initial):\n    w=initial.detach().clone().requires_grad_(True)\n    n=sum(y.numel() for x,y in batches)\n    for x,y in batches:\n        ((x@w-y).square().sum()/n).backward()\n    return w.grad\n",
+      "tests": [
+        {
+          "expr": "batch_linear_gradient([(torch.tensor([[1.,0.],[0.,2.]]),torch.tensor([2.,-2.])),(torch.tensor([[1.,1.]]),torch.tensor([0.]))],torch.zeros(2))",
+          "expected": [
+            -1.3333333333333333,
+            2.6666666666666665
+          ],
+          "label": "不同批大小与向量参数"
+        },
+        {
+          "expr": "batch_linear_gradient([(torch.empty(0,2),torch.empty(0)),(torch.tensor([[1.,2.]]),torch.tensor([0.]))],torch.tensor([1.,1.]))",
+          "expected": [
+            6,
+            12
+          ],
+          "label": "非零初值与空批"
+        },
+        {
+          "expr": "initial.grad",
+          "expected": [
+            9
+          ],
+          "label": "原参数梯度不受污染",
+          "setup": "initial=torch.tensor([2.],requires_grad=True)\ninitial.grad=torch.tensor([9.])\nbatch_linear_gradient([(torch.tensor([[1.]]),torch.tensor([1.]))],initial)\n"
+        },
+        {
+          "expr": "_uses_autograd(batch_linear_gradient,[(torch.ones(1,1),torch.zeros(1))],torch.zeros(1))",
+          "expected": true,
+          "label": "真实反向传播",
+          "setup": "def _uses_autograd(function,*args):\n    with torch.autograd.profiler.profile(use_cpu=True) as trace:\n        function(*args)\n    return any('autograd::engine::evaluate_function' in event.name for event in trace.function_events)\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-cum12-c1",
+      "runtime": "torch",
+      "task": "实现 balanced_sample_weights(labels)。labels是CPU一维long张量，类别编号为非负整数且不要求连续。返回同长float32张量，每个样本权重=其类别出现次数的倒数。空输入返回形状[0] float32，不修改labels。",
+      "signature": "def balanced_sample_weights(labels)",
+      "solution": "import torch\ndef balanced_sample_weights(labels):\n    if labels.numel()==0:return torch.empty(0,dtype=torch.float32)\n    _,inverse,counts=torch.unique(labels,return_inverse=True,return_counts=True)\n    return 1/counts[inverse].float()\n",
+      "tests": [
+        {
+          "expr": "balanced_sample_weights(torch.tensor([0,0,1]))",
+          "expected": [
+            0.5,
+            0.5,
+            1
+          ],
+          "label": "类频率倒数"
+        },
+        {
+          "expr": "balanced_sample_weights(torch.tensor([9,5,9,5,9]))",
+          "expected": [
+            0.3333333333333333,
+            0.5,
+            0.3333333333333333,
+            0.5,
+            0.3333333333333333
+          ],
+          "label": "不连续类别保留样本顺序"
+        },
+        {
+          "expr": "[list(balanced_sample_weights(torch.empty(0,dtype=torch.long)).shape),str(balanced_sample_weights(torch.empty(0,dtype=torch.long)).dtype)]",
+          "expected": [
+            [
+              0
+            ],
+            "torch.float32"
+          ],
+          "label": "空输入与dtype"
+        },
+        {
+          "expr": "x",
+          "expected": [
+            2,
+            2,
+            7
+          ],
+          "label": "不修改标签",
+          "setup": "x=torch.tensor([2,2,7])\nbalanced_sample_weights(x)\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-cum12-c2",
+      "runtime": "torch",
+      "task": "实现 evaluate_masked_tokens(model,batches)。每项x[B,T,D]、y[B,T]，model输出有限logits[B,T,C]，C>=1；y为long，有效标签合法，-100为忽略项。eval+no_grad下按全部有效token聚合交叉熵和准确率，返回{loss:float,accuracy:float,count:int}；没有有效token时loss/accuracy均0。成功或异常均恢复原模式，不更新参数。",
+      "signature": "def evaluate_masked_tokens(model, batches)",
+      "solution": "import torch\ndef evaluate_masked_tokens(model,batches):\n    mode=model.training\n    model.eval()\n    total=0.0;correct=0;count=0\n    try:\n        with torch.no_grad():\n            for x,y in batches:\n                logits=model(x)\n                valid=y!=-100\n                selected=logits[valid]\n                labels=y[valid]\n                if labels.numel():\n                    total+=torch.nn.functional.cross_entropy(selected,labels,reduction='sum').item()\n                    correct+=(selected.argmax(-1)==labels).sum().item()\n                    count+=labels.numel()\n        return {'loss':total/count if count else 0.0,'accuracy':correct/count if count else 0.0,'count':count}\n    finally:\n        model.train(mode)\n",
+      "tests": [
+        {
+          "expr": "evaluate_masked_tokens(torch.nn.Identity(),[(torch.zeros(1,3,2),torch.tensor([[0,0,-100]])),(torch.zeros(1,1,2),torch.tensor([[1]]))])",
+          "expected": {
+            "loss": 0.69314718056,
+            "accuracy": 0.6666666666666666,
+            "count": 3
+          },
+          "label": "按有效token聚合"
+        },
+        {
+          "expr": "evaluate_masked_tokens(torch.nn.Identity(),[(torch.ones(1,2,3),torch.tensor([[-100,-100]]))])",
+          "expected": {
+            "loss": 0,
+            "accuracy": 0,
+            "count": 0
+          },
+          "label": "全忽略"
+        },
+        {
+          "expr": "evaluate_masked_tokens(torch.nn.Identity(),[])",
+          "expected": {
+            "loss": 0,
+            "accuracy": 0,
+            "count": 0
+          },
+          "label": "空数据"
+        },
+        {
+          "expr": "m.training and bool(m.flags) and not any(m.flags)",
+          "expected": true,
+          "label": "真实关闭前向图并恢复模式",
+          "setup": "class Probe(torch.nn.Module):\n    def __init__(self):super().__init__();self.flags=[]\n    def forward(self,x):self.flags.append(torch.is_grad_enabled());return x\nm=Probe()\nevaluate_masked_tokens(m,[(torch.zeros(1,1,2,requires_grad=True),torch.tensor([[0]]))])\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-stage-c1",
+      "runtime": "torch",
+      "task": "实现 prepare_regression(rows,feature_names)。rows是dict列表；feature_names是非空且不重复的字符串列表。只保留所有指定特征及target均存在、类型为int/float（排除bool）且有限的记录，其他记录跳过。按原行顺序与feature_names顺序返回float32张量(x[N,D],y[N,1])；空结果仍保留D。不修改输入，不转换数值字符串。",
+      "signature": "def prepare_regression(rows, feature_names)",
+      "solution": "import torch\ndef prepare_regression(rows,feature_names):\n    import math\n    xs=[];ys=[]\n    keys=list(feature_names)+['target']\n    for row in rows:\n        if all(k in row and type(row[k]) in (int,float) and math.isfinite(row[k]) for k in keys):\n            xs.append([row[k] for k in feature_names])\n            ys.append([row['target']])\n    return torch.tensor(xs,dtype=torch.float32).reshape(-1,len(feature_names)),torch.tensor(ys,dtype=torch.float32).reshape(-1,1)\n",
+      "tests": [
+        {
+          "expr": "prepare_regression([{\"a\":0,\"b\":2,\"target\":1},{\"a\":\"3\",\"b\":4,\"target\":5},{\"a\":7,\"target\":9},{\"a\":2,\"b\":4,\"target\":float(\"nan\")}],[\"b\",\"a\"])",
+          "expected": [
+            [
+              [
+                2,
+                0
+              ]
+            ],
+            [
+              [
+                1
+              ]
+            ]
+          ],
+          "label": "过滤坏记录并保留零和特征顺序"
+        },
+        {
+          "expr": "[list(t.shape) for t in prepare_regression([],[\"a\",\"b\",\"c\"])]",
+          "expected": [
+            [
+              0,
+              3
+            ],
+            [
+              0,
+              1
+            ]
+          ],
+          "label": "空结果形状"
+        },
+        {
+          "expr": "prepare_regression([{\"a\":True,\"target\":2},{\"a\":float(\"inf\"),\"target\":3},{\"a\":2.5,\"target\":4}],[\"a\"])",
+          "expected": [
+            [
+              [
+                2.5
+              ]
+            ],
+            [
+              [
+                4
+              ]
+            ]
+          ],
+          "label": "拒绝bool与非有限值"
+        },
+        {
+          "expr": "rows==old",
+          "expected": true,
+          "label": "不修改源记录",
+          "setup": "import copy\nrows=[{\"a\":1,\"target\":2}]\nold=copy.deepcopy(rows)\nprepare_regression(rows,[\"a\"])\n"
+        },
+        {
+          "expr": "all(t.dtype==torch.float32 for t in prepare_regression([{\"a\":1,\"target\":2}],[\"a\"]))",
+          "expected": true,
+          "label": "统一训练dtype"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-stage-c2",
+      "runtime": "torch",
+      "task": "实现 fit_standardized_regressor(x,y,steps=100,lr=0.1)。x为非空有限CPU float32[N,D]、D>=1，y为float32[N,1]。仅由x拟合逐列mean与总体std(unbiased=False)，scale=std.clamp_min(1e-6)。标准化后，用零初始化含bias的Linear(D,1)和SGD训练steps次mean MSE；记录每次更新前loss.item()。返回{model,mean:[D]张量,scale:[D]张量,losses:Python float列表}。steps>=0；不改输入。",
+      "signature": "def fit_standardized_regressor(x, y, steps=100, lr=0.1)",
+      "solution": "import torch\ndef fit_standardized_regressor(x,y,steps=100,lr=0.1):\n    x=x.detach();y=y.detach()\n    mean=x.mean(0)\n    scale=x.std(0,unbiased=False).clamp_min(1e-6)\n    features=(x-mean)/scale\n    model=torch.nn.Linear(x.shape[1],1)\n    torch.nn.init.zeros_(model.weight);torch.nn.init.zeros_(model.bias)\n    optimizer=torch.optim.SGD(model.parameters(),lr=lr)\n    losses=[]\n    for _ in range(steps):\n        optimizer.zero_grad()\n        loss=(model(features)-y).square().mean()\n        losses.append(loss.item())\n        loss.backward();optimizer.step()\n    return {'model':model,'mean':mean,'scale':scale,'losses':losses}\n",
+      "tests": [
+        {
+          "expr": "[r[\"mean\"],r[\"scale\"],r[\"losses\"]]",
+          "expected": [
+            [
+              2,
+              5
+            ],
+            [
+              1,
+              1e-06
+            ],
+            []
+          ],
+          "label": "训练统计与常数列保护",
+          "setup": "r=fit_standardized_regressor(torch.tensor([[1.,5.],[3.,5.]]),torch.tensor([[0.],[1.]]),steps=0)\n",
+          "tolerance": 1e-08
+        },
+        {
+          "expr": "[r[\"model\"].weight,r[\"model\"].bias,r[\"losses\"]]",
+          "expected": [
+            [
+              [
+                0.4
+              ]
+            ],
+            [
+              0
+            ],
+            [
+              4
+            ]
+          ],
+          "label": "一次标准化SGD更新",
+          "setup": "r=fit_standardized_regressor(torch.tensor([[-1.],[1.]]),torch.tensor([[-2.],[2.]]),steps=1)\n"
+        },
+        {
+          "expr": "len(r[\"losses\"])==60 and r[\"losses\"][-1]<0.001",
+          "expected": true,
+          "label": "完整多特征训练",
+          "setup": "x=torch.tensor([[-1.,-1.],[-1.,1.],[1.,-1.],[1.,1.]])\ny=2*x[:,:1]-x[:,1:2]+0.5\nr=fit_standardized_regressor(x,y,steps=60)\n"
+        },
+        {
+          "expr": "r[\"model\"].weight",
+          "expected": [
+            [
+              0
+            ]
+          ],
+          "label": "尊重学习率",
+          "setup": "r=fit_standardized_regressor(torch.tensor([[-1.],[1.]]),torch.tensor([[-2.],[2.]]),steps=2,lr=0)\n"
+        },
+        {
+          "expr": "torch.equal(x,old) and all(isinstance(v,float) for v in r[\"losses\"])",
+          "expected": true,
+          "label": "输入不变且日志为Python数值",
+          "setup": "x=torch.tensor([[1.],[3.]])\nold=x.clone()\nr=fit_standardized_regressor(x,torch.tensor([[2.],[4.]]),steps=2)\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-stage-c3",
+      "runtime": "torch",
+      "task": "实现 evaluate_saved_regressor(bundle,x,y)。bundle含model、训练集拟合的mean[D]与scale[D]>0；模型输出[N,1]。x是CPU有限float32[N,D]，y为float32[N,1]。只能复用bundle统计做标准化，临时eval+no_grad评估，返回{mse:Python float,mae:Python float,count:Python int}，count=N；空N两项误差0。成功或异常均恢复原模式，不更新参数或修改输入。",
+      "signature": "def evaluate_saved_regressor(bundle, x, y)",
+      "solution": "import torch\ndef evaluate_saved_regressor(bundle,x,y):\n    model=bundle['model'];mode=model.training\n    model.eval()\n    try:\n        with torch.no_grad():\n            if len(x)==0:return {'mse':0.0,'mae':0.0,'count':0}\n            residual=model((x-bundle['mean'])/bundle['scale'])-y\n            return {'mse':residual.square().mean().item(),'mae':residual.abs().mean().item(),'count':len(x)}\n    finally:\n        model.train(mode)\n",
+      "tests": [
+        {
+          "expr": "evaluate_saved_regressor({\"model\":torch.nn.Identity(),\"mean\":torch.tensor([10.]),\"scale\":torch.tensor([2.])},torch.tensor([[12.],[16.]]),torch.tensor([[0.],[1.]]))",
+          "expected": {
+            "mse": 2.5,
+            "mae": 1.5,
+            "count": 2
+          },
+          "label": "只复用训练统计"
+        },
+        {
+          "expr": "evaluate_saved_regressor({\"model\":torch.nn.Identity(),\"mean\":torch.zeros(1),\"scale\":torch.ones(1)},torch.empty(0,1),torch.empty(0,1))",
+          "expected": {
+            "mse": 0,
+            "mae": 0,
+            "count": 0
+          },
+          "label": "空验证集"
+        },
+        {
+          "expr": "m.training and bool(m.flags) and not any(m.flags)",
+          "expected": true,
+          "label": "评估前向无图并恢复原模式",
+          "setup": "class Probe(torch.nn.Module):\n    def __init__(self):super().__init__();self.flags=[]\n    def forward(self,x):self.flags.append(torch.is_grad_enabled());return x\nm=Probe()\nevaluate_saved_regressor({\"model\":m,\"mean\":torch.zeros(1),\"scale\":torch.ones(1)},torch.ones(1,1,requires_grad=True),torch.zeros(1,1))\n"
+        },
+        {
+          "expr": "m.training",
+          "expected": false,
+          "label": "原eval状态不变",
+          "setup": "m=torch.nn.Identity();m.eval()\nevaluate_saved_regressor({\"model\":m,\"mean\":torch.zeros(1),\"scale\":torch.ones(1)},torch.ones(1,1),torch.zeros(1,1))\n"
+        },
+        {
+          "expr": "m.training",
+          "expected": true,
+          "label": "异常恢复状态",
+          "setup": "class Broken(torch.nn.Module):\n    def forward(self,x):raise RuntimeError(\"fail\")\nm=Broken()\ntry:evaluate_saved_regressor({\"model\":m,\"mean\":torch.zeros(1),\"scale\":torch.ones(1)},torch.ones(1,1),torch.zeros(1,1))\nexcept RuntimeError:pass\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-r07-c",
+      "runtime": "torch",
+      "task": "实现 length_mask(lengths,max_len)。lengths为整数list，0<=每个长度<=max_len，max_len>=0。返回CPU bool[B,max_len]张量，每行前length个位置True，其余False；支持空list与max_len=0。",
+      "signature": "def length_mask(lengths, max_len)",
+      "solution": "import torch\ndef length_mask(lengths,max_len):\n    return torch.arange(max_len)[None,:]<torch.tensor(lengths,dtype=torch.long)[:,None]\n",
+      "tests": [
+        {
+          "expr": "length_mask([0,2,3],3)",
+          "expected": [
+            [
+              false,
+              false,
+              false
+            ],
+            [
+              true,
+              true,
+              false
+            ],
+            [
+              true,
+              true,
+              true
+            ]
+          ],
+          "label": "不同长度"
+        },
+        {
+          "expr": "list(length_mask([],4).shape)",
+          "expected": [
+            0,
+            4
+          ],
+          "label": "空批次"
+        },
+        {
+          "expr": "list(length_mask([0,0],0).shape)",
+          "expected": [
+            2,
+            0
+          ],
+          "label": "零长度上限"
+        },
+        {
+          "expr": "str(length_mask([1],1).dtype)",
+          "expected": "torch.bool",
+          "label": "bool类型"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-r08-c",
+      "runtime": "torch",
+      "task": "实现 weighted_values(scores,values)。scores是有限CPU浮点[B,K]、values为同dtype[B,K,D]，K,D>=1。沿K对scores做稳定softmax，再对value加权，返回[B,D]；支持B=0且保留两输入的梯度。不修改输入。",
+      "signature": "def weighted_values(scores, values)",
+      "solution": "import torch\ndef weighted_values(scores,values):\n    return (scores.softmax(-1).unsqueeze(-1)*values).sum(1)\n",
+      "tests": [
+        {
+          "expr": "weighted_values(torch.zeros(1,3),torch.tensor([[[1.,2.],[3.,4.],[8.,9.]]]))",
+          "expected": [
+            [
+              4,
+              5
+            ]
+          ],
+          "label": "均匀权重"
+        },
+        {
+          "expr": "weighted_values(torch.tensor([[1000.,1000.]]),torch.tensor([[[2.],[6.]]]))",
+          "expected": [
+            [
+              4
+            ]
+          ],
+          "label": "大数稳定性"
+        },
+        {
+          "expr": "list(weighted_values(torch.empty(0,2),torch.empty(0,2,3)).shape)",
+          "expected": [
+            0,
+            3
+          ],
+          "label": "空批次"
+        },
+        {
+          "expr": "values.grad",
+          "expected": [
+            [
+              [
+                0.5
+              ],
+              [
+                0.5
+              ]
+            ]
+          ],
+          "label": "value梯度",
+          "setup": "scores=torch.zeros(1,2,requires_grad=True)\nvalues=torch.tensor([[[2.],[6.]]],requires_grad=True)\nweighted_values(scores,values).sum().backward()\n"
+        },
+        {
+          "expr": "scores.grad",
+          "expected": [
+            [
+              -1,
+              1
+            ]
+          ],
+          "label": "score梯度也必须连通",
+          "setup": "scores=torch.zeros(1,2,requires_grad=True)\nvalues=torch.tensor([[[2.],[6.]]])\nweighted_values(scores,values).sum().backward()\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-r09-c",
+      "runtime": "torch",
+      "task": "实现 grad_wrt_input(matrix,x)。matrix为有限CPU float64[M,D]，x为float64[D]，D>=1、M>=0。用真实autograd计算 sum((matrix@x)**2) 对x的梯度并返回[D]张量。不得修改x、matrix或x已有.grad；允许x本来requires_grad=True。",
+      "signature": "def grad_wrt_input(matrix, x)",
+      "solution": "import torch\ndef grad_wrt_input(matrix,x):\n    leaf=x.detach().clone().requires_grad_(True)\n    loss=(matrix@leaf).square().sum()\n    return torch.autograd.grad(loss,leaf)[0]\n",
+      "tests": [
+        {
+          "expr": "grad_wrt_input(torch.tensor([[1.,2.],[0.,3.]],dtype=torch.float64),torch.tensor([1.,2.],dtype=torch.float64))",
+          "expected": [
+            10,
+            56
+          ],
+          "label": "矩阵复合函数的梯度"
+        },
+        {
+          "expr": "grad_wrt_input(torch.empty(0,2,dtype=torch.float64),torch.ones(2,dtype=torch.float64))",
+          "expected": [
+            0,
+            0
+          ],
+          "label": "无输出行"
+        },
+        {
+          "expr": "x.grad",
+          "expected": [
+            7,
+            8
+          ],
+          "label": "外部梯度不受污染",
+          "setup": "x=torch.tensor([1.,2.],dtype=torch.float64,requires_grad=True)\nx.grad=torch.tensor([7.,8.],dtype=torch.float64)\ngrad_wrt_input(torch.eye(2,dtype=torch.float64),x)\n"
+        },
+        {
+          "expr": "str(grad_wrt_input(torch.eye(1,dtype=torch.float64),torch.ones(1,dtype=torch.float64)).dtype)",
+          "expected": "torch.float64",
+          "label": "保留双精度"
+        },
+        {
+          "expr": "_uses_autograd(grad_wrt_input,torch.eye(2,dtype=torch.float64),torch.ones(2,dtype=torch.float64))",
+          "expected": true,
+          "label": "真实自动微分",
+          "setup": "def _uses_autograd(function,*args):\n    with torch.autograd.profiler.profile(use_cpu=True) as trace:\n        function(*args)\n    return any('autograd::engine::evaluate_function' in event.name for event in trace.function_events)\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-r10-c",
+      "runtime": "torch",
+      "task": "实现 PairedClassifier(left_dim,right_dim,classes)，继承nn.Module。参数均为正整数；模型含一个带bias的Linear(left_dim+right_dim,classes)。forward(left,right)按最后一维拼接两个同batch的二维浮点特征，返回原始logits[B,classes]。支持B=0，参数注册，保留左右输入梯度。",
+      "signature": "class PairedClassifier(torch.nn.Module)",
+      "solution": "import torch\nclass PairedClassifier(torch.nn.Module):\n    def __init__(self,left_dim,right_dim,classes):\n        super().__init__()\n        self.projection=torch.nn.Linear(left_dim+right_dim,classes)\n    def forward(self,left,right):\n        return self.projection(torch.cat([left,right],dim=-1))\n",
+      "tests": [
+        {
+          "expr": "list(PairedClassifier(2,3,4)(torch.ones(1,2),torch.ones(1,3)).shape)",
+          "expected": [
+            1,
+            4
+          ],
+          "label": "单样本保持batch轴"
+        },
+        {
+          "expr": "sum(p.numel() for p in PairedClassifier(2,3,4).parameters())",
+          "expected": 24,
+          "label": "参数注册"
+        },
+        {
+          "expr": "list(PairedClassifier(1,2,3)(torch.empty(0,1),torch.empty(0,2)).shape)",
+          "expected": [
+            0,
+            3
+          ],
+          "label": "空batch"
+        },
+        {
+          "expr": "left.grad is not None and right.grad is not None",
+          "expected": true,
+          "label": "两路特征梯度",
+          "setup": "m=PairedClassifier(2,1,2)\nleft=torch.ones(2,2,requires_grad=True)\nright=torch.ones(2,1,requires_grad=True)\nm(left,right).sum().backward()\n"
+        },
+        {
+          "expr": "m(torch.tensor([[2.,3.]]),torch.tensor([[4.]]))",
+          "expected": [
+            [
+              432
+            ]
+          ],
+          "label": "左右特征拼接顺序",
+          "setup": "m=PairedClassifier(2,1,1)\nprojection=next(v for v in m.modules() if isinstance(v,torch.nn.Linear))\nwith torch.no_grad():\n    projection.weight.copy_(torch.tensor([[1.,10.,100.]]));projection.bias.zero_()\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-r11-c",
+      "runtime": "torch",
+      "task": "实现 snapshot_train_state(model,optimizer,epoch)，返回键model、optimizer、epoch的字典，前两项分别是对应state_dict的独立深拷贝。此处不写磁盘；以后修改模型参数、优化器学习率或动量张量，均不能改变该快照。epoch是Python int。",
+      "signature": "def snapshot_train_state(model, optimizer, epoch)",
+      "solution": "import torch\ndef snapshot_train_state(model,optimizer,epoch):\n    import copy\n    return {'model':copy.deepcopy(model.state_dict()),'optimizer':copy.deepcopy(optimizer.state_dict()),'epoch':epoch}\n",
+      "tests": [
+        {
+          "expr": "s[\"epoch\"]",
+          "expected": 8,
+          "label": "轮数保留",
+          "setup": "m=torch.nn.Linear(1,1);o=torch.optim.SGD(m.parameters(),lr=0.2)\ns=snapshot_train_state(m,o,8)\n"
+        },
+        {
+          "expr": "s[\"model\"][\"weight\"]",
+          "expected": [
+            [
+              1
+            ]
+          ],
+          "label": "模型参数深拷贝",
+          "setup": "m=torch.nn.Linear(1,1,bias=False)\nwith torch.no_grad():m.weight.fill_(1)\no=torch.optim.SGD(m.parameters(),lr=0.2)\ns=snapshot_train_state(m,o,1)\nwith torch.no_grad():m.weight.fill_(9)\n"
+        },
+        {
+          "expr": "s[\"optimizer\"][\"param_groups\"][0][\"lr\"]",
+          "expected": 0.2,
+          "label": "优化器容器独立",
+          "setup": "m=torch.nn.Linear(1,1);o=torch.optim.SGD(m.parameters(),lr=0.2)\ns=snapshot_train_state(m,o,1)\no.param_groups[0][\"lr\"]=9\n"
+        },
+        {
+          "expr": "next(iter(s[\"optimizer\"][\"state\"].values()))[\"momentum_buffer\"]",
+          "expected": [
+            [
+              2
+            ]
+          ],
+          "label": "动量张量深拷贝",
+          "setup": "m=torch.nn.Linear(1,1,bias=False);o=torch.optim.SGD(m.parameters(),lr=0.2,momentum=0.9)\no.state[m.weight][\"momentum_buffer\"]=torch.tensor([[2.]])\ns=snapshot_train_state(m,o,1)\no.state[m.weight][\"momentum_buffer\"].fill_(9)\n"
+        }
+      ]
+    },
+    {
+      "id": "ax-torch-r12-c",
+      "runtime": "torch",
+      "task": "实现 masked_class_counts(logits,labels,valid)。logits为有限CPU浮点[B,T,C]、C>=1，labels为long[B,T]，valid为同形bool；有效标签在[0,C)，无效标签可为-100。返回long[C,C]混淆矩阵，行是真实类、列是argmax预测类（平局选首类）。忽略所有无效位置，支持空B/T，不修改输入。",
+      "signature": "def masked_class_counts(logits, labels, valid)",
+      "solution": "import torch\ndef masked_class_counts(logits,labels,valid):\n    c=logits.shape[-1]\n    truth=labels[valid]\n    preds=logits.argmax(-1)[valid]\n    return torch.bincount(truth*c+preds,minlength=c*c).reshape(c,c)\n",
+      "tests": [
+        {
+          "expr": "masked_class_counts(torch.tensor([[[0.,2.],[3.,0.],[8.,0.]]]),torch.tensor([[1,1,-100]]),torch.tensor([[True,True,False]]))",
+          "expected": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              1
+            ]
+          ],
+          "label": "行真实列预测且忽略padding"
+        },
+        {
+          "expr": "masked_class_counts(torch.zeros(1,2,3),torch.tensor([[-100,-100]]),torch.zeros(1,2,dtype=torch.bool))",
+          "expected": [
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ],
+            [
+              0,
+              0,
+              0
+            ]
+          ],
+          "label": "全部忽略"
+        },
+        {
+          "expr": "masked_class_counts(torch.empty(0,2,2),torch.empty(0,2,dtype=torch.long),torch.empty(0,2,dtype=torch.bool))",
+          "expected": [
+            [
+              0,
+              0
+            ],
+            [
+              0,
+              0
+            ]
+          ],
+          "label": "空批次"
+        },
+        {
+          "expr": "masked_class_counts(torch.zeros(1,1,2),torch.tensor([[1]]),torch.ones(1,1,dtype=torch.bool))",
+          "expected": [
+            [
+              0,
+              0
+            ],
+            [
+              1,
+              0
+            ]
+          ],
+          "label": "平局预测首类"
+        },
+        {
+          "expr": "str(masked_class_counts(torch.empty(2,0,3),torch.empty(2,0,dtype=torch.long),torch.empty(2,0,dtype=torch.bool)).dtype)",
+          "expected": "torch.int64",
+          "label": "空序列与整数计数类型"
+        }
+      ]
+    }
+  ],
+  "reviewItems": [
+    "ax-py-review-c01-control",
+    "ax-py-review-c01-duration",
+    "ax-py-review-c02-inner-copy",
+    "ax-py-review-c02-differences",
+    "ax-py-review-c03-none",
+    "ax-py-review-c03-clamp",
+    "ax-py-review-c04-get",
+    "ax-py-review-c04-required-key",
+    "ax-py-review-c05-json-value",
+    "ax-py-review-c05-enabled",
+    "ax-py-review-c06-shared-argument",
+    "ax-py-review-c06-range",
+    "ax-torch-r07-o",
+    "ax-torch-r07-c",
+    "ax-torch-r08-o",
+    "ax-torch-r08-c",
+    "ax-torch-r09-o",
+    "ax-torch-r09-c",
+    "ax-torch-r10-m",
+    "ax-torch-r10-c",
+    "ax-torch-r11-o",
+    "ax-torch-r11-c",
+    "ax-torch-r12-o",
+    "ax-torch-r12-c"
+  ],
+  "chapterLessons": {
+    "c01": [
+      "p1",
+      "py01",
+      "py02",
+      "p3",
+      "py03",
+      "py04"
+    ],
+    "c02": [
+      "p2",
+      "py05",
+      "py06",
+      "py07",
+      "py08",
+      "py09"
+    ],
+    "c03": [
+      "p4",
+      "p6",
+      "py10",
+      "py11",
+      "py12",
+      "py13"
+    ],
+    "c04": [
+      "p5",
+      "py14",
+      "py15",
+      "py16",
+      "py17",
+      "py18"
+    ],
+    "c05": [
+      "py19",
+      "py20",
+      "py21",
+      "py22",
+      "py23",
+      "py24"
+    ],
+    "c06": [
+      "py25",
+      "py26",
+      "py27",
+      "py28",
+      "py29",
+      "py30"
+    ],
+    "c07": [
+      "t1",
+      "pt01",
+      "pt02",
+      "pt03",
+      "pt04",
+      "pt05"
+    ],
+    "c08": [
+      "t2",
+      "pt06",
+      "pt07",
+      "pt08",
+      "pt09",
+      "pt10"
+    ],
+    "c09": [
+      "t3",
+      "pt11",
+      "pt12",
+      "pt13",
+      "pt14",
+      "pt15"
+    ],
+    "c10": [
+      "t4",
+      "pt16",
+      "pt17",
+      "pt18",
+      "pt19",
+      "pt20"
+    ],
+    "c11": [
+      "t5",
+      "pt21",
+      "pt22",
+      "pt23",
+      "pt24",
+      "pt25"
+    ],
+    "c12": [
+      "t6",
+      "pt26",
+      "pt27",
+      "pt28",
+      "pt29",
+      "pt30"
+    ]
+  },
+  "skillTitles": {
+    "p1": "第一行，自己来",
+    "py01": "输入不是数值",
+    "py02": "条件要覆盖边界",
+    "p3": "一次处理一批",
+    "py03": "range 的终点在哪里",
+    "py04": "while 也需要退出条件",
+    "p2": "让数据排成一列",
+    "py05": "切片与独立副本",
+    "py06": "清洗文本与词频输入",
+    "py07": "滑动窗口均值",
+    "py08": "去重但保留顺序",
+    "py09": "把变长序列排成批次",
+    "p4": "把操作装进函数",
+    "p6": "做一个小型评估器",
+    "py10": "让默认参数可控",
+    "py11": "按需产出小批次",
+    "py12": "修复悄悄共享的历史",
+    "py13": "把契约写成明确的异常",
+    "p5": "给实验结果起名字",
+    "py14": "用字典统计标签",
+    "py15": "分组平均不能混在一起",
+    "py16": "让榜单排序可重复",
+    "py17": "合并配置但别共享内部状态",
+    "py18": "选出最好的有效 checkpoint",
+    "py19": "只处理你预料到的错误",
+    "py20": "真正读取一份 JSON 文件",
+    "py21": "CSV 不能直接按逗号切",
+    "py22": "逐行解析不完美的日志",
+    "py23": "把数据约定变成断言",
+    "py24": "综合：生成可重跑的实验报告",
+    "py25": "用类维护加权均值",
+    "py26": "累计分类结果而非累计比例",
+    "py27": "实现一个可索引数据集",
+    "py28": "实现提前停止状态机",
+    "py29": "把小函数组合成处理流水线",
+    "py30": "综合：按组划分，防止数据泄漏",
+    "t1": "先看形状，再做计算",
+    "pt01": "展平特征，保留样本维",
+    "pt02": "取出每条样本的目标分数",
+    "pt03": "只平均有效位置",
+    "pt04": "构造张量版 padding 与 mask",
+    "pt05": "向量化成对平方距离",
+    "t2": "给每条样本同一把尺",
+    "pt06": "数值稳定的 softmax",
+    "pt07": "稳定计算 logsumexp",
+    "pt08": "忽略 padding 的交叉熵",
+    "pt09": "拆分多头时别打乱 token",
+    "pt10": "手写缩放点积注意力",
+    "t3": "让机器帮你求导",
+    "pt11": "区分累积与清空梯度",
+    "pt12": "修复被重新包装断开的图",
+    "pt13": "用有限差分核对 autograd",
+    "pt14": "按全局范数裁剪梯度",
+    "pt15": "梯度累积也要按样本数加权",
+    "t4": "把计算装进模型",
+    "pt16": "构建可配置的两层 MLP",
+    "pt17": "让 Dataset 管好自己的数据",
+    "pt18": "自己实现 collate_fn",
+    "pt19": "只训练分类头",
+    "pt20": "预测后恢复原来的模式",
+    "t5": "完成一次参数更新",
+    "pt21": "整个 epoch 的 MSE",
+    "pt22": "二分类指标的零分母",
+    "pt23": "完整的分类评估循环",
+    "pt24": "保存的是状态，不是引用",
+    "pt25": "写一个可复用的分类训练步骤",
+    "t6": "训练你的第一条直线",
+    "pt26": "综合：训练二分类直线",
+    "pt27": "综合：混淆矩阵与 macro F1",
+    "pt28": "综合：带 mask 的句向量池化",
+    "pt29": "挑战：不偷看未来的注意力",
+    "pt30": "结业实验：训练与独立验证"
+  },
+  "policy": {
+    "reviewDays": [
+      1,
+      3,
+      7
+    ],
+    "suggestedPassPercent": 80,
+    "note": "原有练习全部保留。考核与讲评额外约4–6小时；复习间隔是可调整的学习安排，等待时间不计学习工时。"
+  }
+}

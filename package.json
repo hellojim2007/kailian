@@ -1,0 +1,10 @@
+{
+  "name": "kailian",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "check": "node --check dist/app.js && node --check dist/python-worker.js && node --check dist/assessments.js && node --check dist/sync.js",
+    "build:pages": "node scripts/prepare-pages.mjs",
+    "build:cloud": "node cloud/build.mjs"
+  }
+}

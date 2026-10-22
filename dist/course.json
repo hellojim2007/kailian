@@ -1,0 +1,397 @@
+{
+  "version": 3,
+  "contentRevision": "2026-10-22-audit",
+  "title": "Python × PyTorch 实验编程",
+  "budget": "20–30 小时",
+  "notes": "讲解、例题与练习为原创，参考资料用于知识顺序与延伸阅读；不是对应机构的官方课程或原题镜像。",
+  "chapters": [
+    {
+      "id": "c01",
+      "title": "起步与控制流",
+      "description": "把输入、条件、循环写顺，建立独立写完整程序的习惯。",
+      "minutes": 102,
+      "resources": [
+        {
+          "title": "Harvard CS50P",
+          "url": "https://cs50.harvard.edu/python/"
+        },
+        {
+          "title": "Python：控制流与函数",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        }
+      ],
+      "lessons": [
+        "p1",
+        "py01",
+        "py02",
+        "p3",
+        "py03",
+        "py04"
+      ]
+    },
+    {
+      "id": "c02",
+      "title": "序列与字符串",
+      "description": "从索引切片走到窗口、去重和序列补齐。",
+      "minutes": 125,
+      "resources": [
+        {
+          "title": "Python：数据结构",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        },
+        {
+          "title": "Helsinki Python MOOC",
+          "url": "https://programming-26.mooc.fi/"
+        }
+      ],
+      "lessons": [
+        "p2",
+        "py05",
+        "py06",
+        "py07",
+        "py08",
+        "py09"
+      ]
+    },
+    {
+      "id": "c03",
+      "title": "函数与组合",
+      "description": "练返回值、参数、生成器与可变对象语义。",
+      "minutes": 125,
+      "resources": [
+        {
+          "title": "Python：控制流与函数",
+          "url": "https://docs.python.org/3/tutorial/controlflow.html"
+        },
+        {
+          "title": "Helsinki Python MOOC",
+          "url": "https://programming-26.mooc.fi/"
+        }
+      ],
+      "lessons": [
+        "p4",
+        "p6",
+        "py10",
+        "py11",
+        "py12",
+        "py13"
+      ]
+    },
+    {
+      "id": "c04",
+      "title": "字典与实验数据",
+      "description": "分组、排序、配置合并与模型结果筛选。",
+      "minutes": 145,
+      "resources": [
+        {
+          "title": "Python：数据结构",
+          "url": "https://docs.python.org/3/tutorial/datastructures.html"
+        },
+        {
+          "title": "Harvard CS50P",
+          "url": "https://cs50.harvard.edu/python/"
+        }
+      ],
+      "lessons": [
+        "p5",
+        "py14",
+        "py15",
+        "py16",
+        "py17",
+        "py18"
+      ]
+    },
+    {
+      "id": "c05",
+      "title": "文件、异常与测试",
+      "description": "真实读取 CSV / JSONL，验证边界并写可重复运行的报告。",
+      "minutes": 150,
+      "resources": [
+        {
+          "title": "Python：输入、输出与文件",
+          "url": "https://docs.python.org/3/tutorial/inputoutput.html"
+        },
+        {
+          "title": "Python：异常处理",
+          "url": "https://docs.python.org/3/tutorial/errors.html"
+        },
+        {
+          "title": "Python：csv 标准库",
+          "url": "https://docs.python.org/3/library/csv.html"
+        },
+        {
+          "title": "Python：json 标准库",
+          "url": "https://docs.python.org/3/library/json.html"
+        }
+      ],
+      "lessons": [
+        "py19",
+        "py20",
+        "py21",
+        "py22",
+        "py23",
+        "py24"
+      ]
+    },
+    {
+      "id": "c06",
+      "title": "类与数据流水线",
+      "description": "用类管理状态，组合小型评估器和实验数据流程。",
+      "minutes": 170,
+      "resources": [
+        {
+          "title": "Python：类与迭代器",
+          "url": "https://docs.python.org/3/tutorial/classes.html"
+        },
+        {
+          "title": "Helsinki Python MOOC",
+          "url": "https://programming-26.mooc.fi/"
+        }
+      ],
+      "lessons": [
+        "py25",
+        "py26",
+        "py27",
+        "py28",
+        "py29",
+        "py30"
+      ]
+    },
+    {
+      "id": "c07",
+      "title": "张量形状与索引",
+      "description": "批量维、布尔索引、gather、padding 和成对距离。",
+      "minutes": 140,
+      "resources": [
+        {
+          "title": "PyTorch：Tensors",
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html"
+        },
+        {
+          "title": "ARENA：Fundamentals",
+          "url": "https://learn.arena.education/chapter0_fundamentals/"
+        }
+      ],
+      "lessons": [
+        "t1",
+        "pt01",
+        "pt02",
+        "pt03",
+        "pt04",
+        "pt05"
+      ]
+    },
+    {
+      "id": "c08",
+      "title": "广播与数值稳定",
+      "description": "避免维度碰巧对齐；实现稳定损失与注意力。",
+      "minutes": 160,
+      "resources": [
+        {
+          "title": "PyTorch：Tensors",
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html"
+        },
+        {
+          "title": "ARENA：Fundamentals",
+          "url": "https://learn.arena.education/chapter0_fundamentals/"
+        }
+      ],
+      "lessons": [
+        "t2",
+        "pt06",
+        "pt07",
+        "pt08",
+        "pt09",
+        "pt10"
+      ]
+    },
+    {
+      "id": "c09",
+      "title": "梯度与训练排错",
+      "description": "检查梯度累积、计算图断开、数值求导和梯度裁剪。",
+      "minutes": 150,
+      "resources": [
+        {
+          "title": "PyTorch：自动微分",
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html"
+        },
+        {
+          "title": "ARENA：Fundamentals",
+          "url": "https://learn.arena.education/chapter0_fundamentals/"
+        }
+      ],
+      "lessons": [
+        "t3",
+        "pt11",
+        "pt12",
+        "pt13",
+        "pt14",
+        "pt15"
+      ]
+    },
+    {
+      "id": "c10",
+      "title": "模型与数据加载",
+      "description": "Module、参数注册、Dataset、collate 与评估模式。",
+      "minutes": 150,
+      "resources": [
+        {
+          "title": "PyTorch：构建神经网络",
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html"
+        },
+        {
+          "title": "PyTorch：Dataset 与 DataLoader",
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html"
+        }
+      ],
+      "lessons": [
+        "t4",
+        "pt16",
+        "pt17",
+        "pt18",
+        "pt19",
+        "pt20"
+      ]
+    },
+    {
+      "id": "c11",
+      "title": "训练、评估与恢复",
+      "description": "实现训练步骤、正确聚合指标、无梯度评估和 checkpoint。",
+      "minutes": 165,
+      "resources": [
+        {
+          "title": "PyTorch：优化训练循环",
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html"
+        },
+        {
+          "title": "PyTorch：保存与加载模型",
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html"
+        }
+      ],
+      "lessons": [
+        "t5",
+        "pt21",
+        "pt22",
+        "pt23",
+        "pt24",
+        "pt25"
+      ]
+    },
+    {
+      "id": "c12",
+      "title": "综合实验与挑战",
+      "description": "从线性回归到分类训练、指标分析与因果注意力。",
+      "minutes": 220,
+      "resources": [
+        {
+          "title": "PyTorch：优化训练循环",
+          "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html"
+        },
+        {
+          "title": "ARENA：Fundamentals",
+          "url": "https://learn.arena.education/chapter0_fundamentals/"
+        }
+      ],
+      "lessons": [
+        "t6",
+        "pt26",
+        "pt27",
+        "pt28",
+        "pt29",
+        "pt30"
+      ]
+    }
+  ],
+  "sources": [
+    {
+      "key": "cs50",
+      "title": "Harvard CS50P",
+      "url": "https://cs50.harvard.edu/python/"
+    },
+    {
+      "key": "mooc",
+      "title": "Helsinki Python MOOC",
+      "url": "https://programming-26.mooc.fi/"
+    },
+    {
+      "key": "py",
+      "title": "Python 官方教程",
+      "url": "https://docs.python.org/3/tutorial/index.html"
+    },
+    {
+      "key": "flow",
+      "title": "Python：控制流与函数",
+      "url": "https://docs.python.org/3/tutorial/controlflow.html"
+    },
+    {
+      "key": "data",
+      "title": "Python：数据结构",
+      "url": "https://docs.python.org/3/tutorial/datastructures.html"
+    },
+    {
+      "key": "errors",
+      "title": "Python：异常处理",
+      "url": "https://docs.python.org/3/tutorial/errors.html"
+    },
+    {
+      "key": "io",
+      "title": "Python：输入、输出与文件",
+      "url": "https://docs.python.org/3/tutorial/inputoutput.html"
+    },
+    {
+      "key": "classes",
+      "title": "Python：类与迭代器",
+      "url": "https://docs.python.org/3/tutorial/classes.html"
+    },
+    {
+      "key": "csv",
+      "title": "Python：csv 标准库",
+      "url": "https://docs.python.org/3/library/csv.html"
+    },
+    {
+      "key": "json",
+      "title": "Python：json 标准库",
+      "url": "https://docs.python.org/3/library/json.html"
+    },
+    {
+      "key": "torch",
+      "title": "PyTorch：Learn the Basics",
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/intro.html"
+    },
+    {
+      "key": "tensor",
+      "title": "PyTorch：Tensors",
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/tensorqs_tutorial.html"
+    },
+    {
+      "key": "grad",
+      "title": "PyTorch：自动微分",
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/autogradqs_tutorial.html"
+    },
+    {
+      "key": "dataset",
+      "title": "PyTorch：Dataset 与 DataLoader",
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/data_tutorial.html"
+    },
+    {
+      "key": "model",
+      "title": "PyTorch：构建神经网络",
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/buildmodel_tutorial.html"
+    },
+    {
+      "key": "optim",
+      "title": "PyTorch：优化训练循环",
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/optimization_tutorial.html"
+    },
+    {
+      "key": "save",
+      "title": "PyTorch：保存与加载模型",
+      "url": "https://docs.pytorch.org/tutorials/beginner/basics/saveloadrun_tutorial.html"
+    },
+    {
+      "key": "arena",
+      "title": "ARENA：Fundamentals",
+      "url": "https://learn.arena.education/chapter0_fundamentals/"
+    }
+  ]
+}

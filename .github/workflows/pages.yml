@@ -1,0 +1,42 @@
+name: Publish learning platform
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: github-pages
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+      - name: Check browser code and progress compatibility
+        run: |
+          npm run check
+          node verify_progress.mjs
+          node verify_assessment_state.mjs
+          node verify_progress_sync_state.mjs
+      - name: Prepare static browser assets
+        run: node scripts/prepare-pages.mjs
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v4
+        with:
+          path: .runtime/pages
+      - name: Publish GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

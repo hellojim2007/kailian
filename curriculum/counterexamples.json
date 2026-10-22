@@ -1,0 +1,77 @@
+[
+  {
+    "lesson": "py13",
+    "code": "def mean_probability(xs):\n    if not xs or any(x<0 or x>1 for x in xs):\n        raise ValueError(\"invalid probabilities\")\n    return sum(xs)/len(xs)\n",
+    "reason": "NaN 的小于/大于比较都为 False，原写法让 NaN 穿过 [0,1] 验证。"
+  },
+  {
+    "lesson": "py23",
+    "code": "def validate_batch(features,labels):\n    assert len(features)==len(labels)\n    if features:\n        assert all(len(row)==len(features[0]) for row in features)\n    assert all(type(x) is int and x>=0 for x in labels)\n    return True\n",
+    "reason": "只检查等宽，未验证二维数值结构：一维输入错抛 TypeError，三维和字符串行却通过。"
+  },
+  {
+    "lesson": "py16",
+    "code": "def top_runs(records,k):\n    return [r[\"name\"] for r in sorted(records,key=lambda r:(-r[\"score\"],r[\"name\"]))] if k else []\n",
+    "reason": "排序正确但忽略非零 k 的截断；旧验收没有真正的非空子集。"
+  },
+  {
+    "lesson": "py18",
+    "code": "import math\ndef best_checkpoint(records):\n    valid=[r for r in records if r.get(\"status\")==\"ok\" and type(r.get(\"loss\")) in (int,float) and math.isfinite(r[\"loss\"])]\n    return min(valid,key=lambda r:r[\"epoch\"])[\"epoch\"] if valid else None\n",
+    "reason": "过滤有效后只取最早 epoch，忽略更重要的 loss 主排序键。"
+  },
+  {
+    "lesson": "py20",
+    "code": "import json\ndef read_config(path):\n    try:\n        with open(path,encoding=\"utf-8\") as f:c=json.load(f)\n    except json.JSONDecodeError:\n        return None\n    return {\"name\":c[\"name\"],\"lr\":c.get(\"lr\",0.001)}\n",
+    "reason": "吞掉 JSON 格式错误，违反任务要求保留 JSONDecodeError。"
+  },
+  {
+    "lesson": "pt12",
+    "code": "import torch\ndef square_grad(values):\n    return 2*torch.tensor(values,dtype=torch.float64)",
+    "reason": "用解析导数替代要求的真实autograd"
+  },
+  {
+    "lesson": "pt13",
+    "code": "import torch\ndef check_gradient(value,eps=1e-5):\n    g=3*value**2+4*value-4\n    return g,g",
+    "reason": "两个分量都返回解析导数、完全不做有限差分"
+  },
+  {
+    "lesson": "pt14",
+    "code": "import torch\ndef clip_gradients(parameters,max_norm):\n    grads=[p.grad for p in parameters if p.grad is not None]\n    if not grads:\n        return 0.0\n    total=torch.sqrt(sum((g*g).sum() for g in grads))\n    scale=max_norm/(total.item()+1e-6)\n    with torch.no_grad():\n        for g in grads:\n            g.mul_(scale)\n    return total.item()\n",
+    "reason": "漏掉min(1,...)，对小梯度错误放大"
+  },
+  {
+    "lesson": "pt18",
+    "code": "import torch\ndef collate_samples(samples):\n    if not samples: raise ValueError(\"empty batch\")\n    x= samples[0][0].unsqueeze(0) if len(samples)==1 else torch.stack([s[0] for s in samples])\n    return x,torch.tensor([s[1] for s in samples],dtype=torch.long)",
+    "reason": "单样本分支直接unsqueeze，违反不共享存储约定"
+  },
+  {
+    "lesson": "pt20",
+    "code": "import torch\ndef predict(model,x):\n    mode=model.training\n    model.eval()\n    with torch.no_grad():\n        out=model(x)\n    model.train(mode)\n    return out",
+    "reason": "正常返回恢复模式，但前向异常时未恢复"
+  },
+  {
+    "lesson": "pt21",
+    "code": "import torch\ndef epoch_mse(model,batches):\n    mode=model.training\n    model.eval()\n    total=0.0\n    count=0\n    try:\n        with torch.enable_grad():\n            for x,y in batches:\n                total+=((model(x)-y)**2).sum().item()\n                count+=y.numel()\n        return total/count if count else 0.0\n    finally:\n        model.train(mode)\n",
+    "reason": "评估未关闭梯度记录"
+  },
+  {
+    "lesson": "pt23",
+    "code": "import torch\ndef evaluate_classifier(model,batches):\n    mode=model.training\n    model.eval()\n    loss_sum=0.0\n    correct=0\n    count=0\n    try:\n        with torch.enable_grad():\n            for x,y in batches:\n                logits=model(x)\n                loss_sum+=torch.nn.functional.cross_entropy(logits,y,reduction=\"sum\").item()\n                correct+=(logits.argmax(1)==y).sum().item()\n                count+=len(y)\n        return {\"loss\":loss_sum/count if count else 0.0,\"accuracy\":correct/count if count else 0.0}\n    finally:\n        model.train(mode)\n",
+    "reason": "评估未关闭梯度记录"
+  },
+  {
+    "lesson": "pt25",
+    "code": "import torch\ndef train_step(model,optimizer,x,labels):\n    model.train()\n    optimizer.zero_grad()\n    loss=torch.nn.functional.cross_entropy(model(x),labels)\n    loss.backward()\n    optimizer.step()\n    return loss\n",
+    "reason": "返回训练loss张量，未按任务返回Python数值"
+  },
+  {
+    "lesson": "pt26",
+    "code": "import torch\ndef fit_binary(x,y,steps=100,lr=0.1):\n    m=torch.nn.Linear(x.shape[1],1)\n    torch.nn.init.zeros_(m.weight)\n    torch.nn.init.zeros_(m.bias)\n    o=torch.optim.SGD(m.parameters(),lr=0.1)\n    losses=[]\n    for _ in range(steps):\n        o.zero_grad()\n        loss=torch.nn.functional.binary_cross_entropy_with_logits(m(x).squeeze(-1),y.float())\n        losses.append(loss.item())\n        loss.backward()\n        o.step()\n    return {\"weight\":m.weight.detach().flatten().tolist(),\"bias\":m.bias.item(),\"losses\":losses}\n",
+    "reason": "忽略用户lr参数"
+  },
+  {
+    "lesson": "pt30",
+    "code": "import torch\ndef train_classifier(train_x,train_y,val_x,val_y,epochs=100,lr=0.1):\n    model=torch.nn.Linear(train_x.shape[1],2)\n    torch.nn.init.zeros_(model.weight)\n    torch.nn.init.zeros_(model.bias)\n    optimizer=torch.optim.SGD(model.parameters(),lr=lr)\n    for _ in range(epochs):\n        model.train()\n        optimizer.zero_grad()\n        loss=torch.nn.functional.cross_entropy(model(torch.cat([train_x,val_x.detach()])),torch.cat([train_y,val_y]))\n        loss.backward()\n        optimizer.step()\n    model.eval()\n    with torch.no_grad():\n        train_loss=torch.nn.functional.cross_entropy(model(torch.cat([train_x,val_x.detach()])),torch.cat([train_y,val_y])).item()\n        out=model(val_x)\n        val_loss=torch.nn.functional.cross_entropy(out,val_y).item()\n        val_accuracy=(out.argmax(1)==val_y).float().mean().item()\n    return {\"model\":model,\"train_loss\":train_loss,\"val_loss\":val_loss,\"val_accuracy\":val_accuracy}\n",
+    "reason": "将验证集detach后拼进训练，现有独立验证检查仍误收"
+  }
+]
